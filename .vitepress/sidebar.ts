@@ -152,6 +152,11 @@ export const sidebar = {
             ]
         },
         {
+            text: '数据库',
+            collapsed: true,
+            items: set_sidebar("/docs/数据库")
+        },
+        {
             text: '其他',
             collapsed: true,
             items: set_sidebar("/docs/其他")
@@ -166,6 +171,7 @@ export const sidebar = {
                     text: '通用权限项目(一)', collapsed: true, link: '/project/通用权限项目/通用权限项目(一)/index', items: [
                         { text: '项目介绍', link: '/project/通用权限项目/通用权限项目(一)/项目介绍' },
                         { text: '项目搭建', link: '/project/通用权限项目/通用权限项目(一)/项目搭建' },
+                        { text: '角色管理模块', link: '/project/通用权限项目/通用权限项目(一)/角色管理模块' },
                     ]
                 },
                 { text: '通用权限项目(二)', link: '/project/通用权限项目/通用权限项目(二)/index' },
