@@ -2,6 +2,67 @@
 
 官方网站：https://element-plus.org/zh-CN/
 
+## 安装
+
+安装Element plus：
+
+```shell
+# 选择一个你喜欢的包管理器
+
+# NPM
+npm install element-plus --save
+
+# Yarn
+yarn add element-plus
+
+# pnpm
+pnpm install element-plus
+```
+
+安装图标：
+
+```shell
+# 选择一个你喜欢的包管理器
+
+# NPM
+npm install @element-plus/icons-vue
+# Yarn
+yarn add @element-plus/icons-vue
+# pnpm
+pnpm install @element-plus/icons-vue
+```
+
+## 完整引入
+
+引入ElementPlus：
+
+```typescript
+// main.ts
+import { createApp } from 'vue'
+import ElementPlus from 'element-plus'
+import 'element-plus/dist/index.css'
+import App from './App.vue'
+
+const app = createApp(App)
+
+app.use(ElementPlus)
+app.mount('#app')
+```
+
+完整引入图标：
+
+```typescript
+// main.ts
+
+// 如果您正在使用CDN引入，请删除下面一行。
+import * as ElementPlusIconsVue from '@element-plus/icons-vue'
+
+const app = createApp(App)
+for (const [key, component] of Object.entries(ElementPlusIconsVue)) {
+  app.component(key, component)
+}
+```
+
 ## 按需引入
 
 官方文档：https://element-plus.org/zh-CN/guide/quickstart.html#%E6%8C%89%E9%9C%80%E5%AF%BC%E5%85%A5
