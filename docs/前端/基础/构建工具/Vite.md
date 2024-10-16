@@ -33,7 +33,7 @@ Vite 是快速构建前端的脚手架
 
 **注意**：Vite 需要 [Node.js](https://nodejs.org/en/) 版本 18+，20+。然而，有些模板需要依赖更高的 Node 版本才能正常运行，当包管理器发出警告时，请注意升级Node 版本。
 
-**参数**：
+**参数**：	
 
 - npm是Node Package Manager 的缩写，是Nodejs的包管理工具
 - create是npm命令，用于创建新的npm包
@@ -176,6 +176,30 @@ export default defineConfig({
 
 ![image-20240602182623156](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202406021826636.png)
 
+### 配置 HMR 连接
+
+使用 `server.hmr`禁用或配置 HMR 连接 (用于 HMR websocket 必须使用不同的 http 服务器地址的情况)。
+
+- **类型：** `boolean | { protocol?: string, host?: string, port?: number, path?: string, timeout?: number, overlay?: boolean, clientPort?: number, server?: Server }`
+
+官方教程：https://cn.vitejs.dev/config/server-options.html#server-hmr
+
+```typescript
+import { defineConfig } from 'vite'
+import vue from '@vitejs/plugin-vue'
+
+// https://vitejs.dev/config/
+export default defineConfig({
+  plugins: [vue()],
+  server: {
+    port: 9999, //设置端口号
+    open: true, //设置自动打开浏览器
+    host: '0.0.0.0', //设置IP
+    hmr:true,
+  }
+})
+```
+
 ### 配置@路径别名
 
 path模块是node.js的内置模块。而node.js默认不支持ts文件，所以需要安装：
@@ -225,6 +249,20 @@ export default defineConfig({
     }
   },
 ...
+}
+```
+
+如果别名配置还报错，src下新建`vite-env.d.ts`
+
+> vite-env.d.ts
+
+```typescript
+// <reference types="vite/client" />
+
+declare module '*.vue'{
+    import type {DefineComponent} from 'vue'
+    const component: DefineComponent<{},{},any>
+    export default component
 }
 ```
 
