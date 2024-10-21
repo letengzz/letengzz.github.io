@@ -10,7 +10,7 @@
 
 开通个人实例，在访问凭证中获取账号密码，并创建命名空间
 
-![image-20240620163706557](DockerToAli/image-20240620163706557.png)
+![image-20240620163706557](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202410212241851.png)
 
 ## GitHub
 
