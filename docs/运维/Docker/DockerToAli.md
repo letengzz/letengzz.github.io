@@ -61,7 +61,7 @@ jobs:
 
 然后点击Actions，运行脚本
 
-![image-20240620163531058](DockerToAli/image-20240620163531058.png)
+![image-20240620163531058](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202410212257347.png)
 
 
 
