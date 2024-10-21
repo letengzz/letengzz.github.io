@@ -1,19 +1,28 @@
-### 安装
+# Linux 安装
 上传安装包并解压
-![image.png](Nginx Install/1695277749844-01ac1837-eb77-4018-8e0d-c9aef22991a5.png)
+![image.png](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202410211100769.png)
 进入解压目录
 安装perl库 
+
+```shell
 yum install -y pcre pcre-devel
+```
 
 安装zlib库 
+
+```shell
 yum install -y zlib zlib-devel 
+```
 
 编译安装
+
+```shell
 ./configure --prefix=/usr/local/nginx 
 make
 make install
+```
 
-### 常用命令
+## 常用命令
 ```shell
 ./nginx -v #查看nginx 版本
 ./nginx -V #查看nginx的配置信息
@@ -34,7 +43,7 @@ firewall-cmd --list-ports
 ```
 
 
-### 配置https
+## 配置https
 先安装nginx的ssl模块
 编译之前安装openssl
 yum -y install openssl openssl-devel
@@ -42,7 +51,7 @@ yum -y install openssl openssl-devel
 ./configure --prefix=/usr/local/nginx --with-http_stub_status_module --with-http_ssl_module
 make
 使用nginx -V查看是否成功
-![image.png](Nginx Install/1695277795396-43518bdf-4385-4b27-a9fe-759a2cca5603.png)
+![image.png](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202410211101196.png)
 将objs中的nginx复制到/usr/local/nginx/sbin/nginx
 rm -rf /usr/local/nginx/sbin/nginx
 cp ./nginx /usr/local/nginx/sbin/nginx
@@ -72,7 +81,7 @@ cp ./nginx /usr/local/nginx/sbin/nginx
 
 
 
-### 配置成系统服务
+## 配置成系统服务
 
 ```shell
 vi /usr/lib/systemd/system/nginx.service
