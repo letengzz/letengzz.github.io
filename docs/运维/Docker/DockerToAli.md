@@ -1,6 +1,10 @@
 # Docker镜像To阿里云
 
-### 阿里云
+本地镜像发布到阿里云流程：
+
+![image.png](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202410212008861.png)
+
+## 阿里云
 
 先需要准备阿里云账号，开通**容器镜像服务 ACR**
 
@@ -8,7 +12,7 @@
 
 ![image-20240620163706557](DockerToAli/image-20240620163706557.png)
 
-### GitHub
+## GitHub
 
 创建一个仓库
 
@@ -70,3 +74,35 @@ jobs:
 > docker官方的镜像的命名空间为**library**，非官方的镜像要注意**修改**
 >
 > 例如：skopeo copy docker://docker.io/**canal**/canal-server:v1.1.1 docker://registry.cn-beijing.aliyuncs.com/wulan/canal-server:v1.1.1
+
+## 本地镜像发布到阿里云
+
+**镜像的生成方法**
+方法一：
+基于当前容器创建一个新镜像
+docker commit [OPTIONS] 容器ID [REPOSITORY[:TAG]]
+方法二：
+基于DockerFile
+
+**将本地镜像推送到阿里云**
+创建仓库镜像 ==> 最终获取管理界面脚本
+
+通过管理界面脚本获取命令，通过命令上传镜像
+类似git操作
+示例(示例代码中的“[]”在实际中不需要)：
+
+```
+docker login --username=pengnz registry.cn-beijing.aliyuncs.com
+docker tag [ImageId] registry.cn-beijing.aliyuncs.com/wulan/myubuntu:[镜像版本号]
+docker push registry.cn-beijing.aliyuncs.com/wulan/myubuntu:[镜像版本号]
+```
+
+**将阿里云上的镜像下载到本地**
+通过命令下载到本地
+
+```
+docker pull registry.cn-beijing.aliyuncs.com/wulan/myubuntu:[镜像版本号]
+```
+
+
+
