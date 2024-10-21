@@ -60,7 +60,7 @@ export default defineConfig({
       },
       {
         text: '后端', items: [
-          { text: 'Go', link: '/docs/后端/Go' }, 
+          { text: 'Go', link: '/docs/后端/Go' },
           { text: 'Java', link: '/docs/后端/Java' },
           { text: 'Python', link: '/docs/后端/Python' },]
       },
@@ -74,11 +74,22 @@ export default defineConfig({
           { text: '人大金仓', link: '/docs/数据库/人大金仓' },
         ]
       },
-      { text: '运维', items: [{ text: 'Linux', link: '/docs/运维/Linux' }, { text: 'Docker', link: '/docs/运维/Docker' },] },
+      {
+        text: '运维', items: [
+          { text: '虚拟机', link: '/docs/运维/虚拟机' },
+          { text: 'Linux', link: '/docs/运维/Linux' },
+          { text: 'Docker', link: '/docs/运维/Docker' },
+          { text: 'Nginx', link: '/docs/运维/Nginx' },
+          { text: 'Docker', link: '/docs/运维/Docker' },
+          { text: 'Kubernetes', link: '/docs/运维/Kubernetes' },
+          { text: '工具', link: '/docs/运维/工具' },
+          { text: '其他', link: '/docs/运维/其他' },
+        ]
+      },
       { text: '项目', link: '/project' },
-      { text: '其他', link: '/other' },
+      { text: '其他', link: '/docs/其他' },
     ],
-    sidebar:sidebar,
+    sidebar: sidebar,
 
     socialLinks: [
       { icon: 'github', link: 'https://github.com/letengzz' }
