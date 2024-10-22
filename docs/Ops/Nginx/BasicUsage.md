@@ -1,4 +1,4 @@
-## Nginx基础使用
+# Nginx基础使用
 
 Nginx启动
 

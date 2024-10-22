@@ -1,132 +1,4 @@
-# 第一章 kubernetes介绍
-
-本章节主要介绍应用程序在服务器上部署方式演变以及kubernetes的概念、组件和工作原理。
-
-## 应用部署方式演变
-
-在部署应用程序的方式上，主要经历了三个时代：
-
-- **传统部署**：互联网早期，会直接将应用程序部署在物理机上
-
-  > 优点：简单，不需要其它技术的参与
-  >
-  > 缺点：不能为应用程序定义资源使用边界，很难合理地分配计算资源，而且程序之间容易产生影响
-
-- **虚拟化部署**：可以在一台物理机上运行多个虚拟机，每个虚拟机都是独立的一个环境
-
-  > 优点：程序环境不会相互产生影响，提供了一定程度的安全性
-  >
-  > 缺点：增加了操作系统，浪费了部分资源
-
-- **容器化部署**：与虚拟化类似，但是共享了操作系统
-
-  > 优点：
-  >
-  >     可以保证每个容器拥有自己的文件系统、CPU、内存、进程空间等
-  >
-  >     运行应用程序所需要的资源都被容器包装，并和底层基础架构解耦
-  >
-  >     容器化的应用程序可以跨云服务商、跨Linux操作系统发行版进行部署
-
-![image-20200505183738289](Kubernetes_note/image-20200505183738289.png)
-
-容器化部署方式给带来很多的便利，但是也会出现一些问题，比如说：
-
-- 一个容器故障停机了，怎么样让另外一个容器立刻启动去替补停机的容器
-- 当并发访问量变大的时候，怎么样做到横向扩展容器数量
-
-这些容器管理的问题统称为**容器编排**问题，为了解决这些容器编排问题，就产生了一些容器编排的软件：
-
-- **Swarm**：Docker自己的容器编排工具
-- **Mesos**：Apache的一个资源统一管控的工具，需要和Marathon结合使用
-- **Kubernetes**：Google开源的的容器编排工具
-
-<img src="./Kubernetes_note/image-20200524150339551.png" alt="image-20200524150339551" style="border:1px solid;zoom:110%;" />
-
-## kubernetes简介
-
-<img src="./Kubernetes_note/image-20200406232838722.png" alt="image-20200406232838722" style="zoom:100%;border:1px solid;" />
-
-​    
-
-    kubernetes，是一个全新的基于容器技术的分布式架构领先方案，是谷歌严格保密十几年的秘密武器----Borg系统的一个开源版本，于2014年9月发布第一个版本，2015年7月发布第一个正式版本。
-    
-    kubernetes的本质是**一组服务器集群**，它可以在集群的每个节点上运行特定的程序，来对节点中的容器进行管理。目的是实现资源管理的自动化，主要提供了如下的主要功能：
-
-- **自我修复**：一旦某一个容器崩溃，能够在1秒中左右迅速启动新的容器
-- **弹性伸缩**：可以根据需要，自动对集群中正在运行的容器数量进行调整
-- **服务发现**：服务可以通过自动发现的形式找到它所依赖的服务
-- **负载均衡**：如果一个服务起动了多个容器，能够自动实现请求的负载均衡
-- **版本回退**：如果发现新发布的程序版本有问题，可以立即回退到原来的版本
-- **存储编排**：可以根据容器自身的需求自动创建存储卷
-
-![image-20200526203726071](Kubernetes_note/image-20200526203726071.png)
-
-## kubernetes组件
-
-一个kubernetes集群主要是由**控制节点(master)**、**工作节点(node)**构成，每个节点上都会安装不同的组件。
-
-**master：集群的控制平面，负责集群的决策  (  管理  )**
-
-> **ApiServer** : 资源操作的唯一入口，接收用户输入的命令，提供认证、授权、API注册和发现等机制
->
-> **Scheduler** : 负责集群资源调度，按照预定的调度策略将Pod调度到相应的node节点上
->
-> **ControllerManager** : 负责维护集群的状态，比如程序部署安排、故障检测、自动扩展、滚动更新等
->
-> **Etcd **：负责存储集群中各种资源对象的信息
-
-**node：集群的数据平面，负责为容器提供运行环境 ( 干活 ) **
-
-> **Kubelet** : 负责维护容器的生命周期，即通过控制docker，来创建、更新、销毁容器
->
-> **KubeProxy** : 负责提供集群内部的服务发现和负载均衡
->
-> **Docker** : 负责节点上容器的各种操作
-
-<img src="./Kubernetes_note/image-20200406184656917.png" alt="image-20200406184656917" style="zoom:200%;" />
-
-下面，以部署一个nginx服务来说明kubernetes系统各个组件调用关系：
-
-1. 首先要明确，一旦kubernetes环境启动之后，master和node都会将自身的信息存储到etcd数据库中
-
-2. 一个nginx服务的安装请求会首先被发送到master节点的apiServer组件
-
-3. apiServer组件会调用scheduler组件来决定到底应该把这个服务安装到哪个node节点上
-
-   在此时，它会从etcd中读取各个node节点的信息，然后按照一定的算法进行选择，并将结果告知apiServer
-
-4. apiServer调用controller-manager去调度Node节点安装nginx服务
-
-5. kubelet接收到指令后，会通知docker，然后由docker来启动一个nginx的pod
-
-   pod是kubernetes的最小操作单元，容器必须跑在pod中至此，
-
-6. 一个nginx服务就运行了，如果需要访问nginx，就需要通过kube-proxy来对pod产生访问的代理
-
-        这样，外界用户就可以访问集群中的nginx服务了
-
-## kubernetes概念
-
-**Master**：集群控制节点，每个集群需要至少一个master节点负责集群的管控
-
-**Node**：工作负载节点，由master分配容器到这些node工作节点上，然后node节点上的docker负责容器的运行
-
-**Pod**：kubernetes的最小控制单元，容器都是运行在pod中的，一个pod中可以有1个或者多个容器
-
-**Controller**：控制器，通过它来实现对pod的管理，比如启动pod、停止pod、伸缩pod的数量等等
-
-**Service**：pod对外服务的统一入口，下面可以维护者同一类的多个pod
-
-**Label**：标签，用于对pod进行分类，同一类pod会拥有相同的标签
-
-**NameSpace**：命名空间，用来隔离pod的运行环境
-
-<img src="./Kubernetes_note/image-20200403224313355.png" alt="image-20200403224313355" style="zoom:200%;" />
-
-
-
-# 第二章 集群环境搭建
+# 集群环境搭建
 
 本章节主要介绍如何搭建kubernetes的集群环境
 
@@ -501,7 +373,7 @@ service/nginx        NodePort    10.104.121.45   <none>        80:30073/TCP   17
 
 
 
-# 第三章 资源管理
+# 资源管理
 
 本章节主要介绍yaml语法和kubernetes的资源管理方式
 
@@ -595,7 +467,7 @@ address: [顺义,昌平]
 > 小提示：
 >
 > 	1  书写yaml切记`:` 后面要加一个空格
->		
+>			
 > 	2  如果需要将多段yaml配置放在一个文件中，中间要使用`---`分隔
 >
 >     3 下面是一个yaml转json的网站，可以通过它验证yaml是否书写正确
@@ -1031,7 +903,7 @@ scp -r ~/.kube cluster03:~/
 
 
 
-# 第四章 实战入门
+# 实战入门
 
 本章节将介绍如何在kubernetes集群中部署一个nginx服务，并且能够对其进行访问。
 
@@ -1615,7 +1487,7 @@ spec:
 >
 >     至此，已经掌握了Namespace、Pod、Deployment、Service资源的基本操作，有了这些操作，就可以在kubernetes集群中实现一个服务的简单部署和访问了，但是如果想要更好的使用kubernetes，就需要深入学习这几种资源的细节和原理。
 
-# 第五章 Pod详解
+# Pod详解
 
 本章节将详细介绍Pod资源的各种配置（yaml）和原理。
 
@@ -3224,7 +3096,7 @@ FIELDS:
 
 
 
-# 第六章 Pod控制器详解
+# Pod控制器详解
 
 本章节主要介绍各种Pod控制器的详细使用。
 
@@ -4321,7 +4193,7 @@ cronjob.batch "pc-cronjob" deleted
 
 
 
-# 第七章 Service详解
+# Service详解
 
 本章节主要介绍kubernetes的流量负载组件：Service和Ingress。
 
@@ -4991,7 +4863,7 @@ tomcat.itheima.com /  tomcat-service:8080(10.244.1.99:8080,10.244.2.117:8080,10.
 # 下面可以通过浏览器访问https://nginx.itheima.com:31335 和 https://tomcat.itheima.com:31335来查看了
 ~~~
 
-# 第八章 数据存储
+# 数据存储
 
     在前面已经提到，容器的生命周期可能很短，会被频繁地创建和销毁。那么容器在销毁时，保存在容器中的数据也会被清除。这种结果对用户来说，在某些情况下是不乐意看到的。为了持久化保存容器的数据，kubernetes引入了Volume的概念。
     
@@ -5775,7 +5647,7 @@ admin
 
 至此，已经实现了利用secret实现了信息的编码。
 
-# 第九章 安全认证
+# 安全认证
 
 本章节主要介绍Kubernetes的安全认证机制。
 
@@ -6124,7 +5996,7 @@ Switched to context "kubernetes-admin@kubernetes".
 - DefaultTolerationSeconds：这个插件为那些没有设置forgiveness tolerations并具有notready:NoExecute和unreachable:NoExecute两种taints的Pod设置默认的“容忍”时间，为5min
 - PodSecurityPolicy：这个插件用于在创建或修改Pod时决定是否根据Pod的security context和可用的PodSecurityPolicy对Pod的安全策略进行控制
 
-# 第十章 DashBoard
+# DashBoard
 
     之前在kubernetes中完成的所有操作都是通过命令行工具kubectl完成的。其实，为了提供更丰富的用户体验，kubernetes还开发了一个基于web的用户界面（Dashboard）。用户可以使用Dashboard部署容器化的应用，还可以监控应用的状态，执行故障排查以及管理kubernetes中各种资源。
 

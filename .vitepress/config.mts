@@ -76,14 +76,13 @@ export default defineConfig({
       },
       {
         text: '运维', items: [
-          { text: '虚拟机', link: '/docs/运维/虚拟机' },
-          { text: 'Linux', link: '/docs/运维/Linux' },
-          { text: 'Docker', link: '/docs/运维/Docker' },
-          { text: 'Nginx', link: '/docs/运维/Nginx' },
-          { text: 'Docker', link: '/docs/运维/Docker' },
-          { text: 'Kubernetes', link: '/docs/运维/Kubernetes' },
-          { text: '工具', link: '/docs/运维/工具' },
-          { text: '其他', link: '/docs/运维/其他' },
+          { text: '虚拟机', link: '/docs/Ops/VM' },
+          { text: 'Linux', link: '/docs/Ops/Linux' },
+          { text: 'Nginx', link: '/docs/Ops/Nginx' },
+          { text: 'Docker', link: '/docs/Ops/Docker' },
+          { text: 'Kubernetes', link: '/docs/Ops/Kubernetes' },
+          { text: '工具', link: '/docs/Ops/Tools' },
+          { text: '其他', link: '/docs/Ops/Others' },
         ]
       },
       { text: '项目', link: '/project' },
