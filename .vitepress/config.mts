@@ -52,17 +52,17 @@ export default defineConfig({
       { text: '首页', link: '/' },
       {
         text: '前端', items: [
-          { text: '基础', link: '/docs/前端/基础' },
-          { text: '框架', link: '/docs/前端/框架' },
-          { text: '工具', link: '/docs/前端/工具' },
-          { text: '其他', link: '/docs/前端/其他' }
+          { text: '基础', link: '/docs/Frontend/Basic' },
+          { text: '框架', link: '/docs/Frontend/Frame' },
+          { text: '工具', link: '/docs/Frontend/Tools' },
+          { text: '其他', link: '/docs/Frontend/Others' }
         ]
       },
       {
         text: '后端', items: [
-          { text: 'Go', link: '/docs/后端/Go' },
-          { text: 'Java', link: '/docs/后端/Java' },
-          { text: 'Python', link: '/docs/后端/Python' },]
+          { text: 'Go', link: '/docs/Backend/Go' },
+          { text: 'Java', link: '/docs/Backend/Java' },
+          { text: 'Python', link: '/docs/Backend/Python' },]
       },
       {
         text: '数据库',
@@ -86,7 +86,7 @@ export default defineConfig({
         ]
       },
       { text: '项目', link: '/project' },
-      { text: '其他', link: '/docs/其他' },
+      { text: '其他', link: '/docs/Others' },
     ],
     sidebar: sidebar,
 
