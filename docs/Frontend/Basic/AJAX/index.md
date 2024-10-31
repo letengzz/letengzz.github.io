@@ -1,3 +1,3 @@
 # Ajax
 
-- [Axios](Axios.md)
+- [Axios](axios.md)
