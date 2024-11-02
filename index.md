@@ -24,7 +24,7 @@ features:
   - title: 后端
     details: Go、Java
   - title: 数据库
-    details: MySQL、Redis、Elasticsearch、MongoDB
+    details: MySQL、Redis、ELK、MongoDB
   - title: 运维
     details: Linux、Docker、Kubernetes
   - title: 项目

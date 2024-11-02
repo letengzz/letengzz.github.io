@@ -69,7 +69,7 @@ export default defineConfig({
         items: [
           { text: 'MySQL', link: '/docs/数据库/MySQL' },
           { text: 'Redis', link: '/docs/数据库/Redis' },
-          { text: 'ElasticSearch', link: '/docs/数据库/ELK' },
+          { text: 'ELK', link: '/docs/数据库/ELK' },
           { text: 'MongoDB', link: '/docs/数据库/MongoDB' },
           { text: '人大金仓', link: '/docs/数据库/人大金仓' },
         ]
