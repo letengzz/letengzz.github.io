@@ -1,5 +1,7 @@
 ## docker下安装mysql
 
+![image-20241106091920737](assets/image-20241106091920737.png)
+
 ①下载mysql镜像  docker pull mysql:8.0.33
 ②启动容器实例
 
@@ -127,7 +129,6 @@ master_connect_retry：连接失败重试的时间间隔，单位为秒。
 :::
 **在从机中查看主从同步状态**
 `show slave status \G;`
-![image.png](../../../../Backend/%252525E8%252525BF%25252590%252525E7%252525BB%252525B4/Docker/Docker%252525E9%252525AB%25252598%252525E7%252525BA%252525A7/1695996333485-682c307b-b471-4009-80eb-38efa401933e.png)
 **在从机中开启主从同步**
 `start slave;`
 **再次查看同步状态**

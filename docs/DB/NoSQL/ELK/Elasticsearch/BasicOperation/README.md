@@ -21,7 +21,7 @@ GET /_analyze
   - analyzer：分词器类型，standard为默认分词器
   - text：需要分词的内容
 
-**注意**：处理中文分词，一般会使用[IK分词器](../IK/BasicUse/README.md)
+**注意**：处理中文分词，一般会使用IK分词器
 
 ## 常见mapping属性
 
