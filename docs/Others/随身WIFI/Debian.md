@@ -38,13 +38,13 @@ dpkg-reconfigure tzdata
 ```
 
 
-修改vi配置：把上面这行添加到【setup() {】的下一行
+修改vi配置：
 
 ```shell
 echo -e "if has('mouse')\nset mouse-=a\nendif" > .vimrc
 ```
 
-修改usb为主动模式：
+修改usb为主动模式：把上面这行添加到【setup() {】的下一行
 
 ```shell
 vi /usr/sbin/mobian-usb-gadget
