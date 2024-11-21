@@ -35,3 +35,9 @@ Gitee：https://gitee.com/fantastic-admin/basic
 - 配置丰富：提供丰富的配置项，使框架更加灵活，以适应复杂的业务场景。
 
 - 标准模块生成：支持自动生成包含 CRUD (增查改删) 操作的基础模块，可实现多种展示与交互方式。
+
+fantastic-admin 还有一些配套项目，帮助开发者更轻松地进行开发：
+
+- **Fantastic-startkit**：一个简单好用的 Vue3 项目启动套件。
+- **One-step-admin**：一个高效的 Vue 中后台管理系统框架。
+- **Fantastic-mobile**：一个移动端 H5 框架，适合构建移动端应用。
