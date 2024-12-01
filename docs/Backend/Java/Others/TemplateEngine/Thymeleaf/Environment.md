@@ -73,9 +73,9 @@
 
 ## 配置上下文参数
 
-![./images](./assets/images.png)
+![./images](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202412012326221.png)
 
-![./images](./assets/images-1671786539887-4.png)
+![./images](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202412012326712.png)
 
 物理视图=视图前缀+逻辑视图+视图后缀
 
