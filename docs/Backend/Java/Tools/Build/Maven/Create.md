@@ -1,4 +1,3 @@
-````
 # Maven 创建工程
 
 ## 创建普通工程
@@ -542,5 +541,4 @@ mvn dependency:tree
 在 pom.xml 中并没有依赖 hamcrest-core，但是它却被加入了依赖的列表。
 
 **原因**：junit 依赖了hamcrest-core，然后基于依赖的传递性，hamcrest-core 被传递到工程了。
-````
 

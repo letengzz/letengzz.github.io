@@ -148,7 +148,7 @@
 
 ![image-20240613211629000](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202406132116134.png)
 
-![image-20240613213915625](assets/image-20240613213915625.png)
+![image-20240613213915625](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202412011720022.png)
 
 输入Gitlab地址：
 
@@ -312,7 +312,7 @@ git rm src/main/java/com/hjc/demo/Module1plus.java
 
 最后重新选择正确的代码提交到仓库
 
-![1706151049392](assets/5C1706151049392.png)
+![1706151049392](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202412011720395.png)
 
 最后NERGE即可：
 

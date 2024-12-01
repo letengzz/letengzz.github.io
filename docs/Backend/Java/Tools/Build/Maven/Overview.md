@@ -2,7 +2,7 @@
 
 Maven 是 Apache 软件基金会组织维护的一款专门为 Java 项目提供**构建**和**依赖**管理支持的工具。
 
-![img](https://maven.apache.org/images/maven-logo-black-on-white.png)
+![img](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202412011717030.png)
 
 - 官方网站：https://maven.apache.org/
 
