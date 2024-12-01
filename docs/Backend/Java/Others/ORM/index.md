@@ -1,6 +1,6 @@
 # ORM对象关系映射
 
-ORM（Object Relational Mapping，对象关系映射）是一种[数据持久化](DataPersistence.md)技术，它在对象模型和关系型数据库之间建立起对应关系，并且提供了一种机制，通过 JavaBean 对象去操作数据库表中的数据。
+ORM（Object Relational Mapping，对象关系映射）是一种[数据持久化](../DataPersistence/index.md)技术，它在对象模型和关系型数据库之间建立起对应关系，并且提供了一种机制，通过 JavaBean 对象去操作数据库表中的数据。
 
 对象关系映射(`ORM`、`Object Relationship Mapping`)：
 

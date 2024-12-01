@@ -83,7 +83,21 @@ OGNL：Object-Graph Navigation Language对象-图 导航语言
 
 ### 选择表达式
 
-选择表达式就像变量表达式一样，它们不是整个上下文变量映射上执行，而是在先前选择的对象。 它们看起来像这样：
+选择表达式就像变量表达式一样，它们不是整个上下文变量映射上执行，而是在先前选择的对象， 主要用于在上下文中访问对象的属性。这种表达式通常在表单处理和对象绑定场景中使用。
+
+使用场景：
+
+- 表单绑定：在表单中绑定对象的属性。
+
+- 对象属性访问：在模板中访问对象的属性，特别是当对象是当前上下文的一部分时。
+
+**与 ${...} 的区别**：
+
+- `${...}`：标准表达式，用于访问模型中的变量和执行简单的表达式。
+
+- `*{...}`：属性选择表达式，用于在上下文中访问对象的属性，通常与 th:object 一起使用。
+
+基础语法：
 
 ```java
 *{customer.name}
@@ -108,6 +122,34 @@ OGNL：Object-Graph Navigation Language对象-图 导航语言
   // th:text="*{title}"
   output(selection.getTitle());
 }
+```
+
+表单绑定：假设有一个 User 对象，包含 name 和 age 属性，可以在表单中使用 `*{...}` 表达式来绑定这些属性：
+
+- th:object="${user}" 将 user 对象设置为当前上下文对象。
+- th:field="*{name}" 和 th:field="*{age}" 分别绑定到 user 对象的 name 和 age 属性。
+
+```html
+<form th:object="${user}" method="post" action="/submit">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" th:field="*{name}" /> 
+    <label for="age">Age:</label>
+    <input type="number" id="age" name="age" th:field="*{age}" />
+    <button type="submit">Submit</button>
+</form>
+```
+
+对象属性访问：假设有一个 User 对象，包含 name 和 age 属性，可以在模板中使用 *{...} 表达式来访问这些属性：
+
+- th:object="${user}" 将 user 对象设置为当前上下文对象。
+
+  *{name} 和 *{age} 分别访问 user 对象的 name 和 age 属性。
+
+```html
+<div th:object="${user}">
+    <p>Name: <span th:text="*{name}">Default Name</span></p>
+    <p>Age: <span th:text="*{age}">Default Age</span></p>
+</div>
 ```
 
 ### 消息(i18n)表达式
@@ -141,6 +183,7 @@ OGNL：Object-Graph Navigation Language对象-图 导航语言
 ### 链接(URL)表达式
 
 链接表达式在构建URL并向其添加有用的上下文和会话信息(通常称为URL重写的过程)。
+
 因此，对于部署在Web服务器的`/myapp`上下文中的Web应用程序，可以使用以下表达式：
 
 ```jsp

@@ -1,4 +1,4 @@
-## MVC 理论基础
+# MVC 理论基础
 
 ![img](https://cdn.jsdelivr.net/gh/letengzz/tc2@main/img/Java/202309181433546.jpg)
 

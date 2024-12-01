@@ -4,6 +4,8 @@
 
 动态渲染指定的 html 标签属性值、或者th指令(遍历、判断等)
 
+注意：在根标签`<html>`中引入 `xmlns:th="http://www.thymeleaf.org"`，在编写th:语法时有智能提示。
+
 ![images](https://cdn.jsdelivr.net/gh/letengzz/Two-C@main/img/Java/202301031103270.png)
 
 ## 表达式语法
@@ -181,6 +183,47 @@ request.setAttribute("reqAttrName", "<span>hello-value</span>");
 
   **注意**：`?:`之间没有空格。
 
+## 属性优先级
+
+### 属性优先级 
+
+thymeleaf的属性优先级非常重要，因为它直接决定了模板的解析和执行顺序。
+
+以下是Thymeleaf属性的优先级从高到低的列表，以表格形式展示：
+
+| 优先级 | 属性           | 描述                               |
+| ------ | -------------- | ---------------------------------- |
+| 1      | th:if          | 如果条件为真，则渲染该元素。       |
+| 2      | th:unless      | 如果条件为假，则渲染该元素。       |
+| 3      | th:with        | 定义局部变量。                     |
+| 4      | th:switch      | 开始一个 switch 语句。             |
+| 5      | th:case        | 定义 switch 语句中的 case 分支。   |
+| 6      | th:each        | 遍历列表，用于循环。               |
+| 7      | th:remove      | 移除元素或其属性。                 |
+| 8      | th:attr        | 设置或修改元素的属性。             |
+| 9      | th:classappend | 追加 CSS 类。                      |
+| 10     | th:styleappend | 追加内联样式。                     |
+| 11     | th:src         | 设置元素的 src 属性。              |
+| 12     | th:href        | 设置元素的 href 属性。             |
+| 13     | th:value       | 设置元素的 value 属性。            |
+| 14     | th:text        | 设置元素的文本内容。               |
+| 15     | th:utext       | 设置元素的未转义文本内容。         |
+| 16     | th:html        | 设置元素的 HTML 内容。             |
+| 17     | th:fragment    | 定义模板片段。                     |
+| 18     | th:insert      | 插入一个模板片段。                 |
+| 19     | th:replace     | 替换当前元素为一个模板片段。       |
+| 20     | th:include     | 包含一个模板片段的内容。           |
+| 21     | th:block       | 用于逻辑分组，不产生任何HTML输出。 |
+
+"先控制，再遍历，后操作，末内容"，具体来说：
+
+1. 先控制：th:if 和 th:unless 用于条件控制，决定是否渲染元素。
+2. 再遍历：th:each 用于遍历列表，生成多个元素。
+
+3. 后操作：th:with、th:switch、th:case、th:remove、th:attr 等用于局部变量定义、条件分支、属性操作等。
+
+4. 末内容：th:text、th:utext、th:html 等用于设置元素的内容。
+
 ## 访问域对象
 
 ### 域对象
@@ -310,9 +353,9 @@ Thymeleaf表达式：
 
 内置对象其实就是在表达式中**可以直接使用**的对象。
 
-### 基本内置对象
+官方文档：https://www.thymeleaf.org/doc/tutorials/3.1/usingthymeleaf.html#strings
 
-![./images](https://heavy_code_industry.gitee.io/code_heavy_industry/assets/img/img021.98446d22.png)
+### 基本内置对象
 
 **例**：
 
@@ -519,6 +562,11 @@ state对象包含以下属性：
 
 ## 包含其他模板文件
 
+片段是Thymeleaf中用于代码复用的基本机制。可以将共享的部分提取到单独的HTML文件中，然后在其他模板中引用这些片段。
+
+- 在公共代码部分使用`th:fragment="片段名称"`来声明公共代码片段的名字。
+- 在需要引入的地方使用`th:replace="~{文件名去掉后缀 :: 片段名称}"`来引入。
+
 **应用场景**：
 
 抽取各个页面的公共部分：
@@ -547,15 +595,15 @@ state对象包含以下属性：
 
 ```html
 <!-- 代码片段所在页面的逻辑视图 :: 代码片段的名称 -->
-<div id="badBoy" th:insert="segment :: header">
+<div id="badBoy" th:insert="~{segment :: header}">
     div标签的原始内容
 </div>
 
-<div id="worseBoy" th:replace="segment :: header">
+<div id="worseBoy" th:replace="~{segment :: header}">
     div标签的原始内容
 </div>
 
-<div id="worstBoy" th:include="segment :: header">
+<div id="worstBoy" th:include="~{segment :: header}">
     div标签的原始内容
 </div>
 ```
