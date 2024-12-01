@@ -16,7 +16,7 @@ Gitee：https://gitee.com/HalseySpicy/Geeker-Admin
 
 **项目功能**：
 
-- 技术栈：基于Vue3.4和TypeScript，采用单文件组件 <script setup>。
+- 技术栈：基于Vue3.4和TypeScript，采用单文件组件 `<script setup>`。
 
 - 构建工具：使用Vite5进行开发与打包，支持gzip/brotli压缩、tsx语法和跨域代理。
 
