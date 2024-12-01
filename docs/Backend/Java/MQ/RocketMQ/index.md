@@ -17,7 +17,7 @@
 - [RocketMQ ACL安全](Security.md)
 - [RocketMQ 集群](Cluster.md)
 - [RocketMQ 设计](Design.md)
-- [RocketMQ 常见问题](Error.md)
+- [RocketMQ 常见问题](Errors.md)
 
 **拓展**：
 
