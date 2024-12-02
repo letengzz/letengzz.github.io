@@ -11,7 +11,6 @@
 - [日志](Logs/index.md)
 - [微服务的拆分](MicroserviceSplit/index.md)
 - [模型类](ModelClass/index.md)
-- [MVC 理论基础](MVC/index.md)
 - [网络安全基础](NetworkSecurity/index.md)
 - [ORM对象关系映射](ORM/index.md)
 - [RestFul风格](RestFul/index.md)
@@ -20,3 +19,4 @@
 - [模板引擎](TemplateEngine/index.md)
 - [实用工具](UseTools/index.md)
 - [设计模式](DesignPattern/index.md)
+- [架构设计](Architecture/index.md)
