@@ -67,6 +67,31 @@ public class RestHighLevelClientUtils {
 
 ```
 
+配置到SpringBoot：
+
+```java
+/**
+ * ES 配置类
+ * @author hjc
+ */
+//@Configuration
+public class ElasticsearchConfig {
+    @Value("${shuto.elasticsearch.host-list}")
+    private String hostList;
+
+    @Bean(destroyMethod = "close")
+    public RestHighLevelClient restHighLevelClient(){
+        String[] split = hostList.split(",");
+        HttpHost[] httpHostsArray = new HttpHost[split.length];
+        for (int i = 0; i < split.length; i++) {
+            String item=split[i];
+            httpHostsArray[i]=new HttpHost(item.split(":")[0],Integer.parseInt(item.split(":")[1]),"http");
+        }
+        return new RestHighLevelClient(RestClient.builder(httpHostsArray));
+    }
+}
+```
+
 ## 操作索引库
 
 **索引库操作基本步骤**：

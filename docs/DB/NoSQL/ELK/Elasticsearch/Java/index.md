@@ -4,5 +4,5 @@ Elasticsearch 官方提供了各种不同语言的客户端，用来操作Elasti
 
 **官方文档**：https://www.elastic.co/guide/en/elasticsearch/client/index.html
 
-- [使用 RestClient 操作](RestClient/README.md)
+- [使用 RestClient 操作](RestClient.md)
 - 使用 SpringData 操作

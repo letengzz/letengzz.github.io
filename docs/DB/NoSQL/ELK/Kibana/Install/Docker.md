@@ -26,6 +26,9 @@ docker load -i kibana.tar
 ```docker
 docker run -d \
 --name kibana \
+--restart=always \
+--link elasticsearch:elasticsearch \
+-e "I18N_LOCALE=zh-CN" \
 -e ELASTICSEARCH_HOSTS=http://es:9200 \
 --network=es-net \
 -p 5601:5601  \
@@ -35,6 +38,7 @@ kibana:7.12.1
 - `--network es-net` ：加入一个名为es-net的网络中，与elasticsearch在同一个网络中
 - `-e ELASTICSEARCH_HOSTS=http://es:9200"`：设置elasticsearch的地址，因为kibana已经与elasticsearch在一个网络，因此可以用容器名直接访问elasticsearch
 - `-p 5601:5601`：端口映射配置
+- `--like`：建立两个容器之间的关联, kibana 关联到 es
 
 **说明**：若出现错误：
 
@@ -77,3 +81,4 @@ Kibana中提供了一个DevTools界面：
 ![image-20231228181107400](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202312281811108.png)
 
 **DevTools 作用**：帮助发送DSL语句，本质就是发送一个Restful的请求到 Elasticsearch中
+

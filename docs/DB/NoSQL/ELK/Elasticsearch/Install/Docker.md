@@ -32,6 +32,7 @@ docker load -i es.tar
 ```docker
 docker run -d \
 	--name es \
+	--restart=always \
     -e "ES_JAVA_OPTS=-Xms512m -Xmx512m" \
     -e "discovery.type=single-node" \
     -v es-data:/usr/share/elasticsearch/data \
@@ -46,6 +47,7 @@ elasticsearch:7.12.1
 
 docker run -it \
 --name es8 \
+--restart=always \
 -e "ES_JAVA_OPTS=-Xms512m -Xmx512m" \
 -v es8-data:/usr/share/elasticsearch/data \
 -v es8-plugins:/usr/share/elasticsearch/plugins \
