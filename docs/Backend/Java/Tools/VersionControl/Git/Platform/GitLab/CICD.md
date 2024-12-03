@@ -36,15 +36,15 @@ shell
 
 token的位置
 
-![1705896052634](assets/5C1705896052634.png)
+![1705896052634](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202412031112449.png)
 
 注册完成之后，runner就已经上线了。
 
 ![image-20240615002105853](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202406150021351.png)
 
-![1705557817529](assets/5C1705557817529.png)
+![1705557817529](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202412031113473.png)
 
-![1705898035403](assets/5C1705898035403.png)
+![1705898035403](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202412031113413.png)
 
 
 
