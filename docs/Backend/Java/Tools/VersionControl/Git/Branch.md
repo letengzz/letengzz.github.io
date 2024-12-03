@@ -180,7 +180,7 @@ git log --graph
 
 ## 分支功能介绍
 
-![img](assets/wps13111.jpg)
+![img](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202412021746854.jpg)
 
 ### 主干分支 master
 
