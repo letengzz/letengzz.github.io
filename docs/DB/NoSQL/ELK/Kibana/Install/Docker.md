@@ -70,7 +70,7 @@ docker logs -f kibana
 
 Kibana中提供了一个DevTools界面：
 
-![image-20231228180913602](assets/image-20231228180913602.png)
+![image-20231228180913602](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202412032348417.png)
 
 可以编写DSL来操作elasticsearch。并且对DSL语句有自动补全功能。
 
