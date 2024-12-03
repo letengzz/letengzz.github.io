@@ -24,7 +24,7 @@ QueryWrapper主要用于查询和删除功能也可以用修改功
 
 **组装条件**：
 
-![image_k_cPdiIiy4](assets/image_k_cPdiIiy4.png)
+![image_k_cPdiIiy4](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202412031137869.png)
 
 ### 组装查询条件
 
