@@ -5,7 +5,7 @@
 - [SpringBoot 整合 Druid](Druid/index.md)
 - [SpringBoot 整合 Junit](Junit/index.md)
 - [SpringBoot 整合 MyBatis](MyBatis/index.md)
-- [SpringBoot 整合 MyBatis-Plus](../../../MyBatisPlus/SpringBoot/index.md)
+- [SpringBoot 整合 MyBatis-Plus](../../../MyBatisPlus/SpringBoot/v3/index.md)
 - [SpringBoot 整合 Spring Security](SpringSecurity/index.md)
 - [SpringBoot 整合 Swagger](Swagger/index.md)
 - [SpringBoot 整合 Redis](Redis/index.md)
