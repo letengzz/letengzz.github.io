@@ -28,12 +28,6 @@ alter system set sql_mode=ANSI_QUOTES
 select sys_reload_conf()
 ```
 
-
-
-
-
-
-
 ### SpringBoot+MyBatis+KingBase
 
 > 官网文档：[KingbaseES客户端编程开发框架-MyBatis — KingbaseES产品手册](https://help.kingbase.com.cn/v8/development/client-interfaces-frame/mybatis/index.html)
