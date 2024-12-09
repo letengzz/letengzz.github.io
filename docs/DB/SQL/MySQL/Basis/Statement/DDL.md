@@ -228,7 +228,7 @@ ALTER TABLE user MODIFY vip varchar(20);
 DESC user;
 ```
 
-![image-20230909142412877](./assets/image-20230909142412877.png)
+![image-20230909142412877](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202412011756321.png)
 
 #### 同时修改字段名和字段类型
 
@@ -334,4 +334,4 @@ TRUNCATE TABLE user;
 SELECT * FROM user;
 ```
 
-![image-20230910163814647](./assets/image-20230910163814647.png)
+![image-20230910163814647](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202412051437499.png)

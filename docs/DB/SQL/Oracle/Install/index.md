@@ -29,7 +29,7 @@
 
 默认，下一步：
 
-![image-20241114163306365](assets/image-20241114163306365.png)
+![image-20241114163306365](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202412011810443.png)
 
 根据需要选择用户：
 

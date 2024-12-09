@@ -107,7 +107,7 @@ rpm -ivh mysql-community-server-8.0.25-1.el7.x86_64.rpm
 
 安装过程中可能的报错信息：
 
-![image-20240724093800392](assets/image-20240724093800392.png)
+![image-20240724093800392](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202412011759004.png)
 
 解决办法：一个命令：`yum remove mysql-libs` 解决，清除之前安装过的依赖即可
 
@@ -151,7 +151,7 @@ mysqld --initialize --user=mysql
 
 查看密码：`cat /var/log/mysqld.log` root@localhost: 后面就是初始化的密码
 
-![image.png](assets/1695277996836-04b017f0-cf2e-4f28-9703-63b0560b0b9f.png)
+![image.png](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202412011759307.png)
 
 ####  启动MySQL，查看状态
 
@@ -165,7 +165,7 @@ mysqld --initialize --user=mysql
 
 > mysqld 这个可执行文件就代表着 MySQL 服务器程序，运行这个可执行文件就可以直接启动一个 服务器进程。
 
-![image-20240724094048272](assets/image-20240724094048272.png)
+![image-20240724094048272](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202412011759361.png)
 
 查看进程：
 
@@ -173,7 +173,7 @@ mysqld --initialize --user=mysql
 ps -ef | grep -i mysql
 ```
 
-![image-20240724094106390](assets/image-20240724094106390.png)
+![image-20240724094106390](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202412011759436.png)
 
 查看MySQL服务是否自启动
 
@@ -181,7 +181,7 @@ ps -ef | grep -i mysql
 systemctl list-unit-files | grep mysqld.service
 ```
 
-![image-20240724094131796](assets/image-20240724094131796.png)
+![image-20240724094131796](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202412011759288.png)
 
 默认是enabled。 
 

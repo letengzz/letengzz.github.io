@@ -35,7 +35,7 @@ SELECT @@autocommit;
 - `1` 表示**自动提交事务**
 - `0`表示**手动提交事务**
 
-![image-20230915135120610](./assets/image-20230915135120610.png)
+![image-20230915135120610](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202412011800767.png)
 
 ### 设置事务提交方式
 
@@ -51,7 +51,7 @@ SET @@autocommit = 0;
 SET @@autocommit = 1;  
 ```
 
-![image-20230915135455507](./assets/image-20230915135455507.png)
+![image-20230915135455507](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202412011800022.png)
 
 ### 提交事务
 
@@ -65,7 +65,7 @@ COMMIT;
 
 把事务的提交方式修改为了手动提交来验证一下"**关闭自动提交事务则必须在每次执行SQL之后手动提交事务，否则SQL不生效**"：
 
-![image-20230915140655529](./assets/image-20230915140655529.png)
+![image-20230915140655529](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202412011800626.png)
 
 由于关闭了自动提交事务，执行SQL后发现执行成功，但没有提交事务，查看数据库发现数据并未发生变化。待提交事务后，数据才更新：
 ![image-20230915140946450](https://cdn.jsdelivr.net/gh/letengzz/tc2@main/img/Java/202309151409876.png)
@@ -112,7 +112,7 @@ BEGIN;
 
 - **持久性** (`D`urability)：事务一旦提交或回滚，它对数据库中的数据的改变就是永久的。
 
-  ![image-20230915150320615](./assets/image-20230915150320615.png)
+  ![image-20230915150320615](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202412011800895.png)
 
 ## 并发事务问题
 

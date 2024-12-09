@@ -1,7 +1,5 @@
 ## docker下安装mysql
 
-![image-20241106091920737](assets/image-20241106091920737.png)
-
 ①下载mysql镜像  docker pull mysql:8.0.33
 ②启动容器实例
 
@@ -27,7 +25,7 @@ lower_case_table_names=1 # 设置表名小写
 ```
 
 ④进入容器实例测试
-![image.png](assets/1695279311395-8d7095c7-8ccb-4e92-a012-8e9cae164d52.png)
+
 注意：**当容器不小心删掉，只要容器卷的数据文件夹没有被删除，重新运行一个容器，数据仍然存在。**
 
 #### MySQL主从
@@ -110,7 +108,7 @@ read_only=1
 添加my.cnf后重启容器
 **在主机中查看主从同步状态**
 `show master status;`
-![image.png](assets/1695996218206-3cfed7aa-d2d6-4249-9bbd-2308e35d2475.png)
+
 **进去mysql-slave容器**
 `docker exec -it mysql-slave /bin/bash`
 `mysql -uroot -pabc123`
@@ -132,7 +130,6 @@ master_connect_retry：连接失败重试的时间间隔，单位为秒。
 **在从机中开启主从同步**
 `start slave;`
 **再次查看同步状态**
-![image.png](assets/1695996372637-56b1cae8-f13d-46b3-a268-d3926e680474.png)
 至此，主从同步已完成。
 
 #### install mysql

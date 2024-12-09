@@ -207,7 +207,7 @@ SELECT 聚合函数(字段列表) FROM 表名;
   SELECT MAX(age) FROM emp;
   ```
 
-  ![image-20230911153030753](./assets/image-20230911153030753.png)
+  ![image-20230911153030753](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202412091621948.png)
 
 - 统计该企业员工的最小年龄：
 
