@@ -4,7 +4,7 @@
 
 **所需jar包**：
 
-![image-20221223170337052](https://cdn.jsdelivr.net/gh/letengzz/Two-C@main/img/Java/202301031100996.png)
+![image-20221223170337052](https://cdn.jsdelivr.net/gh/LetengZzz/img/java/others/202412100016100.png)
 
 **Maven依赖**：
 
@@ -73,9 +73,9 @@
 
 ## 配置上下文参数
 
-![./images](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202412012326221.png)
+![./images](https://cdn.jsdelivr.net/gh/LetengZzz/img/java/others/202412100016882.png)
 
-![./images](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202412012326712.png)
+![./images](https://cdn.jsdelivr.net/gh/LetengZzz/img/java/others/202412100016766.png)
 
 物理视图=视图前缀+逻辑视图+视图后缀
 
@@ -196,7 +196,7 @@ public class ViewBaseServlet extends HttpServlet {
 
 ### 创建index.html
 
-![image-20230103110052035](https://cdn.jsdelivr.net/gh/letengzz/Two-C@main/img/Java/202301031100485.png)
+![image-20230103110052035](https://cdn.jsdelivr.net/gh/LetengZzz/img/java/others/202412100016654.png)
 
 > index.html
 
@@ -208,7 +208,7 @@ public class ViewBaseServlet extends HttpServlet {
 
 **修改Servlet继承的父类**：
 
-![image-20230103110118327](https://cdn.jsdelivr.net/gh/letengzz/Two-C@main/img/Java/202301031101665.png)
+![image-20230103110118327](https://cdn.jsdelivr.net/gh/LetengZzz/img/java/others/202412100016053.png)
 
 **在doGet()方法中跳转**：
 

@@ -50,7 +50,7 @@ LockSupport.unpark(暂停线程对象)
 - park & unpark 是以线程为单位来【阻塞】和【唤醒】线程，而 notify 只能随机唤醒一个等待线程，notifyAll是唤醒所有等待线程，就不那么【精确】
 - park & unpark 可以先 unpark，而 wait & notify 不能先 notify
 ## 线程状态转换
-![image.png](images/JUC并发编程/1678088668485-87589231-772e-47bc-afc0-255bff093274.png)
+![image.png](https://cdn.jsdelivr.net/gh/LetengZzz/img/java/others/202412092342557.png)
 ## 死锁
 定位死锁
 
@@ -343,7 +343,7 @@ public Object get(long millis) throws InterruptedException{
 }
 ```
 ## 生产者/消费者模式
-![image.png](images/JUC并发编程/1678088320341-09313cca-9330-48b5-9ec6-85cf57bdff67.png)
+![image.png](https://cdn.jsdelivr.net/gh/LetengZzz/img/java/others/202412092342017.png)
 ## xxx模式
 
 
@@ -594,7 +594,7 @@ class BlockingQueue<T>{
 ```
 ## 线程池状态
 ThreadPoolExecutor使用int的高3位来表示线程池状态，低29位表示线程数量
-![image.png](images/JUC并发编程/1678608343594-8d0eb75f-435a-412c-9b6b-39fd208f154d.png)
+![image.png](https://cdn.jsdelivr.net/gh/LetengZzz/img/java/others/202412092342611.png)
 
 ```java
 public ThreadPoolExecutor(
@@ -1147,7 +1147,7 @@ public class TestCyclicBarrier {
 > **注意** CyclicBarrier 与 CountDownLatch 的主要区别在于 CyclicBarrier 是可以重用的 CyclicBarrier 可以被比喻为『人满发车』
 
 ### 线程安全的集合类
-![image.png](images/JUC并发编程/1678713303660-40ffd30a-7732-420e-a645-6e2d528f0505.png)
+![image.png](https://cdn.jsdelivr.net/gh/LetengZzz/img/java/others/202412092343730.png)
 线程安全集合类可以分为三大类： 
 
 - 遗留的线程安全集合如 Hashtable ， Vector 

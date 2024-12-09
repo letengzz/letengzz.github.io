@@ -48,7 +48,7 @@
 
   比如：添加课程的需求用例：
 
-  ![image-20231217142734973](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202312171427116.png)
+  ![image-20231217142734973](https://cdn.jsdelivr.net/gh/LetengZzz/img/java/others/202412092346754.png)
 
 ## **模块介绍**
 
@@ -75,7 +75,7 @@
 
 *课程编辑与发布的整体流程：
 
-![](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202312152338213.jpg#id=pDuKh&originHeight=483&originWidth=567&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=)
+![](https://cdn.jsdelivr.net/gh/LetengZzz/img/java/others/202412092346880.jpg)
 
 ## **界面原型**
 
@@ -85,30 +85,30 @@
 
 - 课程列表 ：
 
-  ![image.png](https://cdn.nlark.com/yuque/0/2023/png/35537136/1702654365312-51661ebd-a2ab-46b0-b49a-b7d5553bb026.png#averageHue=%23fcfcfb&clientId=u18eafb1a-7fad-4&from=paste&id=u3f01f576&originHeight=246&originWidth=567&originalType=url&ratio=1.25&rotation=0&showTitle=false&size=50326&status=done&style=none&taskId=ua7efb0a6-7b5a-42ab-aa19-512df12bd8e&title=)
+  ![image.png](https://cdn.jsdelivr.net/gh/LetengZzz/img/java/others/202412092347264.png)
 
 - 点击添加课程：
 
-  ![image.png](https://cdn.nlark.com/yuque/0/2023/png/35537136/1702654366811-269b37ac-394a-4517-a240-dd920d391fdc.png#averageHue=%23fdfbfa&clientId=u18eafb1a-7fad-4&from=paste&id=u04ea7b1f&originHeight=450&originWidth=567&originalType=url&ratio=1.25&rotation=0&showTitle=false&size=48978&status=done&style=none&taskId=u3719b59c-115e-4fae-9191-a7d7dcbf170&title=)
+  ![image.png](https://cdn.jsdelivr.net/gh/LetengZzz/img/java/others/202412092348297.png)
 
 - 选择录播课程 ，填写课程信息：
 
-  ![](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202312152340929.jpg#id=BwXJn&originHeight=416&originWidth=567&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=)
+  ![](https://cdn.jsdelivr.net/gh/LetengZzz/img/java/others/202412092346542.jpg)
 
 - 填写课程计划信息：
 
-  ![image.png](https://cdn.nlark.com/yuque/0/2023/png/35537136/1702654355993-1abb7e46-aebb-4b28-a056-e1c3385fd1c5.png#averageHue=%23f8f8f8&clientId=u18eafb1a-7fad-4&from=paste&id=u37a65969&originHeight=268&originWidth=567&originalType=url&ratio=1.25&rotation=0&showTitle=false&size=35527&status=done&style=none&taskId=udccc770c-943a-4533-b338-754eff7f00d&title=)
+  ![image.png](https://cdn.jsdelivr.net/gh/LetengZzz/img/java/others/202412092348534.png)
 
 - 填写课程师资信息：
 
-  ![image.png](https://cdn.nlark.com/yuque/0/2023/png/35537136/1702654354716-5fdbd516-2cd6-466c-8189-f1b2aab43181.png#averageHue=%23fcfcfc&clientId=u18eafb1a-7fad-4&from=paste&id=ub225c893&originHeight=223&originWidth=567&originalType=url&ratio=1.25&rotation=0&showTitle=false&size=28215&status=done&style=none&taskId=ua3456090-1580-46b6-b92a-9f7c63965ac&title=)
+  ![image.png](https://cdn.jsdelivr.net/gh/LetengZzz/img/java/others/202412092348474.png)
 
 - 课程填写完毕进行课程 发布：当审核状态为通过时发布按钮点亮，点击发布按钮 即可对该课程进行发布：
 
-  ![image.png](https://cdn.nlark.com/yuque/0/2023/png/35537136/1702654357807-9c8da12a-0188-458f-af06-be00f4a05688.png#averageHue=%23fafaf9&clientId=u18eafb1a-7fad-4&from=paste&id=ue7b0f348&originHeight=149&originWidth=567&originalType=url&ratio=1.25&rotation=0&showTitle=false&size=35058&status=done&style=none&taskId=u8e0dd4a7-9c23-4e8d-962a-ac81d02d75b&title=)
+  ![image.png](https://cdn.jsdelivr.net/gh/LetengZzz/img/java/others/202412092348862.png)
 
 ## **数据模型**
 
 使用PowerDesigner建立模型：
 
- ![](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202312152333092.jpg#id=zyNng&originHeight=273&originWidth=567&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=)
+ ![](https://cdn.jsdelivr.net/gh/LetengZzz/img/java/others/202412092345234.jpg)

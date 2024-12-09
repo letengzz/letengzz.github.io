@@ -28,4 +28,4 @@
 
 物理视图=视图前缀+逻辑视图+视图后缀
 
-![image-20230731212342772](https://cdn.jsdelivr.net/gh/letengzz/Two-C@main/img/Java/202307312123752.png)
+![image-20230731212342772](https://cdn.jsdelivr.net/gh/LetengZzz/img/java/others/202412100019650.png)

@@ -8,5 +8,5 @@ ORM（Object Relational Mapping，对象关系映射）是一种[数据持久化
 - 关系：关系型数据库
 - 映射：二者之间的对应关系
 
-![image-20230116100614467](https://cdn.jsdelivr.net/gh/letengzz/Two-C@main/img/Java/202303011333866.png)
+![image-20230116100614467](https://cdn.jsdelivr.net/gh/LetengZzz/img/java/others/202412092353374.png)
 

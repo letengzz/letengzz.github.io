@@ -37,7 +37,7 @@ MINIO_ROOT_USER=admin MINIO_ROOT_PASSWORD=password ./minio server /mnt/data --co
 - `/mnt/data`：指定minio服务器用于存储数据的目录
 - `--console-address ":9001"`：指定minio控制台的监听地址和端口
 
-![image-20240504141023117](https://cdn.jsdelivr.net/gh/letengzz/tc2@main/img202405041410457.png)
+![image-20240504141023117](https://cdn.jsdelivr.net/gh/LetengZzz/img/java/others/202412092356228.png)
 
 当不设置用户名密码 有默认的账号和密码：
 
@@ -47,11 +47,11 @@ MINIO_ROOT_USER=admin MINIO_ROOT_PASSWORD=password ./minio server /mnt/data --co
 
 **说明**：提示内核版本低，不影响
 
-![image-20240504142058276](https://cdn.jsdelivr.net/gh/letengzz/tc2@main/img202405041421096.png)
+![image-20240504142058276](https://cdn.jsdelivr.net/gh/LetengZzz/img/java/others/202412092356660.png)
 
 访问：http://localhost:9001/
 
-![image-20240504141924742](https://cdn.jsdelivr.net/gh/letengzz/tc2@main/img202405041419090.png)
+![image-20240504141924742](https://cdn.jsdelivr.net/gh/LetengZzz/img/java/others/202412092356703.png)
 
 ## 关闭MinIO
 

@@ -52,7 +52,7 @@ OGNL：Object-Graph Navigation Language对象-图 导航语言
 
 从根对象触发，通过特定的语法，逐层访问对象的各种属性。
 
-![./images](https://cdn.jsdelivr.net/gh/letengzz/Two-C@main/img/Java/202307312155371.png)
+![./images](https://cdn.jsdelivr.net/gh/LetengZzz/img/java/others/202412100019067.png)
 
 **OGNL语法**：
 

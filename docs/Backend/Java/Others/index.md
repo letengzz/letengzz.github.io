@@ -4,7 +4,6 @@
 - [并发编程](Concurrent/index.md)
 - [组件及其概念](Component/index.md)
 - [常见的数据存储和交换格式](Configurationfile/index.md)
-- [数据持久化](DataPersistence/index.md)
 - [数据库连接池](DbConnectionPool/index.md)
 - [需求分析](DemandAnalysis/index.md)
 - [接口设计](InterfaceDesign/index.md)
