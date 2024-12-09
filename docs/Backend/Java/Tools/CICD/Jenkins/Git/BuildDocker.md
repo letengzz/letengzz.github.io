@@ -20,17 +20,17 @@ docker run -d -p 9999:9999 --name demo-out -v /root/jarfile/demo-0.0.1-SNAPSHOT.
 
 在全局配置System中添加Docker环境目标远程服务器地址：
 
-![image-20240402210057852](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202404022101276.png)
+![image-20240402210057852](https://cdn.jsdelivr.net/gh/LetengZzz/img/java/tools/202412092247955.png)
 
 添加运行之前的步骤：
 
 **说明**：生产环境不建议使用`rm -rf` 清理
 
-![image-20240402224715605](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202404022247756.png)
+![image-20240402224715605](https://cdn.jsdelivr.net/gh/LetengZzz/img/java/tools/202412092247347.png)
 
 添加运行之后的步骤：
 
-![image-20240402224755945](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202404022247515.png)
+![image-20240402224755945](https://cdn.jsdelivr.net/gh/LetengZzz/img/java/tools/202412092247392.png)
 
 ## Jar打包到容器内
 
@@ -64,21 +64,21 @@ docker run -d -p 9999:9999 --name demo-out -v /root/jarfile/demo-0.0.1-SNAPSHOT.
 
 在项目上创建Dockerfile：
 
-![image-20240402233228987](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202404022332729.png)
+![image-20240402233228987](https://cdn.jsdelivr.net/gh/LetengZzz/img/java/tools/202412092247024.png)
 
 在全局配置System中添加Docker环境目标远程服务器地址：
 
-![image-20240402210057852](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202404022101276.png)
+![image-20240402210057852](https://cdn.jsdelivr.net/gh/LetengZzz/img/java/tools/202412092247844.png)
 
 添加运行之前的步骤：
 
 **说明**：生产环境不建议清理，可以通过tag的方式区别镜像，出了问题才能及时回滚
 
-![image-20240402235330916](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202404022353930.png)
+![image-20240402235330916](https://cdn.jsdelivr.net/gh/LetengZzz/img/java/tools/202412092248626.png)
 
 添加运行之后的步骤：
 
-![image-20240403001619656](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202404030016947.png)
+![image-20240403001619656](https://cdn.jsdelivr.net/gh/LetengZzz/img/java/tools/202412092247546.png)
 
-![image-20240403001631339](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202404030016015.png)
+![image-20240403001631339](https://cdn.jsdelivr.net/gh/LetengZzz/img/java/tools/202412092248527.png)
 

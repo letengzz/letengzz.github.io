@@ -4,38 +4,38 @@
 
 创建两个Jenkins服务，并创建节点：
 
-![image-20240404193400402](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202404042012703.png)
-![image-20240404193626902](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202404042012953.png)
+![image-20240404193400402](https://cdn.jsdelivr.net/gh/LetengZzz/img/java/tools/202412092254692.png)
+![image-20240404193626902](https://cdn.jsdelivr.net/gh/LetengZzz/img/java/tools/202412092254802.png)
 
-![image-20240404194551048](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202404042012114.png)
+![image-20240404194551048](https://cdn.jsdelivr.net/gh/LetengZzz/img/java/tools/202412092254813.png)
 
 使用相同方式创建jenkins-03：
 
-![image-20240404194819671](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202404042012662.png)
+![image-20240404194819671](https://cdn.jsdelivr.net/gh/LetengZzz/img/java/tools/202412092254342.png)
 
 ## 调整并发执行个数
 
-![image-20240404195244299](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202404042012633.png)
+![image-20240404195244299](https://cdn.jsdelivr.net/gh/LetengZzz/img/java/tools/202412092254023.png)
 
 ## 并发构建
 
 配置：
 
-![image-20240404195053604](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202404042012960.png)
+![image-20240404195053604](https://cdn.jsdelivr.net/gh/LetengZzz/img/java/tools/202412092254529.png)
 
 效果：
 
-![image-20240404195149195](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202404042012221.png)
+![image-20240404195149195](https://cdn.jsdelivr.net/gh/LetengZzz/img/java/tools/202412092256132.png)
 
 ## 指定节点构建
 
 配置：
 
-![image-20240404195643354](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202404042012768.png)
+![image-20240404195643354](https://cdn.jsdelivr.net/gh/LetengZzz/img/java/tools/202412092257798.png)
 
-![image-20240404195921190](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202404042013227.png)
+![image-20240404195921190](https://cdn.jsdelivr.net/gh/LetengZzz/img/java/tools/202412092254568.png)
 
 常见语法：
 
-![image-20240404195658370](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202404042012185.png)
+![image-20240404195658370](https://cdn.jsdelivr.net/gh/LetengZzz/img/java/tools/202412092254151.png)
 

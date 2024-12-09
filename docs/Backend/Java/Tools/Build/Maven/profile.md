@@ -12,7 +12,7 @@
 - 测试环境：供测试工程师对项目的各个模块进行功能测试；内部使用
 - 生产环境：供最终用户访问——所以这是正式的运行环境，对外提供服务
 
-![images](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202311072128299.png)
+![images](https://cdn.jsdelivr.net/gh/LetengZzz/img/java/tools/202412092257644.png)
 
 而环境仍然只是一个笼统的说法，实际工作中一整套运行环境会包含很多种不同服务器：
 
@@ -27,7 +27,7 @@
 
 就拿其中的 MySQL 来说，不同环境下的访问参数肯定完全不同：
 
-![image-20231107213502064](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202311072135362.png)
+![image-20231107213502064](https://cdn.jsdelivr.net/gh/LetengZzz/img/java/tools/202412092258851.png)
 
 可是代码只有一套。如果在 jdbc.properties 里面来回改，那就太麻烦了，而且很容易遗漏或写错，增加调试的难度和工作量。所以最好的办法就是把适用于各种不同环境的配置信息分别准备好，部署哪个环境就激活哪个配置。
 
@@ -186,7 +186,7 @@ public void test() {
 
 以目前配置运行这个测试方法：
 
-![image-20231107230311037](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202311072303378.png)
+![image-20231107230311037](https://cdn.jsdelivr.net/gh/LetengZzz/img/java/tools/202412092258051.png)
 
 ### 配置 profile
 
@@ -225,7 +225,7 @@ public void test() {
 mvn clean test -PmyJDKProfile
 ```
 
-![image-20231107230702526](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202311072307196.png)
+![image-20231107230702526](https://cdn.jsdelivr.net/gh/LetengZzz/img/java/tools/202412092258102.png)
 
 ## 资源属性过滤
 
@@ -275,7 +275,7 @@ mvn clean resources:resources -PdevJDBCProfile
 
 ### 找到处理得到的资源文件
 
-![image-20231107233255085](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202311072332406.png)
+![image-20231107233255085](https://cdn.jsdelivr.net/gh/LetengZzz/img/java/tools/202412092258377.png)
 
 #### 延伸
 
@@ -316,6 +316,6 @@ mvn clean resources:resources -PdevJDBCProfile
 
 执行效果：
 
-![image-20231107233805709](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202311072338632.png)
+![image-20231107233805709](https://cdn.jsdelivr.net/gh/LetengZzz/img/java/tools/202412092258343.png)
 
 当然这里只是以 properties 文件为例，并不是只能处理 properties 文件。

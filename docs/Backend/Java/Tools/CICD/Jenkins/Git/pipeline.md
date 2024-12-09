@@ -34,7 +34,7 @@
 
 ## 创建流水线任务
 
-![image-20240404202405714](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202404042024286.png)
+![image-20240404202405714](https://cdn.jsdelivr.net/gh/LetengZzz/img/java/tools/202412092249630.png)
 
 ### 完整语法
 
@@ -91,11 +91,11 @@ pipeline {
 
 执行上述操作，会展示出每个阶段的视图：
 
-![image-20240404204834974](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202404042048698.png)
+![image-20240404204834974](https://cdn.jsdelivr.net/gh/LetengZzz/img/java/tools/202412092249204.png)
 
 查看日志：
 
-![image-20240404204858022](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202404042048800.png)
+![image-20240404204858022](https://cdn.jsdelivr.net/gh/LetengZzz/img/java/tools/202412092249955.png)
 
 #### post
 
@@ -170,11 +170,11 @@ pipeline {
 
 查看执行日志：
 
-![image-20240404205010545](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202404042050152.png)
+![image-20240404205010545](https://cdn.jsdelivr.net/gh/LetengZzz/img/java/tools/202412092249440.png)
 
 ## 执行指定阶段
 
-![image-20240404205142092](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202404042051835.png)
+![image-20240404205142092](https://cdn.jsdelivr.net/gh/LetengZzz/img/java/tools/202412092252256.png)
 
 ## 可视化界面
 
@@ -184,23 +184,23 @@ pipeline {
 
 插件中心搜索blue ocean安装即可
 
-![image-20240404205328574](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202404042053159.png)
+![image-20240404205328574](https://cdn.jsdelivr.net/gh/LetengZzz/img/java/tools/202412092252421.png)
 
 打开Blue Ocean：
 
-![image-20240404205838588](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202404042058128.png)
+![image-20240404205838588](https://cdn.jsdelivr.net/gh/LetengZzz/img/java/tools/202412092252555.png)
 
 ## pipeline中执行自动化构建
 
 **使用片段生成器**：
 
-![image-20240404211907746](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202404042119600.png)
+![image-20240404211907746](https://cdn.jsdelivr.net/gh/LetengZzz/img/java/tools/202412092252740.png)
 
 **创建Git拉取**：
 
-![image-20240404212559899](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202404042126324.png)
+![image-20240404212559899](https://cdn.jsdelivr.net/gh/LetengZzz/img/java/tools/202412092252557.png)
 
-![image-20240404212649006](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202404042126622.png)
+![image-20240404212649006](https://cdn.jsdelivr.net/gh/LetengZzz/img/java/tools/202412092252639.png)
 
 **创建Maven拉取**：需要提前将Maven声明(后面是设置中配置的Maven的名称)：
 
@@ -307,30 +307,30 @@ docker run -d --name mdemo -p 9999:9999 mydemo''', execTimeout: 120000, flatten:
 
 创建多分支流水线：
 
-![image-20240405111706516](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202404051153242.png)
+![image-20240405111706516](https://cdn.jsdelivr.net/gh/LetengZzz/img/java/tools/202412092251387.png)
 
-![image-20240405111915371](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202404051153406.png)
+![image-20240405111915371](https://cdn.jsdelivr.net/gh/LetengZzz/img/java/tools/202412092251231.png)
 
-![image-20240405112704726](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202404051153517.png)
+![image-20240405112704726](https://cdn.jsdelivr.net/gh/LetengZzz/img/java/tools/202412092251793.png)
 
 配置用户：
 
-![image-20240405112726077](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202404051153671.png)
+![image-20240405112726077](https://cdn.jsdelivr.net/gh/LetengZzz/img/java/tools/202412092251318.png)
 
 配置Jenkinsfile存放目录：
 
-![image-20240405112756552](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202404051153843.png)
+![image-20240405112756552](https://cdn.jsdelivr.net/gh/LetengZzz/img/java/tools/202412092251991.png)
 
-![image-20240405113305593](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202404051153057.png)
+![image-20240405113305593](https://cdn.jsdelivr.net/gh/LetengZzz/img/java/tools/202412092251594.png)
 
-![image-20240405114415515](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202404051153953.png)
+![image-20240405114415515](https://cdn.jsdelivr.net/gh/LetengZzz/img/java/tools/202412092251060.png)
 
-![image-20240405114433230](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202404051153152.png)
+![image-20240405114433230](https://cdn.jsdelivr.net/gh/LetengZzz/img/java/tools/202412092251514.png)
 
 立即扫描多分支流水线：
 
-![image-20240405114531740](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202404051153726.png) 	
+![image-20240405114531740](https://cdn.jsdelivr.net/gh/LetengZzz/img/java/tools/202412092251338.png) 	
 
 此时打开：
 
-![image-20240405114644339](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202404051152239.png)
+![image-20240405114644339](https://cdn.jsdelivr.net/gh/LetengZzz/img/java/tools/202412092252286.png)

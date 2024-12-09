@@ -17,21 +17,21 @@
 
 创建一个令牌：
 
-![image-20240331221535291](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202403312215192.png)
+![image-20240331221535291](https://cdn.jsdelivr.net/gh/LetengZzz/img/java/tools/202412092241372.png)
 
 使用 GET请求来访问`JENKINS_URL/job/first-project/build?token=TOKEN_NAME` 或者 `/buildWithParameters?token=TOKEN_NAME`来构建项目
 
-![image-20240331222212125](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202403312222416.png)
+![image-20240331222212125](https://cdn.jsdelivr.net/gh/LetengZzz/img/java/tools/202412092242326.png)
 
 但是直接请求需要在登录的情况下才可以构建成功，可以借助插件来解决该问题：
 
-![image-20240331222843327](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202403312228035.png)
+![image-20240331222843327](https://cdn.jsdelivr.net/gh/LetengZzz/img/java/tools/202412092242979.png)
 
 访问该地址来构建：
 
-![image-20240331223428620](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202403312234731.png)
+![image-20240331223428620](https://cdn.jsdelivr.net/gh/LetengZzz/img/java/tools/202412092243849.png)
 
-![image-20240331223621381](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202403312236364.png)
+![image-20240331223621381](https://cdn.jsdelivr.net/gh/LetengZzz/img/java/tools/202412092242216.png)
 
 ### 使用GitLab
 
@@ -39,19 +39,19 @@
 
 配置网络：
 
-![image-20240331224301559](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202403312243735.png)
+![image-20240331224301559](https://cdn.jsdelivr.net/gh/LetengZzz/img/java/tools/202412092242875.png)
 
 新建Webhooks：
 
-![image-20240331223800391](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202403312238498.png)
+![image-20240331223800391](https://cdn.jsdelivr.net/gh/LetengZzz/img/java/tools/202412092242628.png)
 
-![image-20240331224537252](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202403312245804.png)
+![image-20240331224537252](https://cdn.jsdelivr.net/gh/LetengZzz/img/java/tools/202412092242566.png)
 
-![image-20240331224552883](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202403312245772.png)
+![image-20240331224552883](https://cdn.jsdelivr.net/gh/LetengZzz/img/java/tools/202412092242357.png)
 
-![image-20240331224615660](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202403312246417.png)
+![image-20240331224615660](https://cdn.jsdelivr.net/gh/LetengZzz/img/java/tools/202412092242162.png)
 
-![image-20240331224712679](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202403312247412.png)
+![image-20240331224712679](https://cdn.jsdelivr.net/gh/LetengZzz/img/java/tools/202412092243940.png)
 
 ## Job依赖构建
 
@@ -123,30 +123,30 @@ cron表达式：
 
 配置系统管理员邮件地址：
 
-![image-20240331234951592](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202403312349494.png)
+![image-20240331234951592](https://cdn.jsdelivr.net/gh/LetengZzz/img/java/tools/202412092243170.png)
 
 配置邮件地址：
 
-![image-20240331235247325](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202403312352872.png)
+![image-20240331235247325](https://cdn.jsdelivr.net/gh/LetengZzz/img/java/tools/202412092243186.png)
 
-![image-20240331235333322](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202403312353131.png)
+![image-20240331235333322](https://cdn.jsdelivr.net/gh/LetengZzz/img/java/tools/202412092243036.png)
 
-![image-20240331235417958](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202403312354760.png)
+![image-20240331235417958](https://cdn.jsdelivr.net/gh/LetengZzz/img/java/tools/202412092243318.png)
 
-![image-20240331235512699](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202403312355983.png)
+![image-20240331235512699](https://cdn.jsdelivr.net/gh/LetengZzz/img/java/tools/202412092243489.png)
 
-![image-20240331235547635](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202403312355756.png)
+![image-20240331235547635](https://cdn.jsdelivr.net/gh/LetengZzz/img/java/tools/202412092243079.png)
 
 配置系统邮件通知：
 
-![image-20240401000704938](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202404010007637.png)
+![image-20240401000704938](https://cdn.jsdelivr.net/gh/LetengZzz/img/java/tools/202412092242975.png)
 
 创建构建后操作：
 
-![image-20240401000210108](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202404010002080.png)
+![image-20240401000210108](https://cdn.jsdelivr.net/gh/LetengZzz/img/java/tools/202412092242348.png)
 
 添加用户组：
 
-![image-20240401000246724](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202404010002117.png)
+![image-20240401000246724](https://cdn.jsdelivr.net/gh/LetengZzz/img/java/tools/202412092242697.png)
 
-![image-20240401000302032](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202404010003792.png)
+![image-20240401000302032](https://cdn.jsdelivr.net/gh/LetengZzz/img/java/tools/202412092242197.png)
