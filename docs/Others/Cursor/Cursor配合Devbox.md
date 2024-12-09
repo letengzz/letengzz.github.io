@@ -1,14 +1,14 @@
-## 配合Devbox
+# 配合Devbox
 
 在Devbox上创建前端开发环境、后端开发环境以及数据库。通过Cursor连接连接前后端环境，通过提示词让Cursor编写前后端代码，操作数据库已经前后端的对接等等。由于前后端代码已经运行环境都在devbox上，所以devbox可以100%成功的一键打包镜像并部署到提供公网的服务器上。
 
 ![image-20241204161913269](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202412050002861.png)
 
-### 注册Sealos
+## 注册Sealos
 
 注册Sealos Devbox 地址：https://cloud.sealos.run/
 
-### 创建数据库
+## 创建数据库
 
 创建数据库：
 
@@ -16,7 +16,7 @@
 
 ![image-20241204163909999](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202412050003123.png)
 
-### 创建后端环境
+## 创建后端环境
 
 选择devbox，创建一个项目选择Nodejs并更改端口为3000(与创建的项目端口号保持一致)：
 
@@ -54,13 +54,13 @@
 
 ![image-20241204213702489](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202412050003434.png)
 
-### 生成测试用例
+## 生成测试用例
 
 将地址复制并交给Cursor来进行生成并复制用例：
 
 ![image-20241204213438827](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202412042134695.png)
 
-### 创建前端环境
+## 创建前端环境
 
 选择Vue：
 
@@ -82,7 +82,7 @@
 
 ![image-20241204234155805](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202412050003950.png)
 
-### 前后端整合
+## 前后端整合
 
 将生成的测试用例在前端中对接：
 
@@ -106,6 +106,7 @@ npm install cors
 
 ### 后端提示词
 
+```
 请为我开发一个基于 Node.js 和Express 框架的 Todo List 后端项目。项目需要实现以下四个 RESTful API 接口：
 
 1. 查询所有待办事项
@@ -146,6 +147,7 @@ npm install cors
 2. 如果需要执行命令，请暂停创建文件，让我先执行命令
 
 为这个项目中的所有代码写上详细注释
+```
 
 npm 安装依赖很慢请执行这行命令：
 
@@ -155,6 +157,7 @@ npm config set registry <https://registry.npmmirror.com>
 
 ### 前端提示词
 
+```
 请为我开发一个基于 Vue 3 的Todo List 应用。要求如下：
 
 1. 功能需求：
@@ -177,6 +180,7 @@ npm config set registry <https://registry.npmmirror.com>
 1. 直接以当前目录作为项目根目。注意 此目录已经初始化完了vue3项目结构 直接修改即可
 2. 如果需要执行命令，请暂停创建文件，让我先执行命令
 3. 请你根据我的需要，一步一步思考，给我开发这个项目。特别是UI部分 一定要足够美观和现代化
+```
 
 那这里总结一下 我们用cursor完成了前端代码的开发 我们就是发送提示词写清楚我们的需求 以及出现问题  或者想调整功能和UI 继续 用文字和他持续沟通即可。
 
