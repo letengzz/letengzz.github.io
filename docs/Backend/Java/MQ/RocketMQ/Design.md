@@ -4,7 +4,7 @@ NameServer只是存储Broker的信息，提供注册路由的功能。
 
 生产者不是把消息直接发到队列中，而是将消息按照顺序读写的方式放到CommitLog(RocketMQ在磁盘中开辟的连续空间，主要是存放N多个消息，不管消息的区分，性能和速度最快)，然后通过异步的方式根据主题将消息在CommitLog的偏移量(在CommitLog的位置信息)、消息大小、tag标签等信息分发到逻辑主题队列中，队列中只是索引的位置并没有放入数据，消费者连接队列，根据偏移量去找CommitLog找内容。当CommitLog超过1g后，去继续开辟内存
 
-![rocketmq_design_1](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202403301032568.png)
+![rocketmq_design_1](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/java/mq/202412100953721.png)
 
 ## 消息存储整体架构
 
@@ -29,7 +29,7 @@ NameServer只是存储Broker的信息，提供注册路由的功能。
 
 ## 消息刷盘
 
-![](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202404262304918.png)
+![](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/java/mq/202412100953920.png)
 
 - **同步刷盘**：如上图所示，只有在消息真正持久化至磁盘后RocketMQ的Broker端才会真正返回给Producer端一个成功的ACK响应。同步刷盘对MQ消息可靠性来说是一种不错的保障，但是性能上会有较大影响，一般适用于金融业务应用该模式较多。
 

@@ -36,7 +36,7 @@ RocketMQ提供了发送多种发送消息的模式，例如同步消息，异步
 
 消息由消费者发送到broker后，会得到一个确认，是具有可靠性的。这种可靠性同步地发送方式使用的比较广泛，比如：重要的消息通知，短信通知等。
 
-![](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202403172015667.jpg)
+![img202403172015667](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/java/mq/202412100952139.jpg)
 
 **官方文档**：https://rocketmq.apache.org/zh/docs/featureBehavior/01normalmessage
 
@@ -64,7 +64,7 @@ RocketMQ提供了发送多种发送消息的模式，例如同步消息，异步
 
 RocketMQ的broker的机制，导致了RocketMQ会有这个问题 因为一个broker中对应了四个queue
 
-![](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202403172013509.png)
+![](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/java/mq/202412100951905.png)
 
 顺序消费的原理解析：在默认的情况下消息发送会采取Round Robin轮询方式把消息发送到不同的queue(分区队列)；而消费消息的时候从多个queue上拉取消息，这种情况发送和消费是不能保证顺序。但是如果控制发送的顺序消息只依次发送到同一个queue中，消费的时候只从这个queue上依次拉取，则就保证了顺序。当发送和消费参与的queue只有一个，则是全局有序；如果多个queue参与，则为分区有序，即相对每个queue，消息都是有序的。
 
@@ -91,7 +91,7 @@ RocketMQ可以一次性发送一组消息，那么这一组消息会被当做一
 
 事务消息可以被认为是一个两阶段的提交消息实现，以确保分布式系统的最终一致性。事务性消息确保本地事务的执行和消息的发送可以原子地执行。
 
-![](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202403192216672.png)
+![](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/java/mq/202412100950765.png)
 
 事务消息的大致分为两个流程：正常事务消息的发送及提交、事务消息的补偿流程：
 
@@ -106,7 +106,7 @@ RocketMQ可以一次性发送一组消息，那么这一组消息会被当做一
   3. 根据本地事务状态，重新Commit或者Rollback
   4. 其中，补偿阶段用于解决消息UNKNOW或者Rollback发生超时或者失败的情况。
 
-![](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202403192217004.png)
+![](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/java/mq/202412100950290.png)
 
 **事务消息共有三种状态**：提交状态、回滚状态、中间状态
 

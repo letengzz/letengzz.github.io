@@ -4,7 +4,7 @@
 
 RocketMQ的broker的机制，导致了RocketMQ会有这个问题 因为一个broker中对应了四个queue
 
-![](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202403172013509.png)
+![](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/java/mq/202412101603076.png)
 
 **顺序消费的原理**：在默认的情况下消息发送会采取Round Robin轮询方式把消息发送到不同的queue(分区队列)；而消费消息的时候从多个queue上拉取消息，这种情况发送和消费是不能保证顺序。但是如果控制发送的顺序消息只依次发送到同一个queue中，消费的时候只从这个queue上依次拉取，则就保证了顺序。当发送和消费参与的queue只有一个，则是全局有序；如果多个queue参与，则为分区有序，即相对每个queue，消息都是有序的。
 
@@ -112,7 +112,7 @@ RocketMQ的broker的机制，导致了RocketMQ会有这个问题 因为一个bro
      }
      ```
 
-     ![image-20240319134014174](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202403191340476.png)
+     ![image-20240319134014174](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/java/mq/202412101603236.png)
 
   3. 顺序消息消费者：测试时等一会即可有延迟
 
@@ -144,4 +144,4 @@ RocketMQ的broker的机制，导致了RocketMQ会有这个问题 因为一个bro
      }
      ```
 
-     ![image-20240319135217765](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202403191352348.png)
+     ![image-20240319135217765](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/java/mq/202412101603363.png)

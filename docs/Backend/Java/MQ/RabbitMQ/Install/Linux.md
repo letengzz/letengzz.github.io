@@ -63,13 +63,13 @@ systemctl status rabbitmq-server #查看状态
 sudo rabbitmqctl status
 ```
 
-![image-20240310232416553](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202403102324977.png)
+![image-20240310232416553](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/java/mq/202412101614375.png)
 
 这样RabbitMQ服务器就安装完成。
 
 可以看到默认有两个端口名被使用：使用amqp协议的那个端口`5672`来进行连接，25672是集群化端口。
 
-![image-20240310232739381](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202403102339301.png)
+![image-20240310232739381](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/java/mq/202412101614745.png)
 
 ## 管理面板
 
@@ -138,11 +138,11 @@ rabbitmq-plugins disable rabbitmq_management
 
 使用`sudo rabbitmqctl status`查看状态，可以看到多了一个管理面板，使用的是HTTP协议：
 
-![image-20240310232918575](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202403102339354.png)
+![image-20240310232918575](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/java/mq/202412101622695.png)
 
 直接访问：
 
-![image-20240310233004614](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202403102339439.png)
+![image-20240310233004614](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/java/mq/202412101623391.png)
 
 RabbitMQ 默认的管理界面账号和密码：用户名：`guest`、密码：`guest`
 
@@ -196,13 +196,13 @@ RabbitMQ 默认的管理界面账号和密码：用户名：`guest`、密码：`
 
   - 注意，此处需要进行一次授权，否则在代码中连接RabbitMQ会失败
 
-    ![image-20230616194600354](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202403110022613.png)
+    ![image-20230616194600354](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/java/mq/202412101623593.png)
 
-    ![image-20230616194636865](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202403110022681.png)
+    ![image-20230616194636865](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/java/mq/202412101623491.png)
 
 创建完成之后，登录一下页面：
 
-![image-20240310233156858](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202403102332176.png)
+![image-20240310233156858](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/java/mq/202412101616347.png)
 
 进入了之后会显示当前的消息队列情况，包括版本号、Erlang版本等。
 

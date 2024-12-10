@@ -11,7 +11,7 @@ RocketMQ 保证消息的有序性分为了两种：
 
 将需要保证有序的消息放在 Topic 下的同一个 Message Queue 即可：
 
-![image-20240329175038307](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202403291750009.png)
+![img202403291750009](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/java/mq/202412100947602.png)
 
 代码如下，在发送消息的时候，指定 MessageSelector 对象 来将需要保证有序的消息发送到同一个队列中去即可：
 

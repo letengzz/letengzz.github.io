@@ -4,7 +4,7 @@
 
 消息由消费者发送到broker后，会得到一个确认，是具有可靠性的。这种可靠性同步地发送方式使用的比较广泛，比如：重要的消息通知，短信通知等。
 
-![](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202403172015667.jpg)
+![](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/java/mq/202412101604243.jpeg)
 
 ## 生产者
 
@@ -34,7 +34,7 @@ public class Producer {
 
 启动生产者进行测试：
 
-![image-20240318230028805](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202403182300863.png)
+![img202403182300863](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/java/mq/202412101606532.png)
 
 ## 消费者
 
@@ -76,4 +76,4 @@ public class Consumer {
 
 启动消费者进行测试：
 
-![image-20240318230127620](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202403182301790.png)
+![image-20240318230127620](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/java/mq/202412101604749.png)

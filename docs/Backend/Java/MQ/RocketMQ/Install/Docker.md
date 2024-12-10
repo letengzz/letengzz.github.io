@@ -77,8 +77,8 @@ docker run -d --name rmqadmin -e "JAVA_OPTS=-Drocketmq.namesrv.addr=你的外网
 
 正常启动后的docker ps：
 
-![](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202403171629069.png)
+![](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/java/mq/202412100955426.png)
 
 访问控制台：http://你的服务器外网ip:9999/
 
-![](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202403171629531.png)
+![](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/java/mq/202412100955940.png)

@@ -53,4 +53,7 @@
 
 在RocketMQ的面板中可以查看消息轨迹：默认会将消息轨迹的数据存在 `RMQ_SYS_TRACE_TOPIC` 主题里面
 
-![image-20240326235012794](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202403262350925.png)
+![image-20240326235012794](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/java/mq/202412100950942.png)
+
+![](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/java/mq/202412101608941.png)
+

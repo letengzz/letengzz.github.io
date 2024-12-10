@@ -28,13 +28,13 @@ RabbitMQ 支持多种消息模型。
 
 一个生产者 -> 消息队列 -> 一个消费者：生产者只需要将数据丢进消息队列，而消费者只需要将数据从消息队列中取出，这样就实现了生产者和消费者的消息交互。
 
-![image-20220417103647609](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202403122002551.jpg)
+![image-20220417103647609](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/java/mq/202412101634137.jpg)
 
 ## 工作队列模式
 
 工作队列模式非常适合多个工人等待新的任务到来的场景，任务有很多个，一个一个丢进消息队列，而此时工人有很多个，那么就可以将这些任务分配个各个工人，让他们各自负责一些任务，并且做的快的工人还可以做完成一些 (能者多劳)。
 
-![image-20220420151258324](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202403122258110.jpg)
+![image-20220420151258324](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/java/mq/202412101634649.jpg)
 
 ## 发布订阅模式
 
@@ -42,13 +42,13 @@ RabbitMQ 支持多种消息模型。
 
 实现这种模式其实也非常简单，但是如果使用直连交换机，肯定是不行的，这里需要用到另一种类型的交换机，叫做`fanout`（扇出）类型，这时一种广播类型，消息会被广播到所有与此交换机绑定的消息队列中。
 
-![image-20220420172252440](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202403122300359.jpg)
+![image-20220420172252440](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/java/mq/202412101634047.jpg)
 
 ## 路由模式
 
 路由模式在绑定时指定想要的`routingKey`只有生产者发送时指定了对应的`routingKey`才能到达对应的队列。
 
-![image-20220420232826848](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202403122301720.jpg)
+![img202403122301720](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/java/mq/202412101635600.jpg)
 
 ## 主题模式
 
@@ -59,4 +59,4 @@ RabbitMQ 支持多种消息模型。
 - `*`：表示任意的一个单词
 - `#`：表示0个或多个单词
 
-![image-20220420233721239](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202403122301740.jpg)
+![image-20220420233721239](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/java/mq/202412101634580.jpg)

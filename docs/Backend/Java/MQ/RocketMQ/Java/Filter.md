@@ -41,7 +41,7 @@ public class Producer {
 
 启动生产者进行测试：
 
-![image-20240320000152692](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202403200002595.png)
+![image-20240320000152692](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/java/mq/202412101551869.png)
 
 ### 消费者
 
@@ -75,13 +75,13 @@ public class Consumer {
 
 启动消费者进行测试：
 
-![image-20240320000313973](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202403200003819.png)
+![image-20240320000313973](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/java/mq/202412101551066.png)
 
 ## 发送带key的消息
 
 在RocketMQ中的消息，默认会有一个messageId当做消息的唯一标识，可以给消息携带一个key，用作唯一标识或者业务标识，包括在控制面板查询的时候也可以使用messageId或者key来进行查询
 
-![](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202403200004263.png)
+![](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/java/mq/202412101551601.png)
 
 ### 生产者
 
@@ -110,7 +110,7 @@ public class Producer {
 
 启动生产者进行测试：
 
-![image-20240320000935348](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202403200009472.png)
+![img202403200009472](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/java/mq/202412101551976.png)
 
 ### 消费者
 
@@ -144,8 +144,8 @@ public class Consumer {
 
 启动消费者进行测试：
 
-![image-20240320001048212](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202403200011707.png)
+![image-20240320001048212](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/java/mq/202412101552843.png)
 
 ### 查看效果
 
-![image-20240320001512907](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202403200015549.png)
+![image-20240320001512907](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/java/mq/202412101552955.png)

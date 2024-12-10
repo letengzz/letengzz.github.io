@@ -1,6 +1,6 @@
 # RocketMQ
 
-![image-20231219194416529](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202312191944652.png)
+![image-20231219194416529](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/java/mq/202412100952159.png)
 
 - [RocketMQ 概述](Overview.md)
 - [RocketMQ 安装](Install/index.md)

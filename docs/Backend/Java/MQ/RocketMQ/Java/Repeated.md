@@ -119,7 +119,7 @@ https://hutool.cn/docs/#/bloomFilter/%E6%A6%82%E8%BF%B0
 
 4. 查看效果：
 
-   ![image-20240327222409080](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202403272224316.png)
+   ![image-20240327222409080](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/java/mq/202412101558543.png)
 
 #### 使用redis的bitmap类型手写布隆过滤器
 
@@ -234,4 +234,4 @@ https://hutool.cn/docs/#/bloomFilter/%E6%A6%82%E8%BF%B0
   
 - 查看效果：
 
-  ![image-20240323161851436](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202403231619004.png)
+  ![image-20240323161851436](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/java/mq/202412101558774.png)

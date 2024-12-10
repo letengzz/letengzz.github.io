@@ -78,11 +78,11 @@ try(Connection connection = factory.newConnection();
 
 执行完成后，可以在管理页面中看到刚刚创建好的消息队列了：
 
-![image-20240312235711737](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202403130001157.png)
+![img202403130001157](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/java/mq/202412101633295.png)
 
 并且此消息队列已经成功与`amq.direct`交换机进行绑定：
 
-![image-20240312235646035](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202403130001169.png)
+![img202403130001169](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/java/mq/202412101632790.png)
 
 ### 消费者
 
@@ -126,7 +126,7 @@ public static void main(String[] args) throws IOException, TimeoutException {
 
 现在启动一下消费者，可以看到立即读取到刚刚插入到队列中的数据：
 
-![image-20240313000143704](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202403130001376.png)
+![image-20240313000143704](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/java/mq/202412101631086.png)
 
 
 

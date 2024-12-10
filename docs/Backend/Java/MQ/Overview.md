@@ -2,7 +2,7 @@
 
 如果需要进行远程调用，那么一般可以通过发送HTTP请求来完成，但是可以使用第二种方式，就是消息队列，它能够将发送方发送的信息放入队列中，当新的消息入队时，会通知接收方进行处理，一般消息发送方称为**生产者**，接收方称为**消费者**。
 
-![image-20220415165805716](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202403092346318.jpg)
+![image-20220415165805716](https://cdn.jsdelivr.net/gh/LetengZzz/img/java/mq/202412100021974.jpeg)
 
 这样所有的请求，都可以直接丢到消息队列中，再由消费者取出，不再是直接连接消费者的形式了，而是加了一个中间商，这也是一种很好的**解耦**方案，并且在高并发的情况下，由于消费者能力有限，消息队列也能起到一个**削峰填谷**的作用，堆积一部分的请求，再由消费者来慢慢处理，而不会像直接调用那样请求蜂拥而至。
 
@@ -36,7 +36,7 @@ JMS应用程序接口 (Java消息服务，`Java Message Service`)，是一个`Ja
 
 下订单---向MQ 发消息--》积分系统，红包系统，手机短信系统接收消息
 
-![img](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202403112355641.jpg) 
+![img](https://cdn.jsdelivr.net/gh/LetengZzz/img/java/mq/202412100021798.jpeg) 
 
 同步是阻塞的 (会造成等待)，异步是非阻塞的 (不会等待)，大流量高并发请求、批量数据传递，就可以采用异步处理，提升系统吞吐量。
 ****
@@ -45,17 +45,17 @@ JMS应用程序接口 (Java消息服务，`Java Message Service`)，是一个`Ja
 
 1. 串行的方式：将注册信息写入数据库后，发送注册邮件，再发送注册短信，以上三个任务全部完成后才返回给客户端。这有一个问题是，邮件，短信并不是必须的，它只是一个通知，而这种做法让客户端等待没有必要等待的东西。
 
-   ![image-20240311232925543](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202403112329108.png)
+   ![image-20240311232925543](https://cdn.jsdelivr.net/gh/LetengZzz/img/java/mq/202412100021660.png)
 
 2. 并行的方式：将注册信息写入数据库后，发送邮件的同时，发送短信，以上三个任务完成后，返回给客户端，并行的方式能提高处理的时间。
 
-   ![image-20240311233209913](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202403112355847.png)
+   ![image-20240311233209913](https://cdn.jsdelivr.net/gh/LetengZzz/img/java/mq/202412100021876.png)
 
 假设三个业务节点分别使用50ms，串行方式使用时间150ms，并行使用时间100ms。虽然并性已经提高的处理时间，但是，邮件和短信对我正常的使用网站没有任何影响，客户端没有必要等着其发送完成才显示注册成功，应该是写入数据库后就返回。
 
 引入消息队列后，把发送邮件，短信不是必须的业务逻辑异步处理。
 
-![image-20240311233848419](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202403112355909.png)
+![image-20240311233848419](https://cdn.jsdelivr.net/gh/LetengZzz/img/java/mq/202412100021553.png)
 
 由此可以看出，引入消息队列后，用户的响应时间就等于写入数据库的时间+写入消息队列的时间(可以忽略不计)，引入消息队列后处理后，响应时间是串行的3倍，是并行的2倍。
 
@@ -63,13 +63,13 @@ JMS应用程序接口 (Java消息服务，`Java Message Service`)，是一个`Ja
 
 多个系统之间，不需要直接交互，通过消息进行业务流转；
 
-![img](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202403112355210.jpg)
+![img](https://cdn.jsdelivr.net/gh/LetengZzz/img/java/mq/202412100021712.jpeg)
 
 场景：
 
 > 双11是购物狂节，用户下单后，订单系统需要通知库存系统，传统的做法就是订单系统调用库存系统的接口。
 
-![image-20240311234513900](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202403112355697.png)
+![image-20240311234513900](https://cdn.jsdelivr.net/gh/LetengZzz/img/java/mq/202412100022960.png)
 
 这种做法有一个缺点:
 
@@ -78,7 +78,7 @@ JMS应用程序接口 (Java消息服务，`Java Message Service`)，是一个`Ja
 
 **引入消息队列**：
 
-![image-20240311234840707](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202403112355953.png)
+![image-20240311234840707](https://cdn.jsdelivr.net/gh/LetengZzz/img/java/mq/202412100022869.png)
 
 订单系统：用户下单后，订单系统完成持久化处理，将消息写入消息队列，返回用户订单下单成功。
 
@@ -90,7 +90,7 @@ JMS应用程序接口 (Java消息服务，`Java Message Service`)，是一个`Ja
 
 高负载请求/任务的缓冲处理：
 
-![img](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202403112356270.jpg)
+![img](https://cdn.jsdelivr.net/gh/LetengZzz/img/java/mq/202412100021155.jpeg)
 
 流量削峰一般在秒杀活动中应用广泛：
 
@@ -101,7 +101,7 @@ JMS应用程序接口 (Java消息服务，`Java Message Service`)，是一个`Ja
 1. 可以控制活动人数，超过此一定阀值的订单直接丢弃
 2. 可以缓解短时间的高流量压垮应用 (应用程序按自己的最大处理能力获取订单)
 
-![image-20240311235444656](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202403112356241.png)
+![image-20240311235444656](https://cdn.jsdelivr.net/gh/LetengZzz/img/java/mq/202412100021530.png)
 
 用户的请求，服务器收到之后，首先写入消息队列，加入消息队列长度超过最大值，则直接抛弃用户请求或跳转到错误页面。
 
