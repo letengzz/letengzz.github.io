@@ -730,7 +730,7 @@ var joinList1 = from item in list2
 ```
 #### Linq扩展方法
 Linq查询中，为了更加清晰明了的阅读，我们一般采用查询语法，但有些查询操作没有等效的查询表达式，只能采用方法查询，即调用内部方法，有些场景中也可以将查询语法和方法语法结合使用。
-![image.png](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202411052354583.png)
+![image.png](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/DotNet/202412101716589.png)
 ```
 //查询方法
 int[] nums1 = { 12, 34, 9, 45, 12,76,52, 99, 76, 120 };
