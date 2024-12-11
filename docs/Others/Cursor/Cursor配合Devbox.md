@@ -2,7 +2,7 @@
 
 在Devbox上创建前端开发环境、后端开发环境以及数据库。通过Cursor连接连接前后端环境，通过提示词让Cursor编写前后端代码，操作数据库已经前后端的对接等等。由于前后端代码已经运行环境都在devbox上，所以devbox可以100%成功的一键打包镜像并部署到提供公网的服务器上。
 
-![image-20241204161913269](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202412050002861.png)
+![image-20241204161913269](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/others/202412111101092.png)
 
 ## 注册Sealos
 
@@ -12,35 +12,35 @@
 
 创建数据库：
 
-![image-20241204163823715](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202412050002720.png)
+![image-20241204163823715](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/others/202412111101071.png)
 
-![image-20241204163909999](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202412050003123.png)
+![image-20241204163909999](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/others/202412111101336.png)
 
 ## 创建后端环境
 
 选择devbox，创建一个项目选择Nodejs并更改端口为3000(与创建的项目端口号保持一致)：
 
-![image-20241204164042991](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202412050003547.png)
+![image-20241204164042991](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/others/202412111101852.png)
 
-![image-20241204164051399](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202412050003290.png)
+![image-20241204164051399](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/others/202412111102948.png)
 
 编辑软件更改为Cursor：
 
-![image-20241204164206910](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202412050003571.png)
+![image-20241204164206910](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/others/202412111102194.png)
 
 直接点击打开：
 
-![image-20241204164255017](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202412050003391.png)
+![image-20241204164255017](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/others/202412111111079.png)
 
 安装即可：
 
-![image-20241204164401635](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202412050004428.png)
+![image-20241204164401635](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/others/202412111111294.png)
 
-![image-20241204170046677](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202412050003259.png)
+![image-20241204170046677](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/others/202412111112053.png)
 
 全部展示：
 
-![image-20241204170159554](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202412050004204.png)
+![image-20241204170159554](https://cdn.jsdelivr.net/gh/LetengZzz/img/others/202412111112815.png)
 
 可以进行聊天来生成代码的上下文，使用@符号来选定某一个代码文件作为上下文：
 
@@ -48,49 +48,49 @@
 
 显示连接信息：
 
-![image-20241204185811954](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202412050003929.png)
+![image-20241204185811954](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/others/202412111110600.png)
 
 调整脚本：
 
-![image-20241204213702489](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202412050003434.png)
+![image-20241204213702489](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/others/202412111110434.png)
 
 ## 生成测试用例
 
 将地址复制并交给Cursor来进行生成并复制用例：
 
-![image-20241204213438827](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202412042134695.png)
+![image-20241204213438827](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/others/202412111112142.png)
 
 ## 创建前端环境
 
 选择Vue：
 
-![image-20241204213931537](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202412050003036.png)
+![image-20241204213931537](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/others/202412111109996.png)
 
 端口调整为5173：
 
-![image-20241204214003168](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202412050003651.png)
+![image-20241204214003168](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/others/202412111109014.png)
 
 将提示词复制进行生成，修改其端口号：
 
-![image-20241204220818420](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202412050003154.png)
+![image-20241204220818420](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/others/202412111109223.png)
 
 调整前端的sh文件：
 
-![image-20241204234050430](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202412050003682.png)
+![image-20241204234050430](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/others/202412111109412.png)
 
 调整：
 
-![image-20241204234155805](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202412050003950.png)
+![image-20241204234155805](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/others/202412111109224.png)
 
 ## 前后端整合
 
 将生成的测试用例在前端中对接：
 
-![image-20241204220008275](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202412050003970.png)
+![image-20241204220008275](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/others/202412111109051.png)
 
 在后端复制该控制台的错误：
 
-![image-20241204220208879](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202412050003497.png)
+![image-20241204220208879](https://cdn.jsdelivr.net/gh/LetengZzz/img/others/202412111103543.png)
 
 需要执行以下：
 
@@ -100,7 +100,7 @@ npm install cors
 
 调整app.js：
 
-![image-20241204220435960](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202412050003700.png)
+![image-20241204220435960](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/others/202412111103172.png)
 
 ## cursor 提示词
 
@@ -190,24 +190,24 @@ npm config set registry <https://registry.npmmirror.com>
 
 点击发布版本：
 
-![image-20241204234418010](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202412050003281.png)
+![image-20241204234418010](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/others/202412111101534.png)
 
-![image-20241204234502431](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202412050003740.png)
+![image-20241204234502431](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/others/202412111101794.png)
 
 调整项目部署即可：
 
-![image-20241204234544704](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202412050003166.png)
+![image-20241204234544704](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/others/202412111103680.png)
 
 复制公网地址更改(可能位置不同)：
 
-![image-20241204235120262](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202412050003548.png)
+![image-20241204235120262](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/others/202412111109329.png)
 
 ### 上线前端
 
 点击发布版本：
 
-![image-20241204235220594](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202412050003722.png)
+![image-20241204235220594](https://cdn.jsdelivr.net/gh/LetengZzz/img/others/202412111100442.png)
 
 调整项目部署即可：
 
-![image-20241204235527642](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202412050003059.png)
+![image-20241204235527642](https://cdn.jsdelivr.net/gh/LetengZzz/img/others/202412111100263.png)
