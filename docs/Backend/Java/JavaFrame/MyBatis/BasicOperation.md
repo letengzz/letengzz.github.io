@@ -127,7 +127,7 @@ MyBatis通过 insert 标签用来定义插入语句，执行插入操作。
 
 **insert 标签常用属性**：
 
-![图片1](https://cdn.jsdelivr.net/gh/letengzz/Two-C@main/img/Java/202303011038287.png)
+![图片1](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/Two-C/img/Java/202303011038287.png)
 
 **注意**：insert 标签中没有 resultType 属性，只有查询操作才需要对返回结果类型进行相应的指定。
 
@@ -550,7 +550,7 @@ MyBatis update 标签用于定义更新语句，执行更新操作。
 
 **update 标签常用属性**：
 
-![图片1](https://cdn.jsdelivr.net/gh/letengzz/Two-C@main/img/Java/202303011058380.png)
+![图片1](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/Two-C/img/Java/202303011058380.png)
 
 **注意**：update 标签中没有 resultType 属性，只有查询操作才需要对返回结果类型进行相应的指定。
 
@@ -815,7 +815,7 @@ MyBatis delete 标签用于定义 delete 语句，执行删除操作。
 
 **delete 标签常用属性**：
 
-![图片2](https://cdn.jsdelivr.net/gh/letengzz/Two-C@main/img/Java/202303011102074.png)
+![图片2](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/Two-C/img/Java/202303011102074.png)
 
 **注意**：delete 标签中没有 resultType 属性，只有查询操作才需要对返回结果类型进行相应的指定。
 
@@ -1074,7 +1074,7 @@ Mybatis 实现给映射器传递多个参数：
 
 **select 标签常用属性**：
 
-![图片3](https://cdn.jsdelivr.net/gh/letengzz/Two-C@main/img/Java/202303011105702.png)
+![图片3](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/Two-C/img/Java/202303011105702.png)
 
 **注意**：查询功能必须设置resultType(结果类型)或resultMap(结果映射)
 

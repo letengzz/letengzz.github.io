@@ -12,7 +12,7 @@
     KEYS *
     ```
 
-    ![image-20240411000808835](https://cdn.jsdelivr.net/gh/letengzz/tc2@main/img202404110008150.png)
+    ![image-20240411000808835](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202404110008150.png)
 
   - **查找以 key 为开头的 key**：
 
@@ -20,7 +20,7 @@
     KEYS key*
     ```
     
-    ![image-20240411000614582](https://cdn.jsdelivr.net/gh/letengzz/tc2@main/img202404110006200.png)
+    ![image-20240411000614582](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202404110006200.png)
 
 - **判断某个key是否存在**：
 
@@ -28,7 +28,7 @@
   EXISTS key
   ```
 
-  ![image-20240410222916173](https://cdn.jsdelivr.net/gh/letengzz/tc2@main/img202404102229535.png)
+  ![image-20240410222916173](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202404102229535.png)
 
 - **删除指定的key数据**：如果键被删除成功，输出被删除 key 的数量，否则将输出0
 
@@ -36,7 +36,7 @@
   DEL key
   ```
 
-  ![image-20240410222716010](https://cdn.jsdelivr.net/gh/letengzz/tc2@main/img202404102227121.png)
+  ![image-20240410222716010](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202404102227121.png)
 
 - **非阻塞删除**：仅仅将keys从keyspace元数据中删除
 
@@ -50,7 +50,7 @@
   TTL key
   ```
 
-  ![image-20240410223602724](https://cdn.jsdelivr.net/gh/letengzz/tc2@main/img202404102236337.png)
+  ![image-20240410223602724](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202404102236337.png)
 
 - **以毫秒为单位返回 key 的剩余的过期时间**：
 
@@ -70,7 +70,7 @@
     EXPIRE key seconds [NX|XX|GT|LT]
     ```
 
-    ![image-20240410224947448](https://cdn.jsdelivr.net/gh/letengzz/tc2@main/img202404102249877.png)
+    ![image-20240410224947448](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202404102249877.png)
 
   - **PEXPIRE 毫秒**：设置指定的过期时间，以毫秒为单位，表示的是时间间隔
 
@@ -78,7 +78,7 @@
     PEXPIRE key milliseconds
     ```
 
-    ![image-20240410231459084](https://cdn.jsdelivr.net/gh/letengzz/tc2@main/img202404102315540.png)
+    ![image-20240410231459084](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202404102315540.png)
 
   - **EXPIREAT 时间戳-秒**：设置指定的 Key 过期的 Unix 时间，单位为秒，表示的是时间/时刻
 
@@ -86,7 +86,7 @@
     EXPIREAT key timestamp
     ```
 
-    ![image-20240410225833842](https://cdn.jsdelivr.net/gh/letengzz/tc2@main/img202404102258122.png)
+    ![image-20240410225833842](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202404102258122.png)
 
   - **PEXPIREAT 时间戳-毫秒**：设置指定的 Key 到期的 Unix 时间，以毫秒为单位，表示的是时间/时刻
 
@@ -94,7 +94,7 @@
     PEXPIREAT key milliseconds-timestamp
     ```
 
-    ![image-20240410235258886](https://cdn.jsdelivr.net/gh/letengzz/tc2@main/img202404102353222.png)
+    ![image-20240410235258886](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202404102353222.png)
 
 - **切换数据库**：0~15，默认为0
 
@@ -110,15 +110,15 @@
 
   key 存在于当前数据库：
 
-  ![image-20240411001320430](https://cdn.jsdelivr.net/gh/letengzz/tc2@main/img202404110013595.png)
+  ![image-20240411001320430](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202404110013595.png)
 
   当 key 不存在的时候：
 
-  ![image-20240411001532346](https://cdn.jsdelivr.net/gh/letengzz/tc2@main/img202404110015978.png)
+  ![image-20240411001532346](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202404110015978.png)
 
   当源数据库和目标数据库有相同的 key 时：
 
-  ![image-20240411001730937](https://cdn.jsdelivr.net/gh/letengzz/tc2@main/img202404110017948.png)
+  ![image-20240411001730937](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202404110017948.png)
 
 - **移除 key 的过期时间，key 将持久保持**：当 key 不存在时，返回 -2 。 当 key 存在但没有设置剩余生存时间时，返回 -1 。 否则，以毫秒为单位，返回 key 的剩余生存时间。
 
@@ -126,7 +126,7 @@
   PERSIST key
   ```
 
-  ![image-20240411002320656](https://cdn.jsdelivr.net/gh/letengzz/tc2@main/img202404110023142.png)
+  ![image-20240411002320656](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202404110023142.png)
 
 - **从当前数据库中随机返回一个 key**：当数据库不为空时，返回一个 key 。 当数据库为空时，返回 nil(null)
 
@@ -134,7 +134,7 @@
   RANDOMKEY
   ```
 
-  ![image-20240411002653558](https://cdn.jsdelivr.net/gh/letengzz/tc2@main/img202404110026221.png)
+  ![image-20240411002653558](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202404110026221.png)
 
 - **修改 key 的名称**：
 
@@ -144,15 +144,15 @@
 
   key 存在且 newkey 不存在：
 
-  ![image-20240411003145184](https://cdn.jsdelivr.net/gh/letengzz/tc2@main/img202404110031355.png)
+  ![image-20240411003145184](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202404110031355.png)
 
   当 key 不存在时，返回错误：
 
-  ![image-20240411003304764](https://cdn.jsdelivr.net/gh/letengzz/tc2@main/img202404110033189.png)
+  ![image-20240411003304764](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202404110033189.png)
 
   newkey 已存在时， RENAME 会覆盖旧 newkey：
 
-  ![image-20240411003403751](https://cdn.jsdelivr.net/gh/letengzz/tc2@main/img202404110034621.png)
+  ![image-20240411003403751](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202404110034621.png)
 
 - **仅当 newkey 不存在时，将 key 改名为 newkey**：
 
@@ -162,11 +162,11 @@
 
   newkey 不存在，改名成功：
 
-  ![image-20240411003559329](https://cdn.jsdelivr.net/gh/letengzz/tc2@main/img202404110036194.png)
+  ![image-20240411003559329](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202404110036194.png)
 
   newkey存在时，失败：
 
-  ![image-20240411003651830](https://cdn.jsdelivr.net/gh/letengzz/tc2@main/img202404110036934.png)
+  ![image-20240411003651830](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202404110036934.png)
 
 - **查看当前数据库key数量**：
 
@@ -174,7 +174,7 @@
   DBSIZE
   ```
 
-  ![image-20240411002925400](https://cdn.jsdelivr.net/gh/letengzz/tc2@main/img202404110029455.png)
+  ![image-20240411002925400](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202404110029455.png)
 
 - **清空当前库**：
 
@@ -194,7 +194,7 @@
   DUMP key
   ```
 
-  ![image-20240410222819500](https://cdn.jsdelivr.net/gh/letengzz/tc2@main/img202404102228808.png)
+  ![image-20240410222819500](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202404102228808.png)
   
 - **迭代数据库中的数据库键**：
 
@@ -224,4 +224,4 @@
   TYPE key
   ```
 
-  ![image-20240411003839884](https://cdn.jsdelivr.net/gh/letengzz/tc2@main/img202404110038705.png)
+  ![image-20240411003839884](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202404110038705.png)

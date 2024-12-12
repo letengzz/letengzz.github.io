@@ -82,11 +82,11 @@ class SpringCloudMqApplicationTests {
 
 运行测试用例：
 
-![image-20240313192639871](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202403131926523.png)
+![image-20240313192639871](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202403131926523.png)
 
 可以看到后台自动声明了刚刚定义好的消息队列和交换机以及对应的绑定关系，并且数据也是成功插入到消息队列中：
 
-![image-20240313193106234](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202410170921578.png)
+![image-20240313193106234](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202410170921578.png)
 
 ### 消费者
 
@@ -105,11 +105,11 @@ public class TestListener {
 
 接着启动服务器：
 
-![image-20240313194152324](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202410170920984.png)
+![image-20240313194152324](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202410170920984.png)
 
 可以看到控制台成功输出了之前放入队列的消息，并且管理页面中也显示此消费者已经连接了：
 
-![image-20240313195511351](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202410170921061.png)
+![image-20240313195511351](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202410170921061.png)
 
 接着再通过管理页面添加新的消息看看，也是可以正常进行接受的。
 
@@ -138,7 +138,7 @@ public String receiver(String data){
 
 测试没有问题：
 
-![image-20240314015043916](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202403140150090.png)
+![image-20240314015043916](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202403140150090.png)
 
 ### JSON格式
 
@@ -195,11 +195,11 @@ public class TestListener {
 
 > {"id":1,"name":"LB"}
 
-![image-20240314020910698](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202410170920721.png)
+![image-20240314020910698](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202410170920721.png)
 
 可以看到成功完成了转换，并输出了用户信息：
 
-![image-20240314021000252](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202410170921804.png)
+![image-20240314021000252](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202410170921804.png)
 
 同样的，也可以直接发送User，因为刚刚已经配置了Jackson2JsonMessageConverter为Bean，所以直接使用就可以了：
 
@@ -212,7 +212,7 @@ void publisher() {
 
 可以看到：
 
-![image-20240314021328397](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202410170920253.png)
+![image-20240314021328397](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202410170920253.png)
 
 这样，就通过SpringBoot实现了RabbitMQ的简单使用。
 
@@ -237,15 +237,15 @@ public class TestListener {
 
 可以看到发送消息时，会自动进行轮询分发：
 
-![image-20240314212349135](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202410170920626.png)
+![image-20240314212349135](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202410170920626.png)
 
 那么如果一开始就在消息队列中放入一部分消息在开启消费者呢？
 
-![image-20240314212636542](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202410170920314.png)
+![image-20240314212636542](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202410170920314.png)
 
 可以看到，如果是一开始就存在消息，会被一个消费者一次性全部消耗，这是因为没有对消费者的Prefetch count（预获取数量，一次性获取消息的最大数量）进行限制，也就是说现在希望的是消费者一次只能拿一个消息，而不是将所有的消息全部都获取。
 
-![image-20240314213108127](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202410170920816.png)
+![image-20240314213108127](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202410170920816.png)
 
 因此需要对这个数量进行一些配置，需要在配置类中定义一个自定义的ListenerContainerFactory，可以在这里设定消费者Channel的PrefetchCount的大小：
 
@@ -281,11 +281,11 @@ public class TestListener {
 
 再次启动服务器，可以看到PrefetchCount被限定为1：
 
-![image-20240314213425740](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202410170920923.png)
+![image-20240314213425740](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202410170920923.png)
 
 再次重复上述的实现，可以看到消息不会被一号消费者给全部抢走了：
 
-![image-20240314213345178](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202410170920759.png)
+![image-20240314213345178](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202410170920759.png)
 
 当然除了去定义两个相同的监听器之外，也可以直接在注解中定义，比如现在需要10个同样的消费者：
 
@@ -301,7 +301,7 @@ public class TestListener {
 
 可以看到在管理页面中出现了10个消费者：
 
-![image-20240314213546889](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202410170921946.png)
+![image-20240314213546889](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202410170921946.png)
 
 ## 发布订阅模式
 
@@ -309,7 +309,7 @@ public class TestListener {
 
 使用默认的交换机：这个交换机是一个`fanout`类型的交换机
 
-![image-20240314213715094](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202410170921570.png)
+![image-20240314213715094](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202410170921570.png)
 
 ```java
 @Configuration
@@ -355,7 +355,7 @@ public class RabbitConfiguration {
 
 将两个队列都绑定到此交换机上，启动：
 
-![image-20220420230954785](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202410170926403.jpg)
+![image-20220420230954785](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202410170926403.jpg)
 
 绑定没有什么问题，接着搞两个监听器，监听一下这两个队列：
 
@@ -376,11 +376,11 @@ public class TestListener {
 
 现在通过交换机发送消息，看看是不是两个监听器都会接收到消息：
 
-![image-20220420231113658](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202410170926566.jpg)
+![image-20220420231113658](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202410170926566.jpg)
 
 可以看到确实是两个消息队列都能够接受到此消息：
 
-![image-20220420231145578](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202410170923890.jpg)
+![image-20220420231145578](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202410170923890.jpg)
 
 ## 路由模式
 
@@ -426,7 +426,7 @@ public class RabbitConfiguration {
 
 启动后可以看到管理面板中出现了两个绑定关系：
 
-![image-20220420233606749](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202410170924656.jpg)
+![image-20220420233606749](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202410170924656.jpg)
 
 这里可以测试一下，随便使用哪个`routingKey`都可以。
 
@@ -471,11 +471,11 @@ public class RabbitConfiguration {
 
 除了使用的默认主题交换机之外，还有一个叫做`amq.rabbitmq.trace`的交换机：
 
-![image-20220421104035463](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202410170924449.jpg)
+![image-20220421104035463](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202410170924449.jpg)
 
 可以看到它也是`topic`类型的，实际上这是用于帮助我们记录和追踪生产者和消费者使用消息队列的交换机，它是一个内部的交换机，那么如果使用呢？首先创建一个消息队列用于接收记录：
 
-![image-20220421104619325](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202410170924049.jpg)
+![image-20220421104619325](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202410170924049.jpg)
 
 接着需要在控制台将虚拟主机`/test`的追踪功能开启：
 
@@ -485,23 +485,23 @@ sudo rabbitmqctl trace_on -p /test
 
 开启后，将此队列绑定到上面的交换机上：
 
-![image-20220421104843224](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202410170926931.jpg)
+![image-20220421104843224](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202410170926931.jpg)
 
-![image-20220421105141144](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202410170926477.jpg)
+![image-20220421105141144](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202410170926477.jpg)
 
 由于发送到此交换机上的`routingKey`为routing key为 publish.交换机名称 和 deliver.队列名称，分别对应生产者投递到交换机的消息，和消费者从队列上获取的消息，因此这里使用`#`通配符进行绑定。
 
 现在来测试一下，比如还是往yyds队列发送消息：
 
-![image-20220421105242770](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202410170926312.jpg)
+![image-20220421105242770](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202410170926312.jpg)
 
 可以看到在发送消息，并且消费者已经处理之后，`trace`队列中新增了两条消息，那么来看看都是些什么消息：
 
-![image-20220421105528532](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202410170926445.jpg)
+![image-20220421105528532](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202410170926445.jpg)
 
 通过追踪，可以很明确地得知消息发送的交换机、routingKey、用户等信息，包括信息本身，同样的，消费者在取出数据时也有记录：
 
-![image-20220421105638715](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202410170926364.jpg)
+![image-20220421105638715](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202410170926364.jpg)
 
 可以明确消费者的地址、端口、具体操作的队列以及取出的消息信息等。
 
@@ -541,7 +541,7 @@ public class RabbitConfiguration {
 
 现在来启动一下试试看：
 
-![image-20220421110926077](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202410170926819.jpg)
+![image-20220421110926077](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202410170926819.jpg)
 
 结果发现，消息可以成功发送到消息队列，这就是使用头部信息进行路由。
 
@@ -607,17 +607,17 @@ public class TestListener {
 
 配置完成后，启动，注意启动之前记得把之前的队列给删了，这里要重新定义。
 
-![image-20240314152825723](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202403141528860.png)
+![image-20240314152825723](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202403141528860.png)
 
 队列列表中已经出现了刚刚定义好的死信队列，并且yyds队列也支持死信队列发送功能了，现在尝试向此队列发送一个消息，但是将其拒绝：
 
-![image-20220420105359931](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202403141530848.jpg)
+![image-20220420105359931](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202403141530848.jpg)
 
-![image-20240314153104863](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202410170921492.png)
+![image-20240314153104863](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202410170921492.png)
 
 可以看到拒绝后，如果不让消息重新排队，那么就会变成死信，直接被丢进死信队列中，可以看到在拒绝后：
 
-![image-20240314174518242](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202410170921357.png)
+![image-20240314174518242](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202410170921357.png)
 
 RabbitMQ支持将超过一定时间没被消费的消息自动删除，这需要消息队列设定TTL值，如果消息的存活时间超过了Time To Live值，就会被自动删除，自动删除后的消息如果有死信队列，那么就会进入到死信队列中。
 
@@ -637,11 +637,11 @@ public Queue queue(){
 
 现在重启测试一下，注意修改了之后记得删除之前的yyds队列：
 
-![image-20240314191834294](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202410170921793.png)
+![image-20240314191834294](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202410170921793.png)
 
 可以看到现在yyds队列已经具有TTL特性了，现在来插入一个新的消息：
 
-![image-20220420110504022](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202410170927438.jpg)
+![image-20220420110504022](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202410170927438.jpg)
 
 可以看到消息5秒钟之后就不见了，而是被丢进了死信队列中。
 
@@ -661,7 +661,7 @@ public Queue queue(){
 
 重启，然后尝试连续插入4个消息：
 
-![image-20240314204047472](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202410170921507.png)
+![image-20240314204047472](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202410170921507.png)
 
 可以看到yyds消息队列新增了Limit特性，也就是限定长度：
 
@@ -673,7 +673,7 @@ void publisher() {
 }
 ```
 
-![image-20240314204319574](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202403142043192.png)
+![image-20240314204319574](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202403142043192.png)
 
 可以看到因为长度限制为3，所以有一个消息直接被丢进了死信队列中，为了能够更直观地观察消息队列的机制，我们为User类新增一个时间字段：
 

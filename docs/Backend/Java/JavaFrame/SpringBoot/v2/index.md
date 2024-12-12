@@ -39,7 +39,7 @@ In short, the **microservice architectural style** is an approach to developing 
 
 ### 分布式
 
-![image-20230222114734752](https://cdn.jsdelivr.net/gh/letengzz/Two-C@main/img/Java/202302221830099.png)
+![image-20230222114734752](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/Two-C/img/Java/202302221830099.png)
 
 #### 分布式的困难
 
@@ -58,7 +58,7 @@ In short, the **microservice architectural style** is an approach to developing 
 
 - SpringBoot + SpringCloud
 
-![image-20230222183107799](https://cdn.jsdelivr.net/gh/letengzz/Two-C@main/img/Java/202302221831240.png)
+![image-20230222183107799](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/Two-C/img/Java/202302221831240.png)
 
 ### 云原生
 
@@ -76,11 +76,11 @@ In short, the **microservice architectural style** is an approach to developing 
 
 #### 上云的解决
 
-![image-20230222142714695](https://cdn.jsdelivr.net/gh/letengzz/Two-C@main/img/Java/202302221831409.png)
+![image-20230222142714695](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/Two-C/img/Java/202302221831409.png)
 
 ## Spring生态
 
-![image-20230222113843702](https://cdn.jsdelivr.net/gh/letengzz/Two-C@main/img/Java/202302221831452.png)
+![image-20230222113843702](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/Two-C/img/Java/202302221831452.png)
 
 - 微服务 
 - 响应式开发 

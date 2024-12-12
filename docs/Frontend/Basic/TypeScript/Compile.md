@@ -28,7 +28,7 @@
 
    - 执行命令转换成JavaScript：tsc xxx.ts
 
-   ![image-20240608122805910](https://cdn.jsdelivr.net/gh/letengzz/tc2@main/img202406081228089.png)
+   ![image-20240608122805910](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202406081228089.png)
 
 ## 自动化编译
 

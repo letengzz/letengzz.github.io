@@ -2,7 +2,7 @@
 
 yarn 是由 Facebook 在 2016 年推出的新的 Javascript 包管理工具
 
-![image-20231026180709980](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202310261807750.png)
+![image-20231026180709980](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202310261807750.png)
 
 - 官方网址： https://yarnpkg.com/
 
@@ -22,7 +22,7 @@ npm i -g yarn
 
 ## 常用命令
 
-![image-20231026201034999](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202310262010927.png)
+![image-20231026201034999](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202310262010927.png)
 
 yarn 全局安装包的位置可以通过 `yarn global bin` 来查看
 

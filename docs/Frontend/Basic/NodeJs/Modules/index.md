@@ -52,7 +52,7 @@
   ```
 
 
-![](https://cdn.jsdelivr.net/gh/letengzz/tc2@main/img/202310151144090.jpg)
+![](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img/202310151144090.jpg)
 
 ****
 
@@ -84,7 +84,7 @@ me.tiemo();
 me.niejiao();
 ```
 
-![image-20231015121039460](https://cdn.jsdelivr.net/gh/letengzz/tc2@main/img/202310151210376.png)
+![image-20231015121039460](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img/202310151210376.png)
 
 module.exports 可以暴露'任意'数据：
 
@@ -100,9 +100,9 @@ const me = require('./me.js');
 console.log(me);
 ```
 
-![image-20231015121312818](https://cdn.jsdelivr.net/gh/letengzz/tc2@main/img/202310151213697.png)
+![image-20231015121312818](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img/202310151213697.png)
 
-![image-20231015121338489](https://cdn.jsdelivr.net/gh/letengzz/tc2@main/img/202310151213835.png)
+![image-20231015121338489](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img/202310151213835.png)
 
 exports 暴露数据：
 
@@ -131,7 +131,7 @@ me.tiemo();
 me.niejiao();
 ```
 
-![image-20231015121602643](https://cdn.jsdelivr.net/gh/letengzz/tc2@main/img/202310151216902.png)
+![image-20231015121602643](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img/202310151216902.png)
 
 不能使用 `exports = value` 的形式暴露数据：
 
@@ -148,7 +148,7 @@ const me = require('./me.js');
 console.log(me);
 ```
 
-![image-20231015121855043](https://cdn.jsdelivr.net/gh/letengzz/tc2@main/img/202310151218452.png)
+![image-20231015121855043](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img/202310151218452.png)
 
 ## 导入(引入)模块
 
@@ -178,7 +178,7 @@ const test = require('./me.js');
 5. 缓存模块的值
 6. 返回 `module.exports` 的值
 
-![](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202310251822935.jpg)
+![](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202310251822935.jpg)
 
 ## CommonJS 规范
 

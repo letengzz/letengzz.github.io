@@ -1,6 +1,6 @@
 # SpringBoot 远程调用
 
-![image.png](https://cdn.jsdelivr.net/gh/letengzz/Two-C@main/img/Java/202308181530050.png)
+![image.png](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/Two-C/img/Java/202308181530050.png)
 
 
 

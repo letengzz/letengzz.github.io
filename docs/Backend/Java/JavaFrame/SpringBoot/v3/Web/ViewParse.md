@@ -4,7 +4,7 @@
 
 如果需要**服务端页面渲染**，优先考虑使用 模板引擎。
 
-![img](https://cdn.jsdelivr.net/gh/letengzz/Two-C@main/img/Java/202307312026519.png)
+![img](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/Two-C/img/Java/202307312026519.png)
 
 模板引擎页面默认放在 `src/main/resources/templates`
 

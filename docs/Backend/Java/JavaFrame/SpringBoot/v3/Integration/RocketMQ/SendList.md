@@ -51,4 +51,4 @@ public class ListMsgListener implements RocketMQListener<Object> {
 }
 ```
 
-![image-20240329225529668](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202411182232209.png)
+![image-20240329225529668](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202411182232209.png)

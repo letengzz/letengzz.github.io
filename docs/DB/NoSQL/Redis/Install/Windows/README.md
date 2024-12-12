@@ -10,7 +10,7 @@
 
 输入之后，会显示如下界面：
 
-![](https://cdn.jsdelivr.net/gh/letengzz/tc2@main/img202404072305925.png)
+![](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202404072305925.png)
 
 这时候另启一个cmd窗口，原来的不要关闭，不然就无法访问服务端了。
 
@@ -23,6 +23,6 @@
 - 取出键值对 `get myKey`
 
 
-![](https://cdn.jsdelivr.net/gh/letengzz/tc2@main/img202404072305935.png)
+![](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202404072305935.png)
 
 ## 

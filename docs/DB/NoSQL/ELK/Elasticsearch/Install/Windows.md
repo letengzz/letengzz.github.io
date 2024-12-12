@@ -6,11 +6,11 @@
    java -version
    ```
 
-   ![image-20231228091539411](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202312280915876.png)
+   ![image-20231228091539411](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202312280915876.png)
 
 2. 下载和解压缩Elasticsearch安装包：https://www.elastic.co/cn/downloads/elasticsearch
 
-   ![image-20231228091809628](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202312280918676.png)
+   ![image-20231228091809628](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202312280918676.png)
 
 3. 查看目录结构：                  
 

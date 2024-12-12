@@ -75,13 +75,13 @@ spring:
 
 此时会自动构建容器：
 
-![image-20240804124232389](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202408041242871.png)
+![image-20240804124232389](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202408041242871.png)
 
 测试MySQL连接：
 
-![image-20240804124837196](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202408041248820.png)
+![image-20240804124837196](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202408041248820.png)
 
-![image-20240804124957752](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202408041249386.png)
+![image-20240804124957752](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202408041249386.png)
 
 ## 服务连接
 
@@ -93,7 +93,7 @@ spring:
 
 通过使用容器的镜像名称来建立服务连接。目前支持以下服务连接：
 
-![image-20240804125423330](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202408041254219.png)
+![image-20240804125423330](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202408041254219.png)
 
 ## 自定义镜像
 

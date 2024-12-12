@@ -55,5 +55,5 @@
 
 5. 整体文件结构：
 
-   ![image-20240627235224478](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202406272352335.png)
+   ![image-20240627235224478](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202406272352335.png)
 

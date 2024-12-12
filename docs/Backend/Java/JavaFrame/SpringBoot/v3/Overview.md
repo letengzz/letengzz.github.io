@@ -44,7 +44,7 @@ In short, the **microservice architectural style** is an approach to developing 
 
 ### 分布式
 
-![image-20230222114734752](https://cdn.jsdelivr.net/gh/letengzz/Two-C@main/img/Java/202302221830099.png)
+![image-20230222114734752](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/Two-C/img/Java/202302221830099.png)
 
 #### 分布式的困难
 
@@ -63,7 +63,7 @@ In short, the **microservice architectural style** is an approach to developing 
 
 - SpringBoot + [SpringCloud](../../SpringCloud/index.md)
 
-![image-20230222183107799](https://cdn.jsdelivr.net/gh/letengzz/Two-C@main/img/Java/202302221831240.png)
+![image-20230222183107799](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/Two-C/img/Java/202302221831240.png)
 
 ### 云原生
 
@@ -81,11 +81,11 @@ In short, the **microservice architectural style** is an approach to developing 
 
 #### 上云的解决
 
-![image-20230222142714695](https://cdn.jsdelivr.net/gh/letengzz/Two-C@main/img/Java/202302221831409.png)
+![image-20230222142714695](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/Two-C/img/Java/202302221831409.png)
 
 ## Spring生态
 
-![image-20230222113843702](https://cdn.jsdelivr.net/gh/letengzz/Two-C@main/img/Java/202302221831452.png)
+![image-20230222113843702](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/Two-C/img/Java/202302221831452.png)
 
 - 微服务 
 - 响应式开发 
@@ -132,7 +132,7 @@ In short, the **microservice architectural style** is an approach to developing 
 
 **目前的最新版本以及对应的维护情况**：
 
-![image-20230804112343089](https://cdn.jsdelivr.net/gh/letengzz/Two-C@main/img/202308041123294.png)
+![image-20230804112343089](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/Two-C/img/202308041123294.png)
 
 可以看到，曾经的SpringBoot 2.5版本将会在2023年8月底终止商业支持，届时将不会再对这类旧版本进行任何维护，因此，将老版本SpringBoot项目进行升级已经迫在眉睫，目前最强的3.1正式版会维护到2025年中旬。
 

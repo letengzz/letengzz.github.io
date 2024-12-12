@@ -7,11 +7,11 @@
 
 **Options API 的弊端**：`Options`类型的 `API`：数据、方法、计算属性等，是分散在：`data`、`methods`、`computed`中的，若想新增或者修改一个需求，就需要分别修改：`data`、`methods`、`computed`，不便于维护和复用。
 
-<img src="https://cdn.jsdelivr.net/gh/letengzz/tc2/img202402061623795.gif" alt="1.gif" style="zoom:70%;border-radius:20px" /><img src="https://cdn.jsdelivr.net/gh/letengzz/tc2/img202401310106948.gif" alt="2.gif" style="zoom:70%;border-radius:20px" />
+<img src="https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202402061623795.gif" alt="1.gif" style="zoom:70%;border-radius:20px" /><img src="https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202401310106948.gif" alt="2.gif" style="zoom:70%;border-radius:20px" />
 
 **Composition API 的优势**：可以用函数的方式，更加优雅的组织代码，让相关功能的代码更加有序的集中组织在一起。
 
-<img src="https://cdn.jsdelivr.net/gh/letengzz/tc2/img202401310106357.gif" alt="3.gif" style="height:300px;border-radius:10px"  /><img src="https://cdn.jsdelivr.net/gh/letengzz/tc2/img202401310122342.gif" alt="4.gif" style="height:300px;border-radius:10px"  />
+<img src="https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202401310106357.gif" alt="3.gif" style="height:300px;border-radius:10px"  /><img src="https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202401310122342.gif" alt="4.gif" style="height:300px;border-radius:10px"  />
 
 ## setup
 
@@ -455,7 +455,7 @@ function test(){
 
 1. `ref`创建的变量必须使用`.value`（可以使用vscode的`volar`插件自动添加`.value`：设置中勾选Auto Insert Dot Value）。
 
-   <img src="https://cdn.jsdelivr.net/gh/letengzz/tc2/img202401312120000.png" alt="自动补充value" style="zoom:50%;border-radius:20px" />
+   <img src="https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202401312120000.png" alt="自动补充value" style="zoom:50%;border-radius:20px" />
 
    ```js
    let car = ref({brand:'奔驰',price:100})
@@ -532,7 +532,7 @@ function test(){
 
 作用：根据已有数据计算出新数据（和`Vue2`中的`computed`作用一致）。
 
-<img src="https://cdn.jsdelivr.net/gh/letengzz/tc2/img202402091439573.gif" style="zoom:20%;" />  
+<img src="https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202402091439573.gif" style="zoom:20%;" />  
 
 ```vue
 <template>
@@ -949,7 +949,7 @@ function showLog(){
 
 App.vue 和 自定义组件中的template中的内容都会扭在一起，形成整个页面，id只能唯一，所以只打印了App.vue的id为title2的DOM元素
 
-![image-20240207205914975](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202402091442507.png)
+![image-20240207205914975](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202402091442507.png)
 
 使用标签中的ref属性可以解决该问题，将数据隔离：
 
@@ -1002,7 +1002,7 @@ function showLog(){
 </script>
 ```
 
-![image-20240207210941131](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202402091447197.png)
+![image-20240207210941131](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202402091447197.png)
 
 用在组件标签上，获取的是组件实例对象：
 
@@ -1029,7 +1029,7 @@ function showLog(){
 
 打印取到组件的实例：
 
-![image-20240207212000020](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202402091443449.png)
+![image-20240207212000020](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202402091443449.png)
 
 在组件中设置三个值：
 
@@ -1073,7 +1073,7 @@ function showLog(){
 </script>
 ```
 
-![image-20240207212544477](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202402091443856.png)
+![image-20240207212544477](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202402091443856.png)
 
 ## props
 

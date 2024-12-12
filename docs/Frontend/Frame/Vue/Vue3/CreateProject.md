@@ -25,7 +25,7 @@ yarn global add @vue/cli
 vue --version
 ```
 
-![image-20240130223431436](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202401302234174.png)
+![image-20240130223431436](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202401302234174.png)
 
 如需升级全局的 Vue CLI 包，请运行：
 
@@ -45,7 +45,7 @@ vue create vue_test
 ##    2.x
 ```
 
-![image-20240130224142087](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202401302241412.png) 
+![image-20240130224142087](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202401302241412.png) 
 
 启动：
 
@@ -54,11 +54,11 @@ cd vue_test
 npm run serve
 ```
 
-![image-20240130224239693](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202401302242475.png)
+![image-20240130224239693](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202401302242475.png)
 
 访问  http://localhost:8080/ ：
 
-![image-20240130224338381](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202401302243688.png)
+![image-20240130224338381](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202401302243688.png)
 
 ## 基于 vite 创建
 
@@ -96,7 +96,7 @@ npm create vue@latest
 √ Add Prettier for code formatting?  No
 ```
 
-![image-20240130231116713](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202401302311574.png)
+![image-20240130231116713](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202401302311574.png)
 
 安装所有依赖并启动：
 
@@ -106,8 +106,8 @@ npm install
 npm run dev
 ```
 
-![image-20240130231455414](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202401302314063.png)
+![image-20240130231455414](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202401302314063.png)
 
 访问  http://localhost:5173/ ：
 
-![image-20240130231532887](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202401302315780.png)
+![image-20240130231532887](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202401302315780.png)

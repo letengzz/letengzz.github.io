@@ -379,9 +379,9 @@ class UserMapperTest {
 
 MyBatis-Plus中有一个接口 IService和其实现类 ServiceImpl，封装了常见的业务层逻辑。
 
-![image-20230225150753143](https://cdn.jsdelivr.net/gh/letengzz/Two-C@main/img/Java/202302261313729.png)
+![image-20230225150753143](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/Two-C/img/Java/202302261313729.png)
 
-![image-20230225150819726](https://cdn.jsdelivr.net/gh/letengzz/Two-C@main/img/Java/202302261313888.png)
+![image-20230225150819726](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/Two-C/img/Java/202302261313888.png)
 
 ### 创建Service接口和实现类
 

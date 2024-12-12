@@ -12,7 +12,7 @@ Snowy快速开发平台的目的是为了让初级研发人员使用本框架能
 
 **开源地址**：https://gitee.com/xiaonuobase/snowy
 
-![img](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202411212046116.jpeg)
+![img](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202411212046116.jpeg)
 
 **Snowy功能特性**：
 
@@ -32,7 +32,7 @@ Snowy快速开发平台的目的是为了让初级研发人员使用本框架能
 - 支持报表设计、票据套打功能，深度集成框架动态数据源
 - 更多丰富的前后端开发示例
 
-![img](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202411212047223.jpeg)
+![img](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202411212047223.jpeg)
 
  **Snowy安全特性**：
 
@@ -46,4 +46,4 @@ Snowy快速开发平台的目的是为了让初级研发人员使用本框架能
 - 密码、手机、身份证号等使用国密算法加密传输、加密存储，数据更安全
 - 操作日志使用SM2进行完整性保护，满足安全审计要求
 
-![img](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202411212047280.jpeg)
+![img](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202411212047280.jpeg)

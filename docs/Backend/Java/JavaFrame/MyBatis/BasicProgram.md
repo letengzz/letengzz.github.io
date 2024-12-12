@@ -34,7 +34,7 @@ INSERT INTO `company`(c_name,email) VALUES("白度","3@bai.com");
 
 1. 创建一个maven项目(打包方式为jar即可)：
 
-   ![image-20221222185104943](https://cdn.jsdelivr.net/gh/letengzz/Two-C@main/img/Java/202303010949956.png)
+   ![image-20221222185104943](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/Two-C/img/Java/202303010949956.png)
 
 2. 创建一个**Java实体类**：实体类是和现实世界中某一个具体或抽象的概念对应，是软件开发过程中，为了管理现实世界中的数据而设计的模型。
 
@@ -230,7 +230,7 @@ INSERT INTO `company`(c_name,email) VALUES("白度","3@bai.com");
 
    **目录结构**：
 
-   <img src="https://cdn.jsdelivr.net/gh/letengzz/Two-C@main/img/Java/202308281739576.png" alt="image-20230203204143207" style="zoom:50%;" />
+   <img src="https://cdn.jsdelivr.net/gh/LetengZzz/img@main/Two-C/img/Java/202308281739576.png" alt="image-20230203204143207" style="zoom:50%;" />
 
    **注意**：CompanyMapper.xml所在的目录要和mybatis-config.xml中使用mapper标签配置的一致。
 
@@ -346,6 +346,6 @@ public class MyBatisTest {
 
 4. MyBatis添加日志后执行语句：
 
-   ![image-20230203204439018](https://cdn.jsdelivr.net/gh/letengzz/Two-C@main/img/Java/202303011008283.png)
+   ![image-20230203204439018](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/Two-C/img/Java/202303011008283.png)
 
    

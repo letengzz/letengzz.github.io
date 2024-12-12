@@ -2,7 +2,7 @@
 
 使用gitLab的自动部署功能，可以快速实现自动部署，完成运行。
 
-![1705557925090](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202406142346689.png)
+![1705557925090](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202406142346689.png)
 
 ## 安装gitLab-runner
 
@@ -36,15 +36,15 @@ shell
 
 token的位置
 
-![1705896052634](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202412031112449.png)
+![1705896052634](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202412031112449.png)
 
 注册完成之后，runner就已经上线了。
 
-![image-20240615002105853](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202406150021351.png)
+![image-20240615002105853](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202406150021351.png)
 
-![1705557817529](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202412031113473.png)
+![1705557817529](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202412031113473.png)
 
-![1705898035403](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202412031113413.png)
+![1705898035403](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202412031113413.png)
 
 
 

@@ -50,15 +50,15 @@ class Producer {
 
 运行后查看控制台：
 
-![image-20240324162609683](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202403241626660.png)
+![image-20240324162609683](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202403241626660.png)
 
 查看RocketMQ的控制台：
 
-![image-20240324163206911](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202403241632299.png)
+![image-20240324163206911](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202403241632299.png)
 
 查看消息的细节：
 
-![image-20240324163237090](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202403241632628.png)
+![image-20240324163237090](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202403241632628.png)
 
 ## 消费者
 
@@ -91,5 +91,5 @@ public class AsyncMsgListener implements RocketMQListener<MessageExt> {
 
 启动 rocketmq-consumer，运行结果：查看控制台，发现已经监听到消息了
 
-![image-20240324163922478](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202403241639434.png)
+![image-20240324163922478](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202403241639434.png)
 

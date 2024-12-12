@@ -2,7 +2,7 @@
 
 ## 主从同步集群
 
-![image-20240615224423060](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202406152244600.png)
+![image-20240615224423060](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202406152244600.png)
 
 ```shell
 #自定义网络

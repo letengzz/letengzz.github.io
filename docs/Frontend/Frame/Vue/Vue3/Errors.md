@@ -4,7 +4,7 @@
 
 当使用TypeScript引入vue飘红：`Vue: Cannot find module  ./components/person.vue  or its corresponding type declarations.`
 
-![image-20240131004835117](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202401310050419.png)
+![image-20240131004835117](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202401310050419.png)
 
 **原因**：这段代码是 TypeScript 中用于声明 Vue 单文件组件（.vue 文件）模块的声明文件。
 

@@ -24,10 +24,10 @@ SimpleKV 需要支持的 3 种基本操作，即 PUT、GET 和 DELETE：
 
 因此，**如何进行设计选择，通常需要考虑键值数据库的主要应用场景**。比如，缓存场景下的数据需要能快速访问但允许丢失，那么，用于此场景的键值数据库通常采用内存保存键值数据。Memcached 和 Redis 都是属于内存键值数据库。对于 Redis 而言，缓存是 非常重要的一个应用场景。
 
-![image-20240308230848741](https://cdn.jsdelivr.net/gh/letengzz/tc2@main/img202404152140833.png)
+![image-20240308230848741](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202404152140833.png)
 
 Redis数据类型指的是value的数据类型，key的类型都是字符串。
 
 - 官方操作命令：https://redis.io/docs/latest/commands
 
-![](https://cdn.jsdelivr.net/gh/letengzz/tc2@main/img202404102042922.png)
+![](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202404102042922.png)

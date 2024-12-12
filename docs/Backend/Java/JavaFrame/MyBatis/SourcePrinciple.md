@@ -4,7 +4,7 @@
 
 刚开始接触框架，会认为Java程序会转入XML配置文件中执行，但其实框架会在初始化时将XML文件读取进来，封装到对象中，再然后就都是Java代码的执行了，XML中的配置是没法执行的。
 
-![./images](https://cdn.jsdelivr.net/gh/letengzz/Two-C@main/img/Java/202303011647842.png)
+![./images](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/Two-C/img/Java/202303011647842.png)
 
 ## 源码
 
@@ -12,13 +12,13 @@
 
    所在类：`org.apache.ibatis.session.defaults.DefaultSqlSessionFactory`
 
-![./images](https://cdn.jsdelivr.net/gh/letengzz/Two-C@main/img/Java/202303011647853.png)
+![./images](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/Two-C/img/Java/202303011647853.png)
 
 2. **准备去获取已映射的指令**：
 
    所在类：`org.apache.ibatis.session.defaults.DefaultSqlSession`
 
-![./images](https://cdn.jsdelivr.net/gh/letengzz/Two-C@main/img/Java/202303011647943.png)
+![./images](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/Two-C/img/Java/202303011647943.png)
 
 3. **正式获取已映射的指令**：
 
@@ -30,4 +30,4 @@
 
    mappedStatements对象的类型：Configuration类中的一个静态内部类：StrictMap
 
-![./images](https://cdn.jsdelivr.net/gh/letengzz/Two-C@main/img/Java/202303011647484.png)
+![./images](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/Two-C/img/Java/202303011647484.png)

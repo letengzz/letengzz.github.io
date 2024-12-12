@@ -35,7 +35,7 @@ insert into user(username,password,age) values ("杜甫","124356",70);
 
 ### 整体结构
 
-![image-20230131195712260](https://cdn.jsdelivr.net/gh/letengzz/Two-C@main/img/Java/202303011020660.png)
+![image-20230131195712260](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/Two-C/img/Java/202303011020660.png)
 
 ### 导入依赖
 

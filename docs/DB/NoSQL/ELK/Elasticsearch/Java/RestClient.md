@@ -208,11 +208,11 @@ public class ElasticsearchIndexTest {
 }
 ```
 
-![image-20231229002823352](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202312290028907.png)
+![image-20231229002823352](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202312290028907.png)
 
 执行，查看是否创建成功：
 
-![image-20231229003258934](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202312290033733.png)
+![image-20231229003258934](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202312290033733.png)
 
 ### 删除索引库
 
@@ -267,7 +267,7 @@ public class ElasticsearchIndexTest {
 
 执行，查看是否删除成功：
 
-![image-20231229004338893](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202312290043322.png)
+![image-20231229004338893](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202312290043322.png)
 
 ### 判断索引库存在
 
@@ -323,7 +323,7 @@ public class ElasticsearchIndexTest {
 
 执行，查看是否存在：
 
-![image-20231229004425771](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202312290044700.png)
+![image-20231229004425771](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202312290044700.png)
 
 ## 操作文档
 
@@ -351,7 +351,7 @@ void testIndexDocument() throws IOException {
 }
 ```
 
-![image-20231229140132662](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202312291401486.png)
+![image-20231229140132662](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202312291401486.png)
 
 ### 查询文档
 
@@ -370,7 +370,7 @@ void testSelectIndexDocument() throws IOException {
 }
 ```
 
-![image-20231229135558281](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202312291355703.png)
+![image-20231229135558281](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202312291355703.png)
 
 ### 修改文档
 
@@ -395,7 +395,7 @@ void testSelectIndexDocument() throws IOException {
   }
   ```
 
-  ![image-20231229141208751](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202312291412169.png)
+  ![image-20231229141208751](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202312291412169.png)
 
 ### 删除文档
 

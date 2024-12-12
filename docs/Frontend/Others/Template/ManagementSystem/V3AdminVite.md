@@ -40,13 +40,13 @@
 
 **项目演示**：
 
-![img](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202411212052006.png)
+![img](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202411212052006.png)
 
-![img](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202411212052215.png)
+![img](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202411212052215.png)
 
-![img](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202411212052697.png)
+![img](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202411212052697.png)
 
-![img](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202411212052808.png)
+![img](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202411212052808.png)
 
 
 

@@ -16,4 +16,4 @@ npm install -g cnpm --registry=https://registry.npmmirror.com
 
 ## 基本使用
 
-![image-20231026180030011](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202310261800169.png)
+![image-20231026180030011](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202310261800169.png)

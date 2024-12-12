@@ -14,9 +14,9 @@ SpringBoot 提供异常处理机制主要是为了提高应用的健壮性和用
 
 对于机器客户端，它将生成JSON响应，其中包含错误，HTTP状态和异常消息的详细信息。对于浏览器客户端，响应一个"whitelabel"错误视图，以HTML格式呈现相同的数据
 
-![image-20230223110956415](https://cdn.jsdelivr.net/gh/letengzz/Two-C@main/img/Java/202307312050534.png)
+![image-20230223110956415](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/Two-C/img/Java/202307312050534.png)
 
-![image-20230223110751895](https://cdn.jsdelivr.net/gh/letengzz/Two-C@main/img/Java/202307312050313.png)
+![image-20230223110751895](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/Two-C/img/Java/202307312050313.png)
 
 **错误处理的自动配置**都在`ErrorMvcAutoConfiguration`中，两大核心机制：
 
@@ -24,7 +24,7 @@ SpringBoot 提供异常处理机制主要是为了提高应用的健壮性和用
 
 2. **SpringMVC的错误处理机制**依然保留，**MVC处理不了**，才会**交给boot进行处理**
 
-![img](https://cdn.jsdelivr.net/gh/letengzz/Two-C@main/img/Java/202307312059215.png)
+![img](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/Two-C/img/Java/202307312059215.png)
 
 发生错误以后，转发给/error路径，SpringBoot在底层写好一个 BasicErrorController的组件，专门处理这个请求：
 
@@ -245,7 +245,7 @@ public String index(){
 
 访问后，发现控制台会输出异常信息，同时页面也是自定义的一个页面。
 
-![image-20230919130750542](https://cdn.jsdelivr.net/gh/letengzz/tc2@main/img/Java/202309191308819.png)
+![image-20230919130750542](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img/Java/202309191308819.png)
 
 ### SpringBoot默认错误处理方案
 
@@ -264,7 +264,7 @@ public String index(){
 
 解析顺序如果发生404错误，先找 404.html，找不到则查找4xx.html，如果都没有找到，就触发白页
 
-![image-20230223112150202](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202403231846413.png)
+![image-20230223112150202](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202403231846413.png)
 
 ## 在错误页获取错误信息 
 

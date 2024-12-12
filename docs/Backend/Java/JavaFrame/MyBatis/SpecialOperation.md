@@ -401,7 +401,7 @@ Mybatis批量插入的方式有三种
 
 项目实践发现，当表的列数较多（超过20），以及一次性插入的行数较多（上万条）时，插入性能非常差，通常需要20分钟以上
 
-![image-20230425133328250](https://cdn.jsdelivr.net/gh/letengzz/Two-C@main/img/Java/202304251345264.png)
+![image-20230425133328250](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/Two-C/img/Java/202304251345264.png)
 
 所以，如果非要使用 foreach 的方式来进行批量插入的话，可以考虑减少一条 insert 语句中 values 的个数，最好能达到上面曲线的最底部的值，使速度最快。一般按经验来说，一次性插20~50行数量是比较合适的，时间消耗也能接受。
 
@@ -550,7 +550,7 @@ public void commit(boolean required) throws SQLException {
 
 当使用模糊查询时，由于`#{}`底层为占位符，获取参数值并且执行过程中用`?`代替`#{}` 不会解析成占位符，会被认为是字符串。
 
-![image-20230202193346092](https://cdn.jsdelivr.net/gh/letengzz/Two-C@main/img/Java/202308281741126.png)
+![image-20230202193346092](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/Two-C/img/Java/202308281741126.png)
 
 解决办法：
 

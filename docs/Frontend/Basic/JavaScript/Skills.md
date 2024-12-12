@@ -1,6 +1,6 @@
 # 19个JS超有用的简写技巧
 
-![img](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202408131050203.png)
+![img](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202408131050203.png)
 
 ## 1. 三元操作符
 

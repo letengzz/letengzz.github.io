@@ -4,7 +4,7 @@
 
 事务消息可以被认为是一个两阶段的提交消息实现，以确保分布式系统的最终一致性。事务性消息确保本地事务的执行和消息的发送可以原子地执行。
 
-![](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202403192216672.png)
+![](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202403192216672.png)
 
 事务消息的大致分为两个流程：正常事务消息的发送及提交、事务消息的补偿流程：
 
@@ -21,7 +21,7 @@
   4. 其中，补偿阶段用于解决消息UNKNOW或者Rollback发生超时或者失败的情况。
 
 
-![](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202403192217004.png)
+![](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202403192217004.png)
 
 **事务消息共有三种状态**：提交状态、回滚状态、中间状态
 

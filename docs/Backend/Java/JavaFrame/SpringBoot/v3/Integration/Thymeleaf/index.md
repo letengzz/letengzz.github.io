@@ -4,15 +4,15 @@
 
 1. 开启了 org.springframework.boot.autoconfigure.thymeleaf.ThymeleafAutoConfiguration 自动配置
 
-   ![image.png](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202411221837609.png)
+   ![image.png](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202411221837609.png)
 
 2. 属性绑定在 ThymeleafProperties 中，对应配置文件 `spring.thymeleaf` 内容
 
-   ![image.png](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202411221837770.png)
+   ![image.png](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202411221837770.png)
 
 3. 所有的模板页面默认在 `classpath:/templates`文件夹下
 
-   ![image.png](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202411221838825.png)
+   ![image.png](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202411221838825.png)
 
 4. **默认效果**：
 
@@ -39,7 +39,7 @@
 
 3. 导入依赖后，在classpath:/templates文件夹下创建一个hello.html
 
-   ![image-20230805232317490](https://cdn.jsdelivr.net/gh/letengzz/Two-C@main/img/Java/202308052323262.png)
+   ![image-20230805232317490](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/Two-C/img/Java/202308052323262.png)
 
 - 创建一个controller：
 
@@ -55,7 +55,7 @@
 
 - 启动并访问：http://localhost:8080/hello
 
-  ![image-20230805234225081](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202401061913735.png)
+  ![image-20230805234225081](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202401061913735.png)
 
 - 修改hello.html
 
@@ -89,7 +89,7 @@
 
 - 启动并访问：http://localhost:8080/hello?name=zhangsan
 
-  ![image-20230805234754395](https://cdn.jsdelivr.net/gh/letengzz/Two-C@main/img/Java/202308052347373.png)
+  ![image-20230805234754395](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/Two-C/img/Java/202308052347373.png)
 
 ## Thymeleaf核心语法
 

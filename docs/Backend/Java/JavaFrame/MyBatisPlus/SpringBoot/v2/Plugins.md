@@ -293,7 +293,7 @@ class ProductMapperTest {
 
 ### 使用乐观锁
 
-![image-20230226104932989](https://cdn.jsdelivr.net/gh/letengzz/Two-C@main/img/Java/202302261314410.png)
+![image-20230226104932989](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/Two-C/img/Java/202302261314410.png)
 
 **修改实体类**：
 

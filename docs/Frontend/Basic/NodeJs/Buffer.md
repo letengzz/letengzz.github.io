@@ -4,7 +4,7 @@ Buffer(缓冲区)，是一个类似于Array的**对象**，用于表示固定长
 
 换句话说，Buffer就是一段固定长度的内存空间，用于处理二进制数据。
 
-![image-20231003203709841](https://cdn.jsdelivr.net/gh/letengzz/tc2@main/img/Java/202310032037073.png)
+![image-20231003203709841](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img/Java/202310032037073.png)
 
 **特点**：
 
@@ -14,7 +14,7 @@ Buffer(缓冲区)，是一个类似于Array的**对象**，用于表示固定长
 
 3. 每个元素的大小为 1 字节 (byte) 
 
-   ![image-20231003204111960](https://cdn.jsdelivr.net/gh/letengzz/tc2@main/img/Java/202310032041629.png)
+   ![image-20231003204111960](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img/Java/202310032041629.png)
 
 **说明**：Buffer 是Node.js 中的内置模块。在启动时已经将此模块自动加载，不需要手动导入即可使用，直接使用Buffer模块完成操作即可。
 
@@ -30,7 +30,7 @@ let buf = Buffer.alloc(10);
 console.log(buf);
 ```
 
-![image-20231003204914520](https://cdn.jsdelivr.net/gh/letengzz/tc2@main/img/Java/202310032049104.png)
+![image-20231003204914520](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img/Java/202310032049104.png)
 
 ### 使用allocUnsafe()创建
 
@@ -42,14 +42,14 @@ let buf_2 = Buffer.allocUnsafe(10);
 console.log(buf_2);
 ```
 
-![image-20231003205348803](https://cdn.jsdelivr.net/gh/letengzz/tc2@main/img/Java/202310032053823.png)
+![image-20231003205348803](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img/Java/202310032053823.png)
 
 ```js
 let buf_3 = Buffer.allocUnsafe(100000);
 console.log(buf_3);
 ```
 
-![image-20231003205753935](https://cdn.jsdelivr.net/gh/letengzz/tc2@main/img/Java/202310032057399.png)
+![image-20231003205753935](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img/Java/202310032057399.png)
 
 ### 使用from()创建
 
@@ -65,7 +65,7 @@ let buf_5 = Buffer.from([105, 108, 111, 118, 101, 121, 111, 117]);
 console.log(buf_5);
 ```
 
-![image-20231003210834305](https://cdn.jsdelivr.net/gh/letengzz/tc2@main/img/Java/202310032108051.png)
+![image-20231003210834305](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img/Java/202310032108051.png)
 
 ## Buffer的操作
 
@@ -80,7 +80,7 @@ let buf_6 = Buffer.from('hi');
 console.log(buf_6.toString());
 ```
 
-![image-20231003212348356](https://cdn.jsdelivr.net/gh/letengzz/tc2@main/img/Java/202310032123284.png)
+![image-20231003212348356](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img/Java/202310032123284.png)
 
 ### Buffer的读写
 
@@ -102,7 +102,7 @@ console.log(buf_7[0].toString());
 console.log(buf_7[0].toString(2));
 ```
 
-![image-20231003213524673](https://cdn.jsdelivr.net/gh/letengzz/tc2@main/img/Java/202310032135348.png)
+![image-20231003213524673](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img/Java/202310032135348.png)
 
 ## 注意
 
@@ -115,7 +115,7 @@ let buf_8 = Buffer.from([361]);
 console.log(buf_8[0].toString(2));  //舍弃高位的数字 0001 0110 1001 => 0110 1001
 ```
 
-![image-20231003214047438](https://cdn.jsdelivr.net/gh/letengzz/tc2@main/img/Java/202310032140695.png)
+![image-20231003214047438](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img/Java/202310032140695.png)
 
 ### 中文问题
 
@@ -126,4 +126,4 @@ let buf_9 = Buffer.from('我');
 console.log(buf_9);
 ```
 
-![image-20231003214249619](https://cdn.jsdelivr.net/gh/letengzz/tc2@main/img/Java/202310032142774.png)
+![image-20231003214249619](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img/Java/202310032142774.png)

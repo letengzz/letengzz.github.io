@@ -24,7 +24,7 @@ Node.js 中的磁盘操作是由其他线程完成的，结果的处理有两种
 
 文件写入就是将数据保存到文件中。Node.js提供了五种写入方式：
 
-![image-20231004073207045](https://cdn.jsdelivr.net/gh/letengzz/tc2@main/img/Java/202310040732088.png)
+![image-20231004073207045](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img/Java/202310040732088.png)
 
 **注意**：使用fs模块写入时，当文件不存在 会自动创建并写入。
 
@@ -64,7 +64,7 @@ fs.writeFile('./1.txt','你好 中国',err =>{
 console.log('结束');
 ```
 
-![image-20231004075310164](https://cdn.jsdelivr.net/gh/letengzz/tc2@main/img/Java/202310040753423.png)
+![image-20231004075310164](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img/Java/202310040753423.png)
 
 #### 同步写入
 
@@ -92,7 +92,7 @@ fs.writeFileSync('./2.txt','hello world');
 console.log('写入成功');
 ```
 
-![image-20231004080029491](https://cdn.jsdelivr.net/gh/letengzz/tc2@main/img/Java/202310040800350.png)
+![image-20231004080029491](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img/Java/202310040800350.png)
 
 #### 追加写入
 
@@ -130,9 +130,9 @@ fs.appendFileSync('1.txt','Hello China');
 console.log('同步追加成功');
 ```
 
-![image-20231004081543210](https://cdn.jsdelivr.net/gh/letengzz/tc2@main/img/Java/202310040815188.png)
+![image-20231004081543210](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img/Java/202310040815188.png)
 
-![image-20231004081840451](https://cdn.jsdelivr.net/gh/letengzz/tc2@main/img/Java/202310040818269.png)
+![image-20231004081840451](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img/Java/202310040818269.png)
 
 使用 writeFile实现追加写入：
 
@@ -149,7 +149,7 @@ fs.writeFile('./1.txt','Hello China',{flag: 'a'},err =>{
 console.log('结束');
 ```
 
-![image-20231004085931329](https://cdn.jsdelivr.net/gh/letengzz/tc2@main/img/Java/202310040859359.png)
+![image-20231004085931329](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img/Java/202310040859359.png)
 
 #### 流式写入
 
@@ -190,13 +190,13 @@ ws.end();
 //ws.close();
 ```
 
-![image-20231004090403026](https://cdn.jsdelivr.net/gh/letengzz/tc2@main/img/Java/202310040904519.png)
+![image-20231004090403026](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img/Java/202310040904519.png)
 
 ### 文件读取
 
 文件读取就是通过程序从文件中取出其中的数据。Node.js提供的读取方式：
 
-![image-20231004091229027](https://cdn.jsdelivr.net/gh/letengzz/tc2@main/img/Java/202310040912523.png)
+![image-20231004091229027](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img/Java/202310040912523.png)
 
 #### 异步读取
 
@@ -238,7 +238,7 @@ fs.readFile('./1.txt','UTF-8',(err,data) =>{
 console.log('读取成功');
 ```
 
-![image-20231004092950156](https://cdn.jsdelivr.net/gh/letengzz/tc2@main/img/Java/202310040929020.png)
+![image-20231004092950156](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img/Java/202310040929020.png)
 
 #### 同步读取
 
@@ -269,7 +269,7 @@ let data2 = fs.readFileSync('./1.txt','UTF-8');
 console.log('读取成功'+data2);
 ```
 
-![image-20231004093326746](https://cdn.jsdelivr.net/gh/letengzz/tc2@main/img/Java/202310040933773.png)
+![image-20231004093326746](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img/Java/202310040933773.png)
 
 #### 流式读取
 
@@ -321,7 +321,7 @@ const ws = fs.createWriteStream('./HelloChina.txt');
 rs.pipe(ws);
 ```
 
-![image-20231004094507101](https://cdn.jsdelivr.net/gh/letengzz/tc2@main/img/Java/202310040945155.png)
+![image-20231004094507101](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img/Java/202310040945155.png)
 
 ### 文件移动与重命名
 
@@ -358,7 +358,7 @@ fs.rename('1.txt','你好中国.txt',(err) =>{
 });
 ```
 
-![image-20231004095500164](https://cdn.jsdelivr.net/gh/letengzz/tc2@main/img/202310040955902.png)
+![image-20231004095500164](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img/202310040955902.png)
 
 ```js
 // require 是 Node.js 环境中的'全局'变量，用来导入模块
@@ -368,7 +368,7 @@ fs.renameSync('1.txt','你好中国.txt');
 console.log('修改成功');
 ```
 
-![image-20231004100017834](https://cdn.jsdelivr.net/gh/letengzz/tc2@main/img/202310041000529.png)
+![image-20231004100017834](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img/202310041000529.png)
 
 ### 文件删除
 
@@ -401,7 +401,7 @@ fs.unlink('./2.txt', (err) => {
 });
 ```
 
-![image-20231004100617338](https://cdn.jsdelivr.net/gh/letengzz/tc2@main/img/202310041006750.png)
+![image-20231004100617338](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img/202310041006750.png)
 
 ```js
 // require 是 Node.js 环境中的'全局'变量，用来导入模块
@@ -411,7 +411,7 @@ fs.unlinkSync('./2.txt');
 console.log('删除成功');
 ```
 
-![image-20231004100805277](https://cdn.jsdelivr.net/gh/letengzz/tc2@main/img/202310041008703.png)
+![image-20231004100805277](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img/202310041008703.png)
 
 Node.js在14.4后可以通过 `rm()`、`rmSync()` 来删除文件，使用方法同`unlink()`、`unlinkSync()`
 
@@ -440,7 +440,7 @@ console.log('删除成功');
 
 使用Node.js可以对文件夹进行创建 、读取、 删除等操作。
 
-![image-20231004101313943](https://cdn.jsdelivr.net/gh/letengzz/tc2@main/img/202310041013044.png)
+![image-20231004101313943](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img/202310041013044.png)
 
 ### 创建文件夹
 
@@ -486,7 +486,7 @@ fs.mkdir('./a/b/c',{recursive:true},err =>{
 });
 ```
 
-![image-20231004102226590](https://cdn.jsdelivr.net/gh/letengzz/tc2@main/img/202310041022541.png)
+![image-20231004102226590](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img/202310041022541.png)
 
 ```js
 // require 是 Node.js 环境中的'全局'变量，用来导入模块
@@ -499,7 +499,7 @@ fs.mkdirSync('./aa/bb',{recursive:true});
 console.log('创建成功');
 ```
 
-![image-20231004102536780](https://cdn.jsdelivr.net/gh/letengzz/tc2@main/img/202310041025909.png)
+![image-20231004102536780](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img/202310041025909.png)
 
 ### 读取文件夹
 
@@ -536,7 +536,7 @@ fs.readdir('./page',(data,err) =>{
 });
 ```
 
-![image-20231004103413229](https://cdn.jsdelivr.net/gh/letengzz/tc2@main/img/202310041034273.png)
+![image-20231004103413229](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img/202310041034273.png)
 
 ```js
 // require 是 Node.js 环境中的'全局'变量，用来导入模块
@@ -546,7 +546,7 @@ let data = fs.readdirSync('./page');
 console.log(data);
 ```
 
-![image-20231004103645744](https://cdn.jsdelivr.net/gh/letengzz/tc2@main/img/202310041036230.png)
+![image-20231004103645744](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img/202310041036230.png)
 
 ### 删除文件夹
 
@@ -592,7 +592,7 @@ fs.rmdir('./a',{recursive:true},err =>{
 });
 ```
 
-![image-20231004104938491](https://cdn.jsdelivr.net/gh/letengzz/tc2@main/img/202310041049761.png)
+![image-20231004104938491](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img/202310041049761.png)
 
 ```js
 // require 是 Node.js 环境中的'全局'变量，用来导入模块
@@ -604,7 +604,7 @@ fs.rmdirSync('./index');
 fs.rmdirSync('./aa',{recursive:true});
 ```
 
-![image-20231004105034151](https://cdn.jsdelivr.net/gh/letengzz/tc2@main/img/202310041051724.png)
+![image-20231004105034151](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img/202310041051724.png)
 
 Node.js在14.4后可以通过 `rm()`、`rmSync()` 来删除文件夹，使用方法同`rmdir()`、`rmdirSync()`
 
@@ -677,7 +677,7 @@ fs.stat('./你好中国.txt',(err,data) =>{
 });
 ```
 
-![image-20231004142323662](https://cdn.jsdelivr.net/gh/letengzz/tc2@main/img/202310041458387.png)
+![image-20231004142323662](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img/202310041458387.png)
 
 ```js
 // require 是 Node.js 环境中的'全局'变量，用来导入模块
@@ -687,7 +687,7 @@ let data = fs.statSync('./你好中国.txt');
 console.log(data);
 ```
 
-![image-20231004105732473](https://cdn.jsdelivr.net/gh/letengzz/tc2@main/img/202310041057114.png)
+![image-20231004105732473](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img/202310041057114.png)
 
 ## 相对路径问题
 

@@ -10,15 +10,15 @@
 
 - 理想情况：
 
-  ![image-20230915115553185](https://cdn.jsdelivr.net/gh/letengzz/tc2@main/img/Java/202309151156109.png)
+  ![image-20230915115553185](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img/Java/202309151156109.png)
 
 - 假设抛出了异常：
 
-  ![image-20230915121120731](https://cdn.jsdelivr.net/gh/letengzz/tc2@main/img/Java/202309151212683.png)
+  ![image-20230915121120731](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img/Java/202309151212683.png)
 
 - 为了解决上述的问题，就需要通过开启事务来完成，只需要在业务逻辑执行之前开启事务，执行完毕后必须提交事务，如果执行过程中报错，则回滚事务，把数据恢复到事务开始之前的状态。
 
-  ![image-20230915134849804](https://cdn.jsdelivr.net/gh/letengzz/tc2@main/img/Java/202309151348054.png)
+  ![image-20230915134849804](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img/Java/202309151348054.png)
 
 值得一提的是，默认MySQL的事务是自动提交的，也就是说，当**执行完一条DML语句时，MySQL会立即隐式的提交事务**。即默认情况下，**一条SQL语句就是一个事务**。假如**关闭自动提交则必须在每次执行SQL之后手动提交事务，否则SQL不生效**。
 
@@ -35,7 +35,7 @@ SELECT @@autocommit;
 - `1` 表示**自动提交事务**
 - `0`表示**手动提交事务**
 
-![image-20230915135120610](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202412011800767.png)
+![image-20230915135120610](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202412011800767.png)
 
 ### 设置事务提交方式
 
@@ -51,7 +51,7 @@ SET @@autocommit = 0;
 SET @@autocommit = 1;  
 ```
 
-![image-20230915135455507](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202412011800022.png)
+![image-20230915135455507](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202412011800022.png)
 
 ### 提交事务
 
@@ -65,10 +65,10 @@ COMMIT;
 
 把事务的提交方式修改为了手动提交来验证一下"**关闭自动提交事务则必须在每次执行SQL之后手动提交事务，否则SQL不生效**"：
 
-![image-20230915140655529](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202412011800626.png)
+![image-20230915140655529](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202412011800626.png)
 
 由于关闭了自动提交事务，执行SQL后发现执行成功，但没有提交事务，查看数据库发现数据并未发生变化。待提交事务后，数据才更新：
-![image-20230915140946450](https://cdn.jsdelivr.net/gh/letengzz/tc2@main/img/Java/202309151409876.png)
+![image-20230915140946450](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img/Java/202309151409876.png)
 
 ### 回滚事务
 
@@ -94,7 +94,7 @@ BEGIN;
 
 除了可以以关闭自动提交事务，然后手动commit的方式控制事务以外，还可以通过在SQL开始执行之前，先执行`START TRANSACTION; `或 `BEGIN;`然后执行SQL，最后`COMMIT;`的方式控制事务。
 
-![image-20230915141909394](https://cdn.jsdelivr.net/gh/letengzz/tc2@main/img/Java/202309151419658.png)
+![image-20230915141909394](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img/Java/202309151419658.png)
 
 ## 四大特性
 
@@ -102,17 +102,17 @@ BEGIN;
 
 - **原子性** (`A`tomicity)：事务是不可分割的最小操作单元，要么全部成功，要么全部失败
 
-  ![image-20230915144548936](https://cdn.jsdelivr.net/gh/letengzz/tc2@main/img/Java/202309151445691.png)
+  ![image-20230915144548936](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img/Java/202309151445691.png)
 
 - **一致性** (`C`onsistency)：事务完成时，必须使所有的数据都保持一致状态。
 
 - **隔离性** (`I`solation)：数据库系统提供的隔离机制，保证事务在不受外部并发操作影响的独立 环境下运行。
 
-  ![image-20230915144843956](https://cdn.jsdelivr.net/gh/letengzz/tc2@main/img/Java/202309151448509.png)
+  ![image-20230915144843956](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img/Java/202309151448509.png)
 
 - **持久性** (`D`urability)：事务一旦提交或回滚，它对数据库中的数据的改变就是永久的。
 
-  ![image-20230915150320615](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202412011800895.png)
+  ![image-20230915150320615](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202412011800895.png)
 
 ## 并发事务问题
 

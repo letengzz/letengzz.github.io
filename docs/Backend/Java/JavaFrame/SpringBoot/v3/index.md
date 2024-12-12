@@ -1,6 +1,6 @@
 # SpringBoot 3
 
-![image-20230722002105472](https://cdn.jsdelivr.net/gh/letengzz/Two-C@main/img/Java/202307220027897.png)
+![image-20230722002105472](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/Two-C/img/Java/202307220027897.png)
 
 - [SpringBoot 介绍](Overview.md)
 

@@ -23,9 +23,9 @@ sqlSession提供select、insert、update、delete方法，在旧版本中使用s
 
 - ResultHandler：结果集ResultSet封装处理放回。
 
-![image-20230131185358336](https://cdn.jsdelivr.net/gh/letengzz/Two-C@main/img/Java/202303011659535.png)
+![image-20230131185358336](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/Two-C/img/Java/202303011659535.png)
 
-![image-20230131185427570](https://cdn.jsdelivr.net/gh/letengzz/Two-C@main/img/Java/202303011659549.png)
+![image-20230131185427570](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/Two-C/img/Java/202303011659549.png)
 
 ## selectOne 
 

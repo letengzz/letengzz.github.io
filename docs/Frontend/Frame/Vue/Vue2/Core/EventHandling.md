@@ -18,7 +18,7 @@
 6. 回调函数中的this 是 vm。如果回调函数是箭头函数的话，this 是window 对象，因为箭头函数没有自己的 this，它的 this 是继承过来的，默认这个this 是箭头函数所在的宿主对象。这个宿主对象其实就是它的父级作用域。而对象又不能构成单独的作用城，所以这个父级作用域是全局作用域，也就是 window。
 7. 可以在函数中改变 data 中的数据，例如：`this.counter++`，这样会联动页面上产生动态效果。
 
-![image.png](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202406202136183.png)
+![image.png](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202406202136183.png)
 
 ```js
 <!DOCTYPE html>

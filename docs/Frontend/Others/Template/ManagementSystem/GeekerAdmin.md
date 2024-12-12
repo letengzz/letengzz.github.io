@@ -12,7 +12,7 @@ Gitee：https://gitee.com/HalseySpicy/Geeker-Admin
 
 文档地址**：**https://docs.spicyboy.cn
 
-![image-20241121200040623](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202411212000325.png)
+![image-20241121200040623](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202411212000325.png)
 
 **项目功能**：
 
@@ -34,17 +34,17 @@ Gitee：https://gitee.com/HalseySpicy/Geeker-Admin
 
 - 首页：
 
-  ![image-20241121200300353](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202411212004474.png)
+  ![image-20241121200300353](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202411212004474.png)
 
 - 超级表格：
 
-  ![image-20241121200357304](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202411212004371.png)
+  ![image-20241121200357304](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202411212004371.png)
 
 - 数据统计：
 
-  ![image-20241121200333738](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202411212004512.png)
+  ![image-20241121200333738](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202411212004512.png)
 
 - 数据大屏：
 
-  ![image-20241121200416774](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202411212004613.png)
+  ![image-20241121200416774](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202411212004613.png)
 

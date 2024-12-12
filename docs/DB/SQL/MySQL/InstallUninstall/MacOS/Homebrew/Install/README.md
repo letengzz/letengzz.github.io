@@ -24,7 +24,7 @@ mysql.server start
 mysql --version
 ```
 
-![image-20231214224051419](https://cdn.jsdelivr.net/gh/letengzz/tc2/img/202407042246041.png)
+![image-20231214224051419](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img/202407042246041.png)
 
 停止mysql服务，在终端输入以下指令：
 

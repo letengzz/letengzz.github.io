@@ -19,7 +19,7 @@ RocketMQ提供消息过滤功能，通过tag或者key进行区分
 
 从源码注释得知，tag带在主题后面用`:`来携带：
 
-![image-20240324221150661](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202403242211518.png)
+![image-20240324221150661](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202403242211518.png)
 
 ```java
 @SpringBootTest
@@ -46,7 +46,7 @@ class Producer {
 
 运行结果：
 
-![image-20240324225409185](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202403242254169.png)
+![image-20240324225409185](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202403242254169.png)
 
 ### 消费者
 
@@ -80,19 +80,19 @@ public class TagMsgListener implements RocketMQListener<String> {
 
 运行结果：
 
-![image-20240324231944541](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202403242319161.png)
+![image-20240324231944541](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202403242319161.png)
 
 ## 发送带key的消息
 
 在RocketMQ中的消息，默认会有一个messageId当做消息的唯一标识，可以给消息携带一个key，用作唯一标识或者业务标识，包括在控制面板查询的时候也可以使用messageId或者key来进行查询
 
-![](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202403200004263.png)
+![](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202403200004263.png)
 
 ### 生产者
 
 在 `org.apache.rocketmq.spring.support.RocketMQUtil` 的`getAndWrapMessage()`方法里面看到了具体细节，keys在消息头里面携带：
 
-![image-20240324221537525](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202403242215189.png)
+![image-20240324221537525](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202403242215189.png)
 
 ```java
 @SpringBootTest
@@ -126,7 +126,7 @@ class Producer {
 
 运行结果：
 
-![image-20240324233232060](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202403242332111.png)
+![image-20240324233232060](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202403242332111.png)
 
 ### 消费者
 
@@ -159,8 +159,8 @@ public class KeyMsgListener implements RocketMQListener<MessageExt> {
 
 运行结果：
 
-![image-20240324233333928](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202403242333678.png)
+![image-20240324233333928](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202403242333678.png)
 
 ### 查看效果
 
-![image-20240324233451076](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202403242334090.png)
+![image-20240324233451076](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202403242334090.png)

@@ -26,7 +26,7 @@ Redis(远程字典服务器，**RE**mote **Di**ctionary **S**erver) 是一个开
 - 功能丰富
 - 简单稳定
 
-![](https://cdn.jsdelivr.net/gh/letengzz/tc2@main/img%E4%B8%8B%E8%BD%BD%20.png)
+![](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img%E4%B8%8B%E8%BD%BD%20.png)
 
 ## 引用
 
@@ -51,11 +51,11 @@ Redis(远程字典服务器，**RE**mote **Di**ctionary **S**erver) 是一个开
 - 高可靠：主从复制、哨兵机制
 - 高可扩展：数据分片、负载均衡
 
-![](https://cdn.jsdelivr.net/gh/letengzz/tc2@main/img%E4%B8%8B%E8%BD%BD.jpeg)
+![](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img%E4%B8%8B%E8%BD%BD.jpeg)
 
 ## 应用场景
 
-![](https://cdn.jsdelivr.net/gh/letengzz/tc2@main/img%E4%B8%8B%E8%BD%BD-9914224.png)
+![](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img%E4%B8%8B%E8%BD%BD-9914224.png)
 
 - **分布式缓存**：与传统数据库关系(mysql)，Redis是key-value数据库(NoSQL一种)，mysql是关系数据库
 
@@ -65,7 +65,7 @@ Redis(远程字典服务器，**RE**mote **Di**ctionary **S**erver) 是一个开
 
   Redis通常用于一些特定场景，需要与DBMS 一起配合使用，两者并不是相互替换和竞争关系，而是共用和配合使用，客户端从 DBMS 中查询出的数据首先写入到 Redis 中，后续无论哪个客户端再需要访问该数据，直接读取 Redis 中的即可，不仅减小了 RT，而且降低了 DBMS 的压力。
 
-  ![](https://cdn.jsdelivr.net/gh/letengzz/tc2@main/img%E4%B8%8B%E8%BD%BD.png)
+  ![](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img%E4%B8%8B%E8%BD%BD.png)
 
   根据 Redis 缓存的数据与 DBMS 中数据的同步性划分：
 
@@ -93,7 +93,7 @@ Redis(远程字典服务器，**RE**mote **Di**ctionary **S**erver) 是一个开
 - **持久化**：可以将内存中的数据保存在磁盘中，重启的时候可以再次加载进行使用
 - **数据备份**：master-slave模式的数据备份
 
-![](https://cdn.jsdelivr.net/gh/letengzz/tc2@main/img202404072217680.png)
+![](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202404072217680.png)
 
 ## 命名规则
 

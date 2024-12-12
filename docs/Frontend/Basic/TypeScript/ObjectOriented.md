@@ -297,7 +297,7 @@ class Student extends Person {
 
 ## 属性修饰符
 
-![image-20240820210508382](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202408202105454.png)
+![image-20240820210508382](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202408202105454.png)
 
 ### public 修饰符
 

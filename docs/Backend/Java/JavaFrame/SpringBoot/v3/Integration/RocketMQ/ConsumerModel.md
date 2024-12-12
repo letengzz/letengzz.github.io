@@ -7,7 +7,7 @@ Rocketmq消息消费的模式分为两种：**负载均衡模式**和**广播模
 - **负载均衡模式**`MessageModel.CLUSTERING`：负载均衡模式表示多个消费者交替消费同一个主题里面的消息
 - **广播模式**`MessageModel.BROADCASTING`：广播模式表示每个每个消费者都消费一遍订阅的主题的消息
 
-![image-20231219205310716](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202312192053776.png)
+![image-20231219205310716](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202312192053776.png)
 
 **注意**：
 
@@ -100,7 +100,7 @@ public class MsgCluster2Listener implements RocketMQListener<MessageExt> {
 
 查看效果：
 
-![image-20240328233805626](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202403282338339.png)
+![image-20240328233805626](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202403282338339.png)
 
 ## 广播模式
 
@@ -208,4 +208,4 @@ public class MsgBroad2Listener implements RocketMQListener<MessageExt>, RocketMQ
 
 查看效果：
 
-![image-20240328233730554](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202403282337444.png)
+![image-20240328233730554](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202403282337444.png)

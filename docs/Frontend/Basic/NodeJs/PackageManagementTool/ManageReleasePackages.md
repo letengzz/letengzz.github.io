@@ -26,7 +26,7 @@
 
 **问题**：
 
-![image-20231026205719680](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202310262057422.png)
+![image-20231026205719680](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202310262057422.png)
 
 **原因**：由于包名被使用
 

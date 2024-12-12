@@ -2,7 +2,7 @@
 
 安装官方推荐的`vscode`插件：
 
-![image-20241014111500415](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202410170001624.png) 
+![image-20241014111500415](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202410170001624.png) 
 
 总结：
 
@@ -12,11 +12,11 @@
 
 通过`Vue VSCode Snippets`快速生成模板：
 
-![image-20241014111807467](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202410170001303.png)
+![image-20241014111807467](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202410170001303.png)
 
 通过vbase来生成各类型模板：
 
-![image-20241014140852128](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202410170001578.png)
+![image-20241014140852128](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202410170001578.png)
 
 更多详见：https://marketplace.visualstudio.com/items?itemName=sdras.vue-vscode-snippets
 

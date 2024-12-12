@@ -68,13 +68,13 @@ SpringBoot 大多场景都无需自定义配置，包括：
 
    AutoConfigurationImportSelector底层实现步骤具体：
 
-   ![image.png](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202411252109113.png)
+   ![image.png](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202411252109113.png)
 
-   ![image.png](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202411252109257.png)
+   ![image.png](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202411252109257.png)
 
-   ![image.png](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202411252109426.png)
+   ![image.png](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202411252109426.png)
 
-   ![image.png](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202411252109345.png)
+   ![image.png](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202411252109345.png)
 
 6. 加载 `META-INF/spring/org.springframework.boot.autoconfigure.AutoConfiguration.imports` 文件中配置的所有组件
 
@@ -110,7 +110,7 @@ SpringBoot 大多场景都无需自定义配置，包括：
 
 在自动配置列表中找到web自动配置相关的类：
 
-![image.png](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202411252123043.png)
+![image.png](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202411252123043.png)
 
 以下就是web自动配置类列表：
 
@@ -129,23 +129,23 @@ org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration
 
 1. WebMvcAutoConfiguration
 
-   ![image.png](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202411252128302.png)
+   ![image.png](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202411252128302.png)
 
-   ![image.png](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202411252128835.png)
+   ![image.png](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202411252128835.png)
 
    ![image.png](https://cdn.nlark.com/yuque/0/2024/png/21376908/1729847268539-715a377a-ecb9-48fc-ad58-9194d23b7cdf.png?x-oss-process=image%2Fformat%2Cwebp)
 
 2. MultipartAutoConfiguration：
 
-   ![image.png](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202411252128566.png)
+   ![image.png](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202411252128566.png)
 
-   ![image.png](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202411252129369.png)
+   ![image.png](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202411252129369.png)
 
 3. HttpEncodingAutoConfiguration：
 
-   ![image.png](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202411252129852.png)
+   ![image.png](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202411252129852.png)
 
-   ![image.png](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202411252129717.png)
+   ![image.png](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202411252129717.png)
 
 4. ErrorMvcAutoConfiguration
 

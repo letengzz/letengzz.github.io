@@ -12,7 +12,7 @@
 
 如果下载不了，或下载比较慢，可以根据提示在在linux系统中直接采用wget指令下载：
 
-![image-20230514003127782](https://cdn.jsdelivr.net/gh/letengzz/Two-C@main/img/Java/202305140107182.png)
+![image-20230514003127782](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/Two-C/img/Java/202305140107182.png)
 
 ### 开启ssh
 
@@ -41,7 +41,7 @@ sudo systemctl start postfix
 sudo rpm -ivh /opt/module/software/gitlab-ce-15.7.0-ce.0.el7.x86_64.rpm
 ```
 
-![image-20230514003143828](https://cdn.jsdelivr.net/gh/letengzz/Two-C@main/img/Java/202305140107080.png)
+![image-20230514003143828](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/Two-C/img/Java/202305140107080.png)
 
 ## 安装方式二
 
@@ -107,11 +107,11 @@ sudo gitlab-ctl reconfigure
    vi  /etc/gitlab/gitlab.rb
    ```
 
-   ![image-20240330223603898](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202403302236309.png)
+   ![image-20240330223603898](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202403302236309.png)
 
    访问地址，如果出现502的问题，基本上是端口被占用，需要修改puma['port']=8080。默认是8080端口，修改为其他的端口，且不能和gitlab访问端口一样。
 
-   ![image-20240330223909728](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202403302239678.png)
+   ![image-20240330223909728](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202403302239678.png)
 
 2. 修改host：
 
@@ -181,11 +181,11 @@ sudo gitlab-ctl reconfigure
 
 访问GitLab 进入：http://centos/users/sign_in
 
-![image-20240330235420340](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202403302354872.png)
+![image-20240330235420340](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202403302354872.png)
 
 **注意**：当URL为主机名时在host中设置主机名及ip
 
-![image-20230514003740918](https://cdn.jsdelivr.net/gh/letengzz/Two-C@main/img/Java/202305140107910.png)
+![image-20230514003740918](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/Two-C/img/Java/202305140107910.png)
 
 初始化时，软件会提供默认管理员账户：root，但是密码是随机生成的。在/etc/gitlab/initial_root_password文件中查找密码
 
@@ -193,7 +193,7 @@ sudo gitlab-ctl reconfigure
 cat /etc/gitlab/initial_root_password
 ```
 
-![image-20240330235610219](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202403302356640.png)
+![image-20240330235610219](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202403302356640.png)
 
 
 
@@ -203,15 +203,15 @@ cat /etc/gitlab/initial_root_password
 
 使用此密码和用户名 `root` 登录，修改一下密码
 
-![image-20230514003756915](https://cdn.jsdelivr.net/gh/letengzz/Two-C@main/img/Java/202305140107749.png)
+![image-20230514003756915](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/Two-C/img/Java/202305140107749.png)
 
-![image-20230514003802544](https://cdn.jsdelivr.net/gh/letengzz/Two-C@main/img/Java/202305140107587.png)
+![image-20230514003802544](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/Two-C/img/Java/202305140107587.png)
 
 ## 设置简体中文
 
 点击右上角个人头像 -> preferences -> preferences-> Localization更改简体中文：
 
-![wps223](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202406131328090.jpg)
+![wps223](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202406131328090.jpg)
 
 回到首页，可以看到变成中文。
 

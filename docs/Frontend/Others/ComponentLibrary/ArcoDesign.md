@@ -1,6 +1,6 @@
 # ArcoDesign
 
-![image-20240206210641045](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202409281507010.png)
+![image-20240206210641045](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202409281507010.png)
 
 官方网站：https://arco.design/
 
@@ -49,11 +49,11 @@ arco init hello-arco-pro
 
 等待安装依赖，看到以下输出就是创建成功了
 
-![img](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202405082306987.png)
+![img](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202405082306987.png)
 
 **注意**：安装过程中出现： `arco-init  项目初始化失败！Error: spawnSync pnpm.cmd ENOENT` 说明未安装pnpm：
 
-![image-20240207185521358](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202405082306210.png)
+![image-20240207185521358](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202405082306210.png)
 
 安装pnpm：
 
@@ -65,7 +65,7 @@ npm install pnpm -g
 
 项目创建完成后：
 
-![image-20240207190031153](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202405082306551.png)
+![image-20240207190031153](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202405082306551.png)
 
 进入到项目中，运行代码
 
@@ -75,8 +75,8 @@ cd hello-arco-pro
 npm run dev
 ```
 
-![image-20240207190211102](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202405082306103.png)
+![image-20240207190211102](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202405082306103.png)
 
 打开 http://localhost:5174 就能看到如下页面：
 
-![image-20240207190236041](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202405082306666.png)
+![image-20240207190236041](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202405082306666.png)

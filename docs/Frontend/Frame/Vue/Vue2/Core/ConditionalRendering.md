@@ -43,7 +43,7 @@
 </html>
 ```
 
-![image-20240620222833318](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202406202228738.png)
+![image-20240620222833318](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202406202228738.png)
 
 ### v-else
 
@@ -220,7 +220,7 @@
 </html>
 ```
 
-![image-20240620223708926](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202406202237653.png)
+![image-20240620223708926](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202406202237653.png)
 
 ### v-if与v-show
 

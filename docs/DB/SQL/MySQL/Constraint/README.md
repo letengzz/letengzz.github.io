@@ -2,7 +2,7 @@
 
 **约束**是**作用于表中字段上**的**规则**，用于**限制存储在表中的数据**。 使用约束可以保证数据库中数据的正确、有效性以及完整性。可以在创建表或修改表的时候在表字段上添加约束。
 
-![image-20230911234825421](https://cdn.jsdelivr.net/gh/letengzz/tc2@main/img/Java/202309112348169.png)
+![image-20230911234825421](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img/Java/202309112348169.png)
 
 ## 普通约束
 
@@ -26,7 +26,7 @@ CREATE TABLE test(
 );
 ```
 
-![image-20230912003841054](https://cdn.jsdelivr.net/gh/letengzz/tc2@main/img/Java/202309120038513.png)
+![image-20230912003841054](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img/Java/202309120038513.png)
 
 #### 建表后指定约束
 
@@ -56,7 +56,7 @@ ALTER TABLE test ADD PRIMARY KEY (id);
 ALTER TABLE test MODIFY id int AUTO_INCREMENT;
 ```
 
-![image-20230912003955620](https://cdn.jsdelivr.net/gh/letengzz/tc2@main/img/Java/202309120040907.png)
+![image-20230912003955620](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img/Java/202309120040907.png)
 
 #### 插入测试
 
@@ -66,7 +66,7 @@ INSERT INTO test(name) VALUES ('李四');
 SELECT * FROM test;
 ```
 
-![image-20230912004618851](https://cdn.jsdelivr.net/gh/letengzz/tc2@main/img/Java/202309121037796.png)
+![image-20230912004618851](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img/Java/202309121037796.png)
 
 ### 唯一约束
 
@@ -81,7 +81,7 @@ CREATE TABLE test(
 );
 ```
 
-![image-20230912010004463](https://cdn.jsdelivr.net/gh/letengzz/tc2@main/img/Java/202309120100046.png)
+![image-20230912010004463](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img/Java/202309120100046.png)
 
 #### 建表后指定约束
 
@@ -103,7 +103,7 @@ CREATE TABLE test(
 ALTER TABLE test ADD UNIQUE(name);
 ```
 
-![image-20230912010053302](https://cdn.jsdelivr.net/gh/letengzz/tc2@main/img/Java/202309120100435.png)
+![image-20230912010053302](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img/Java/202309120100435.png)
 
 #### 插入测试
 
@@ -113,7 +113,7 @@ INSERT INTO test VALUES ('张三','张三');
 SELECT * FROM test;
 ```
 
-![image-20230912010208703](https://cdn.jsdelivr.net/gh/letengzz/tc2@main/img/Java/202309120102074.png)
+![image-20230912010208703](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img/Java/202309120102074.png)
 
 ### 默认约束
 
@@ -131,7 +131,7 @@ CREATE TABLE test(
 );
 ```
 
-![image-20230912105655568](https://cdn.jsdelivr.net/gh/letengzz/tc2@main/img/Java/202309121056960.png)
+![image-20230912105655568](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img/Java/202309121056960.png)
 
 #### 建表后指定约束
 
@@ -154,7 +154,7 @@ CREATE TABLE test(
 ALTER TABLE test MODIFY status int DEFAULT '1';
 ```
 
-![image-20230912105755300](https://cdn.jsdelivr.net/gh/letengzz/tc2@main/img/Java/202309121057581.png)
+![image-20230912105755300](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img/Java/202309121057581.png)
 
 #### 插入测试
 
@@ -164,7 +164,7 @@ INSERT INTO test(name,status) VALUES ('李四',2);
 SELECT * FROM test;
 ```
 
-![image-20230912110011594](https://cdn.jsdelivr.net/gh/letengzz/tc2@main/img/Java/202309121100537.png)
+![image-20230912110011594](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img/Java/202309121100537.png)
 
 ### 检查约束
 
@@ -182,7 +182,7 @@ CREATE TABLE test(
 );
 ```
 
-![image-20230912111409528](https://cdn.jsdelivr.net/gh/letengzz/tc2@main/img/Java/202309121114720.png)
+![image-20230912111409528](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img/Java/202309121114720.png)
 
 #### 建表后指定约束
 
@@ -205,7 +205,7 @@ CREATE TABLE test(
 ALTER TABLE test ADD CONSTRAINT age CHECK(age > 0 && age <= 120);
 ```
 
-![image-20230912111637041](https://cdn.jsdelivr.net/gh/letengzz/tc2@main/img/Java/202309121116577.png)
+![image-20230912111637041](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img/Java/202309121116577.png)
 
 #### 插入测试
 
@@ -215,7 +215,7 @@ INSERT INTO test(name,age,test) VALUES ('李四',150,150);
 SELECT * FROM test;
 ```
 
-![image-20230912112039870](https://cdn.jsdelivr.net/gh/letengzz/tc2@main/img/Java/202309121120126.png)
+![image-20230912112039870](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img/Java/202309121120126.png)
 
 ### 非空约束
 
@@ -230,7 +230,7 @@ CREATE TABLE test(
 );
 ```
 
-![image-20230912112809037](https://cdn.jsdelivr.net/gh/letengzz/tc2@main/img/Java/202309121128171.png)
+![image-20230912112809037](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img/Java/202309121128171.png)
 
 #### 建表后指定约束
 
@@ -252,7 +252,7 @@ CREATE TABLE test(
 ALTER TABLE test MODIFY name VARCHAR(20) NOT NULL;
 ```
 
-![image-20230912112857455](https://cdn.jsdelivr.net/gh/letengzz/tc2@main/img/Java/202309121128848.png)
+![image-20230912112857455](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img/Java/202309121128848.png)
 
 #### 插入测试
 
@@ -262,7 +262,7 @@ INSERT INTO test(name,test) VALUES ('张三','张三');
 SELECT * FROM test;
 ```
 
-![image-20230912113015276](https://cdn.jsdelivr.net/gh/letengzz/tc2@main/img/Java/202309121130508.png)
+![image-20230912113015276](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img/Java/202309121130508.png)
 
 ## 外键约束
 
@@ -275,7 +275,7 @@ SELECT * FROM test;
 
 左侧的emp表是员工表，里面存储员工的基本信息，包含员工的ID、姓名、年龄、职位、薪资、入职日期、上级主管ID、部门ID，在员工的信息中存储的是部门的ID dept_id，而这个部门的ID是关联的 部门表dept的主键id，emp表的dept_id就是外键,关联的是另一张dept表的主键。
 
-![image-20230912144737805](https://cdn.jsdelivr.net/gh/letengzz/tc2@main/img/Java/202309121858265.png)
+![image-20230912144737805](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img/Java/202309121858265.png)
 
 两张表之间存在着一种关联关系，但它们只是在逻辑上存在这样一层关系；在数据库层面，并未建立外键关联。也就说emp表中的dept_id值可以为任意数值，即是dept表中不存在。而dept表中字段被emp使用了也可以随意删除。 因此无法保证数据的一致性和完整性的。这时候就需要严格的进行手动维护或者使用外键约束。
 
@@ -320,9 +320,9 @@ CREATE TABLE emp(
 )COMMENT '员工表';
 ```
 
-![image-20230912150021819](https://cdn.jsdelivr.net/gh/letengzz/tc2@main/img/Java/202309121502312.png)
+![image-20230912150021819](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img/Java/202309121502312.png)
 
-![image-20230912150205212](https://cdn.jsdelivr.net/gh/letengzz/tc2@main/img/Java/202309121502081.png)
+![image-20230912150205212](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img/Java/202309121502081.png)
 
 #### 建表后添加
 
@@ -354,9 +354,9 @@ CREATE TABLE emp(
 ALTER TABLE emp ADD CONSTRAINT fk_dept_id FOREIGN KEY (dept_id) REFERENCES dept(id);
 ```
 
-![image-20230912150808431](https://cdn.jsdelivr.net/gh/letengzz/tc2@main/img/Java/202309121509157.png)
+![image-20230912150808431](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img/Java/202309121509157.png)
 
-![image-20230912150934426](https://cdn.jsdelivr.net/gh/letengzz/tc2@main/img/Java/202309121509907.png)
+![image-20230912150934426](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img/Java/202309121509907.png)
 
 #### 外键测试
 
@@ -371,7 +371,7 @@ DELETE FROM emp WHERE dept_id = 1;
 DELETE FROM dept WHERE id = 1;
 ```
 
-![image-20230912152116879](https://cdn.jsdelivr.net/gh/letengzz/tc2@main/img/Java/202309121521470.png)
+![image-20230912152116879](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img/Java/202309121521470.png)
 
 ### 删除外键
 
@@ -381,15 +381,15 @@ DELETE FROM dept WHERE id = 1;
 ALTER TABLE  表名   DROP  FOREIGN  KEY  外键名称;
 ```
 
-![image-20230912152326971](https://cdn.jsdelivr.net/gh/letengzz/tc2@main/img/Java/202309121530518.png)
+![image-20230912152326971](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img/Java/202309121530518.png)
 
-![image-20230912153054919](https://cdn.jsdelivr.net/gh/letengzz/tc2@main/img/Java/202309121530497.png)
+![image-20230912153054919](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img/Java/202309121530497.png)
 
 ### 删除/更新行为
 
 在添加了外键之后，再删除**父表数据**时产生的约束行为，就称为删除/更新行为。具体的删除/更新行为有以下几种:
 
-![image-20230912154450928](https://cdn.jsdelivr.net/gh/letengzz/tc2@main/img/Java/202309121544333.png)
+![image-20230912154450928](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img/Java/202309121544333.png)
 
 **注意**：`NO ACTION`与`RESTRICT`为外键约束的默认行为，也就是在一些情况下阻止删除/更新数据，添加外键时默认生效。如果需要修改为其他几种行为则需要在添加外键时手动设置。
 
@@ -421,8 +421,8 @@ ALTER TABLE  表名  ADD CONSTRAINT  外键名称  FOREIGN KEY  (外键字段)  
   SELECT * FROM dept;
   ```
 
-  ![image-20230912184640377](https://cdn.jsdelivr.net/gh/letengzz/tc2@main/img/Java/202309121858531.png)
-  ![image-20230912184405708](https://cdn.jsdelivr.net/gh/letengzz/tc2@main/img/Java/202309121846480.png)
+  ![image-20230912184640377](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img/Java/202309121858531.png)
+  ![image-20230912184405708](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img/Java/202309121846480.png)
 
 - `SET NULL`行为：
 
@@ -443,6 +443,6 @@ ALTER TABLE  表名  ADD CONSTRAINT  外键名称  FOREIGN KEY  (外键字段)  
   SELECT * FROM emp;
   ```
 
-  ![image-20230912185431478](https://cdn.jsdelivr.net/gh/letengzz/tc2@main/img/Java/202309122124233.png)
+  ![image-20230912185431478](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img/Java/202309122124233.png)
 
-![image-20230912185755099](https://cdn.jsdelivr.net/gh/letengzz/tc2@main/img/Java/202309121858203.png)
+![image-20230912185755099](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img/Java/202309121858203.png)

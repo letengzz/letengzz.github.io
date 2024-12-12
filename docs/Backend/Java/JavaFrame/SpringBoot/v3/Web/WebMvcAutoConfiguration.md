@@ -134,7 +134,7 @@ public interface WebMvcConfigurer {
 
 提供了配置SpringMVC底层的所有组件入口：
 
-![img](https://cdn.jsdelivr.net/gh/letengzz/Two-C@main/img/Java/202308011535530.png)
+![img](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/Two-C/img/Java/202308011535530.png)
 
 ## WebMvcAutoConfigurationAdapter
 
@@ -142,13 +142,13 @@ WebMvcConfigurer接口的实现类WebMvcAutoConfigurationAdapter。
 
 WebMvcAutoConfigurationAdapter是Spring Boot框架提供的，实现了Spring MVC中的WebMvcConfigurer接口，对Spring MVC的所有行为进行了默认的配置：
 
-![image.png](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202411252205808.png)
+![image.png](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202411252205808.png)
 
 可以看到，该类上有一个注解`@EnableConfigurationProperties({ WebMvcProperties.class, WebProperties.class })`，该注解负责启用配置属性。会将配置文件application.properties或application.yml中的配置传递到该类中。因此可以通过application.properties或application.yml配置文件来改变Spring Boot对SpringMVC的默认配置。WebMvcProperties和WebProperties源码： 
 
-![image.png](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202411252205904.png)
+![image.png](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202411252205904.png)
 
-![image.png](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202411252205068.png)
+![image.png](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202411252205068.png)
 
 通过以上源码得知要改变SpringBoot对SpringMVC的默认配置，需要在配置文件中使用以下前缀的配置：
 
@@ -257,17 +257,17 @@ public static class EnableWebMvcConfiguration extends DelegatingWebMvcConfigurat
 
 在SpringBoot框架的WebMvcAutoConfiguration类中提供了一个内部类：WebMvcAutoConfigurationAdapter
 
-![image.png](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202411252205067.png)
+![image.png](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202411252205067.png)
 
 WebMvcAutoConfiguration类的内部类EnableWebMvcConfiguration，这个类继承了DelegatingWebMvcConfiguration（Delegating是委派的意思。）
 
-![image.png](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202411252206195.png)
+![image.png](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202411252206195.png)
 
 DelegatingWebMvcConfiguration中的setConfigurers()方法用来设置配置。而配置参数是一个List集合，这个List集合中存放的是WebMvcConfigurer接口的实例，并且可以看到这个方法上面使用了@Autowired进行了自动注入，这也就是说为什么只要是IoC容器中的组件就能生效的原因。
 
 再次进入到this.configurers.addWebMvcConfigurers(configurers);方法中进一步查看源码：
 
-![image.png](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202411252205128.png)
+![image.png](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202411252205128.png)
 
 对于WebMvcConfigurerComposite类的代码来说，它是一个非常典型的组合模式。
 

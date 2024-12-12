@@ -8,7 +8,7 @@ sudo launchctl unload -F /Library/LaunchDaemons/com.oracle.oss.mysql.mysqld.plis
 
 或在设置中停止服务：
 
-![image-20240704221823340](https://cdn.jsdelivr.net/gh/letengzz/tc2/img/202407042218735.png)
+![image-20240704221823340](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img/202407042218735.png)
 
 查看MySQL路径：
 
@@ -24,7 +24,7 @@ brew uninstall mysql
 
 或在设置中卸载：
 
-![image-20240704222011818](https://cdn.jsdelivr.net/gh/letengzz/tc2/img/202407042220328.png)
+![image-20240704222011818](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img/202407042220328.png)
 
 删除MySQL数据文件夹，运行以下命令：删除MySQL的数据文件
 

@@ -6,21 +6,21 @@
 
 **说明**："GA" 是 "General Availability" 的缩写，通常表示软件的正式发布版本，即最新的稳定版本。
 
-![image-20240704201822707](https://cdn.jsdelivr.net/gh/letengzz/tc2/img/202407042245456.png)
+![image-20240704201822707](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img/202407042245456.png)
 
 双击mysql8的安装向导：
 
-![1703050965495](https://cdn.jsdelivr.net/gh/letengzz/tc2/img/202407042200639.png)
+![1703050965495](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img/202407042200639.png)
 
 安装和密码配置：
 
-![1703051078057](https://cdn.jsdelivr.net/gh/letengzz/tc2/img/202407042201603.png)
+![1703051078057](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img/202407042201603.png)
 
 配置信息：
 
-![1703051193588](https://cdn.jsdelivr.net/gh/letengzz/tc2/img/202407042201527.png)
+![1703051193588](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img/202407042201527.png)
 
-![1703051261547](https://cdn.jsdelivr.net/gh/letengzz/tc2/img/202407042202121.png)
+![1703051261547](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img/202407042202121.png)
 
 ## MySQL数据库服务的启动和停止
 
@@ -32,13 +32,13 @@ MySQL软件的服务器端必须先启动，客户端才可以连接和使用使
 
 * 找到mysql服务
 
-  ![1703051722457](https://cdn.jsdelivr.net/gh/letengzz/tc2/img/202407042202272.png)
+  ![1703051722457](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img/202407042202272.png)
 
 ## MySQL数据库环境变量的配置
 
 打开终端，输入mysql，下面情况证明MYSQL环境变量问题！
 
-![image-20240704220422547](https://cdn.jsdelivr.net/gh/letengzz/tc2/img/202407042204138.png)
+![image-20240704220422547](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img/202407042204138.png)
 
 打开终端配置MySQL环境：[mac环境变量文件在登录用户文件夹下/.bash_profile]
 

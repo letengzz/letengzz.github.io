@@ -24,7 +24,7 @@
 
 ## 运行原理
 
-![运行原理.png](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202406202049756.png)
+![运行原理.png](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202406202049756.png)
 
 ## 编写APP组件
 
@@ -32,11 +32,11 @@
 
 index.html为项目的入口文件，在项目的最外层，主要将main.ts引入：
 
-![image-20240131000503248](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202401310005377.png)
+![image-20240131000503248](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202401310005377.png)
 
 加载`index.html`后，`Vite` 解析 `<script type="module" src="xxx">` 指向的`TypeScript`。通过main.ts引入样式，通过createApp创建应用实例设置App为根组件，并挂载App组件到#app元素上：
 
-![image-20240131000943148](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202402052208664.png)
+![image-20240131000943148](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202402052208664.png)
 
 将src目录全部删除。
 
@@ -190,7 +190,7 @@ declare module '*.vue' {
 
 运行 `npm run dev` 并访问：http://localhost:5174/
 
-![image-20240131005349510](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202401310053711.png)
+![image-20240131005349510](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202401310053711.png)
 
 ## 修改端口号
 

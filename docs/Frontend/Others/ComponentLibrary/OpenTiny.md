@@ -6,17 +6,17 @@ OpenTiny 是一个由华为开源的轻量级 Vue 组件库，同时支持 Vue 2
 
 部分组件预览：
 
-![图片](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202409281730261.png)
+![图片](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202409281730261.png)
 
-![图片](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202409281730296.webp)
+![图片](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202409281730296.webp)
 
-![图片](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202409281730052.webp)
+![图片](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202409281730052.webp)
 
-![图片](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202409281730428.webp)
+![图片](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202409281730428.webp)
 
-![图片](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202409281730340.webp)
+![图片](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202409281730340.webp)
 
-![图片](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202409281730614.webp)
+![图片](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202409281730614.webp)
 
 使用组件：
 

@@ -4,4 +4,4 @@
 
 插件安装：
 
-![image-20220225153946727](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202407102110401.png)
+![image-20220225153946727](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202407102110401.png)

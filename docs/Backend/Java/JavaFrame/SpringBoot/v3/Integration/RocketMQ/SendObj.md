@@ -96,4 +96,4 @@ public class ObjectMsgListener implements RocketMQListener<Order> {
 }
 ```
 
-![image-20240329224222408](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202403292242257.png)
+![image-20240329224222408](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202403292242257.png)

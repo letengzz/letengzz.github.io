@@ -1,6 +1,6 @@
 # Git
 
-![image-20230513221400636](https://cdn.jsdelivr.net/gh/letengzz/Two-C@main/img/Java/202305140056996.png)
+![image-20230513221400636](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/Two-C/img/Java/202305140056996.png)
 
 - [Git 概述](Overview.md)
 

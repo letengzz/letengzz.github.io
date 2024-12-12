@@ -56,7 +56,7 @@ brew services stop redis
 
 在[官方网站](https://redis.io/download/)中下载即可：
 
-![image-20240309184632287](https://cdn.jsdelivr.net/gh/letengzz/tc2@main/img202403091846901.png)
+![image-20240309184632287](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202403091846901.png)
 
 ## 修改配置文件
 
@@ -68,15 +68,15 @@ vi /usr/local/etc/redis.conf
 
 默认`daemonize no` 改为 `daemonize yes`：设置后台启动
 
-![image-20240501154741763](https://cdn.jsdelivr.net/gh/letengzz/tc2@main/img202405011549237.png)
+![image-20240501154741763](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202405011549237.png)
 
 默认`protected-mode yes` 改为 `protected-mode no`：关闭保护模式
 
-![image-20240501155013907](https://cdn.jsdelivr.net/gh/letengzz/tc2@main/img202405011550462.png)
+![image-20240501155013907](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202405011550462.png)
 
 添加redis密码 改为 requirepass 你自己设置的密码
 
-![image-20240501155143447](https://cdn.jsdelivr.net/gh/letengzz/tc2@main/img202405011551891.png)
+![image-20240501155143447](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202405011551891.png)
 
 启动Redis服务端：
 

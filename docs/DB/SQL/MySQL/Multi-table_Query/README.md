@@ -15,7 +15,7 @@
 
 实现方式：**通常会在 '多' 的一方建立外键，指向 '一' 的一方的主键**
 
-![image-20230913125410187](https://cdn.jsdelivr.net/gh/letengzz/tc2@main/img/Java/202309131524346.png)
+![image-20230913125410187](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img/Java/202309131524346.png)
 
 ## 多对多
 
@@ -23,7 +23,7 @@
 关系介绍：一个学生可以选修多门课程，一门课程也可以供多个学生选择
 实现方式：**建立第三张中间表，中间表至少包含两个外键，分别关联两方主键**
 
-![image-20230913145919870](https://cdn.jsdelivr.net/gh/letengzz/tc2@main/img/Java/202309131500098.png)
+![image-20230913145919870](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img/Java/202309131500098.png)
 
 ## 一对一
 
@@ -31,7 +31,7 @@
 关系介绍：一对一关系，多用于单表拆分，将一张表的基础字段放在一张表中，其他详情字段放在另 一张表中，以提升操作效率
 实现方式：**在任意一方加入外键，关联另外一方的主键，并且设置外键为唯一的 (UNIQUE)**
 
-![image-20230913152356166](https://cdn.jsdelivr.net/gh/letengzz/tc2@main/img/Java/202309131633356.png)
+![image-20230913152356166](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img/Java/202309131633356.png)
 
 # 多表查询
 
@@ -51,18 +51,18 @@ SELECT 字段列表 FROM 表名1, 表名2;
 
 **问题**：同时查到了多张表的数据，但是数据形式排列组合了两张表中的所有数据项
 
-![image-20230913153717956](https://cdn.jsdelivr.net/gh/letengzz/tc2@main/img/Java/202309131633119.png)
+![image-20230913153717956](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img/Java/202309131633119.png)
 
 **例**：查询员工、部门表，本来预期是每个员工对应其所在的部门，但事实确实，每个员工都对应了所有部门。这种现象也称之为 **笛卡尔积** 
 
-![image-20230913155833752](https://cdn.jsdelivr.net/gh/letengzz/tc2@main/img/Java/202309131558077.png)
+![image-20230913155833752](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img/Java/202309131558077.png)
 
 
 因此，在多表查询中，需要根据业务情况进行连接查询，消除无效的笛卡尔积，只保留两张表关联部分的有效数据。
 
 可以通过`表名.字段名`指定员工表的外键等于部门表的主键即可获得预期数据
 
-![image-20230913160247056](https://cdn.jsdelivr.net/gh/letengzz/tc2@main/img/Java/202309131602344.png)
+![image-20230913160247056](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img/Java/202309131602344.png)
 
 **说明**：
 
@@ -76,7 +76,7 @@ SELECT 字段列表 FROM 表名1, 表名2;
 
 内连接查询的是两张表交集部分的数据。
 
-![image-20230913161710799](https://cdn.jsdelivr.net/gh/letengzz/tc2@main/img/Java/202309131617329.png)
+![image-20230913161710799](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img/Java/202309131617329.png)
 
 语法分为：
 
@@ -99,7 +99,7 @@ SELECT 字段列表 FROM 表1,表2 WHERE 限制条件;
 SELECT e.name,d.name FROM emp e,dept d WHERE e.dept_id = d.id;
 ```
 
-![image-20230913162938159](https://cdn.jsdelivr.net/gh/letengzz/tc2@main/img/Java/202309131633718.png)
+![image-20230913162938159](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img/Java/202309131633718.png)
 
 ### 显式外连接
 
@@ -117,7 +117,7 @@ SELECT 字段列表 FROM 表1 [ INNER ] JOIN 表2 ON 连接条件 ... ;
 SELECT e.name, d.name FROM emp e INNER JOIN dept d ON e.dept_id = d.id;
 ```
 
-![image-20230913163243902](https://cdn.jsdelivr.net/gh/letengzz/tc2@main/img/Java/202309131632236.png)
+![image-20230913163243902](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img/Java/202309131632236.png)
 
 ## 外连接
 
@@ -126,7 +126,7 @@ SELECT e.name, d.name FROM emp e INNER JOIN dept d ON e.dept_id = d.id;
 - 左外连接：左外连接相当于查询表1(左表)的所有数据，当然也包含表1和表2交集部分的数据
 - 右外连接：右外连接相当于查询表2(右表)的所有数据，当然也包含表1和表2交集部分的数据
 
-![image-20230913163741488](https://cdn.jsdelivr.net/gh/letengzz/tc2@main/img/Java/202309131804712.png)
+![image-20230913163741488](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img/Java/202309131804712.png)
 
 ### 左外连接
 
@@ -146,7 +146,7 @@ SELECT e.*, d.name FROM emp e LEFT OUTER JOIN dept d ON e.dept_id = d.id;
 
 **说明**：内连接则无法查询到null，因为外连接会获取到一张表的全部数据，而内连接只获取交集部分数据。
 
-![image-20230913164514558](https://cdn.jsdelivr.net/gh/letengzz/tc2@main/img/Java/202309131817046.png)
+![image-20230913164514558](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img/Java/202309131817046.png)
 
 ### 右外连接
 
@@ -166,7 +166,7 @@ SELECT e.*, d.name FROM emp e RIGHT OUTER JOIN dept d ON e.dept_id = d.id;
 
 **说明**：通常左外连接和右外连接是可以相互替换的，只需要调整在连接查询时SQL中，表结构的先后顺序就可以了。**在日常开发使用时，更偏向于左外连接。**
 
-![image-20230913164904980](https://cdn.jsdelivr.net/gh/letengzz/tc2@main/img/Java/202309131817420.png)
+![image-20230913164904980](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img/Java/202309131817420.png)
 
 ## 自连接
 
@@ -188,7 +188,7 @@ SELECT 字段列表 FROM 表A 别名A JOIN 表A 别名B ON 条件 ... ;
 SELECT a.name '员工', b.name '领导' FROM emp a LEFT JOIN emp b ON a.managerid = b.id;
 ```
 
-![image-20230913171538946](https://cdn.jsdelivr.net/gh/letengzz/tc2@main/img/Java/202309131715228.png)
+![image-20230913171538946](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img/Java/202309131715228.png)
 
 ## 联合查询
 
@@ -219,7 +219,7 @@ SELECT * FROM emp WHERE age > 30;
 
 UNION ALL 查询出来的结果，仅仅只对数据集进行简单的合并，查询结果中可能会存在重复数据项，使用UNION 即可去除重复数据项。
 
-![image-20230913172651072](https://cdn.jsdelivr.net/gh/letengzz/tc2@main/img/Java/202309131727306.png)
+![image-20230913172651072](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img/Java/202309131727306.png)
 
 ## 子查询
 
@@ -264,7 +264,7 @@ SELECT * FROM t1 WHERE column1 = (SELECT column1 FROM t2);
   select * from emp where dept_id = (select id from dept where name = '研发部');
   ```
 
-![image-20230913173535416](https://cdn.jsdelivr.net/gh/letengzz/tc2@main/img/Java/202309131804359.png)
+![image-20230913173535416](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img/Java/202309131804359.png)
 
 ### 列子查询
 
@@ -298,9 +298,9 @@ SELECT * FROM t1 WHERE column1 = (SELECT column1 FROM t2);
   (select id from dept where name = '市场部') );
   ```
 
-![image-20230913181308713](https://cdn.jsdelivr.net/gh/letengzz/tc2@main/img/Java/202309131813277.png)
+![image-20230913181308713](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img/Java/202309131813277.png)
 
-![image-20230913181400591](https://cdn.jsdelivr.net/gh/letengzz/tc2@main/img/Java/202309131816696.png)
+![image-20230913181400591](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img/Java/202309131816696.png)
 
 ### 行子查询
 
@@ -327,9 +327,9 @@ SELECT * FROM t1 WHERE column1 = (SELECT column1 FROM t2);
   where name = '张无忌');
   ```
 
-![image-20230913175139373](https://cdn.jsdelivr.net/gh/letengzz/tc2@main/img/Java/202309131752376.png)
+![image-20230913175139373](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img/Java/202309131752376.png)
 
-![image-20230913175237011](https://cdn.jsdelivr.net/gh/letengzz/tc2@main/img/Java/202309131753160.png)
+![image-20230913175237011](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img/Java/202309131753160.png)
 
 ### 表子查询
 
@@ -355,6 +355,6 @@ SELECT * FROM t1 WHERE column1 = (SELECT column1 FROM t2);
   select * from emp where (job,salary) in (select job, salary from emp where name = '鹿杖客' or name = '宋远桥');
   ```
 
-![image-20230913180030595](https://cdn.jsdelivr.net/gh/letengzz/tc2@main/img/Java/202309131814822.png)
+![image-20230913180030595](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img/Java/202309131814822.png)
 
-![image-20230913180129006](https://cdn.jsdelivr.net/gh/letengzz/tc2@main/img/Java/202309131814738.png)
+![image-20230913180129006](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img/Java/202309131814738.png)

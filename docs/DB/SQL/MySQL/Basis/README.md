@@ -18,7 +18,7 @@
 
 **注意**：`DECIMAL`中**M(精度)表示整个数值长度，D(标度)表示小数位长度**。例如：123.45。M=5,D=2。
 
-![image-20230909210942414](https://cdn.jsdelivr.net/gh/letengzz/tc2@main/img/Java/202309092109519.png)
+![image-20230909210942414](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img/Java/202309092109519.png)
 
 ### 字符串类型
 
@@ -30,17 +30,17 @@
 
   相对来说，CHAR 的性能会更高些，而varchar相对更节省存储空间。
 
-![image-20230909211120960](https://cdn.jsdelivr.net/gh/letengzz/tc2@main/img/Java/202309092111809.png)
+![image-20230909211120960](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img/Java/202309092111809.png)
 
 ### 日期时间类型
 
-![image-20230909150546272](https://cdn.jsdelivr.net/gh/letengzz/tc2@main/img/Java/202309091505145.png)
+![image-20230909150546272](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img/Java/202309091505145.png)
 
 ## SQL语句
 
 SQL语句，根据其功能，主要分为四类：`DDL`、`DML`、`DQL`、`DCL`：
 
-![image-20230909211225965](https://cdn.jsdelivr.net/gh/letengzz/tc2@main/img/Java/202309092112787.png)
+![image-20230909211225965](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img/Java/202309092112787.png)
 
 - [数据定义语言 DDL](Statement/DDL.md)
 - [数据操作语言 DML](Statement/DML.md)

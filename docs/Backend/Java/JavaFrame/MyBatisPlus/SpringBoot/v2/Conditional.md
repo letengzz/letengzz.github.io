@@ -4,7 +4,7 @@
 
 通过观察BaseMapper中的方法，大多方法中都有Wrapper类型的形参，此为条件构造器，可针对于SQL语句设置不同的条件，若没有条件，则可以为该形参赋值null，即查询（删除/修改）所有数据
 
-![image-20230225222850348](https://cdn.jsdelivr.net/gh/letengzz/Two-C@main/img/Java/202302261313615.png)
+![image-20230225222850348](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/Two-C/img/Java/202302261313615.png)
 
 - Wrapper ： 条件构造抽象类，最顶端父类 
   - AbstractWrapper ： 用于查询条件封装，生成 sql 的 where 条件

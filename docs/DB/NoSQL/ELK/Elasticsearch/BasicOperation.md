@@ -27,7 +27,7 @@ GET /_analyze
 
 官方文档：https://www.elastic.co/guide/en/elasticsearch/reference/current/mapping-params.html
 
-![image-20231228204050135](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202312282040369.png)
+![image-20231228204050135](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202312282040369.png)
 
 mapping是对索引库总文档的约束。
 
@@ -94,7 +94,7 @@ PUT /索引库名称
 
 **例**：
 
-![image-20231228213214372](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202312282132942.png)
+![image-20231228213214372](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202312282132942.png)
 
 字段名和数据类型可以根据数据库来创建。是否搜索、是否分词：与业务强相关，根据业务来指定。
 
@@ -102,13 +102,13 @@ PUT /索引库名称
 
 - 定义id 不能定义为long，在id这个字段都是字符串类型，又因为是个整体不可分割，将来不会分词，所以选择字符串中的keyword 类型。
 
-  ![image-20231228234409873](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202312282344948.png)
+  ![image-20231228234409873](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202312282344948.png)
 
 - 当多个单词构成时，使用驼峰命名
 
 - 根据多个字段搜索，多个值在es 可以使用`copy_to`属性将当前字段拷贝到指定字段
 
-  ![image-20231228235549954](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202312282355460.png)
+  ![image-20231228235549954](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202312282355460.png)
 
 Elasticsearch在处理地理位置(经纬度)信息时，支持两种地理坐标数据类型：
 
@@ -125,7 +125,7 @@ GET /索引库名
 
 **例**：
 
-![image-20231228213719418](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202312282137524.png)
+![image-20231228213719418](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202312282137524.png)
 
 ### 删除索引库
 
@@ -137,7 +137,7 @@ DELETE /索引库名
 
 **例**：
 
-![image-20231228214337714](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202312282143019.png)
+![image-20231228214337714](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202312282143019.png)
 
 ### 修改索引库
 
@@ -160,7 +160,7 @@ PUT /索引库名/_mapping
 
 **例**：
 
-![image-20231228215031607](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202312282150262.png)
+![image-20231228215031607](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202312282150262.png)
 
 ## 文档操作
 
@@ -191,7 +191,7 @@ POST /索引库名/_doc/文档id
 
 **例**：
 
-![image-20231228220912487](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202312282209244.png)
+![image-20231228220912487](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202312282209244.png)
 
 ### 查询文档
 
@@ -215,11 +215,11 @@ GET /索引库名/_search
 
 **例**：
 
-![image-20231228221056963](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202312282211929.png)
+![image-20231228221056963](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202312282211929.png)
 
 当删除或查询不存在的数据时，会报404：
 
-![image-20231228221422847](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202312282214923.png)
+![image-20231228221422847](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202312282214923.png)
 
 ### 删除文档
 
@@ -231,7 +231,7 @@ DELETE /索引库名/_doc/文档id
 
 **例**：
 
-![image-20231228221250010](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202312282212572.png)
+![image-20231228221250010](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202312282212572.png)
 
 ### 修改文档
 
@@ -263,7 +263,7 @@ PUT /索引库名/_doc/文档id
 
 **例**：
 
-![image-20231228222237847](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202312282222753.png)
+![image-20231228222237847](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202312282222753.png)
 
 #### 局部修改
 
@@ -280,7 +280,7 @@ POST /索引库名/_update/文档id
 
 **例**：
 
-![image-20231228222354416](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202312282223330.png)
+![image-20231228222354416](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202312282223330.png)
 
 ## 查询操作
 
@@ -330,7 +330,7 @@ GET /hotel/_search
 }
 ```
 
-![image-20231230141837884](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202312301418793.png)
+![image-20231230141837884](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202312301418793.png)
 
 - took：花费的时间
 - timed_out：是否超时
@@ -342,7 +342,7 @@ GET /hotel/_search
 
 全文检索查询，会对用户输入内容分词，常用于搜索框搜索。
 
-![image-20231230142300881](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202312301423337.png)
+![image-20231230142300881](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202312301423337.png)
 
 #### match查询
 
@@ -363,7 +363,7 @@ GET /indexName/_search
 }
 ```
 
-![image-20231231162431439](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202312311624261.png)
+![image-20231231162431439](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202312311624261.png)
 
 - took：花费的时间
 - timed_out：是否超时
@@ -391,7 +391,7 @@ GET /indexName/_search
 }
 ```
 
-![image-20231231164855610](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202312311648022.png)
+![image-20231231164855610](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202312311648022.png)
 
 ### 精确查询
 
@@ -419,7 +419,7 @@ GET /indexName/_search
 }
 ```
 
-![image-20231231170353937](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202312311703144.png)
+![image-20231231170353937](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202312311703144.png)
 
 ****
 
@@ -444,7 +444,7 @@ GET /hotel/_search
 - `gte`：大于等于 
 - `lte`：小于等于
 
-![image-20231231170438178](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202312311704836.png)
+![image-20231231170438178](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202312311704836.png)
 
 ### 地理查询
 
@@ -490,9 +490,9 @@ GET /hotel/_search
   }
   ```
 
-![image-20240101155454851](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202401011554590.png)
+![image-20240101155454851](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202401011554590.png)
 
-![image-20240101155852678](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202401011558162.png)
+![image-20240101155852678](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202401011558162.png)
 
 ### 复合查询
 
@@ -506,9 +506,9 @@ GET /hotel/_search
 - `TF-IDF`：在Elasticsearch5.0之前，会随着词频增加而越来越大
 - `BM25`：在Elasticsearch5.0之后，会随着词频增加而增大，但增长曲线会趋于水平
 
-![image-20240101154947855](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202404091749188.png)
+![image-20240101154947855](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202404091749188.png)
 
-![img](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202404091749760.jpeg)
+![img](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202404091749760.jpeg)
 
 #### Function Score Query
 
@@ -522,7 +522,7 @@ GET /hotel/_search
 - **算分函数**：如何计算function score
 - **加权方式**：function score 与 query score 如何运算
 
-![image-20240101163856506](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202401011638929.png)
+![image-20240101163856506](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202401011638929.png)
 
 ```
 GET /hotel/_search
@@ -550,7 +550,7 @@ GET /hotel/_search
 }
 ```
 
-![image-20240101162928092](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202401011629069.png)
+![image-20240101162928092](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202401011629069.png)
 
 #### Boolean Query
 
@@ -602,7 +602,7 @@ GET /hotel/_search
 }
 ```
 
-![image-20240101164856880](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202401011648139.png)
+![image-20240101164856880](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202401011648139.png)
 
 ## 排序
 
@@ -651,9 +651,9 @@ GET /indexName/_search
 }
 ```
 
-![image-20240101151642672](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202401011516910.png)
+![image-20240101151642672](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202401011516910.png)
 
-![image-20240101152157467](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202401011521935.png)
+![image-20240101152157467](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202401011521935.png)
 
 ## 分页
 
@@ -691,7 +691,7 @@ Elasticsearch是分布式的，所以会面临深度分页问题。
 - 将所有节点的结果聚合，在内存中重新排序选出前1000条文档
 - 最后从这1000条中，选取从990开始的10条文档
 
-![image-20231230145318251](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202404091749138.png)
+![image-20231230145318251](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202404091749138.png)
 
 如果搜索页数过深，或者结果集 (from+size)越大，对内存和CPU的消耗也越高。因此Elasticsearch设定的结果集查询的上限是10000
 
@@ -748,5 +748,5 @@ GET /hotel/_search
 }
 ```
 
-![image-20231231173723404](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202312311737635.png)
+![image-20231231173723404](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202312311737635.png)
 

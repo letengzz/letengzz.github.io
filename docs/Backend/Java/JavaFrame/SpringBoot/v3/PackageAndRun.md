@@ -75,11 +75,11 @@
 
 在IDEA点击package或使用 `mvn package`命令进行打包。
 
-![image-20231216230527114](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202312162305163.png)
+![image-20231216230527114](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202312162305163.png)
 
 可以在编译的target文件中查看jar包：
 
-![image-20231216231634785](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202312162317560.png)
+![image-20231216231634785](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202312162317560.png)
 
 ## 命令启动和参数说明
 
@@ -101,7 +101,7 @@ java -jar  [选项] [参数] <jar文件名>
 
 启动和测试：
 
-![image-20231217010256758](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202312170102831.png)
+![image-20231217010256758](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202312170102831.png)
 
 **注意**： -D 参数必须要在jar之前！否者不生效！
 
@@ -131,11 +131,11 @@ nohup java -jar <jar文件名> > output.log 2>&1 &
 
 分析 jar，我们可以看出，jar 包里面分为以下三个模块
 
-![图片](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202403291834471.png)
+![图片](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202403291834471.png)
 
 分为 `BOOT-INF`，`META-INF`，org 三个部分，打开 `BOOT-INF`
 
-![图片](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202403291834442.webp)
+![图片](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202403291834442.webp)
 
 可以看到有 classes，lib 两个文件夹，我们编译好的代码是放在 classes 里面的，而我们所依赖的 jar 包都是放在 lib 文件夹下
 
@@ -203,13 +203,13 @@ classes 部分是非常小的，lib部分是非常大的，所以上传很慢
 
 再次点击` maven package`，得到一个 jar 包，可以看到此时的 jar 包只有几兆了
 
-![image-20240329183319446](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202403291833159.png)
+![image-20240329183319446](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202403291833159.png)
 
 ### 上传启动
 
 将 lib 目录，以及最后打包的瘦身项目 jar 包，上传至服务器，目录如下
 
-![图片](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202403291833893.png)
+![图片](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202403291833893.png)
 
 使用命令：
 

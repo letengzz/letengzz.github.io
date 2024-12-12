@@ -6,7 +6,7 @@
 
 在运行MySQL8.0软件安装包之前，用户需要确保系统中已经安装了.Net Framework相关软件，如果缺少此软件，将不能正常地安装MySQL8.0软件
 
-![image-20211127170411358](https://cdn.jsdelivr.net/gh/letengzz/tc2/img/202407042039940.png)
+![image-20211127170411358](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img/202407042039940.png)
 
 解决方案：到这个地址https://www.microsoft.com/en-us/download/details.aspx?id=42642下载Microsoft .NET Framework 4.5并安装后，再去安装MySQL。
 
@@ -14,11 +14,11 @@
 
 另外，还要确保Windows Installer正常安装。Windows上安装MySQL8.0需要操作系统提前已安装好Microsoft Visual C++ 2015-2019。
 
-![image-20211127170434387](https://cdn.jsdelivr.net/gh/letengzz/tc2/img/202407042039474.png)
+![image-20211127170434387](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img/202407042039474.png)
 
 ### 丢失MSVCP140.dll
 
-![image-20211127170442613](https://cdn.jsdelivr.net/gh/letengzz/tc2/img/202407042039471.png)
+![image-20211127170442613](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img/202407042039471.png)
 
 解决方案同样是，提前到微软官网https://support.microsoft.com/en-us/topic/the-latest-supported-visual-c-downloads-2647da03-1eea-4433-9aff-95f26a218cc0下载相应的环境。
 
@@ -34,15 +34,15 @@ mysqld: File '.\绐︽枃褰?bin.index' not found (OS errno 2 - No such file or 
 
 解决方法：【计算机】右键-->【属性】  重命名计算机设备名称
 
-![image-20220222180637898](https://cdn.jsdelivr.net/gh/letengzz/tc2/img/202407042040020.png)
+![image-20220222180637898](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img/202407042040020.png)
 
 ### mysql服务启动失败
 
 MySQL error 1042: Unable to connect to any of the specified MySQL hosts.
 
-![image-20220222181221100](https://cdn.jsdelivr.net/gh/letengzz/tc2/img/202407042041558.png)
+![image-20220222181221100](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img/202407042041558.png)
 
-![image-20220222181414534](https://cdn.jsdelivr.net/gh/letengzz/tc2/img/202407042041851.png)
+![image-20220222181414534](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img/202407042041851.png)
 
 解决方案：
 
@@ -51,21 +51,21 @@ MySQL error 1042: Unable to connect to any of the specified MySQL hosts.
 电脑–>管理–>本地用户和组–>组–>双击Administrators–>添加–>高级
 把NETWORK SERVICE添加到Administrators组
 
-![image-20220222182053069](https://cdn.jsdelivr.net/gh/letengzz/tc2/img/202407042041883.png)
+![image-20220222182053069](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img/202407042041883.png)
 
 如果是家庭版操作系统：
 
 计算机（点击鼠标右键）》管理（点击）》服务和应用程序（点击）》服务（点击）》MySQL80（点击鼠标右键）》属性》登录选项卡下将选择的此账户改为选择本地系统账户。之后重新执行excute
 
-![image-20220222182341155](https://cdn.jsdelivr.net/gh/letengzz/tc2/img/202407042041306.png)
+![image-20220222182341155](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img/202407042041306.png)
 
-![image-20220222182425252](https://cdn.jsdelivr.net/gh/letengzz/tc2/img/202407042041271.png)
+![image-20220222182425252](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img/202407042041271.png)
 
 ### 可视化工具连接MySQL8问题
 
 有些图形界面工具，特别是旧版本的图形界面工具，在连接MySQL8时出现“Authentication plugin 'caching_sha2_password' cannot be loaded”错误。
 
-![image-20211127170917407](https://cdn.jsdelivr.net/gh/letengzz/tc2/img/202407042042803.png)
+![image-20211127170917407](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img/202407042042803.png)
 
 出现这个原因是MySQL8之前的版本中加密规则是mysql_native_password，而在MySQL8之后，加密规则是caching_sha2_password。
 
@@ -84,7 +84,7 @@ MySQL error 1042: Unable to connect to any of the specified MySQL hosts.
    FLUSH PRIVILEGES;
    ```
 
-   ![image-20211127171046998](https://cdn.jsdelivr.net/gh/letengzz/tc2/img/202407042044836.png)
+   ![image-20211127171046998](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img/202407042044836.png)
 
 ## MySQL8忘记root用户密码
 
@@ -102,7 +102,7 @@ MySQL error 1042: Unable to connect to any of the specified MySQL hosts.
 
    例如在D盘根目录下新建一个文本文件"root_newpass.txt"，文件内容就上面一条语句。
 
-   ![image-20211128193420899](https://cdn.jsdelivr.net/gh/letengzz/tc2/img/202407042045746.png)
+   ![image-20211128193420899](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img/202407042045746.png)
 
 3. 使用管理员权限运行cmd命令行，运行以下命令：
 
@@ -112,17 +112,17 @@ MySQL error 1042: Unable to connect to any of the specified MySQL hosts.
 
    **注意**：my.ini文件的路径看你自己的安装路径，找数据目录
 
-   ![image-20211128193734236](https://cdn.jsdelivr.net/gh/letengzz/tc2/img/202407042046265.png)
+   ![image-20211128193734236](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img/202407042046265.png)
 
    上面命令意思就是初始化启动一次数据库，并运行这个修改密码的文件：
 
-   ![image-20211128193623962](https://cdn.jsdelivr.net/gh/letengzz/tc2/img/202407042046029.png)
+   ![image-20211128193623962](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img/202407042046029.png)
 
    上面的命令执行后，就像卡住了一样，这就是启动MySQL服务了。
 
 4. 然后按CTRL+C结束上面的运行命令
 
-   ![image-20211129084057307](https://cdn.jsdelivr.net/gh/letengzz/tc2/img/202407042047061.png)
+   ![image-20211129084057307](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img/202407042047061.png)
 
 5. 最后重新启动MySQL服务，用新密码登录即可
 

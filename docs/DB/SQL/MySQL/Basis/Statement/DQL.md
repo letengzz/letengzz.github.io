@@ -19,7 +19,7 @@ SELECT id,username FROM user;
 SELECT id,username,password FROM user;
 ```
 
-![image-20230910171926521](https://cdn.jsdelivr.net/gh/letengzz/tc2@main/img/Java/202309111525483.png)
+![image-20230910171926521](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img/Java/202309111525483.png)
 
 ### 查询全部字段
 
@@ -35,7 +35,7 @@ SELECT  *  FROM  表名;
 SELECT  *  FROM  user;
 ```
 
-![image-20230910171951705](https://cdn.jsdelivr.net/gh/letengzz/tc2@main/img/Java/202309111525917.png)
+![image-20230910171951705](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img/Java/202309111525917.png)
 
 ### 查询时为字段设置别名
 
@@ -58,7 +58,7 @@ SELECT id,username AS 账号,password AS 密码 FROM user;
 SELECT id,username 账号,password 密码 FROM user;
 ```
 
-![image-20230910172222955](https://cdn.jsdelivr.net/gh/letengzz/tc2@main/img/Java/202309111525806.png)
+![image-20230910172222955](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img/Java/202309111525806.png)
 
 ### 去除重复记录查询
 
@@ -76,7 +76,7 @@ SELECT  DISTINCT  username,password  FROM user;
 SELECT  DISTINCT  username FROM user;
 ```
 
-![image-20230910172530105](https://cdn.jsdelivr.net/gh/letengzz/tc2@main/img/Java/202309111525547.png)
+![image-20230910172530105](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img/Java/202309111525547.png)
 
 ## 条件查询
 
@@ -96,7 +96,7 @@ SELECT 字段列表 FROM 表名 WHERE 条件列表;
   SELECT * FROM emp WHERE age = 88;
   ```
 
-  ![image-20230911150112334](https://cdn.jsdelivr.net/gh/letengzz/tc2@main/img/Java/202309111525760.png)
+  ![image-20230911150112334](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img/Java/202309111525760.png)
 
 - 查询年龄不等于 88 的员工：
 
@@ -105,7 +105,7 @@ SELECT 字段列表 FROM 表名 WHERE 条件列表;
   SELECT * FROM emp WHERE age <> 88;
   ```
 
-  ![image-20230911150306048](https://cdn.jsdelivr.net/gh/letengzz/tc2@main/img/Java/202309111525070.png)
+  ![image-20230911150306048](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img/Java/202309111525070.png)
 
 - 查询没有身份证号的员工信息：
 
@@ -113,7 +113,7 @@ SELECT 字段列表 FROM 表名 WHERE 条件列表;
   SELECT * FROM emp WHERE idcard IS NULL;
   ```
 
-  ![image-20230911150555298](https://cdn.jsdelivr.net/gh/letengzz/tc2@main/img/Java/202309111525618.png)
+  ![image-20230911150555298](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img/Java/202309111525618.png)
 
 - 查询有身份证号的员工信息：
 
@@ -121,7 +121,7 @@ SELECT 字段列表 FROM 表名 WHERE 条件列表;
   SELECT * FROM emp WHERE idcard IS NOT NULL;
   ```
 
-  ![image-20230911150632995](https://cdn.jsdelivr.net/gh/letengzz/tc2@main/img/Java/202309111525411.png)
+  ![image-20230911150632995](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img/Java/202309111525411.png)
 
 - 查询年龄在15岁(包含) 到 20岁(包含)之间的员工信息：
 
@@ -131,7 +131,7 @@ SELECT 字段列表 FROM 表名 WHERE 条件列表;
   SELECT * FROM emp WHERE age BETWEEN 15 AND 20;
   ```
 
-  ![image-20230911150723584](https://cdn.jsdelivr.net/gh/letengzz/tc2@main/img/Java/202309111525190.png)
+  ![image-20230911150723584](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img/Java/202309111525190.png)
 
 - 查询年龄等于18 或 20 或 40 的员工信息：
 
@@ -140,7 +140,7 @@ SELECT 字段列表 FROM 表名 WHERE 条件列表;
   SELECT * FROM emp WHERE age IN (18,20,40);
   ```
 
-  ![image-20230911150830031](https://cdn.jsdelivr.net/gh/letengzz/tc2@main/img/Java/202309111525753.png)
+  ![image-20230911150830031](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img/Java/202309111525753.png)
 
 - 查询姓范名字为两个字的员工信息：
 
@@ -148,7 +148,7 @@ SELECT 字段列表 FROM 表名 WHERE 条件列表;
   SELECT * FROM emp WHERE name LIKE '范_';  # 名字只可以为范X
   ```
 
-  ![image-20230911150913030](https://cdn.jsdelivr.net/gh/letengzz/tc2@main/img/Java/202309111525194.png)
+  ![image-20230911150913030](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img/Java/202309111525194.png)
 
 - 查询姓范员工信息：
 
@@ -156,7 +156,7 @@ SELECT 字段列表 FROM 表名 WHERE 条件列表;
   SELECT * FROM emp WHERE name LIKE '范%';  # 名字可以为范X,范XX,范XXX等等
   ```
 
-  ![image-20230911150926993](https://cdn.jsdelivr.net/gh/letengzz/tc2@main/img/Java/202309111526054.png)
+  ![image-20230911150926993](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img/Java/202309111526054.png)
 
 ## 聚合函数查询
 
@@ -178,7 +178,7 @@ SELECT 聚合函数(字段列表) FROM 表名;
 
 **常见聚合函数**：
 
-![image-20230911152454533](https://cdn.jsdelivr.net/gh/letengzz/tc2@main/img/Java/202309111524031.png)
+![image-20230911152454533](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img/Java/202309111524031.png)
 
 - [常见函数](../../Common_Function/README.md)
 
@@ -191,7 +191,7 @@ SELECT 聚合函数(字段列表) FROM 表名;
   SELECT COUNT(idcard) FROM emp; -- 统计的是idcard字段不为null的记录数
   ```
 
-  ![image-20230911152955984](https://cdn.jsdelivr.net/gh/letengzz/tc2@main/img/Java/202309111529528.png)
+  ![image-20230911152955984](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img/Java/202309111529528.png)
 
 - 统计该企业员工的平均年龄：
 
@@ -199,7 +199,7 @@ SELECT 聚合函数(字段列表) FROM 表名;
   SELECT AVG(age) FROM emp;
   ```
 
-  ![image-20230911153016223](https://cdn.jsdelivr.net/gh/letengzz/tc2@main/img/Java/202309111530464.png)
+  ![image-20230911153016223](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img/Java/202309111530464.png)
 
 - 统计该企业员工的最大年龄：
 
@@ -207,7 +207,7 @@ SELECT 聚合函数(字段列表) FROM 表名;
   SELECT MAX(age) FROM emp;
   ```
 
-  ![image-20230911153030753](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202412091621948.png)
+  ![image-20230911153030753](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202412091621948.png)
 
 - 统计该企业员工的最小年龄：
 
@@ -215,7 +215,7 @@ SELECT 聚合函数(字段列表) FROM 表名;
   SELECT MIN(age) FROM emp;
   ```
 
-  ![image-20230911153048160](https://cdn.jsdelivr.net/gh/letengzz/tc2@main/img/Java/202309111530643.png)
+  ![image-20230911153048160](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img/Java/202309111530643.png)
 
 - 统计西安地区员工的年龄之和：
 
@@ -223,7 +223,7 @@ SELECT 聚合函数(字段列表) FROM 表名;
   SELECT SUM(age) FROM emp WHERE workaddress = '西安';
   ```
 
-  ![image-20230911153112944](https://cdn.jsdelivr.net/gh/letengzz/tc2@main/img/Java/202309111531403.png)
+  ![image-20230911153112944](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img/Java/202309111531403.png)
 
 ## 分组查询
 
@@ -247,7 +247,7 @@ SELECT 字段列表 FROM 表名 [ WHERE 条件 ] GROUP BY 分组字段名 [ HAVI
   SELECT gender,COUNT(*) FROM emp GROUP BY gender;
   ```
 
-  ![image-20230911153857336](https://cdn.jsdelivr.net/gh/letengzz/tc2@main/img/Java/202309111539744.png)
+  ![image-20230911153857336](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img/Java/202309111539744.png)
 
 - 查询年龄小于45的员工，并根据工作地址分组，获取员工数量大于等于3的工作地址：
 
@@ -255,7 +255,7 @@ SELECT 字段列表 FROM 表名 [ WHERE 条件 ] GROUP BY 分组字段名 [ HAVI
   SELECT workaddress,COUNT(*) address_count FROM emp WHERE age < 45 GROUP BY workaddress HAVING address_count >= 3;
   ```
   
-  ![image-20230911153910841](https://cdn.jsdelivr.net/gh/letengzz/tc2@main/img/Java/202309111539402.png)
+  ![image-20230911153910841](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img/Java/202309111539402.png)
   
 - 统计各个工作地址上班的男性及女性员工的数量：
 
@@ -263,7 +263,7 @@ SELECT 字段列表 FROM 表名 [ WHERE 条件 ] GROUP BY 分组字段名 [ HAVI
   SELECT workaddress,gender,COUNT(*) '数量' FROM emp GROUP BY gender,workaddress;
   ```
 
-  ![image-20230911154024890](https://cdn.jsdelivr.net/gh/letengzz/tc2@main/img/Java/202309122129558.png)
+  ![image-20230911154024890](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img/Java/202309122129558.png)
 
 ## 排序查询
 
@@ -292,7 +292,7 @@ SELECT 字段列表 FROM 表名 ORDER BY 字段1 排序方式,字段2 排序方�
   SELECT * FROM emp ORDER BY age;
   ```
 
-  ![image-20230911154216609](https://cdn.jsdelivr.net/gh/letengzz/tc2@main/img/Java/202309111542852.png)
+  ![image-20230911154216609](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img/Java/202309111542852.png)
 
 - 根据年龄对公司的员工进行升序排序 , 年龄相同 , 再按照入职时间进行降序排序：
 
@@ -300,7 +300,7 @@ SELECT 字段列表 FROM 表名 ORDER BY 字段1 排序方式,字段2 排序方�
   SELECT * FROM emp ORDER BY age ASC,entrydate DESC;
   ```
 
-  ![image-20230911154535765](https://cdn.jsdelivr.net/gh/letengzz/tc2@main/img/Java/202309111545211.png)
+  ![image-20230911154535765](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img/Java/202309111545211.png)
 
 ## 分页查询
 
@@ -324,7 +324,7 @@ SELECT 字段列表 FROM 表名 LIMIT 起始索引,查询记录数;
   SELECT * FROM emp LIMIT 5;
   ```
 
-  ![image-20230911154752074](https://cdn.jsdelivr.net/gh/letengzz/tc2@main/img/Java/202309122129453.png)
+  ![image-20230911154752074](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img/Java/202309122129453.png)
 
 - 查询第2页员工数据, 每页展示10条记录：
 
@@ -332,7 +332,7 @@ SELECT 字段列表 FROM 表名 LIMIT 起始索引,查询记录数;
   SELECT * FROM emp LIMIT 5,5;
   ```
 
-  ![image-20230911154817367](https://cdn.jsdelivr.net/gh/letengzz/tc2@main/img/Java/202309111549517.png)
+  ![image-20230911154817367](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img/Java/202309111549517.png)
 
 ## 复合查询
 
@@ -357,7 +357,7 @@ LIMIT
     分页参数
 ```
 
-![image-20230911160839756](https://cdn.jsdelivr.net/gh/letengzz/tc2@main/img/Java/202309111608221.png)
+![image-20230911160839756](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img/Java/202309111608221.png)
 
 ### 系统执行顺序
 

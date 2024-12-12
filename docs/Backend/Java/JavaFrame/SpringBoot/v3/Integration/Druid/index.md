@@ -180,11 +180,11 @@ public class UserController {
 
 启动测试：
 
-![image-20231224201630487](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202312242016501.png)
+![image-20231224201630487](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202312242016501.png)
 
 访问http://localhost:8080/druid/login.html，通过登录名、密码进行监控。
 
-![image-20240106190603019](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202401061906211.png)
+![image-20240106190603019](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202401061906211.png)
 
 **问题解决**：
 
@@ -194,7 +194,7 @@ public class UserController {
 com.alibaba.druid.spring.boot3.autoconfigure.DruidDataSourceAutoConfigure
 ```
 
-![image-20231224202815860](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202312242028390.png)
+![image-20231224202815860](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202312242028390.png)
 
 
 

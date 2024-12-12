@@ -4,7 +4,7 @@ TypeScript是微软开发的一个开源的编程语言。TypeScript是JavaScrip
 
 TypeScript通过TypeScript编译器或Babel转译为JavaScript代码，再交由JavaScript解析器执行。可以运行在任何浏览器，任何操作系统。TypeScript完全兼容JavaScript，换言之，任何的JavaScript代码都可以直接当成JavaScript使用。
 
-![image-20240817141032767](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202408171443537.png)
+![image-20240817141032767](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202408171443537.png)
 
 JavaScript中的困扰：
 
@@ -48,4 +48,4 @@ JavaScript中的困扰：
 - TypeScript不能被JavaScript解析器直接执行，但是TypeScript代码可以编译为任意版本的JavaScript代码，可有效解决不同JavaScript运行环境的兼容问题
 - 同样的功能，TypeScript的代码量要大于JavaScript，但由于TypeScript的代码结构更加清晰，变量类型更加明确，在后期代码的维护中TypeScript却远远胜于JavaScript。
 
-![u=3023260295,131125603&fm=253&fmt=auto&app=138&f=PNG](https://cdn.jsdelivr.net/gh/letengzz/tc2@main/img202406081213688.webp)
+![u=3023260295,131125603&fm=253&fmt=auto&app=138&f=PNG](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202406081213688.webp)

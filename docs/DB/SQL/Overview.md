@@ -4,7 +4,7 @@
 
 所有关系型数据库都支持**标准SQL**语句但是也会有特定的**方言SQL**语句
 
-![image-20240704232319709](https://cdn.jsdelivr.net/gh/letengzz/tc2/img/202407042325306.png)
+![image-20240704232319709](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img/202407042325306.png)
 
 SQL包括了所有对数据库的操作，主要是由数据定义、数据操纵、数据查询、数据控制、事务控制等SQL语言的使用规定组成：
 

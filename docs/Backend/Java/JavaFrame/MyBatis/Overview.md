@@ -13,9 +13,9 @@ MyBatis最初是Apache的一个开源项目`iBatis`, 2010年6月这个项目由A
 
 https://github.com/mybatis/mybatis-3
 
-![./images](https://cdn.jsdelivr.net/gh/letengzz/Two-C@main/img/Java/202303010949745.png)
+![./images](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/Two-C/img/Java/202303010949745.png)
 
-![./images](https://cdn.jsdelivr.net/gh/letengzz/Two-C@main/img/Java/202303010949678.png)
+![./images](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/Two-C/img/Java/202303010949678.png)
 
 ## Mybatis特性
 

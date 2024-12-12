@@ -71,53 +71,53 @@ management:
 
 - 访问 http://localhost:8080/actuator 展示出所有可以用的监控端点
 
-  ![image-20230723181633709](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202401061249904.png)
+  ![image-20230723181633709](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202401061249904.png)
 
 - 访问 http://localhost:8080/actuator/health 展示出健康信息(UP：运行成功、DOWN：运行失败)
 
-  ![image-20230723181658479](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202401061249031.png)
+  ![image-20230723181658479](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202401061249031.png)
 
 - 访问 http://localhost:8080/actuator/beans 展示出所有的组件(Bean)，包括组件名、类型、依赖
 
-  ![image-20230723181712639](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202401061249056.png)
+  ![image-20230723181712639](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202401061249056.png)
 
 - 访问 http://localhost:8080/actuator/caches 展示出所有的缓存信息
 
-  ![image-20230723181728329](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202401061250560.png)
+  ![image-20230723181728329](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202401061250560.png)
 
 - 访问 http://localhost:8080/actuator/conditions 展示条件判断(自动配置)，判断哪些的功能是开启的
 
-  ![image-20230723181750444](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202401061249186.png)
+  ![image-20230723181750444](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202401061249186.png)
 
 - 访问 http://localhost:8080/actuator/env 展示出所有的环境变量
 
-  ![image-20230723181829352](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202401061249857.png)
+  ![image-20230723181829352](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202401061249857.png)
 
 - 访问 http://localhost:8080/actuator/configprops 展示出所有的属性(配置文件)
 
-  ![image-20230723181851463](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202401061249293.png)
+  ![image-20230723181851463](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202401061249293.png)
 
 - 访问 http://localhost:8080/actuator/loggers 展示出所有的日志级别及信息
 
-  ![image-20230723181908241](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202401061249147.png)
+  ![image-20230723181908241](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202401061249147.png)
 
 - 访问 http://localhost:8080/actuator/heapdump 下载整个堆内存
 
-  ![image-20230723182137940](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202401061250026.png)
+  ![image-20230723182137940](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202401061250026.png)
 
 - 访问 http://localhost:8080/actuator/threaddump 展示出所有的线程信息
 
-  ![image-20230723182319764](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202401061250443.png)
+  ![image-20230723182319764](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202401061250443.png)
 
 - 访问 http://localhost:8080/actuator/metrics 展示出所有的指标
 
   访问 http://localhost:8080/actuator/metrics/jvm.gc.pause 展示出具体的指标
 
-  ![image-20230723182602649](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202401061249966.png)
+  ![image-20230723182602649](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202401061249966.png)
 
 - 访问 http://localhost:8080/actuator/mappings 展示出所有的映射信息
 
-  ![image-20230723182749261](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202401061250966.png)
+  ![image-20230723182749261](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202401061250966.png)
 
 ### 定制端点
 
@@ -251,7 +251,7 @@ management:
 
 4. 访问：http://localhost:8080/actuator/health
 
-   ![image-20240106140504759](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202401061405599.png)
+   ![image-20240106140504759](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202401061405599.png)
 
    当有一个组件DOWN，那么Spring就会认为总体状态就DOWN
 
@@ -324,15 +324,15 @@ public class MyHahaComponent {
 
 再次访问：http://localhost:8080/actuator/metrics
 
-![image-20240106142639155](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202401061426703.png)
+![image-20240106142639155](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202401061426703.png)
 
 访问：http://localhost:8080/actuator/metrics/myhaha.haha
 
-![image-20240106142732151](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202401061427264.png)
+![image-20240106142732151](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202401061427264.png)
 
 ## 基于Prometheus+Grafana监控
 
-![image.png](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202401061314881.png)
+![image.png](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202401061314881.png)
 
 ### 安装Prometheus
 
@@ -348,7 +348,7 @@ prom/prometheus
 
 访问ip:9090访问Prometheus：
 
-![image-20240106144334929](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202401061443442.png)
+![image-20240106144334929](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202401061443442.png)
 
 ### 安装Grafana
 
@@ -359,7 +359,7 @@ docker run -d --name=grafana -p 3000:3000 grafana/grafana
 
 访问ip:3000访问Grafana，输入账号：admin，密码：admin，修改密码即可：
 
-![image-20240106144045243](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202401061440403.png)
+![image-20240106144045243](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202401061440403.png)
 
 ### 导入依赖
 
@@ -384,7 +384,7 @@ management:
 
 访问： http://localhost:8080/actuator/prometheus  验证，返回 prometheus 格式的所有指标
 
-![image-20240106144908405](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202401061449946.png)
+![image-20240106144908405](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202401061449946.png)
 
 ### 部署Java应用
 
@@ -439,11 +439,11 @@ scrape_configs:
           nodename: 'app-demo'
 ```
 
-![image-20240106151628445](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202401061516296.png)
+![image-20240106151628445](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202401061516296.png)
 
 配置完成后，访问Prometheus查看：
 
-![image-20240106151655074](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202401061516007.png)
+![image-20240106151655074](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202401061516007.png)
 
 重启Prometheus：
 
@@ -451,26 +451,26 @@ scrape_configs:
 docker restart prometheus
 ```
 
-![image-20240106154844274](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202401061548986.png)
+![image-20240106154844274](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202401061548986.png)
 
 ### 配置 Grafana 监控面板 
 
 添加数据源 (Prometheus)：
 
-![image-20240106155605296](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202401061556817.png)
+![image-20240106155605296](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202401061556817.png)
 
-![image-20240106160034023](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202401061600971.png)
+![image-20240106160034023](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202401061600971.png)
 
 添加面板。可去 dashboard 市场找一个自己喜欢的面板，也可以自己开发面板：[Dashboards | Grafana Labs](https://grafana.com/grafana/dashboards/?plcmt=footer)
 
-![image-20240106160530876](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202401061605240.png)
+![image-20240106160530876](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202401061605240.png)
 
-![image-20240106160202449](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202401061602515.png)
+![image-20240106160202449](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202401061602515.png)
 
-![image-20240106160555343](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202401061605713.png)
+![image-20240106160555343](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202401061605713.png)
 
-![image-20240106160506829](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202401061605870.png)
+![image-20240106160506829](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202401061605870.png)
 
 ### 效果
 
-![image-20240106160720637](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202401061607023.png)
+![image-20240106160720637](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202401061607023.png)
