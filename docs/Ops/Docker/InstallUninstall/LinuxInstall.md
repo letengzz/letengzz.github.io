@@ -98,7 +98,7 @@ uname -r
    docker version
    ```
 
-   ![image-20240401222521119](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202404012225981.png)
+   ![image-20240401222521119](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202404012225981.png)
 
 ## 使用安装脚本自动安装
 
@@ -199,7 +199,7 @@ uname -r
    docker version
    ```
 
-   ![image-20240401222521119](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202404012225981.png)
+   ![image-20240401222521119](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202404012225981.png)
 
 ## Docker镜像加速
 
@@ -209,7 +209,7 @@ uname -r
 
 登陆后，左侧菜单选中镜像加速器就可以看到专属地址，选中粘贴即可。
 
-![image-20240401222805165](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202404012228630.png)
+![image-20240401222805165](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202404012228630.png)
 
 查看是否新增了阿里云的地址：
 
@@ -217,7 +217,7 @@ uname -r
 docker info
 ```
 
-![image-20240401224219492](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202404012242145.png)
+![image-20240401224219492](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202404012242145.png)
 
 ### 配置网易云加速
 
@@ -234,7 +234,7 @@ sudo systemctl daemon-reload
 sudo systemctl restart docker
 ```
 
-![image-20240401224659949](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202404012257197.png)
+![image-20240401224659949](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202404012257197.png)
 
 查看是否新增了网易云的地址：
 
@@ -242,4 +242,4 @@ sudo systemctl restart docker
 docker info
 ```
 
-![image-20240401224734219](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202404012247498.png)
+![image-20240401224734219](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202404012247498.png)

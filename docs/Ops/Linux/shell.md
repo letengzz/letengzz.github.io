@@ -4,7 +4,7 @@
 
 Linux操作系统是一种开放源代码的类UNIX操作系统，它的结构分为内核、Shell和应用程序三个层次。
 
-![image.png](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202405222324146.png)
+![image.png](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202405222324146.png)
 
 ### 内核层
 

@@ -42,7 +42,7 @@ location / {                 proxy_set_header Host $http_host;                 p
 
 ### 基本原理
 
-![image-20240617162029872](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202410211101287.png)
+![image-20240617162029872](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202410211101287.png)
 
 ### Nginx配置与应用场景
 
@@ -68,13 +68,13 @@ sendfile on; 使用linux的 sendfile(socket, file, len) 高效网络传输，也
 
 未开启sendfile
 
-<img src="https://cdn.jsdelivr.net/gh/letengzz/tc2/img202410211102966.png" alt="image-20240617162229066" style="zoom:50%;" />
+<img src="https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202410211102966.png" alt="image-20240617162229066" style="zoom:50%;" />
 
 
 
 开启sendfile
 
-<img src="https://cdn.jsdelivr.net/gh/letengzz/tc2/img202410211102039.png" alt="image-20240617162252122" style="zoom:50%;" />
+<img src="https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202410211102039.png" alt="image-20240617162252122" style="zoom:50%;" />
 
 **keepalive_timeout 65;** 
 

@@ -4,11 +4,11 @@
 
 通过 docker run 命令可以启动运行一个容器。该命令在执行时首先会在本地查找指定的镜像，如果找到了，则直接启动，否则会到镜像中心查找。如果镜像中心存在该镜像，则会下载到本地并启动，如果镜像中心也没有，则直接报错。
 
-![](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202406151430759.png)
+![](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202406151430759.png)
 
 如果再与多架构镜像原理相整合，则就形成了完整的容器启动流程。
 
-![](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202406151431124.png)
+![](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202406151431124.png)
 
 ## 容器运行本质
 

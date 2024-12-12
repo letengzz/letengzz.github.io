@@ -4,21 +4,21 @@
 
 ### 注册阿里云账号
 
-![image.png](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202405222311470.png)
+![image.png](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202405222311470.png)
 
-![image.png](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202405222311187.png)
+![image.png](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202405222311187.png)
 
-![image.png](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202405222311326.png)
+![image.png](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202405222311326.png)
 
-![image.png](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202405222313190.png)
+![image.png](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202405222313190.png)
 
-![image.png](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202405222313256.png)
+![image.png](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202405222313256.png)
 
-![image.png](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202405222313473.png)
+![image.png](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202405222313473.png)
 
-![image.png](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202405222313225.png)
+![image.png](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202405222313225.png)
 
-![无标题.png](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202405222314669.png)
+![无标题.png](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202405222314669.png)
 
 到此，阿里云账号注册成功，并且进行了个人的实名认证。可以开始使用阿里云了。
 
@@ -26,23 +26,23 @@
 
 进入阿里云首页：
 
-![image.png](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202405222314865.png)
+![image.png](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202405222314865.png)
 
-![image.png](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202405222314412.png)
+![image.png](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202405222314412.png)
 
 可以选择免费试用，也可以立即购买，根据自己情况而定，这里采用免费试用：
 
-![image.png](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202405222315759.png)
+![image.png](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202405222315759.png)
 
-![image.png](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202405222315175.png)
+![image.png](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202405222315175.png)
 
 创建的实例是这样的：需要记住这个公网IP。
 
-![image.png](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202405222315298.png)
+![image.png](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202405222315298.png)
 
 管理员：root，新建的实例需要设置密码：
 
-![image.png](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202405222317191.png)
+![image.png](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202405222317191.png)
 
 ## 使用xshell/xftp连接阿里云服务器 
 
@@ -50,7 +50,7 @@
 
 在阿里云服务器实例中找到如下图的VNC连接：
 
-![image.png](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202405222318619.png)
+![image.png](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202405222318619.png)
 
 然后输入用户名root和密码。登录成功之后找到该文件：`/etc/ssh/sshd_config`
 
@@ -83,23 +83,23 @@ password: 3268d738
 
 通过以上宝塔面板地址得知使用的端口是10710，所以需要在阿里云服务器上开放该端口（配置安全组）：
 
-![image.png](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202405222319453.png)
+![image.png](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202405222319453.png)
 
-![image.png](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202405222319390.png)
+![image.png](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202405222319390.png)
 
 访问宝塔面板：
 
-![image.png](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202405222319814.png)
+![image.png](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202405222319814.png)
 
 
 
 输入用户名和密码登录宝塔面板：
 
-![image.png](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202405222319823.png)
+![image.png](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202405222319823.png)
 
 注册宝塔账号并绑定：
 
-![image.png](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202405222320149.png)
+![image.png](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202405222320149.png)
 
 
 
@@ -107,31 +107,31 @@ password: 3268d738
 
 搜索tomcat，安装tomcat9，会自动关联安装JDK8。
 
-![image.png](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202405222320419.png)
+![image.png](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202405222320419.png)
 
 JDK8也有了：
 
-![image.png](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202405222320170.png)
+![image.png](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202405222320170.png)
 
 搜索mysql，安装mysql：
 
-![image.png](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202405222320690.png)
+![image.png](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202405222320690.png)
 
 注意：阿里云服务器有两个防火墙，一个是阿里云服务器自带的防火墙，在安全组中进行放行设置。阿里云服务器中安装的centos操作系统也会有一个防火墙，要访问tomcat服务器的话，centos操作系统中的防火墙也要放行8080端口：这个需要在宝塔中进行配置：
 
-![image.png](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202405222321525.png)
+![image.png](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202405222321525.png)
 
 这样tomcat服务器就可以访问了：
 
-![image.png](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202405222321132.png)
+![image.png](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202405222321132.png)
 
 mysql数据库的3306端口同样需要在宝塔中放行。这样mysql数据库才可以连接：
 
-![image.png](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202405222321101.png)
+![image.png](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202405222321101.png)
 
 使用navicat for mysql连接mysql数据库，报错信息如下：
 
-![image.png](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202405222322970.png)
+![image.png](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202405222322970.png)
 
 解决办法：
 
@@ -142,5 +142,5 @@ mysql数据库的3306端口同样需要在宝塔中放行。这样mysql数据库
 
 然后使用navicat for mysql就可以连接mysql数据库了：
 
-![image.png](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202405222322532.png)
+![image.png](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202405222322532.png)
 

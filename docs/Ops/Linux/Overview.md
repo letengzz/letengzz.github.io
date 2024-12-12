@@ -31,7 +31,7 @@
 
 Linux 操作系统的历史可以追溯到 1991 年，当时 Linus Torvalds (林纳斯·托瓦兹) 是一名芬兰赫尔辛基大学的学生，并且对 MINIX，一种类 UNIX 操作系统，感到不满意。他开始编写自己的操作系统内核，最终发布了第一个版本，命名为 Linux。从此，Linux 这个开源、自由和可定制化的操作系统内核就开始了它的发展之旅。
 
-![image.png](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202405191026079.webp)
+![image.png](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202405191026079.webp)
 
 以下是 Linux 操作系统的发展史中一些重要的时间节点和里程碑：
 

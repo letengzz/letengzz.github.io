@@ -182,7 +182,7 @@ mount 192.168.10.100:/data/share /share
 ```
 使用命令：`df -h`可以查看是否挂在成功
 
-![image-20240724143457186](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202410221130721.png) 
+![image-20240724143457186](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202410221130721.png) 
 
 > 设置自动挂载（确保系统在启动时自动挂载指定的 NFS 共享目录）
 
@@ -198,7 +198,7 @@ vim /etc/fstab
 - `defaults`：挂载选项，默认选项
 - `0 0`：这两个字段通常用于备份和文件系统检查，对于 NFS 来说通常设置为 0
 
-![image-20240724145247440](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202410221130722.png)
+![image-20240724145247440](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202410221130722.png)
 **挂载验证**
 
 ```

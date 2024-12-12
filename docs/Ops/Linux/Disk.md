@@ -12,7 +12,7 @@
 - C盘下的"用户"目录是所有的用户，包括超级管理员也在其中
 - Windows操作系统分为C盘、D盘、E盘等，每个磁盘下采用文档树的形式组织文件
 
-![image-20240519151604153](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202405191516675.png)
+![image-20240519151604153](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202405191516675.png)
 
 ### Linux资源管理方式
 
@@ -42,7 +42,7 @@ linux操作系统采用一个文档树来组织所有的资源。
 
 - `/var` 目录：包含可变数据的文件。包括日志、数据库、Web服务器、邮件队列等文件。它是一个经常被修改的目录，如果在其他目录有可变数据的话，它们都应当被链接到 `/var` 中。 
 
-![image-20240519151956171](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202405191519351.png)
+![image-20240519151956171](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202405191519351.png)
 
 ## 常用命令
 
@@ -50,7 +50,7 @@ linux操作系统采用一个文档树来组织所有的资源。
 
 在终端中输入该命令，可以查看当前所在位置：
 
-![image-20240519152619536](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202405191526530.png)
+![image-20240519152619536](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202405191526530.png)
 
 可以看到，当前所在位置是根目录。
 
@@ -70,13 +70,13 @@ man命令退出：q
 
 通过ls命令可以查看当前目录下的子目录和子文件：ls命令是list的意思：列出，列表等。
 
-![image-20240519152805473](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202405191528876.png)
+![image-20240519152805473](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202405191528876.png)
 
 #### 列出所有的文件：ls -a
 
 列出包含隐藏文件在内的所有的文件，a是all的意思，表示所有。(在Linux操作系统中隐藏文件的文件名通常以"`.`"开始)
 
-![image-20240519153046745](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202405191530213.png)
+![image-20240519153046745](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202405191530213.png)
 
 #### 以列方式列出文件：ls -l
 
@@ -84,11 +84,11 @@ man命令退出：q
 
 `ls -l` 可以简写为：`ll`
 
-![image-20240519154454700](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202405191544405.png)
+![image-20240519154454700](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202405191544405.png)
 
 注意权限部分：
 
-![image-20240519154910569](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202405191549994.png)
+![image-20240519154910569](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202405191549994.png)
 
 #### 以列方式列出所有文件：ls -al
 

@@ -24,5 +24,5 @@
 
 4. 重启docker-desktop即可
 
-![image-20240924230323719](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202409242303966.png)
+![image-20240924230323719](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202409242303966.png)
 
