@@ -2,8 +2,8 @@
 
 **安装**：
 
-- [Windows 安装](WindowsInstall.md)
-- [MacOS 安装](MacOSInstall.md)
-- [Linux  安装](LinuxInstall.md)
-- [Docker 安装](DockerInstall.md)
+- [Windows 安装](Windows.md)
+- [MacOS 安装](MacOS.md)
+- [Linux  安装](Linux.md)
+- [Docker 安装](Docker.md)
 
