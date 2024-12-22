@@ -1,4 +1,4 @@
-# MacOS 安装 RabbitMQ
+# MacOS 安装 R
 
 ## brew 命令安装
 

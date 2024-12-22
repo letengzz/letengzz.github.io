@@ -1,4 +1,4 @@
-# Windows 安装 RocketMQ
+# Windows 安装
 
 ## 准备工作
 

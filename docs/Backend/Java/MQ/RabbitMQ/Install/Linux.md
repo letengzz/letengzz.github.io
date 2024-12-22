@@ -1,4 +1,4 @@
-# Linux 安装 RabbitMQ
+# Linux 安装
 
 ## 安装 Erlang
 

@@ -1,4 +1,4 @@
-# Linux 安装 RocketMQ
+# Linux 安装
 
 ## 准备工作
 
