@@ -1,4 +1,4 @@
-# Mybatis分页操作
+# Mybatis 分页操作
 
 **提示**：下列各项操作均使用[user表](Table/user.md)来操作(不做相关MyBatis操作)。
 

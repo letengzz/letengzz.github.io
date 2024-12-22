@@ -1,4 +1,4 @@
-# MyBatis关联查询及延迟加载
+# MyBatis 关联查询及延迟加载
 
 **提示**：下列各项操作均使用[t_dept表、t_emp表](Table/dept_emp.md)来操作。
 

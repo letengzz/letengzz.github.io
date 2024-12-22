@@ -1,10 +1,10 @@
-## MyBatis下载
+# MyBatis 下载
 
 在 MyBatis 的官方网站 [http://mybatis.org](http://mybatis.org/)下载。
 
 如果打不开网站或下载进度较慢，可以通过 https://github.com/mybatis/mybatis-3/releases 网址下载。
 
-## MyBatis文件目录结构
+**MyBatis文件目录结构**：
 
 下载完成后，mybatis-3.5.5.zip 解压后目录结构：
 

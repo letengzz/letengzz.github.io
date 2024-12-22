@@ -1,4 +1,4 @@
-# MyBatis处理特殊操作
+# MyBatis 处理特殊操作
 
 **提示**：下列各项操作均使用[student表](Table/student.md)来操作。
 

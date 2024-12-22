@@ -1,4 +1,4 @@
-# MyBatis基本操作
+# MyBatis 基本操作
 
 **提示**：下列各项操作均使用[user表](Table/user.md)来操作。
 
