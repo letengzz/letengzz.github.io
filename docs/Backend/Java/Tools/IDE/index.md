@@ -1,3 +1,3 @@
-# IDE
+# IDE 工具
 
-- [IDEA](IDEA/index.md)
+- [IntelliJ IDEA](IDEA/index.md)

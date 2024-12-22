@@ -1,4 +1,4 @@
-# 自动化部署到docker容器
+# Jenkins+Git 容器化构建
 
 ## 部署方式
 

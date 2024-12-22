@@ -1,4 +1,4 @@
-# MyBatisX(IDEA插件)
+# MyBatisX
 
 MyBatis-Plus为我们提供了强大的mapper和service模板，能够大大的提高开发效率 但是在真正开发过程中，MyBatis-Plus并不能为我们解决所有问题，例如一些复杂的SQL，多表联查，我们就需要自己去编写代码和SQL语句，可以使用MyBatisX插件MyBatisX一款基于 IDEA 的快速开发插件，为效率而生。
 

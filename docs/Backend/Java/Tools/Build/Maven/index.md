@@ -8,7 +8,7 @@
 - [Maven 创建工程](Create.md)
 - [Maven 命令](Command.md)
 - [Maven 依赖](Dependency.md)
-- [Maven 集成和聚合特性](Integrated.md)
+- [Maven 继承和聚合特性](Integrated.md)
 - [Maven 拓展概念](Expansion.md)
 - [Maven profile](profile.md)
 - [Maven 私服：Nexus](Nexus.md)

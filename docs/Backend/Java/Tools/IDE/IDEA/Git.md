@@ -1,4 +1,4 @@
-# IDEA 操作 Git
+# IDEA Git操作
 
 ## 基本操作
 

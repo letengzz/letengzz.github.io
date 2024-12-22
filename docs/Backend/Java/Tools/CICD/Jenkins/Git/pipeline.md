@@ -1,4 +1,4 @@
-# 流水线 pipeline
+# Jenkins+Git 流水线pipeline
 
 流水线既能作为任务的本身，也能作为Jenkinsfile
 
