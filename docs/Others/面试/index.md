@@ -1,3 +1,15 @@
+面经来源于各大公众号
+
+面试题在线网站：
+
+https://javaguide.cn/home.html
+
+[Java面试题介绍 | 小林coding (xiaolincoding.com)](https://xiaolincoding.com/interview/)
+
+https://www.pdai.tech/md/interview/x-interview.html
+
+[小满zs博客](https://blog.csdn.net/qq1195566313/category_11559497.html)
+
 Kafka 如何保证⾼吞吐的？Kafka 如何保证消息不丢失？
 
 你的设计中有两条链路，他们之间互为旁路，如何保证幂等的？
