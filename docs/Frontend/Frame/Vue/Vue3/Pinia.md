@@ -377,8 +377,7 @@ export const useCountStore = defineStore('count',{
 组件中读取数据：
 
 ```js
-const {increment,decrement} = countStore
-let {sum,school,bigSum,upperSchool} = storeToRefs(countStore)
+let {,bigSum,upperSchool} = storeToRefs(countStore)
 ```
 
 ## $subscribe
