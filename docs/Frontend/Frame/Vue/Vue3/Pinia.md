@@ -292,13 +292,13 @@ app.mount('#app')
        increment(value:number) {
          if (this.sum < 10) {
            //操作countStore中的sum（this是当前的store）
-           this.sum += value
+           this.$state.sum += value
          }
        },
        //减
        decrement(value:number){
          if(this.sum > 1){
-           this.sum -= value
+           this.$state.sum -= value
          }
        }
      },
@@ -377,7 +377,7 @@ export const useCountStore = defineStore('count',{
 组件中读取数据：
 
 ```js
-let {,bigSum,upperSchool} = storeToRefs(countStore)
+let {bigSum,upperSchool} = storeToRefs(countStore)
 ```
 
 ## $subscribe
@@ -420,9 +420,99 @@ export const useTalkStore = defineStore('talk',()=>{
 })
 ```
 
+## 持久化插件
 
+持久化插件官网：https://seb-l.github.io/pinia-plugin-persist
 
+安装插件：
 
+```
+npm install pinia-plugin-persist
+```
 
+引入持久化插件：
 
+```typescript
+import piniaPersist from 'pinia-plugin-persist'
+
+//实例化Pinia
+const pinia = createPinia()
+//使用持久化插件
+pinia.use(piniaPersist)
+```
+
+将pinia-plugin-persist类型定义文件添加到tsconfig文件中：
+
+```json
+{
+  "compilerOptions": {
+    "types": [
+      "pinia-plugin-persist"
+    ],
+    "moduleResolution": "node", //将Bundler调整为node
+  },
+}
+```
+
+基础使用：默认情况下，整个状态将存储在sessionStorage中。 存储ID用作存储键（以设置自定义存储键）
+
+```typescript
+// store/use-user-store.ts
+import { defineStore } from 'pinia'
+
+export const useUserStore = defineStore('storeUser', {
+  state: () => {
+    return {
+      firstName: 'S',
+      lastName: 'L',
+      accessToken: 'xxxxxxxxxxxxx'
+    }
+  },
+  actions: {
+    setToken (value: string) {
+      this.accessToken = value
+    }
+  },
+  persist: {
+    enabled: true
+  }
+})
+```
+
+可以使用sessionStorage、localStorage或任何自定义存储对象：
+
+```typescript
+// store/use-user-store.ts
+import Cookies from 'js-cookie'
+
+const cookiesStorage: Storage = {
+  setItem (key, state) {
+    return Cookies.set('accessToken', state.accessToken, { expires: 3 })
+  },
+  getItem (key) {
+    return JSON.stringify({
+      accessToken: Cookies.getJSON('accessToken'),
+    })
+  },
+}
+
+export const useUserStore = defineStore('storeUser', {
+  state () {
+    return {
+      firstName: 'S',
+      lastName: 'L',
+      accessToken: 'xxxxxxxxxxxxx',
+    }
+  },
+  persist: {
+    enabled: true,
+    strategies: [
+      {
+        storage: cookiesStorage, //存储方式
+        paths: ['accessToken'] //指定字段
+      },
+    ],
+  },
+})
+```
 
