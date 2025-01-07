@@ -14,3 +14,4 @@
 **拓展**：
 
 - [Vue3 常见问题](Errors.md)
+- [Vue3 搭建基础环境](BuildBasic.md)
