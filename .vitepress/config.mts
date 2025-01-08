@@ -60,6 +60,7 @@ export default defineConfig({
       },
       {
         text: '后端', items: [
+          { text: '.Net', link: '/docs/Backend/DotNet' },
           { text: 'Go', link: '/docs/Backend/Go' },
           { text: 'Java', link: '/docs/Backend/Java' },
           { text: 'Python', link: '/docs/Backend/Python' },]
