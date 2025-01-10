@@ -422,97 +422,63 @@ export const useTalkStore = defineStore('talk',()=>{
 
 ## 持久化插件
 
-持久化插件官网：https://seb-l.github.io/pinia-plugin-persist
+官方文档：https://prazdevs.github.io/pinia-plugin-persistedstate/zh/
 
 安装插件：
 
 ```
-npm install pinia-plugin-persist
+npm install pinia-plugin-persistedstate
 ```
 
 引入持久化插件：
 
 ```typescript
-import piniaPersist from 'pinia-plugin-persist'
+import piniaPluginPersistedstate from 'pinia-plugin-persistedstate'
 
 //实例化Pinia
 const pinia = createPinia()
 //使用持久化插件
-pinia.use(piniaPersist)
-```
-
-将pinia-plugin-persist类型定义文件添加到tsconfig文件中：
-
-```json
-{
-  "compilerOptions": {
-    "types": [
-      "pinia-plugin-persist"
-    ],
-    "moduleResolution": "node", //将Bundler调整为node
-  },
-}
+pinia.use(piniaPluginPersistedstate)
 ```
 
 基础使用：默认情况下，整个状态将存储在sessionStorage中。 存储ID用作存储键（以设置自定义存储键）
 
 ```typescript
-// store/use-user-store.ts
 import { defineStore } from 'pinia'
+import { computed, ref } from 'vue'
 
-export const useUserStore = defineStore('storeUser', {
-  state: () => {
-    return {
-      firstName: 'S',
-      lastName: 'L',
-      accessToken: 'xxxxxxxxxxxxx'
-    }
-  },
-  actions: {
-    setToken (value: string) {
-      this.accessToken = value
-    }
-  },
-  persist: {
-    enabled: true
+export const useCounterStore = defineStore('counter', () => {
+  const count = ref(0)
+  const doubleCount = computed(() => count.value * 2)
+  function increment() {
+    count.value++
   }
+  return { count, doubleCount, increment }
+}, {
+  persist: true
 })
 ```
 
 可以使用sessionStorage、localStorage或任何自定义存储对象：
 
 ```typescript
-// store/use-user-store.ts
-import Cookies from 'js-cookie'
+import { defineStore } from 'pinia'
+import { computed, ref } from 'vue'
 
-const cookiesStorage: Storage = {
-  setItem (key, state) {
-    return Cookies.set('accessToken', state.accessToken, { expires: 3 })
-  },
-  getItem (key) {
-    return JSON.stringify({
-      accessToken: Cookies.getJSON('accessToken'),
-    })
-  },
-}
-
-export const useUserStore = defineStore('storeUser', {
-  state () {
-    return {
-      firstName: 'S',
-      lastName: 'L',
-      accessToken: 'xxxxxxxxxxxxx',
-    }
-  },
-  persist: {
-    enabled: true,
-    strategies: [
-      {
-        storage: cookiesStorage, //存储方式
-        paths: ['accessToken'] //指定字段
-      },
-    ],
-  },
+export const useCounterStore = defineStore('counter', () => {
+  const count = ref(0)
+  const doubleCount = computed(() => count.value * 2)
+  function increment() {
+    count.value++
+  }
+  return { count, doubleCount, increment }
+}, {
+  persist: [
+    {
+      pick: ['count'],  //指定字段
+      storage: localStorage,  //存储方式
+   },
+  ]
 })
 ```
 
