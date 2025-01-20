@@ -1,4 +1,4 @@
-# Thymeleaf环境搭建
+# Thymeleaf 环境搭建
 
 ## 引入依赖
 
