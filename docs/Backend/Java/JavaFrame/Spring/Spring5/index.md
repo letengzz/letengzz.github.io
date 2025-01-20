@@ -93,9 +93,3 @@ Spring 有两个最核心模块： IoC 和 AOP。
 
 Spring 使创建 Java 企业应用程序变得容易。它提供了在企业环境中采用 Java 语言所需的一切，支持 Groovy 和 Kotlin 作为 JVM 上的替代语言，并且可以根据应用程序的需求灵活地创建多种架构。
 
-## Spring 版本要求
-
-从Spring Framework 6开始，Spring 需要 Java 17+(**JDK最低版本是JDK17**)：
-
-![image-20221201103138194](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/Two-C/img/Java/202307042002052.png)
-
