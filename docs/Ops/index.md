@@ -5,5 +5,6 @@
 - [Nginx](Nginx/index.md)
 - [Docker](Docker/index.md)
 - [Kubernetes](Kubernetes/index.md)
+- [JumpServer](JumpServer/index.md)
 - [工具](Tools/index.md)
 - [其他](Others/index.md)
