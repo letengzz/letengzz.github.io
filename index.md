@@ -22,7 +22,7 @@ features:
   - title: 前端
     details: Vue、微信小程序、UniApp
   - title: 后端
-    details: Go、Java
+    details: .Net、Go、Java、Python
   - title: 数据库
     details: MySQL、Redis、ELK、MongoDB
   - title: 运维
