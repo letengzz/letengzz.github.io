@@ -1,5 +1,6 @@
 # CSS
 
+- [CSS 变量](variable.md)
 - [flex 弹性布局](flex.md)
 
 **预处理器**：
