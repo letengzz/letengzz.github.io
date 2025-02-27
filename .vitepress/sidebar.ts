@@ -1604,11 +1604,11 @@ export const sidebar = {
             },
             {
               "collapsed": true,
-              "link": "/docs/Backend/Java/Others/DbConnectionPool/index.md",
+              "link": "/docs/Backend/Java/Others/Pools/DbConnectionPool/index.md",
               "text": "数据库连接池",
               "items": [
                 {
-                  "link": "/docs/Backend/Java/Others/DbConnectionPool/Druid/index.md",
+                  "link": "/docs/Backend/Java/Others/Pools/DbConnectionPool/Druid/index.md",
                   "text": "Druid"
                 }
               ]
@@ -1872,6 +1872,31 @@ export const sidebar = {
         { text: 'Nginx 概述', link: '/docs/Ops/Nginx/Overview.md' },
         { text: 'Nginx 安装', link: '/docs/Ops/Nginx/Install/index.md' },
         { text: 'Nginx 基础使用', link: '/docs/Ops/Nginx/BasicUsage.md' },
+      ]
+    }
+  ],
+  //ELK
+  "/docs/DB/Nosql/ELK": [
+    {
+      text: 'ELK',
+  
+      link: '/docs/DB/Nosql/ELK/index.md',
+      items: [
+        { text: 'Elasticsearch',  collapsed: true, items: [
+          { text: 'Elasticsearch 概述', link: '/docs/DB/Nosql/ELK/Elasticsearch/Overview.md' },
+          { text: 'Elasticsearch 核心概念', link: '/docs/DB/Nosql/ELK/Elasticsearch/CoreConcept.md' },
+          { text: 'Elasticsearch 安装', link: '/docs/DB/Nosql/ELK/Elasticsearch/Install/index.md' },
+          { text: 'Elasticsearch 基础使用', link: '/docs/DB/Nosql/ELK/Elasticsearch/BasicOperation.md' },
+          { text: 'Elasticsearch 分词器', link: '/docs/DB/Nosql/ELK/Elasticsearch/Tokenizer/index.md' },
+          { text: 'Elasticsearch 可视化工具', link: '/docs/DB/Nosql/ELK/Elasticsearch/VisualTool/index.md' },
+          { text: 'Elasticsearch Java操作', link: '/docs/DB/Nosql/ELK/Elasticsearch/Java/index.md' },
+        ] },
+        { text: 'Kibana',  collapsed: true, items: [
+          { text: 'Kibana 安装', link: '/docs/DB/Nosql/ELK/Kibana/Install/index.md' },
+        ] },
+        { text: '插件',  collapsed: true, items: [
+          { text: 'fscrawler 文档爬虫', link: '/docs/DB/Nosql/ELK/Kibana/Install/index.md' },
+        ] },
       ]
     }
   ],
