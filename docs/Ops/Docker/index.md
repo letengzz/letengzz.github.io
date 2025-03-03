@@ -9,7 +9,7 @@
 - [Docker 数据卷](Volumes.md)
 - [Dockerfile](Dockerfile.md)
 - [Docker 网络](Network.md)
-- [Docker Component](DockerComponent.md)
+- [Docker Compose](DockerCompose.md)
 - Docker 其他操作
 - Docker 管理平台
 - [Docker 监控平台](CIG.md)

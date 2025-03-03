@@ -40,7 +40,7 @@ uname -r
 4. 设置yum源：
 
    ```sh
-   sudo yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
+   sudo yum-config-manager --add-repo http://mirrors.aliyun.com/docker-ce/linux/centos/docker-ce.repo
    ```
 
    阿里源：
