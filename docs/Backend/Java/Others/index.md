@@ -5,7 +5,6 @@
 - [组件及其概念](Component/index.md)
 - [常见的数据存储和交换格式](Configurationfile/index.md)
 - [池化技术](Pools/index.md)
-- [数据库连接池](DbConnectionPool)
 - [需求分析](DemandAnalysis/index.md)
 - [接口设计](InterfaceDesign/index.md)
 - [日志](Logs/index.md)
@@ -20,3 +19,4 @@
 - [实用工具](UseTools/index.md)
 - [设计模式](DesignPattern/index.md)
 - [架构设计](Architecture/index.md)
+- [定时任务](ScheduledTask/index.md)
