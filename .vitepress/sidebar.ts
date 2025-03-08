@@ -1604,13 +1604,28 @@ export const sidebar = {
             },
             {
               "collapsed": true,
-              "link": "/docs/Backend/Java/Others/Pools/DbConnectionPool/index.md",
-              "text": "数据库连接池",
+              "link": "/docs/Backend/Java/Others/Pools/index.md",
+              "text": "池化技术",
               "items": [
                 {
-                  "link": "/docs/Backend/Java/Others/Pools/DbConnectionPool/Druid/index.md",
-                  "text": "Druid"
-                }
+                  "link": "/docs/Backend/Java/Others/Pools/CommonsPool2/index.md",
+                  "text": "公用池化包 Commons Pool 2",
+                },
+                {
+                  "link": "/docs/Backend/Java/Others/Pools/DbConnectionPool/index.md",
+                  "text": "数据库连接池",
+                  "collapsed": true,
+                  item: [
+                    {
+                      "link": "/docs/Backend/Java/Others/Pools/DbConnectionPool/HikariCP/index.md",
+                      "text": "HikariCP"
+                    },
+                    {
+                      "link": "/docs/Backend/Java/Others/Pools/DbConnectionPool/Druid/index.md",
+                      "text": "Druid"
+                    }
+                  ]
+                },
               ]
             },
             {
@@ -1814,7 +1829,11 @@ export const sidebar = {
                   "text": "客户管理系统的应用架构设计"
                 }
               ]
-            }
+            },
+            {
+              "link": "/docs/Backend/Java/Others/ScheduledTask/index.md",
+              "text": "定时任务"
+            },
           ]
         }
       ]
@@ -1926,7 +1945,7 @@ export const sidebar = {
         { text: 'Docker 数据卷', link: '/docs/Ops/Docker/Volumes.md' },
         { text: 'Dockerfile', link: '/docs/Ops/Docker/Dockerfile.md' },
         { text: 'Docker 网络', link: '/docs/Ops/Docker/Network.md' },
-        { text: 'Docker Component', link: '/docs/Ops/Docker/DockerComponent.md' },
+        { text: 'Docker Compose', link: '/docs/Ops/Docker/DockerCompose.md' },
         { text: 'Docker 其他操作' },
         { text: 'Docker 管理平台' },
         { text: 'Docker 监控平台', link: '/docs/Ops/Docker/CIG.md' },
