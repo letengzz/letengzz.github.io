@@ -1,5 +1,4 @@
 import { set_sidebar } from "../utils/auto-gen-sidebar.mjs";	// 改成自己的路径
-import { defineConfig } from 'vitepress'
 export const sidebar = {
 
   //前端
