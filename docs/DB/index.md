@@ -2,22 +2,22 @@
 
 - [数据库概述](Overview.md)
 
-**SQL**：
+**关系型数据库**：
 
-- [SQL 概述](SQL/Overview.md)
-- [ER模型](SQL/ERModel.md)
-- [DBMS](SQL/DBMS.md)
-- [MySQL](SQL/MySQL/index.md)
-- [Oracle](SQL/Oracle/index.md)
-- [人大金仓](SQL/KingbaseES/index.md)
+- [SQL 概述](Relational/SQL.md)
+- [ER模型](Relational/ERModel.md)
+- [DBMS](Relational/DBMS.md)
+- [MySQL](Relational/MySQL/index.md)
+- [Oracle](Relational/Oracle/index.md)
+- [人大金仓](Relational/KingbaseES/index.md)
 
-**NoSQL**：
+**非关系型数据库**：
 
-- [NoSQL 概述](NoSQL/.md)
-- [ELK](NoSQL/ELK/index.md)
-- [HBase](NoSQL/HBase/index.md)
-- [MongoDB](NoSQL/MongoDB/index.md)
-- [Redis](NoSQL/Redis/index.md)
+- [NoSQL 概述](NoRelational/Overview.md)
+- [ELK](NoRelational/ELK/index.md)
+- [HBase](NoRelational/HBase/index.md)
+- [MongoDB](NoRelational/MongoDB/index.md)
+- [Redis](NoRelational/Redis/index.md)
 
 
 
