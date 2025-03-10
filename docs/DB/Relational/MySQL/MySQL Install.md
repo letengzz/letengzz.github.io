@@ -45,7 +45,7 @@ root@localhost: 后面就是初始化的密码
 修改mysql数据库下user表的host属性
 例如：
 
-```mysql
+ ```sql
 use mysql; 
 update user set host = '%' where user ='root';
 select Host,User from user; 
@@ -57,7 +57,7 @@ flush privileges;
 ```
 
 ### 添加新用户
-```mysql
+ ```sql
 CREATE USER 用户名 [IDENTIFIED BY '密码'][,用户名 [IDENTIFIED BY '密码']];
 ```
 - 用户名表示新用户的账户，由“用户User”和“主机名Host”构成
@@ -68,7 +68,7 @@ CREATE USER 用户名 [IDENTIFIED BY '密码'][,用户名 [IDENTIFIED BY '密码
 
   示例：创建用户pnz@%密码为abc123，创建用户zhangsan@%密码为abc123
 
-```mysql
+ ```sql
 create user 'pnz'@'%' identified by 'abc123', 'zhangsan' identified by 'abc123';
 ```
 ### 授权

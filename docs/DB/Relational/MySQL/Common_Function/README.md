@@ -18,7 +18,7 @@ MySQL官方文档：https://dev.mysql.com/doc/refman/8.0/en/functions.html
 
 - 字符串拼接：
 
-  ```mysql
+ 
   SELECT CONCAT('Hello，',name) FROM emp;
   ```
 
@@ -26,7 +26,7 @@ MySQL官方文档：https://dev.mysql.com/doc/refman/8.0/en/functions.html
 
 - 全部转小写：
 
-  ```mysql
+  ```sql
   SELECT LOWER('Hello');
   ```
 
@@ -34,7 +34,7 @@ MySQL官方文档：https://dev.mysql.com/doc/refman/8.0/en/functions.html
 
 - 全部转大写：
 
-  ```mysql
+  ```sql
   SELECT UPPER('Hello');
   ```
 
@@ -42,7 +42,7 @@ MySQL官方文档：https://dev.mysql.com/doc/refman/8.0/en/functions.html
 
 - 左填充：
 
-  ```mysql
+  ```sql
   SELECT LPAD(name,5,'*') FROM emp;
   ```
 
@@ -50,7 +50,7 @@ MySQL官方文档：https://dev.mysql.com/doc/refman/8.0/en/functions.html
 
 - 右填充：
 
-  ```mysql
+  ```sql
   SELECT RPAD(name,5,'*') FROM emp;
   ```
 
@@ -58,7 +58,7 @@ MySQL官方文档：https://dev.mysql.com/doc/refman/8.0/en/functions.html
 
 - 去除空格：
 
-  ```mysql
+  ```sql
   SELECT TRIM('            Hello  MySQL ');
   ```
 
@@ -66,7 +66,7 @@ MySQL官方文档：https://dev.mysql.com/doc/refman/8.0/en/functions.html
 
 - 截取子字符串：
 
-  ```mysql
+  ```sql
   SELECT SUBSTRING(name,1,1) FROM emp;
   ```
 
@@ -80,7 +80,7 @@ MySQL官方文档：https://dev.mysql.com/doc/refman/8.0/en/functions.html
 
 - 向上取整：
 
-  ```mysql
+  ```sql
   SELECT CEIL(1.1);
   ```
 
@@ -88,7 +88,7 @@ MySQL官方文档：https://dev.mysql.com/doc/refman/8.0/en/functions.html
 
 - 向下取整：
 
-  ```mysql
+  ```sql
   SELECT FLOOR(1.9);
   ```
 
@@ -96,7 +96,7 @@ MySQL官方文档：https://dev.mysql.com/doc/refman/8.0/en/functions.html
 
 - 取模：
 
-  ```mysql
+  ```sql
   SELECT MOD(7,4);
   ```
 
@@ -104,7 +104,7 @@ MySQL官方文档：https://dev.mysql.com/doc/refman/8.0/en/functions.html
 
 - 获取随机数：
 
-  ```mysql
+  ```sql
   SELECT RAND();
   ```
 
@@ -112,7 +112,7 @@ MySQL官方文档：https://dev.mysql.com/doc/refman/8.0/en/functions.html
 
 - 四舍五入：
 
-  ```mysql
+  ```sql
   SELECT ROUND(2.344,2);
   ```
 
@@ -126,7 +126,7 @@ MySQL官方文档：https://dev.mysql.com/doc/refman/8.0/en/functions.html
 
 - 当前日期：
 
-  ```mysql
+  ```sql
   SELECT CURDATE();
   ```
 
@@ -134,7 +134,7 @@ MySQL官方文档：https://dev.mysql.com/doc/refman/8.0/en/functions.html
 
 - 当前时间：
 
-  ```mysql
+  ```sql
   SELECT CURTIME();
   ```
 
@@ -142,7 +142,7 @@ MySQL官方文档：https://dev.mysql.com/doc/refman/8.0/en/functions.html
 
 - 当前日期和时间：
 
-  ```mysql
+  ```sql
   SELECT NOW();
   ```
 
@@ -150,7 +150,7 @@ MySQL官方文档：https://dev.mysql.com/doc/refman/8.0/en/functions.html
 
 - 当前年、月、日：
 
-  ```mysql
+  ```sql
   SELECT YEAR(NOW());
   SELECT MONTH(NOW());
   SELECT DAY(NOW());
@@ -160,7 +160,7 @@ MySQL官方文档：https://dev.mysql.com/doc/refman/8.0/en/functions.html
 
 - 增加指定的时间间隔：
 
-  ```mysql
+  ```sql
   SELECT DATE_ADD(NOW(),INTERVAL 70 YEAR);
   ```
 
@@ -168,7 +168,7 @@ MySQL官方文档：https://dev.mysql.com/doc/refman/8.0/en/functions.html
 
 - 获取两个日期相差的天数：
 
-  ```mysql
+  ```sql
   SELECT DATEDIFF(NOW(),'2023-1-1');
   ```
 
@@ -182,7 +182,7 @@ MySQL官方文档：https://dev.mysql.com/doc/refman/8.0/en/functions.html
 
 - `if` 示例：
 
-  ```mysql
+  ```sql
   SELECT IF(FALSE,'Success','Error');
   ```
 
@@ -190,7 +190,7 @@ MySQL官方文档：https://dev.mysql.com/doc/refman/8.0/en/functions.html
 
 - `ifnull` 示例：
 
-  ```mysql
+  ```sql
   SELECT IFNULL('ok','Default');
   SELECT IFNULL(null,'Default');
   ```
@@ -199,7 +199,7 @@ MySQL官方文档：https://dev.mysql.com/doc/refman/8.0/en/functions.html
 
 - `CASE [ expr ] WHEN [ val1 ] THEN [res1] ... ELSE [ default ] END `示例：
 
-  ```mysql
+  ```sql
   SELECT name,
   (CASE workaddress	WHEN '北京' THEN '一线城市'	WHEN '上海' THEN '一线城市'
   	WHEN '广州' THEN '一线城市' ELSE '二线城市' END) AS '工作地址'
@@ -210,7 +210,7 @@ MySQL官方文档：https://dev.mysql.com/doc/refman/8.0/en/functions.html
 
 - `CASE WHEN [ val1 ] THEN [res1] ... ELSE [ default ] END` 示例：
 
-  ```mysql
+  ```sql
   SELECT name,
   (CASE WHEN age >= 20 THEN '年轻人' WHEN age >= 40 THEN '中年人' ELSE '老年人' END ) AS 年龄 
   FROM emp;

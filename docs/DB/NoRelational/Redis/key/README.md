@@ -8,7 +8,7 @@
 
   - **查看当前库所有的key**：
 
-    ```redis
+     ```
     KEYS *
     ```
 
@@ -24,7 +24,7 @@
 
 - **判断某个key是否存在**：
 
-  ```redis
+   ```
   EXISTS key
   ```
 
@@ -32,7 +32,7 @@
 
 - **删除指定的key数据**：如果键被删除成功，输出被删除 key 的数量，否则将输出0
 
-  ```redis
+   ```
   DEL key
   ```
 
@@ -40,13 +40,13 @@
 
 - **非阻塞删除**：仅仅将keys从keyspace元数据中删除
 
-  ```redis
+   ```
   unlink key
   ```
 
 - **查看过期时间(秒)**：-1表示永不过期，-2表示已过期
 
-  ```redis
+   ```
   TTL key
   ```
 
@@ -66,7 +66,7 @@
 
   - **EXPIRE 秒**：设置指定的过期时间(秒)，表示的是时间间隔
 
-    ```redis
+     ```
     EXPIRE key seconds [NX|XX|GT|LT]
     ```
 
@@ -74,7 +74,7 @@
 
   - **PEXPIRE 毫秒**：设置指定的过期时间，以毫秒为单位，表示的是时间间隔
 
-    ```redis
+     ```
     PEXPIRE key milliseconds
     ```
 
@@ -82,7 +82,7 @@
 
   - **EXPIREAT 时间戳-秒**：设置指定的 Key 过期的 Unix 时间，单位为秒，表示的是时间/时刻
 
-    ```redis
+     ```
     EXPIREAT key timestamp
     ```
 
@@ -90,7 +90,7 @@
 
   - **PEXPIREAT 时间戳-毫秒**：设置指定的 Key 到期的 Unix 时间，以毫秒为单位，表示的是时间/时刻
 
-    ```redis
+     ```
     PEXPIREAT key milliseconds-timestamp
     ```
 
@@ -98,13 +98,13 @@
 
 - **切换数据库**：0~15，默认为0
 
-  ```redis
+   ```
   select dbindex
   ```
 
 - **将当前数据库的key移动到给定的数据库db中**：移动成功返回 1 ，失败则返回 0 。
 
-  ```redis
+   ```
   MOVE key dbindex (0~15)
   ```
 
@@ -178,19 +178,19 @@
 
 - **清空当前库**：
 
-  ```redis
+   ```
   FLUSHDB
   ```
 
 - **删除全部库**：
 
-  ```redis
+   ```
   FLUSHALL
   ```
 
 - **序列化给定 key 返回被序列化的值**：key 不存在返回 null (nil)，否则，返回序列化之后的值。
 
-  ```redis
+   ```
   DUMP key
   ```
 
@@ -206,7 +206,7 @@
   
   - SSCAN 命令用于迭代集合键中的元素。
   
-    ```redis
+     ```
     SCAN cursor [MATCH pattern] [COUNT count]
     ```
   

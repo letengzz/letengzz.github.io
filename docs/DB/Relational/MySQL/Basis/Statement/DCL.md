@@ -8,7 +8,7 @@
 
 使用 `SELECT * FROM mysql.user;` 查询用户信息
 
-```mysql
+ ```sql
 SELECT * FROM mysql.user;
 ```
 
@@ -21,13 +21,13 @@ SELECT * FROM mysql.user;
 
 使用 `CREATE USER '用户名'@'主机名' IDENTIFIED BY '密码';` 来创建用户
 
-```mysql
+ ```sql
 CREATE USER '用户名'@'主机名' IDENTIFIED BY '密码';
 ```
 
 **例**：
 
-```mysql
+ ```sql
 CREATE USER 'hjc'@'localhost' IDENTIFIED BY '123123';
 ```
 
@@ -37,13 +37,13 @@ CREATE USER 'hjc'@'localhost' IDENTIFIED BY '123123';
 
 使用 `ALTER USER '用户名'@'主机名' IDENTIFIED WITH mysql_native_password BY '新密码';` 修改用户密码
 
-```mysql
+ ```sql
 ALTER USER '用户名'@'主机名' IDENTIFIED WITH mysql_native_password BY '新密码';
 ```
 
 **例**：
 
-```mysql
+ ```sql
 ALTER USER 'hjc'@'localhost' IDENTIFIED WITH mysql_native_password BY 'hjc123';
 ```
 
@@ -51,13 +51,13 @@ ALTER USER 'hjc'@'localhost' IDENTIFIED WITH mysql_native_password BY 'hjc123';
 
 使用 `DROP USER '用户名'@'主机名'; ` 来删除用户
 
-```mysql
+ ```sql
 DROP USER '用户名'@'主机名'; 
 ```
 
 **例**：
 
-```mysql
+ ```sql
 DROP USER 'hjc'@'localhost'; 
 ```
 
@@ -78,13 +78,13 @@ DROP USER 'hjc'@'localhost';
 
 使用 `SHOW GRANTS FOR '用户名'@'主机名' ;` 查询用户权限
 
-```mysql
+ ```sql
 SHOW GRANTS FOR '用户名'@'主机名';
 ```
 
 **例**：
 
-```mysql
+ ```sql
 SHOW GRANTS FOR 'hjc'@'localhost';
 ```
 
@@ -94,13 +94,13 @@ SHOW GRANTS FOR 'hjc'@'localhost';
 
 使用 `GRANT 权限列表 ON 数据库名.表名 TO '用户名'@'主机名';` 授予权限
 
-```mysql
+ ```sql
 GRANT 权限列表 ON 数据库名.表名 TO '用户名'@'主机名';
 ```
 
 **例**：
 
-```mysql
+ ```sql
 GRANT INSERT,SELECT ON sql_test.* TO 'hjc'@'localhost';
 ```
 
@@ -110,13 +110,13 @@ GRANT INSERT,SELECT ON sql_test.* TO 'hjc'@'localhost';
 
 使用 `REVOKE 权限列表 ON 数据库名.表名 FROM '用户名'@'主机名';` 撤销权限
 
-```mysql
+ ```sql
 REVOKE 权限列表 ON 数据库名.表名 FROM '用户名'@'主机名';
 ```
 
 **例**：
 
-```mysql
+ ```sql
 REVOKE INSERT ON sql_test.* FROM 'hjc'@'localhost';
 ```
 

@@ -18,7 +18,7 @@
 
 在创建表时在字段类型之后加上主键约束的关键字(`PRIMARY KEY`)，并且使用 `AUTO_INCREMENT` 自增即可。
 
-```mysql
+ ```sql
 CREATE TABLE test(
 	id INT AUTO_INCREMENT PRIMARY KEY  COMMENT  'ID唯一标识',
 	name VARCHAR(20) COMMENT  '姓名',
@@ -34,19 +34,19 @@ CREATE TABLE test(
 
 添加**主键约束** (`primary key`)：
 
-```mysql
+ ```sql
 ALTER TABLE 表名  ADD PRIMARY KEY(表字段名);
 ```
 
 添加自增：
 
-```mysql
+ ```sql
 ALTER TABLE 表名 MODIFY 字段名 数据类型 AUTO_INCREMENT;
 ```
 
 **例**：
 
-```mysql
+ ```sql
 CREATE TABLE test(
 	id int COMMENT  'ID唯一标识',
 	name VARCHAR(20) COMMENT  '姓名',
@@ -60,7 +60,7 @@ ALTER TABLE test MODIFY id int AUTO_INCREMENT;
 
 #### 插入测试
 
-```mysql
+ ```sql
 INSERT INTO test(name) VALUES ('张三');
 INSERT INTO test(name) VALUES ('李四');
 SELECT * FROM test;
@@ -74,7 +74,7 @@ SELECT * FROM test;
 
 创建表时在字段类型之后加上唯一约束的关键字(`UNIQUE`)即可。
 
-```mysql
+ ```sql
 CREATE TABLE test(
 	name VARCHAR(20) UNIQUE COMMENT  '姓名',
 	test VARCHAR(20) COMMENT  '无约束对比测试字段'
@@ -89,13 +89,13 @@ CREATE TABLE test(
 
 添加**唯一约束** (`UNIQUE`)：
 
-```mysql
+ ```sql
 ALTER TABLE 表名 ADD UNIQUE(表字段名);
 ```
 
 **例**：
 
-```mysql
+ ```sql
 CREATE TABLE test(
 	name VARCHAR(20) COMMENT  '姓名',
 	test VARCHAR(20) COMMENT  '无约束对比测试字段'
@@ -107,7 +107,7 @@ ALTER TABLE test ADD UNIQUE(name);
 
 #### 插入测试
 
-```mysql
+ ```sql
 INSERT INTO test VALUES ('张三','张三');
 INSERT INTO test VALUES ('张三','张三');
 SELECT * FROM test;
@@ -123,7 +123,7 @@ SELECT * FROM test;
 
 创建表时在字段类型之后加上默认约束的关键字(`DEFAULT`)即可。
 
-```mysql
+ ```sql
 CREATE TABLE test(
 	name VARCHAR(20) COMMENT  '姓名',
     status char(1) DEFAULT  '1'  COMMENT  '状态',
@@ -139,13 +139,13 @@ CREATE TABLE test(
 
 添加**默认约束** (`DEFAULT`)：
 
-```mysql
+ ```sql
 ALTER TABLE 表名 MODIFY 字段名 数据类型 DEFAULT 默认值;
 ```
 
 **例**：
 
-```mysql
+ ```sql
 CREATE TABLE test(
 	name VARCHAR(20) COMMENT  '姓名',
     status char(1) COMMENT  '状态',
@@ -158,7 +158,7 @@ ALTER TABLE test MODIFY status int DEFAULT '1';
 
 #### 插入测试
 
-```mysql
+ ```sql
 INSERT INTO test(name) VALUES ('张三');
 INSERT INTO test(name,status) VALUES ('李四',2);
 SELECT * FROM test;
@@ -174,7 +174,7 @@ SELECT * FROM test;
 
 创建表时在字段类型之后加上检查约束的关键字(`CHECK`)即可。
 
-```mysql
+ ```sql
 CREATE TABLE test(
 	name VARCHAR(20) COMMENT  '姓名',
     age INT CHECK(age > 0 && age <= 120)  COMMENT  '年龄',
@@ -196,7 +196,7 @@ ALTER TABLE 表名 ADD CONSTRAINT 字段名 CHECK(约束条件);
 
 **例**：
 
-```mysql
+ ```sql
 CREATE TABLE test(
 	name VARCHAR(20) COMMENT  '姓名',
     age INT COMMENT  '年龄',
@@ -209,7 +209,7 @@ ALTER TABLE test ADD CONSTRAINT age CHECK(age > 0 && age <= 120);
 
 #### 插入测试
 
-```mysql
+ ```sql
 INSERT INTO test(name,age,test) VALUES ('张三',29,29);
 INSERT INTO test(name,age,test) VALUES ('李四',150,150);
 SELECT * FROM test;
@@ -223,7 +223,7 @@ SELECT * FROM test;
 
 创建表时在字段类型之后加上非空约束的关键字(` NOT NULL`)即可。
 
-```mysql
+ ```sql
 CREATE TABLE test(
 	name VARCHAR(20)  NOT NULL COMMENT  '姓名' ,
 	test VARCHAR(20)  COMMENT  '无约束对比测试字段'
@@ -244,7 +244,7 @@ ALTER TABLE 表名 MODIFY 字段名 数据类型  NOT NULL
 
 **例**：
 
-```mysql
+ ```sql
 CREATE TABLE test(
 	name VARCHAR(20) COMMENT  '姓名' ,
 	test VARCHAR(20)  COMMENT  '无约束对比测试字段'
@@ -256,7 +256,7 @@ ALTER TABLE test MODIFY name VARCHAR(20) NOT NULL;
 
 #### 插入测试
 
-```mysql
+ ```sql
 INSERT INTO test(name,test) VALUES (null,null);
 INSERT INTO test(name,test) VALUES ('张三','张三');
 SELECT * FROM test;
@@ -290,7 +290,7 @@ SELECT * FROM test;
 
 使用 `CREATE TABLE 表名( 字段名    数据类型, ... [CONSTRAINT] [外键名称]  FOREIGN  KEY (子表字段名)   REFERENCES   父表 (父表字段名) );` 添加外键
 
-```mysql
+ ```sql
 CREATE TABLE 表名(
 字段名    数据类型,
  ...
@@ -300,7 +300,7 @@ CREATE TABLE 表名(
 
 **例**：
 
-```mysql
+ ```sql
 CREATE TABLE dept(
 	id INT AUTO_INCREMENT PRIMARY KEY COMMENT '部门 ID',
 	name VARCHAR(50) COMMENT '部门名称'
@@ -328,13 +328,13 @@ CREATE TABLE emp(
 
 使用 `ALTER TABLE 表名 ADD CONSTRAINT 外键名称 FOREIGN KEY (子表字段名) REFERENCES 父表 (父表字段名);`　添加外键
 
-```mysql
+ ```sql
 ALTER TABLE 表名 ADD CONSTRAINT 外键名称 FOREIGN KEY (子表字段名) REFERENCES 父表 (父表字段名);
 ```
 
 **例**：
 
-```mysql
+ ```sql
 CREATE TABLE dept(
 	id INT AUTO_INCREMENT PRIMARY KEY COMMENT '部门 ID',
 	name VARCHAR(50) COMMENT '部门名称'
@@ -362,7 +362,7 @@ ALTER TABLE emp ADD CONSTRAINT fk_dept_id FOREIGN KEY (dept_id) REFERENCES dept(
 
 添加外键约束后无法随意删除父表中的数据，必须先删除所有子表中关联到改记录的数据才能删除父表中数据。
 
-```mysql
+ ```sql
 # emp中使用了该记录无法直接删除dept表中的记录
 DELETE FROM dept WHERE id = 1;
 # 必须先删除emp表的关联数据
@@ -377,7 +377,7 @@ DELETE FROM dept WHERE id = 1;
 
 使用 `ALTER TABLE  表名   DROP  FOREIGN  KEY  外键名称;` 删除外键
 
-```mysql
+ ```sql
 ALTER TABLE  表名   DROP  FOREIGN  KEY  外键名称;
 ```
 
@@ -395,7 +395,7 @@ ALTER TABLE  表名   DROP  FOREIGN  KEY  外键名称;
 
 **修改删除/更新语法**：
 
-```mysql
+ ```sql
 ALTER TABLE  表名  ADD CONSTRAINT  外键名称  FOREIGN KEY  (外键字段)   REFERENCES   
 父表名 (父表字段名)  ON UPDATE [更新行为] ON DELETE [删除行为]
 ```
@@ -404,7 +404,7 @@ ALTER TABLE  表名  ADD CONSTRAINT  外键名称  FOREIGN KEY  (外键字段)  
 
 - `CASCADE`行为：
 
-  ```mysql
+  ```sql
   # 1.修改更新/删除行为同步
   ALTER TABLE  emp  ADD CONSTRAINT  fk_emp_dept_id  FOREIGN KEY  (dept_id) REFERENCES dept (id)  
     ON UPDATE CASCADE ON DELETE CASCADE;
@@ -426,7 +426,7 @@ ALTER TABLE  表名  ADD CONSTRAINT  外键名称  FOREIGN KEY  (外键字段)  
 
 - `SET NULL`行为：
 
-  ```mysql
+  ```sql
   # 1.修改更新/删除行为同步
   ALTER TABLE  emp  ADD CONSTRAINT  fk_emp_dept_id  FOREIGN KEY  (dept_id) REFERENCES dept (id)  
     ON UPDATE SET NULL ON DELETE SET NULL;

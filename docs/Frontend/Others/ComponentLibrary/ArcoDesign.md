@@ -69,7 +69,7 @@ npm install pnpm -g
 
 进入到项目中，运行代码
 
-```lang
+ ```
 cd hello-arco-pro
 
 npm run dev

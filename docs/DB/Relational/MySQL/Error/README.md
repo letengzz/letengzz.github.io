@@ -77,7 +77,7 @@ MySQL error 1042: Unable to connect to any of the specified MySQL hosts.
 
    用命令行登录MySQL数据库之后，执行如下命令修改用户密码加密规则并更新用户密码，这里修改用户名为"root@localhost"的用户密码规则为"mysql_native_password"，密码值为"123456"。
 
-   ```mysql
+   ```sql
    #修改'root'@'localhost'用户的密码规则和密码
    ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY '密码'; 
    #刷新权限
@@ -96,7 +96,7 @@ MySQL error 1042: Unable to connect to any of the specified MySQL hosts.
 
 2. 新建一个文本文件，文本文件中就写一条修改密码的语句
 
-   ```mysql
+   ```sql
    ALTER USER 'root'@'localhost' IDENTIFIED BY '123456';
    ```
 
@@ -106,7 +106,7 @@ MySQL error 1042: Unable to connect to any of the specified MySQL hosts.
 
 3. 使用管理员权限运行cmd命令行，运行以下命令：
 
-   ```mysql
+   ```sql
    mysqld --defaults-file="D:\ProgramFiles\MySQL\MySQLServer8.0_Data\my.ini" --init-file="d:\root_newpass.txt"
    ```
 
@@ -130,7 +130,7 @@ MySQL error 1042: Unable to connect to any of the specified MySQL hosts.
 
 在命令行可以使用mysqladmin命令修改用户密码，命令格式：
 
-```mysql
+ ```sql
 mysqladmin -u 用户名 -h 主机名  -p password "新密码"
 Enter password:输入旧密码
 ```
@@ -139,7 +139,7 @@ Enter password:输入旧密码
 
 例如："root"用户登录后，修改用户名为"hjc1"，主机名为"localhost"的用户的密码为“hjc1123”。
 
-```mysql
+ ```sql
 SET PASSWORD FOR 'hjc1'@'localhost' = '新密码';
 ```
 

@@ -8,7 +8,7 @@ Redis 中每个 hash 可以存储 2^32 - 1 键值对 (40多亿)
 
 - 将哈希表 key 中的字段 field 的值设为 value ：
 
-  ```redis
+   ```
   HSET key field value
   ```
 
@@ -16,7 +16,7 @@ Redis 中每个 hash 可以存储 2^32 - 1 键值对 (40多亿)
 
 - 删除一个或多个哈希表字段：返回被成功删除字段的数量，不包括被忽略的字段。
 
-  ```redis
+   ```
   HDEL key field1 [field2]
   ```
 
@@ -24,7 +24,7 @@ Redis 中每个 hash 可以存储 2^32 - 1 键值对 (40多亿)
 
 - 查看哈希表 key 中，指定的字段是否存在：如果哈希表含有给定字段，返回 1 。 如果哈希表不含有给定字段，或 key 不存在，返回 0 。
 
-  ```redis
+   ```
   HEXISTS key field
   ```
 
@@ -32,7 +32,7 @@ Redis 中每个 hash 可以存储 2^32 - 1 键值对 (40多亿)
 
 - 获取存储在哈希表中指定字段的值：返回给定字段的值。如果给定的字段或 key 不存在时，返回 nil 。
 
-  ```redis
+   ```
   HGET key field 
   ```
 
@@ -40,7 +40,7 @@ Redis 中每个 hash 可以存储 2^32 - 1 键值对 (40多亿)
 
 - 获取在哈希表中指定 key 的所有字段和值：以列表形式返回哈希表的字段及字段值。 若 key 不存在，返回空列表。
 
-  ```redis
+   ```
   HGETALL key
   ```
 
@@ -56,7 +56,7 @@ Redis 中每个 hash 可以存储 2^32 - 1 键值对 (40多亿)
 
   本操作的值被限制在 64 位(bit)有符号数字表示之内。
 
-  ```redis
+   ```
   HINCRBY key field increment
   ```
 
@@ -64,7 +64,7 @@ Redis 中每个 hash 可以存储 2^32 - 1 键值对 (40多亿)
 
 - 为哈希表 key 中的指定字段的浮点数值加上增量 increment ：
 
-  ```redis
+   ```
   HINCRBYFLOAT key field increment
   ```
 
@@ -72,7 +72,7 @@ Redis 中每个 hash 可以存储 2^32 - 1 键值对 (40多亿)
 
 - 获取哈希表中的所有字段：包含哈希表中所有域（field）列表。 当 key 不存在时，返回一个空列表。
 
-  ```redis
+   ```
   HKEYS key
   ```
 
@@ -80,7 +80,7 @@ Redis 中每个 hash 可以存储 2^32 - 1 键值对 (40多亿)
 
 - 获取哈希表中字段的数量：返回哈希表中字段的数量。 当 key 不存在时，返回 0 
 
-  ```redis
+   ```
   HLEN key
   ```
 
@@ -88,7 +88,7 @@ Redis 中每个 hash 可以存储 2^32 - 1 键值对 (40多亿)
 
 - 获取所有给定字段的值：返回一个包含多个给定字段关联值的表，表值的排列顺序和指定字段的请求顺序一样。
 
-  ```redis
+   ```
   HMGET key field1 field2
   ```
 
@@ -96,7 +96,7 @@ Redis 中每个 hash 可以存储 2^32 - 1 键值对 (40多亿)
 
 - 同时将多个 field-value (域-值)对设置到哈希表 key 中：此命令会覆盖哈希表中已存在的字段。如果哈希表不存在，会创建一个空哈希表，并执行 HMSET 操作。
 
-  ```redis
+   ```
   HMSET key field1 value1 field2 value2
   ```
 
@@ -104,7 +104,7 @@ Redis 中每个 hash 可以存储 2^32 - 1 键值对 (40多亿)
 
 - 只有在字段 field 不存在时，设置哈希表字段的值：如果哈希表不存在，一个新的哈希表被创建并进行 HSET 操作。如果字段已经存在于哈希表中，操作无效。如果 key 不存在，一个新哈希表被创建并执行 HSETNX 命令。
 
-  ```redis
+   ```
   HSETNX key field value
   ```
 
@@ -112,7 +112,7 @@ Redis 中每个 hash 可以存储 2^32 - 1 键值对 (40多亿)
 
 - 获取哈希表中所有值：返回一个包含哈希表中所有值的列表。 当 key 不存在时，返回一个空表
 
-  ```redis
+   ```
   HVALS key
   ```
 
@@ -124,7 +124,7 @@ Redis 中每个 hash 可以存储 2^32 - 1 键值对 (40多亿)
   - pattern - 匹配的模式。
   - count - 指定从数据集里返回多少元素，默认值为 10 。
 
-  ```redis
+   ```
   HSCAN key cursor [MATCH pattern] [COUNT count] 
   ```
 

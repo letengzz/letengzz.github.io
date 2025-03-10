@@ -207,7 +207,7 @@ mysql -u root -p
 
 修改密码：
 
-```mysql
+ ```sql
 ALTER USER 'root'@'localhost' IDENTIFIED BY 'new_password' 
 ```
 
@@ -250,7 +250,7 @@ firewall-cmd --list-ports --permanent
 
 修改mysql数据库下user表的host属性：
 
-```mysql
+ ```sql
 use mysql; 
 update user set host = '%' where user ='root';
 select Host,User from user; 
@@ -264,7 +264,7 @@ flush privileges;
 
 ### 添加新用户
 
-```mysql
+ ```sql
 CREATE USER 用户名 [IDENTIFIED BY '密码'][,用户名 [IDENTIFIED BY '密码']];
 ```
 
@@ -276,7 +276,7 @@ CREATE USER 用户名 [IDENTIFIED BY '密码'][,用户名 [IDENTIFIED BY '密码
 
   示例：创建用户pnz@%密码为abc123，创建用户zhangsan@%密码为abc123
 
-```mysql
+ ```sql
 create user 'pnz'@'%' identified by 'abc123', 'zhangsan' identified by 'abc123';
 ```
 
@@ -284,7 +284,7 @@ create user 'pnz'@'%' identified by 'abc123', 'zhangsan' identified by 'abc123';
 
 #### 直接授权
 
-```mysql
+ ```sql
 GRANT 权限1,权限2,…权限n ON 数据库名称.表名称 TO 用户名@用户地址 [IDENTIFIED BY '密码']; 
 ```
 

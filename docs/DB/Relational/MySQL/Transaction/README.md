@@ -28,7 +28,7 @@
 
 **基本语法**：
 
-```mysql
+ ```sql
 SELECT @@autocommit;
 ```
 
@@ -41,13 +41,13 @@ SELECT @@autocommit;
 
 **设置为手动提交事务**：
 
-```mysql
+ ```sql
 SET @@autocommit = 0;
 ```
 
 **设置为自动提交事务**：
 
-```mysql
+ ```sql
 SET @@autocommit = 1;  
 ```
 
@@ -57,7 +57,7 @@ SET @@autocommit = 1;
 
 **基本语法**：
 
-```mysql
+ ```sql
 COMMIT;
 ```
 
@@ -74,7 +74,7 @@ COMMIT;
 
 **基本语法**：
 
-```mysql
+ ```sql
 ROLLBACK;
 ```
 
@@ -88,7 +88,7 @@ ROLLBACK;
 START TRANSACTION; 
 ```
 
-```mysql
+ ```sql
 BEGIN;
 ```
 

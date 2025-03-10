@@ -138,13 +138,13 @@ MySQL软件的服务器端必须先启动，客户端才可以连接和使用使
 
    启动 MySQL 服务命令：
 
-   ```mysql
+   ```sql
    net start MySQL80
    ```
 
    停止 MySQL 服务命令：
 
-   ```mysql
+   ```sql
    net stop MySQL80
    ```
 

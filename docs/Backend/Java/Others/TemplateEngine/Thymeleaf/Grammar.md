@@ -57,7 +57,7 @@ System.out.println("a = " + a);
 
 `th:attr`：标签任意属性渲染
 
-```jsp
+ ```
 <img src="../../images/gtvglogo.png" 
      th:attr="src=@{/images/gtvglogo.png},title=#{logo},alt=#{logo}" />
 ```

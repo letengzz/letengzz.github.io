@@ -39,13 +39,13 @@
 
 **查询单表数据**：执行的SQL形式为：`select 字段列表 from 表名;`
 
-```mysql
+ ```sql
 SELECT 字段列表 FROM 表名;
 ```
 
 **多表查询**：就只需要使用逗号分隔多张表即可，如： `select 字段列表 from 表名1, 表名2;`
 
-```mysql
+ ```sql
 SELECT 字段列表 FROM 表名1, 表名2;
 ```
 
@@ -87,7 +87,7 @@ SELECT 字段列表 FROM 表名1, 表名2;
 
 **基本语法**：
 
-```mysql
+ ```sql
 SELECT 字段列表 FROM 表1,表2 WHERE 限制条件;
 ```
 
@@ -95,7 +95,7 @@ SELECT 字段列表 FROM 表1,表2 WHERE 限制条件;
 
 查询每一个员工的姓名 , 及关联的部门的名称 
 
-```mysql
+ ```sql
 SELECT e.name,d.name FROM emp e,dept d WHERE e.dept_id = d.id;
 ```
 
@@ -105,7 +105,7 @@ SELECT e.name,d.name FROM emp e,dept d WHERE e.dept_id = d.id;
 
 **基本语法**：
 
-```mysql
+ ```sql
 SELECT 字段列表 FROM 表1 [ INNER ] JOIN 表2 ON 连接条件 ... ;
 ```
 
@@ -113,7 +113,7 @@ SELECT 字段列表 FROM 表1 [ INNER ] JOIN 表2 ON 连接条件 ... ;
 
 查询每一个员工的姓名 , 及关联的部门的名称 
 
-```mysql
+ ```sql
 SELECT e.name, d.name FROM emp e INNER JOIN dept d ON e.dept_id = d.id;
 ```
 
@@ -132,7 +132,7 @@ SELECT e.name, d.name FROM emp e INNER JOIN dept d ON e.dept_id = d.id;
 
 **基本语法**：
 
-```mysql
+ ```sql
 SELECT 字段列表 FROM 表1 LEFT [ OUTER ] JOIN 表2 ON 条件 ... ;
 ```
 
@@ -140,7 +140,7 @@ SELECT 字段列表 FROM 表1 LEFT [ OUTER ] JOIN 表2 ON 条件 ... ;
 
 查询emp表的所有数据, 和对应的部门信息
 
-```mysql
+ ```sql
 SELECT e.*, d.name FROM emp e LEFT OUTER JOIN dept d ON e.dept_id = d.id;
 ```
 
@@ -152,7 +152,7 @@ SELECT e.*, d.name FROM emp e LEFT OUTER JOIN dept d ON e.dept_id = d.id;
 
 **基本语法**：
 
-```mysql
+ ```sql
 SELECT 字段列表 FROM 表1 RIGHT [ OUTER ] JOIN 表2 ON 条件 ... ;
 ```
 
@@ -160,7 +160,7 @@ SELECT 字段列表 FROM 表1 RIGHT [ OUTER ] JOIN 表2 ON 条件 ... ;
 
 查询emp表的所有数据, 和对应的部门信息 
 
-```mysql
+ ```sql
 SELECT e.*, d.name FROM emp e RIGHT OUTER JOIN dept d ON e.dept_id = d.id;
 ```
 
@@ -176,7 +176,7 @@ SELECT e.*, d.name FROM emp e RIGHT OUTER JOIN dept d ON e.dept_id = d.id;
 
 自连接查询，可以是[内连接查询](#内连接)，也可以是[外连接查询](#外连接)，其关键点在于 自己连接自己
 
-```mysql
+ ```sql
 SELECT 字段列表 FROM 表A 别名A JOIN 表A 别名B ON 条件 ... ;
 ```
 
@@ -184,7 +184,7 @@ SELECT 字段列表 FROM 表A 别名A JOIN 表A 别名B ON 条件 ... ;
 
 查询员工 及其所属领导的名字，如果员工没有领导，也需要查询出来
 
-```mysql
+ ```sql
 SELECT a.name '员工', b.name '领导' FROM emp a LEFT JOIN emp b ON a.managerid = b.id;
 ```
 
@@ -196,7 +196,7 @@ SELECT a.name '员工', b.name '领导' FROM emp a LEFT JOIN emp b ON a.manageri
 
 **基本语法**：
 
-```mysql
+ ```sql
 SELECT 字段列表 FROM 表A  ...   # 查询结果集1
 UNION [ ALL ]
 SELECT 字段列表 FROM 表B  ....;  # 查询结果集2
@@ -211,7 +211,7 @@ SELECT 字段列表 FROM 表B  ....;  # 查询结果集2
 
 **例**：
 
-```mysql
+ ```sql
 SELECT * FROM emp WHERE salary < 5000
 UNION ALL
 SELECT * FROM emp WHERE age > 30;
@@ -236,7 +236,7 @@ SQL语句中嵌套SELECT语句，称为**嵌套查询**，又称**子查询**。
 
 **例**：
 
-```mysql
+ ```sql
 SELECT * FROM t1 WHERE column1 = (SELECT column1 FROM t2); 
 ```
 
@@ -248,19 +248,19 @@ SELECT * FROM t1 WHERE column1 = (SELECT column1 FROM t2);
 
 - 拆分1： 查询 "研发部" 部门ID，返回单个id值
 
-  ```mysql
+  ```sql
   select id from dept where name = '研发部';
   ```
 
 - 拆分2：根据部门ID, 查询员工信息
 
-  ```mysql
+  ```sql
   select id from dept where name = xxx;
   ```
 
 - 完整版
 
-  ```mysql
+  ```sql
   select * from emp where dept_id = (select id from dept where name = '研发部');
   ```
 
@@ -274,26 +274,26 @@ SELECT * FROM t1 WHERE column1 = (SELECT column1 FROM t2);
 
 - 拆分1: 查询市场部id：
 
-  ```mysql
+  ```sql
   select id from dept where name = '市场部';
   ```
 
 - 拆分2： 查询市场部员工工资
 
-  ```mysql
+  ```sql
   select salary from emp where dept_id = 拆分1;
   select salary from emp where dept_id = (select id from dept where name = '市场部');
   ```
 
 - 拆分3 ： 比 市场部 所有人工资都高的员工信息
 
-  ```mysql
+  ```sql
   select * from emp where salary > all (拆分2);
   ```
 
 - 合并
 
-  ```mysql
+  ```sql
   select * from emp where salary > all ( select salary from emp where dept_id = 
   (select id from dept where name = '市场部') );
   ```
@@ -310,19 +310,19 @@ SELECT * FROM t1 WHERE column1 = (SELECT column1 FROM t2);
 
 - 拆分1：查询 "张无忌" 的薪资及直属领导
 
-  ```mysql
+  ```sql
   select salary, managerid from emp where name = '张无忌';
   ```
 
 - 拆分2：查询与 "张无忌" 的薪资及直属领导相同的员工信息
 
-  ```mysql
+  ```sql
   select * from emp where (salary,managerid) = (xx,xx);
   ```
 
 - 合并：
 
-  ```mysql
+  ```sql
   select * from emp where (salary,managerid) = (select salary, managerid from emp 
   where name = '张无忌');
   ```
@@ -339,19 +339,19 @@ SELECT * FROM t1 WHERE column1 = (SELECT column1 FROM t2);
 
 - 拆分1：查询 "鹿杖客" , "宋远桥" 的职位和薪资
 
-  ```mysql
+  ```sql
   select job, salary from emp where name = '鹿杖客' or name = '宋远桥';
   ```
 
 - 拆分2：查询与 "鹿杖客" , "宋远桥" 的职位和薪资相同的员工信息
 
-  ```mysql
+  ```sql
   select * from emp where (job,salary) in ( xxx );
   ```
 
 - 合并
 
-  ```mysql
+  ```sql
   select * from emp where (job,salary) in (select job, salary from emp where name = '鹿杖客' or name = '宋远桥');
   ```
 

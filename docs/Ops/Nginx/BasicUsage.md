@@ -86,7 +86,7 @@ keepalive_timeout 65;
 
 虚拟主机配置
 
-```conf
+ ```
 server {
     listen 80; 监听端口号
     server_name localhost; 主机名
