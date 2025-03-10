@@ -3,20 +3,20 @@
 layout: home
 
 hero:
-  name: "Hjc的个人文档"
+  name: "Welcome to my website"
   text: "文档知识库"
   tagline: 持续更新...
   image:
     src: /background.svg
     alt: 背景图
-  actions:
-    - theme: brand
-      text: 文档
-      link: /docs
-      target: _blank
-    - theme: alt
-      text: 项目
-      link: /project
+  # actions:
+  #   - theme: brand
+  #     text: 文档
+  #     link: /docs
+  #     target: _blank
+  #   - theme: alt
+  #     text: 项目
+  #     link: /project
 
 features:
   - title: 前端

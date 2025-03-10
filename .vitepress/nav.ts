@@ -18,11 +18,9 @@ export const nav = [
     {
       text: '数据库',
       items: [
-        { text: 'MySQL', link: '/docs/数据库/MySQL' },
-        { text: 'Redis', link: '/docs/数据库/Redis' },
-        { text: 'ELK', link: '/docs/数据库/ELK' },
-        { text: 'MongoDB', link: '/docs/数据库/MongoDB' },
-        { text: '人大金仓', link: '/docs/数据库/人大金仓' },
+        { text: '概述', link: '/docs/DB/Overview' },
+        { text: '关系型数据库', link: '/docs/DB/Relational' },
+        { text: '非关系型数据库', link: '/docs/DB/NoRelational' },
       ]
     },
     {
