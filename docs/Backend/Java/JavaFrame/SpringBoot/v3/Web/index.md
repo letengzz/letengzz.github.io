@@ -1,4 +1,4 @@
-# SpringBoot-web开发
+# SpringBoot Web开发
 
 SpringBoot的Web开发能力，由[**SpringMVC**](../../../SpringMVC/v6/index.md)提供。
 

@@ -46,7 +46,7 @@
 
 - [SpringBoot 提前编译AOT](AOT.md)
 
-> SpringBoot 提前编译(AOT)：
+> SpringBoot 提前编译(AOT)：JIT与AOT的区别、编译器与解释器、AOT的优缺点、JVM架构、Java执行过程、JVM编译器、分层编译云原生、Native Images构建过程、GraalVM、操作过程、Linux平台测试、SpringBoot整合、常见问题
 
 - [SpringBoot 项目打包和运行](PackageAndRun.md)
 
@@ -58,9 +58,10 @@
 
 **拓展**：
 
-- [SpringBoot2 & 3区别](Diff.md)
+- [SpringBoot3改变 & 新特性](Diff.md)
 - [LomBok](../../../Others/UseTools/Lombok.md)
 - [Dev-tools](../../../Others/UseTools/DevTools.md)
 - [Thymeleaf 视图模板](../../../Others/TemplateEngine/Thymeleaf/index.md)
 - [SpringBoot  邮件发送](Email.md)
 - [SpringBoot Docker编排支持](DockerComposeSupport.md)
+- [SpringBoot 重试](Retry.md)
