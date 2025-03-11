@@ -7,6 +7,7 @@
 - [SQL 概述](Relational/SQL.md)
 - [ER模型](Relational/ERModel.md)
 - [DBMS](Relational/DBMS.md)
+- [建模工具](Relational/ModelTools/index.md)
 - [MySQL](Relational/MySQL/index.md)
 - [Oracle](Relational/Oracle/index.md)
 - [人大金仓](Relational/KingbaseES/index.md)
