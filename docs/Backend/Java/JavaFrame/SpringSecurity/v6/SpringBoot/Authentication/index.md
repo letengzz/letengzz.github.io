@@ -58,15 +58,15 @@ public class SecurityConfiguration {
 
 配置完成后就可以前往登录界面，进行登录操作了：
 
-![image-20230702144938540](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202402121758311.png)
+![image-20230702144938540](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202402121758311.png)
 
 登录成功后，就可以访问到之前的界面了：
 
-![image-20230920183027051](https://cdn.jsdelivr.net/gh/letengzz/tc2@main/img/Java/202309201830297.png)
+![image-20230920183027051](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img/Java/202309201830297.png)
 
 并且为了防止会话固定问题，在登录之后，JSESSIONID会得到重新分配：
 
-![image-20230703192441811](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202402121758823.png)
+![image-20230703192441811](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202402121758823.png)
 
 ### 用户相关操作
 
@@ -209,7 +209,7 @@ public class UserController {
 
 访问 http://localhost:8080/user/index 添加用户：
 
-![image-20240213182427288](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202402141710798.png)
+![image-20240213182427288](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202402141710798.png)
 
 使用该新建账号登录，发现登录成功。
 
@@ -701,11 +701,11 @@ public class SecurityConfiguration {
 
 启动后，可以看到两张表中已经自动添加好对应的数据了：
 
-![image-20230920192814847](https://cdn.jsdelivr.net/gh/letengzz/tc2@main/img/Java/202309202211543.png)
+![image-20230920192814847](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img/Java/202309202211543.png)
 
 直接进行登录，使用方式和之前是完全一样的：
 
-![ ](https://cdn.jsdelivr.net/gh/letengzz/tc2@main/img/Java/202309202211352.png)
+![ ](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img/Java/202309202211352.png)
 
 当下次需要快速创建一个用户登录的应用程序时，直接使用这种方式就能快速完成了。
 
@@ -872,7 +872,7 @@ public class UserController {
 
 访问 http://localhost:8080/user/index 添加用户：
 
-![image-20240213182427288](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202402141711500.png)
+![image-20240213182427288](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202402141711500.png)
 
 使用该新建账号登录，发现登录成功。
 
@@ -1432,7 +1432,7 @@ public class UserController {
 
 启动并访问：http://localhost:8080/user/list
 
-![image-20240212141018383](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202402121757905.png)
+![image-20240212141018383](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202402121757905.png)
 
 ### 实现 UserDetailsService
 
@@ -1475,7 +1475,7 @@ public class AuthorizeService implements UserDetailsService {
 
 这样，就通过自定义的方式实现了数据库信息查询，并完成用户登录操作。
 
-![image-20240212142358194](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202402121757467.png)
+![image-20240212142358194](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202402121757467.png)
 
 ### 实现 DBUserDetailsManager
 
@@ -1542,7 +1542,7 @@ public class DBUserDetailsManager implements UserDetailsManager, UserDetailsPass
 
 这样，就通过自定义的方式实现了数据库信息查询，并完成用户登录操作。
 
-![image-20240212142358194](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202402121757083.png)
+![image-20240212142358194](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202402121757083.png)
 
 #### 添加用户
 
@@ -1676,7 +1676,7 @@ public class DBUserDetailsManager implements UserDetailsManager, UserDetailsPass
 
 访问 http://localhost:8080/user/index 添加用户：
 
-![image-20240213182427288](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202402141711068.png)
+![image-20240213182427288](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202402141711068.png)
 
 退出登录并使用`zhangsan`账号进行登录，发现可以登录成功。
 
@@ -1697,7 +1697,7 @@ public class DBUserDetailsManager implements UserDetailsManager, UserDetailsPass
 
 在SecurityFilterChain过滤器链中的UsernamePasswordAuthenticationFilter 专门处理用户认证流程的过滤器。这个过滤器首先先接收用户在浏览器中输入的用户名和密码，然后再用这个用户名和密码生成一个UsernamePasswordAuthenticationToken对象，把这个对象交给AuthenticationManager去做用户认证工作，当认证成功，经过一系列的处理最终到达：AuthenticationSuccessHandler(**处理用户认证成功之后返回信息的类**)，同样用户认证失败会到达：AuthenticationFailureHandler(**处理用户认证失败之后返回信息的类**)
 
-![usernamepasswordauthenticationfilter](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202402241103853.png)
+![usernamepasswordauthenticationfilter](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202402241103853.png)
 
 ### 引入fastjson
 

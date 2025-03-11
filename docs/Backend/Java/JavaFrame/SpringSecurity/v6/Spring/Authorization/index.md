@@ -23,7 +23,7 @@ SpringSecurity为我们提供了两种授权方式：
 
 两者只是概念上的不同，实际上使用起来效果差不多。
 
-### 基于角色授权
+## 基于角色授权
 
 现在我们希望创建两个角色，普通用户和管理员，普通用户只能访问index页面，而管理员可以访问任何页面。
 
@@ -90,7 +90,7 @@ public UserDetails loadUserByUsername(String username) throws UsernameNotFoundEx
 
 通过使用角色控制页面的访问，我们就可以让某些用户只能访问部分页面。
 
-### 基于权限授权
+## 基于权限授权
 
 基于权限的授权与角色类似，需要以`hasAnyAuthority`或`hasAuthority`进行判断：
 
@@ -105,7 +105,7 @@ public UserDetails loadUserByUsername(String username) throws UsernameNotFoundEx
 
 实际上权限跟角色相比只是粒度更细，由于使用方式差不多，这里不多做阐述。
 
-### 使用注解权限判断
+## 使用注解权限判断
 
 除了直接配置以外，我们还可以以注解形式直接配置，首先需要在配置类（注意这里是在Mvc的配置类上添加，因为这里只针对Controller进行过滤，所有的Controller是由Mvc配置类进行注册的，如果需要为Service或其他Bean也启用权限判断，则需要在Security的配置类上添加）上开启：
 

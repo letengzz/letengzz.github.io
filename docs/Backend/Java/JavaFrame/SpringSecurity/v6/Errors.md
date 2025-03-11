@@ -1,6 +1,6 @@
 # Spring Security 常见错误
 
-![img](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202402241730734.jpg)
+![img](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202402241730734.jpg)
 
 **错误的原因**：
 

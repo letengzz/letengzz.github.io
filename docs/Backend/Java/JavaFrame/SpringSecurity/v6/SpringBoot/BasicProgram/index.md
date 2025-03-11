@@ -12,7 +12,7 @@
 
 使用Spring Initializr 创建项目，并选择Spring Web、Spring Security、Thymeleaf依赖：
 
-![image-20240211180735335](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202402121754129.png)
+![image-20240211180735335](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202402121754129.png)
 
 创建完成后查看依赖：
 
@@ -83,25 +83,25 @@ public class IndexController {
 
 当运行起来访问，会自动跳转到默认登陆页面，在运行的时候校验了用户是否已经进行了用户身份认证(默认情况下，会自动生成登陆页，并把url地址重定向到login登陆页)，如果没有进行身份认证。
 
-![image-20230920181714958](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202402121754725.png)
+![image-20230920181714958](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202402121754725.png)
 
 默认用户名 `user` 密码在控制台中，每次重启都会重新生成
 
-![image-20240211190943354](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202402121754080.png)
+![image-20240211190943354](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202402121754080.png)
 
 访问并输入用户名和密码：http://localhost:8080/ 
 
-![image-20240211191305237](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202402121754604.png)
+![image-20240211191305237](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202402121754604.png)
 
 点击`Log Out`退出到登录页面：
 
-![image-20240211191423240](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202402121754186.png)
+![image-20240211191423240](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202402121754186.png)
 
 ## 退出登录
 
 当退出时，也可以直接访问：http://localhost:8080/logout 地址，会进入到一个退出登录界面：
 
-![image-20230920183136259](https://cdn.jsdelivr.net/gh/letengzz/tc2@main/img/Java/202309201831588.png)
+![image-20230920183136259](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2@main/img/Java/202309201831588.png)
 
 退出登录后需要重新登录才能访问网站。
 
@@ -109,11 +109,11 @@ public class IndexController {
 
 页面样式bootstrap.min.css是一个CDN地址，需要通过科学上网的方式访问
 
-![image-20231130152247055](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202402121754104.png)
+![image-20231130152247055](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202402121754104.png)
 
 否则你的登录页会加载很久，并且看到的页面是这样的（登录按钮没有样式文件渲染，但是不影响登录功能的执行）
 
-![image-20231130152345471](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202402121755684.png)
+![image-20231130152345471](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202402121755684.png)
 
 ## Spring Security默认做了什么
 

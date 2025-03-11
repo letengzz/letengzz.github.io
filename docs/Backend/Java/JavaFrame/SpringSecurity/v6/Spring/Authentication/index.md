@@ -52,11 +52,11 @@ public class SecurityConfiguration {
 
 配置完成后就可以前往登录界面，进行登录操作了：
 
-![image-20230702144938540](https://s2.loli.net/2023/07/02/tSGxZmv6jUDMy95.png)
+![img](https://s2.loli.net/2023/07/02/tSGxZmv6jUDMy95.png)
 
 登录成功后，就可以访问到之前的界面了：
 
-![image-20230920183027051](https://cdn.jsdelivr.net/gh/letengzz/tc2@main/img/Java/202309201830297.png)
+![image-20230920183027051](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img/Java/202309201830297.png)
 
 并且为了防止会话固定问题，在登录之后，JSESSIONID会得到重新分配：
 
@@ -66,7 +66,7 @@ public class SecurityConfiguration {
 
 当退出时，也可以直接访问：http://localhost:8080/logout 地址，会进入到一个退出登录界面：
 
-![image-20230920183136259](https://cdn.jsdelivr.net/gh/letengzz/tc2@main/img/Java/202309201831588.png)
+![image-20230920183136259](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img/Java/202309201831588.png)
 
 退出登录后需要重新登录才能访问网站。
 
@@ -76,7 +76,7 @@ public class SecurityConfiguration {
 
 在配置用户信息的时候，报了黄标，实际上这种方式存储密码并不安全：
 
-![image-20230920183415087](https://cdn.jsdelivr.net/gh/letengzz/tc2@main/img/Java/202309201834683.png)
+![image-20230920183415087](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img/Java/202309201834683.png)
 
 SpringSecurity的密码校验不推荐直接使用原文进行比较，而是使用加密算法将密码进行加密 (进行Hash处理，此过程是不可逆的，无法解密)，最后将用户提供的密码以同样的方式加密后与密文进行比较。用户提供的密码属于隐私信息，直接明文存储并不好，而且如果数据库内容被窃取，那么所有用户的密码将全部泄露，这是不希望看到的结果，需要一种既能隐藏用户密码也能完成认证的机制，而Hash处理就是一种很好的解决方案，通过将用户的密码进行Hash值计算，计算出来的结果一般是单向的，无法还原为原文，如果需要验证是否与此密码一致，那么需要以同样的方式加密再比较两个Hash值是否一致，这样就很好的保证了用户密码的安全性。
 
@@ -113,15 +113,15 @@ public class SecurityConfiguration {
 
 这样，存储的密码就是更加安全的密码了：
 
-![image-20230702152150157](https://cdn.jsdelivr.net/gh/letengzz/tc2@main/img/Java/202309201839213.png)
+![image-20230702152150157](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img/Java/202309201839213.png)
 
-![image-20230702152216162](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202402241612376.png)
+![image-20230702152216162](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202402241612376.png)
 
 ### CSRF防护
 
 SpringSecurity自带了csrf防护，需求我们在POST请求中携带页面中的csrfToken才可以，否则一律进行拦截操作：
 
-![image-20230920185515712](https://cdn.jsdelivr.net/gh/letengzz/tc2@main/img/Java/202309201855228.png)
+![image-20230920185515712](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img/Java/202309201855228.png)
 
 可以将其嵌入到页面中，随便找一个地方添加以下内容：
 
@@ -233,11 +233,11 @@ public class SecurityConfiguration {
 
 启动后，可以看到两张表中已经自动添加好对应的数据了：
 
-![image-20230920192814847](https://cdn.jsdelivr.net/gh/letengzz/tc2@main/img/Java/202309202211543.png)
+![image-20230920192814847](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img/Java/202309202211543.png)
 
 直接进行登录，使用方式和之前是完全一样的：
 
-![image-20230702181211157](https://cdn.jsdelivr.net/gh/letengzz/tc2@main/img/Java/202309202211352.png)
+![image-20230702181211157](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img/Java/202309202211352.png)
 
 当下次需要快速创建一个用户登录的应用程序时，直接使用这种方式就能快速完成了。
 
@@ -359,7 +359,7 @@ public interface UserDetailsManager extends UserDetailsService {
 
 这样就可以在首页进行修改密码操作了：
 
-![image-20240212101910122](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202402241612104.png)
+![image-20240212101910122](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202402241612104.png)
 
 当然，这种方式的权限校验虽然能够直接使用数据库，但是存在一定的局限性，只适合快速搭建Demo使用，不适合实际生产环境下编写。
 
@@ -514,7 +514,7 @@ public class UserController {
 
 启动并访问：http://localhost:8080/user/list
 
-![image-20240212141018383](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202402241612365.png)
+![image-20240212141018383](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202402241612365.png)
 
 ### 实现 UserDetailsService
 
@@ -557,7 +557,7 @@ public class AuthorizeService implements UserDetailsService {
 
 这样，就通过自定义的方式实现了数据库信息查询，并完成用户登录操作。
 
-![image-20240212142358194](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202402241613027.png)
+![image-20240212142358194](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202402241613027.png)
 
 ### 实现 DBUserDetailsManager
 
@@ -624,7 +624,7 @@ public class DBUserDetailsManager implements UserDetailsManager, UserDetailsPass
 
 这样，就通过自定义的方式实现了数据库信息查询，并完成用户登录操作。
 
-![image-20240212142358194](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202402241613461.png)
+![image-20240212142358194](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202402241613461.png)
 
 ### 用户认证流程
 

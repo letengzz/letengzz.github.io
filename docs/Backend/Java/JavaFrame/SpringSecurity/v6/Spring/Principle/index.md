@@ -1,6 +1,6 @@
 # Spring Security 内部机制
 
-### 授权校验流程
+## 授权校验流程
 
 SpringSecurity的实现原理：它本质上是依靠N个Filter实现的，也就是一个完整的过滤链（注意这里是过滤器，不是拦截器）
 
@@ -286,7 +286,7 @@ protected void unsuccessfulAuthentication(HttpServletRequest request, HttpServle
 
 各位小伙伴感兴趣的话可以自行了解。
 
-### 安全上下文
+## 安全上下文
 
 用户登录之后，怎么获取当前已经登录用户的信息呢？通过使用SecurityContextHolder就可以很方便地得到SecurityContext对象了，我们可以直接使用SecurityContext对象来获取当前的认证信息：
 
@@ -382,13 +382,13 @@ SecurityContext的生命周期：请求到来时从Session中取出，放入Secu
 
 下一节我们将详细讨论它的实现过程。
 
-### 安全上下文持久化过滤器
+## 安全上下文持久化过滤器
 
 SecurityContextHolderFilter也是内置的Filter，它就是专门用于处理SecurityContext的，这里先说一下大致流程，以便我们后续更加方便地理解：
 
 > 当过滤器链执行到SecurityContextHolderFilter时，它会从HttpSession中把SecurityContext对象取出来（是存在Session中的，跟随会话的消失而消失），然后放入SecurityContextHolder对象中。请求结束后，再把SecurityContext存入HttpSession中，并清除SecurityContextHolder内的SecurityContext对象。
 
-我们还是直接进入到源码中：
+直接进入到源码中：
 
 ```java
 	@Override
@@ -675,4 +675,4 @@ final class ThreadLocalSecurityContextHolderStrategy implements SecurityContextH
 }
 ```
 
-这样，整个流程其实就很清楚了，项目启动时，SecurityContextHolder会自动根据配置创建对应的SecurityContextHolderStrategy对象。当我们的请求到来之后，首先会经过SecurityContextHolderFilter，然后在这个阶段，通过SecurityContextRepository来将不同地方存储（一般是Session中存储）的SecurityContext对象取出并封装为DefferdSecurityContext，然后将其添加到一开始创建好的SecurityContextHolderStrategy对象中，这样，我们的Controller在处理时就能直接从SecurityContextHolder取出SecurityContext对象了，最后在处理结束返回响应时，SecurityContextHolderFilter也会将SecurityContextHolderStrategy存储的DefferdSecurityContext清除掉，至此，一个完整流程结束。：
+这样，整个流程其实就很清楚了，项目启动时，SecurityContextHolder会自动根据配置创建对应的SecurityContextHolderStrategy对象。当我们的请求到来之后，首先会经过SecurityContextHolderFilter，然后在这个阶段，通过SecurityContextRepository来将不同地方存储（一般是Session中存储）的SecurityContext对象取出并封装为DefferdSecurityContext，然后将其添加到一开始创建好的SecurityContextHolderStrategy对象中，这样，我们的Controller在处理时就能直接从SecurityContextHolder取出SecurityContext对象了，最后在处理结束返回响应时，SecurityContextHolderFilter也会将SecurityContextHolderStrategy存储的DefferdSecurityContext清除掉，至此，一个完整流程结束。

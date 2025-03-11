@@ -1,6 +1,6 @@
 # Spring Security 构建入门程序
 
-- 基于 [测试环境搭建](../../../../../../Other/NetworkSecurity/README.md#测试环境搭建) 项目搭建！
+- 基于 [测试环境搭建](../../../../../Others/NetworkSecurity/index.md#测试环境搭建) 项目搭建！
 
 
 首先导入SpringSecurity的相关依赖 (它不仅仅是一个模块，可以根据需求导入需要的模块)，常用的是以下两个(版本同 `spring-webmvc`版本)：
@@ -48,6 +48,6 @@ protected Class<?>[] getRootConfigClasses() {
 
 这样，SpringSecurity的配置就完成了，再次运行项目，会发现无法进入的我们的页面中，无论访问哪个页面，都会进入到SpringSecurity为我们提供的一个默认登录页面。
 
-![image-20230920181714958](./assets/image-20230920181714958.png)
+![image-20230920181714958](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202402241614941.png)
 
 至此，项目环境搭建完成。
