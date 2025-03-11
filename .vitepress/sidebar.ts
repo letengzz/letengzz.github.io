@@ -2,7 +2,7 @@ import { set_sidebar } from "../utils/auto-gen-sidebar.mjs";	// 改成自己的�
 import { DotNet, Go, Java, Python } from "./backend";
 import { NoRelational, Relational } from "./db";
 import { FrontBasic, FrontFrame, FrontTools, FrontOthers } from "./frontend";
-import { Docker, Kubernetes, Linux, Nginx, OpsOthers, OpsTools, VM } from "./ops";
+import { Docker, JumpServer, Kubernetes, Linux, Nginx, OpsOthers, OpsTools, VM } from "./ops";
 export const sidebar = {
 
   //前端
@@ -23,6 +23,7 @@ export const sidebar = {
   "/docs/Ops/Nginx": Nginx,
   "/docs/Ops/Docker": Docker,
   "/docs/Ops/Kubernetes": Kubernetes,
+  "/docs/Ops/JumpServer": JumpServer,
   "/docs/Ops/Tools": OpsTools,
   "/docs/Ops/Others": OpsOthers,
 
@@ -30,7 +31,7 @@ export const sidebar = {
   "/docs/DB/NoRelational": NoRelational,
   //Relational
   "/docs/DB/Relational": Relational,
-  
+
   //其他
   "/docs/Others": set_sidebar("/docs/Others"),
 }

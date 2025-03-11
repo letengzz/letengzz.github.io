@@ -1,8 +1,25 @@
+// 关系型数据库
+export const Relational = [
+    {
+        text: '关系型数据库', link: '/docs/DB/Relational/index.md', items: [
+            { text: 'SQL 概述', link: '/docs/DB/Relational/SQL.md' },
+            { text: 'ER模型', link: '/docs/DB/Relational/ERModel.md' },
+            { text: 'DBMS 概述', link: '/docs/DB/Relational/DBMS.md' },
+            { text: '建模工具', link: '/docs/DB/Relational/ModelTools/index.md' },
+            { text: 'MySQL', link: '/docs/DB/Relational/MySQL/index.md' },
+            { text: 'Oracle', link: '/docs/DB/Relational/Oracle/index.md' },
+            { text: '人大金仓', link: '/docs/DB/Relational/KingbaseES/index.md' },
+        ]
+    },
+]
+
+// 非关系型数据库
 export const NoRelational = [
     {
         text: '非关系型数据库',
         link: '/docs/DB/NoRelational/index.md',
         items: [
+            { text: '概述', link: '/docs/DB/NoRelational/Overview.md' },
             {
                 text: 'Elastic Stack', link: '/docs/DB/NoRelational/ELK/index.md', collapsed: true, items: [
                     {
@@ -28,8 +45,10 @@ export const NoRelational = [
                     },
                 ]
             },
+            { text: 'Redis', link: '/docs/DB/NoRelational/Redis/index.md' },
+            { text: 'MongoDB', link: '/docs/DB/NoRelational/MongoDB/index.md' },
+            { text: 'HBase', link: '/docs/DB/NoRelational/HBase/index.md' },
         ]
     }
 ]
 
-export const Relational = []

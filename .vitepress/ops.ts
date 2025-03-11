@@ -104,6 +104,14 @@ export const Kubernetes = [
     }
 ]
 
+// JumpServer
+export const JumpServer = [
+    {
+        text: 'JumpServer',
+        link: '/docs/Ops/JumpServer/index.md',
+    }
+]
+
 // Tools
 export const OpsTools = [
     {
