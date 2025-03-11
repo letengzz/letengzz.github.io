@@ -1,4 +1,4 @@
-# Java新特性
+# Java 新特性
 
 ## Lambda语法格式
 
