@@ -44,7 +44,7 @@ public class Producer {
 
 启动生产者进行测试：
 
-![image-20240318205141580](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/java/mq/202412101544893.png)
+![image-20240318205141580](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/java/mq/202412101544893.png)
 
 ## 消费者
 
@@ -86,4 +86,4 @@ public class Consumer {
 
 启动消费者进行测试：
 
-![img202403182123726](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/java/mq/202412101547778.png)
+![img202403182123726](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/java/mq/202412101547778.png)

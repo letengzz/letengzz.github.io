@@ -4,7 +4,7 @@
 
 GitHub: https://github.com/honghuangdc/soybean-admin
 
-![img](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202411212039717.png)
+![img](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202411212039717.png)
 
 **特点**：
 
@@ -35,26 +35,26 @@ GitHub: https://github.com/honghuangdc/soybean-admin
 
 - 仪表盘
 
-  ![img](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202411212039305.png)
+  ![img](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202411212039305.png)
 
 - 主题配色
 
-  ![img](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202411212039272.png)
+  ![img](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202411212039272.png)
 
 - 内置组件
 
-  ![img](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202411212039137.png)
+  ![img](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202411212039137.png)
 
 - 地图插件
 
-  ![img](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202411212039371.png)
+  ![img](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202411212039371.png)
 
 - 异常页面
 
-  ![img](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202411212039472.png)
+  ![img](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202411212039472.png)
 
 - 深色模式
 
-  ![img](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202411212039495.png)
+  ![img](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202411212039495.png)
 
-  ![img](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202411212039263.png)
+  ![img](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202411212039263.png)

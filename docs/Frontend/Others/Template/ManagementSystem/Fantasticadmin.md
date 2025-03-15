@@ -8,15 +8,15 @@ Gitee：https://gitee.com/fantastic-admin/basic
 
 官方文档：https://fantastic-admin.hurui.me/v3-docs/
 
-![img](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202410220954734.png)
+![img](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202410220954734.png)
 
 部分页面预览：
 
-![img](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202410220955138.png)
+![img](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202410220955138.png)
 
-![img](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202410220955250.png)
+![img](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202410220955250.png)
 
-![img](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202410220955643.png)
+![img](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202410220955643.png)
 
 功能和特性：
 

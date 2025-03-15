@@ -1,6 +1,6 @@
 # Maven
 
-![img](https://cdn.jsdelivr.net/gh/LetengZzz/img/img/java/tools/202412092205842.png)
+![img](https://fastly.jsdelivr.net/gh/LetengZzz/img/img/java/tools/202412092205842.png)
 
 - [Maven 概述](Overview.md)
 - [Maven 安装及配置核心程序](Install.md)

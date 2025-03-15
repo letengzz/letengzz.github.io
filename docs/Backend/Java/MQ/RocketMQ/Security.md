@@ -9,7 +9,7 @@ ACL (Access Control List)访问控制列表，是一种**细粒度**的权限管
    aclEnable=true
    ```
 
-   ![image-20240318090012541](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/java/mq/202412100936380.png)
+   ![image-20240318090012541](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/java/mq/202412100936380.png)
 
 2. 配置账号密码 (当使用RocketMQ时，需要指定账户和密码)：修改plain_acl.yml
 
@@ -17,7 +17,7 @@ ACL (Access Control List)访问控制列表，是一种**细粒度**的权限管
    vi /root/rocketmq/conf/plain_acl.yml
    ```
 
-   ![image-20240318090703306](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/java/mq/202412100936370.png)
+   ![image-20240318090703306](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/java/mq/202412100936370.png)
 
    将rocketmq2的白名单地址 改为 `192.168.*.*`
 
@@ -27,10 +27,10 @@ ACL (Access Control List)访问控制列表，是一种**细粒度**的权限管
 
 3. 修改控制面板的配置文件：将源码中的application.yaml 放开52/53行 把49行改为true，将application.yaml 上传到服务器的jar包平级目录下即可
 
-   ![image-20240318101006697](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/java/mq/202412100937846.png)
+   ![image-20240318101006697](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/java/mq/202412100937846.png)
 
-   ![image-20240318100629311](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/java/mq/202412100941497.png)
+   ![image-20240318100629311](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/java/mq/202412100941497.png)
 
 4. 在users.properties中修改可视化控制台的账号密码：
 
-   ![image-20240318191426657](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/java/mq/202412100941231.png)
+   ![image-20240318191426657](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/java/mq/202412100941231.png)

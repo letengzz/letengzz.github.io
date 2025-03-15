@@ -2,7 +2,7 @@
 
 IDEA添加模板：settings --> Editor --> File and Code Templates
 
-![image-20230202101540277](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/Two-C/img/Java/202303011700490.png)
+![image-20230202101540277](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/Two-C/img/Java/202303011700490.png)
 
 ## 配置核心配置文件模板
 
@@ -78,7 +78,7 @@ IDEA添加模板：settings --> Editor --> File and Code Templates
 </configuration>
 ```
 
-![image-20230202101734608](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/Two-C/img/Java/202303011700809.png)
+![image-20230202101734608](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/Two-C/img/Java/202303011700809.png)
 
 ## 配置映射文件模板
 
@@ -92,4 +92,4 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 </mapper>
 ```
 
-![image-20230202101631814](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/Two-C/img/Java/202303011700956.png)
+![image-20230202101631814](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/Two-C/img/Java/202303011700956.png)

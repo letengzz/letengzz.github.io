@@ -1,6 +1,6 @@
 # Linux 安装
 上传安装包并解压
-![image.png](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202410211100769.png)
+![image.png](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202410211100769.png)
 进入解压目录
 安装perl库 
 
@@ -51,7 +51,7 @@ yum -y install openssl openssl-devel
 ./configure --prefix=/usr/local/nginx --with-http_stub_status_module --with-http_ssl_module
 make
 使用nginx -V查看是否成功
-![image.png](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202410211101196.png)
+![image.png](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202410211101196.png)
 将objs中的nginx复制到/usr/local/nginx/sbin/nginx
 rm -rf /usr/local/nginx/sbin/nginx
 cp ./nginx /usr/local/nginx/sbin/nginx

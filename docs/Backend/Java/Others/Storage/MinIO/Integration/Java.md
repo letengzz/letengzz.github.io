@@ -60,7 +60,7 @@ void contextLoads() {
 
 ## MinioClient 方法
 
-![minio (1)](https://cdn.jsdelivr.net/gh/LetengZzz/img/java/others/202412092356866.png)
+![minio (1)](https://fastly.jsdelivr.net/gh/LetengZzz/img/java/others/202412092356866.png)
 
 ## Bucket 操作
 
@@ -83,7 +83,7 @@ void existsBucketTest() throws Exception {
 }
 ```
 
-![image-20240505154303591](https://cdn.jsdelivr.net/gh/LetengZzz/img/java/others/202412092359949.png)
+![image-20240505154303591](https://fastly.jsdelivr.net/gh/LetengZzz/img/java/others/202412092359949.png)
 
 ### 创建存储桶
 
@@ -101,9 +101,9 @@ void makeBucketTest() throws Exception {
 }
 ```
 
-![image-20240505154652506](https://cdn.jsdelivr.net/gh/LetengZzz/img/java/others/202412092356673.png)
+![image-20240505154652506](https://fastly.jsdelivr.net/gh/LetengZzz/img/java/others/202412092356673.png)
 
-![image-20240505154759143](https://cdn.jsdelivr.net/gh/LetengZzz/img/java/others/202412092356608.png)
+![image-20240505154759143](https://fastly.jsdelivr.net/gh/LetengZzz/img/java/others/202412092356608.png)
 
 ### 列出所有存储桶
 
@@ -118,7 +118,7 @@ void bucketListTest() throws Exception {
 }
 ```
 
-![image-20240505155102973](https://cdn.jsdelivr.net/gh/LetengZzz/img/java/others/202412092357028.png)
+![image-20240505155102973](https://fastly.jsdelivr.net/gh/LetengZzz/img/java/others/202412092357028.png)
 
 ### 删除已存在的存储桶
 
@@ -136,11 +136,11 @@ void removeBucketTest() throws Exception {
 
 删除成功：
 
-![image-20240505155601476](https://cdn.jsdelivr.net/gh/LetengZzz/img/java/others/202412092357919.png)
+![image-20240505155601476](https://fastly.jsdelivr.net/gh/LetengZzz/img/java/others/202412092357919.png)
 
 删除失败：
 
-![image-20240505155622842](https://cdn.jsdelivr.net/gh/LetengZzz/img/java/others/202412092357096.png)
+![image-20240505155622842](https://fastly.jsdelivr.net/gh/LetengZzz/img/java/others/202412092357096.png)
 
 ## Object 操作
 
@@ -187,7 +187,7 @@ void uploadFileTest2() throws Exception {
 }
 ```
 
-![image-20240505210519471](https://cdn.jsdelivr.net/gh/LetengZzz/img/java/others/202412092357327.png)
+![image-20240505210519471](https://fastly.jsdelivr.net/gh/LetengZzz/img/java/others/202412092357327.png)
 
 ### 检查文件是否存在
 
@@ -210,11 +210,11 @@ void existsObjectTest() throws Exception {
 
 存在则返回文件信息：
 
-![image-20240505214125654](https://cdn.jsdelivr.net/gh/LetengZzz/img/java/others/202412092357743.png)
+![image-20240505214125654](https://fastly.jsdelivr.net/gh/LetengZzz/img/java/others/202412092357743.png)
 
 不存在则会抛出异常：
 
-![image-20240505214531327](https://cdn.jsdelivr.net/gh/LetengZzz/img/java/others/202412092357426.png)
+![image-20240505214531327](https://fastly.jsdelivr.net/gh/LetengZzz/img/java/others/202412092357426.png)
 
 ### 下载文件
 
@@ -244,7 +244,7 @@ void objectListTest() throws Exception {
 }
 ```
 
-![image-20240506230317282](https://cdn.jsdelivr.net/gh/LetengZzz/img/java/others/202412092357812.png)
+![image-20240506230317282](https://fastly.jsdelivr.net/gh/LetengZzz/img/java/others/202412092357812.png)
 
 ### 删除文件
 
@@ -274,7 +274,7 @@ void getUrlTest() throws Exception {
 }
 ```
 
-![image-20240506225400406](https://cdn.jsdelivr.net/gh/LetengZzz/img/java/others/202412092357024.png)
+![image-20240506225400406](https://fastly.jsdelivr.net/gh/LetengZzz/img/java/others/202412092357024.png)
 
 ## 开放公共URL
 
@@ -284,7 +284,7 @@ void getUrlTest() throws Exception {
 
 1. 在Web管理后台修改访问策略为public，此时不用签名即可访问，公共的访问策略可以任何人上传下载删除：
 
-   ![image-20240507124557648](https://cdn.jsdelivr.net/gh/LetengZzz/img/java/others/202412092357486.png)
+   ![image-20240507124557648](https://fastly.jsdelivr.net/gh/LetengZzz/img/java/others/202412092357486.png)
 
 2. 自定义访问策略：
 
@@ -311,7 +311,7 @@ void getUrlTest() throws Exception {
    }
    ```
 
-   ![image-20240507125330592](https://cdn.jsdelivr.net/gh/LetengZzz/img/java/others/202412092358617.png)
+   ![image-20240507125330592](https://fastly.jsdelivr.net/gh/LetengZzz/img/java/others/202412092358617.png)
 
 3. 通过客户端API修改： 创建存储桶，修改文件访问策略为公开的读权限
 

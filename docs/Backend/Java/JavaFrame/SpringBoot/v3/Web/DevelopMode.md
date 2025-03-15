@@ -20,7 +20,7 @@
 
 例如：使用VUE开发的前端系统
 
-![image.png](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202411221446626.png)
+![image.png](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202411221446626.png)
 
 ## 前后不分离模式
 
@@ -28,5 +28,5 @@
 
 使用功能`@Controller` + Thymeleaf模板引擎开发。
 
-![image.png](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202411221444514.png)
+![image.png](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202411221444514.png)
 

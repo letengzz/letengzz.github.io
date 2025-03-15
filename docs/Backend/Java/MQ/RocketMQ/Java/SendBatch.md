@@ -49,7 +49,7 @@ public class Producer {
 
 启动生产者进行测试：
 
-![image-20240319215958367](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/java/mq/202412101559546.png)
+![image-20240319215958367](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/java/mq/202412101559546.png)
 
 ## 消费者
 
@@ -99,7 +99,7 @@ public class Consumer {
 
 启动消费者进行测试：
 
-![image-20240326180813377](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/java/mq/202412101559153.png)
+![image-20240326180813377](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/java/mq/202412101559153.png)
 
 ## 一次消费多条
 

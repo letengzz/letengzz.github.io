@@ -637,7 +637,7 @@ services.AddMvc(option=> {
 
 ### ResourceFilter
  就是为了缓存而存在 
-![image.png](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/DotNet/202412101726862.png)
+![image.png](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/DotNet/202412101726862.png)
 
 ```
 public class CustomResourceFilterAttribute : Attribute, IResourceFilter
@@ -798,7 +798,7 @@ app.UseExceptionHandler(errorApp =>
 });
 ```
 ### ResultFilter
-![image.png](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/DotNet/202412101727396.png)
+![image.png](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/DotNet/202412101727396.png)
 
 1. 自定义一个类，继承Attribute,实现IResultFilter接口，实现方法 
 2. 标记在Action方法头上 

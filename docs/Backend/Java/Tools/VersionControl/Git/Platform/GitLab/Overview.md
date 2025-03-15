@@ -10,7 +10,7 @@ GitLab可以用于搭建自己的代码托管平台。
 
 GitLab优点：
 
-![image-20240612110747233](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202406121107031.png)
+![image-20240612110747233](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202406121107031.png)
 
 ## 中国发行版-极狐GitLab
 

@@ -8,7 +8,7 @@
 
 条件构造器类结构：
 
-![image-20230225222850348](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/Two-C/img/Java/202302261313615.png)
+![image-20230225222850348](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/Two-C/img/Java/202302261313615.png)
 
 - Wrapper ： 条件构造抽象类，最顶端父类 
   - AbstractWrapper ： 用于查询条件封装，生成 sql 的 where 条件
@@ -24,7 +24,7 @@ QueryWrapper主要用于查询和删除功能也可以用修改功
 
 **组装条件**：
 
-![image_k_cPdiIiy4](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202412031137869.png)
+![image_k_cPdiIiy4](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202412031137869.png)
 
 ### 组装查询条件
 

@@ -32,11 +32,11 @@
 
   DAO层是整个应用程序中与数据库交互的核心部分。DAO层负责将数据库中的数据转换成Java对象，并将Java对象的数据保存到数据库中。DAO层的主要作用是隔离上层业务逻辑和下层数据访问细节。在Java开发中，通常使用Hibernate等ORM框架来实现DAO层。DAO层的主要任务是实现数据的增删改查等基本操作，同时提供一些高级查询功能。
 
-![image-20231217151801301](https://cdn.jsdelivr.net/gh/LetengZzz/img/java/others/202412092350834.png) 
+![image-20231217151801301](https://fastly.jsdelivr.net/gh/LetengZzz/img/java/others/202412092350834.png) 
 
 ## 命名规范
 
-![image-20231217160329770](https://cdn.jsdelivr.net/gh/LetengZzz/img/java/others/202412092350304.png)
+![image-20231217160329770](https://fastly.jsdelivr.net/gh/LetengZzz/img/java/others/202412092350304.png)
 
 ## 为什么会存在Vo
 

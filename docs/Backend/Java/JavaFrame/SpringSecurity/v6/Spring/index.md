@@ -1,6 +1,6 @@
 # Spring Security6-Spring
 
-![img](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img/Java/202309201637507.jpeg)
+![img](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/tc2/img/Java/202309201637507.jpeg)
 
 - [Spring Security 概述](../Overview.md)
 

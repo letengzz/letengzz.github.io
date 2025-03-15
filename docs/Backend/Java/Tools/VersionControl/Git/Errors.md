@@ -2,7 +2,7 @@
 
 ## SSH 公钥错误
 
-![image-20230514005537921](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/Two-C/img/Java/202305140114775.png)
+![image-20230514005537921](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/Two-C/img/Java/202305140114775.png)
 
 Git远程仓库的SSH免密公钥和推送用户提供的公钥不一致导致的。
 
@@ -14,9 +14,9 @@ Git远程仓库的SSH免密公钥和推送用户提供的公钥不一致导致�
 
 1. 在Linux 下创建一个文件：hello.html
 
-   ![image-20230817140203460](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/Two-C/img/202308171402617.png)
+   ![image-20230817140203460](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/Two-C/img/202308171402617.png)
 
 2. 保存到Window并提交会提示：`warning: LF will be replaced by CRLF in hello.html.`
 
-   ![image-20230817140258013](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/Two-C/img/202308171402114.png)
+   ![image-20230817140258013](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/Two-C/img/202308171402114.png)
 

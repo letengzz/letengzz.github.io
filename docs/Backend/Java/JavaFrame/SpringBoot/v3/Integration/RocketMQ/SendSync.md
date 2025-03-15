@@ -4,7 +4,7 @@
 
 消息由消费者发送到broker后，会得到一个确认，是具有可靠性的。这种可靠性同步地发送方式使用的比较广泛，比如：重要的消息通知，短信通知等。
 
-![](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202403172015667.jpg)
+![](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202403172015667.jpg)
 
 ## 生产者
 
@@ -42,15 +42,15 @@ class Producer {
 
 运行后查看控制台：
 
-![image-20240324160317526](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202403241603211.png)
+![image-20240324160317526](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202403241603211.png)
 
 查看RocketMQ的控制台：
 
-![image-20240324160436245](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202403241604647.png)
+![image-20240324160436245](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202403241604647.png)
 
 查看消息的细节：
 
-![image-20240324160509280](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202403241605700.png)
+![image-20240324160509280](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202403241605700.png)
 
 ## 消费者
 
@@ -83,4 +83,4 @@ public class SyncMsgListener implements RocketMQListener<MessageExt> {
 
 启动 rocketmq-consumer，运行结果：查看控制台，发现已经监听到消息了
 
-![image-20240324160839789](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202403241608816.png)
+![image-20240324160839789](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202403241608816.png)

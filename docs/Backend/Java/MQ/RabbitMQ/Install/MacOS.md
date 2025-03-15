@@ -113,13 +113,13 @@ Mac 后台启动 RabbitMQ：
 
   - 注意，此处需要进行一次授权，否则在代码中连接RabbitMQ会失败
 
-    ![img202403171903826](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/java/mq/202412101626696.png)
+    ![img202403171903826](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/java/mq/202412101626696.png)
 
-    ![image-20230616194636865](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/java/mq/202412101626686.png)
+    ![image-20230616194636865](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/java/mq/202412101626686.png)
 
 创建完成之后，登录一下页面：
 
-![image-20240310233156858](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/java/mq/202412101626935.png)
+![image-20240310233156858](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/java/mq/202412101626935.png)
 
 进入了之后会显示当前的消息队列情况，包括版本号、Erlang版本等。
 

@@ -74,7 +74,7 @@ elasticsearch:8.12.0
 
 在浏览器中输入：http://ip:9200 即可看到elasticsearch的响应结果：
 
-![image-20231228175312648](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202312281753385.png)
+![image-20231228175312648](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202312281753385.png)
 
 ## 部署 Elasticsearch 集群
 

@@ -8,7 +8,7 @@
 - 消息TTL过期
 - 队列达到最大长度
 
-![image-20220419112336088](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/java/mq/202412101627908.jpg)
+![image-20220419112336088](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/java/mq/202412101627908.jpg)
 
 实际上本质就是一个死信交换机+绑定的死信队列，当正常队列中的消息被判定为死信时，会被发送到对应的死信交换机，然后再通过交换机发送到死信队列中，死信队列也有对应的消费者去处理消息。
 

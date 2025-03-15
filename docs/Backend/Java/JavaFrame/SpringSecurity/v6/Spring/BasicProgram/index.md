@@ -48,6 +48,6 @@ protected Class<?>[] getRootConfigClasses() {
 
 这样，SpringSecurity的配置就完成了，再次运行项目，会发现无法进入的我们的页面中，无论访问哪个页面，都会进入到SpringSecurity为我们提供的一个默认登录页面。
 
-![image-20230920181714958](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202402241614941.png)
+![image-20230920181714958](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202402241614941.png)
 
 至此，项目环境搭建完成。

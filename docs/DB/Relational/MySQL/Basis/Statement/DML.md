@@ -26,7 +26,7 @@ INSERT INTO user(id,username,password) VALUES (1,'张三','123');
 INSERT INTO user(id,password) VALUES (1,'123');
 ```
 
-![image-20230909220545880](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img/Java/202309092205290.png)
+![image-20230909220545880](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/tc2/img/Java/202309092205290.png)
 
 ### 给全部字段添加值
 
@@ -42,7 +42,7 @@ INSERT INTO 表名 VALUES (值1, 值2, ...);
 insert into user values (2,'李四','lisi');
 ```
 
-![image-20230909220650705](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img/Java/202309092206160.png)
+![image-20230909220650705](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/tc2/img/Java/202309092206160.png)
 
 ### 批量添加数据
 
@@ -60,7 +60,7 @@ INSERT INTO 表名 (字段名1, 字段名2, ...) VALUES (值1, 值2, ...), (值1
 INSERT INTO user (id,username,password) VALUES (1, '张三', 'zhangsan'), (2, '李四', 'lisi'), (3, '王五','wangwu');
 ```
 
-![image-20230909224554016](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img/Java/202309092247590.png)
+![image-20230909224554016](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/tc2/img/Java/202309092247590.png)
 
 #### 全部字段批量添加
 
@@ -76,7 +76,7 @@ INSERT INTO 表名 VALUES (值1, 值2, ...), (值1, 值2, ...), (值1, 值2, ...
 INSERT INTO user VALUES (1, '张三', 'zhangsan'), (2, '李四', 'lisi'), (3, '王五','wangwu');
 ```
 
-![image-20230909224724383](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img/Java/202309092247207.png)
+![image-20230909224724383](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/tc2/img/Java/202309092247207.png)
 
 ## 修改数据
 
@@ -97,7 +97,7 @@ UPDATE user SET username = 'zhangsan',password = 'zs' WHERE id = 1;
 SELECT * FROM user;
 ```
 
-![image-20230909225955723](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img/Java/202309092259468.png)
+![image-20230909225955723](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/tc2/img/Java/202309092259468.png)
 
 ## 删除数据
 
@@ -121,4 +121,4 @@ DELETE FROM user;
 SELECT * FROM user;
 ```
 
-![image-20230909230305793](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img/Java/202309092303759.png)
+![image-20230909230305793](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/tc2/img/Java/202309092303759.png)

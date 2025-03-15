@@ -37,7 +37,7 @@ class Producer {
 }
 ```
 
-![image-20240327230230761](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202403272302783.png)
+![image-20240327230230761](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202403272302783.png)
 
 ## 消费者
 
@@ -73,11 +73,11 @@ public class MsgListener implements RocketMQListener<MessageExt>, RocketMQPushCo
 }
 ```
 
-![image-20240327231142064](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202403272311184.png)
+![image-20240327231142064](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202403272311184.png)
 
 ## 查看效果
 
-![image-20240323174833749](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202403231748311.png)
+![image-20240323174833749](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202403231748311.png)
 
 ## 监听死信消息
 
@@ -106,6 +106,6 @@ public class DeadMsgListener implements RocketMQListener<MessageExt> {
 }
 ```
 
-![image-20240327231531186](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202403272315032.png)
+![image-20240327231531186](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202403272315032.png)
 
-![image-20240323175156058](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202403231751595.png)
+![image-20240323175156058](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202403231751595.png)

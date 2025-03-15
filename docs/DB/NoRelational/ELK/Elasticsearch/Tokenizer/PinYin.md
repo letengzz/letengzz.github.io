@@ -35,7 +35,7 @@ exit
 docker volume inspect es-plugins
 ```
 
-![image-20231228194409739](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202312281944552.png)
+![image-20231228194409739](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202312281944552.png)
 
 说明plugins目录被挂载到了：`/var/lib/docker/volumes/es-plugins/_data `这个目录中。
 
@@ -43,11 +43,11 @@ docker volume inspect es-plugins
 
 通过：https://github.com/medcl/elasticsearch-analysis-pinyin/releases/download/v7.12.1/elasticsearch-analysis-pinyin-7.12.1.zip 下载并解压，重命名为pinyin
 
-![image-20240106232532010](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202401062325640.png)
+![image-20240106232532010](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202401062325640.png)
 
 #### 上传到es容器的插件数据卷中
 
-![image-20240106232740337](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202401062327053.png)
+![image-20240106232740337](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202401062327053.png)
 
 ###  重启容器
 
@@ -71,7 +71,7 @@ POST /_analyze
 }
 ```
 
-![image-20240106233328845](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202401062333691.png)
+![image-20240106233328845](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202401062333691.png)
 
 ```
 # ①创建索引
@@ -108,5 +108,5 @@ GET /countries/_search
 }
 ```
 
-![image-20240106233936019](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202404091732471.png)
+![image-20240106233936019](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202404091732471.png)
 

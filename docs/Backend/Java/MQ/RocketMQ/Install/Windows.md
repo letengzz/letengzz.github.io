@@ -8,9 +8,9 @@
 
 下载解压到本地目录 bin目录下存放可运行的脚本：
 
-![](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/java/mq/202412101008872.png)
+![](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/java/mq/202412101008872.png)
 
-![](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/java/mq/202412101008730.png)
+![](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/java/mq/202412101008730.png)
 
 - 项目目录结构：
 
@@ -27,7 +27,7 @@
 
 - 配置ROCKETMQ_HOME环境变量：ROCKETMQ_HOME 应指向解压后的`Readme.md`文件所在目录。
 
-  ![](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/java/mq/202412101008543.png)
+  ![](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/java/mq/202412101008543.png)
 
 ## 启动NameServer
 
@@ -37,7 +37,7 @@
 
 - 在runserver.cmd脚本，java的默认启动参数中，启动时堆内存的大小为2g，可根据自己的情况来设置内存大小。
 
-  ![](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/java/mq/202412101008422.png)
+  ![](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/java/mq/202412101008422.png)
 
   ```shell
   rem set "JAVA_OPT=%JAVA_OPT% -server -Xms2g -Xmx2g -Xmn1g -XX:MetaspaceSize=128m -XX:MaxMetaspaceSize=320m"
@@ -48,7 +48,7 @@
 
 - 启动方式一：直接双击mqnamesrv.cmd脚本启动NameServer。
 
-  ![](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/java/mq/202412101008266.png)
+  ![](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/java/mq/202412101008266.png)
 
 - 启动方式二：使用cmd命令启动，首先进入rocketMq的安装目录，再进入bin目录，执行`start mqnamesrv.cmd`，启动NAMESERVER
 
@@ -56,7 +56,7 @@
   start mqnamesrv.cmd 
   ```
 
-  ![](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/java/mq/202412101008516.png)
+  ![](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/java/mq/202412101008516.png)
 
 - NameServer启动显示：看到 The Name Server boot success 字样，表示NameServer己启动成功。
 
@@ -70,7 +70,7 @@
 
 - 同样的，优化一下`runbroker.cmd`的启动内存
 
-  ![](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/java/mq/202412101008365.png)
+  ![](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/java/mq/202412101008365.png)
 
   ```shell
   rem set "JAVA_OPT=%JAVA_OPT% -server -Xms2g -Xmx2g -Xmn1g"
@@ -91,11 +91,11 @@
     call "%ROCKETMQ_HOME%\bin\runbroker.cmd" -Drmq.logback.configurationFile=%ROCKETMQ_HOME%\conf\rmq.broker.logback.xml org.apache.rocketmq.broker.BrokerStartup %*
     ```
 
-    ![](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/java/mq/202412101008609.png)
+    ![](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/java/mq/202412101008609.png)
 
     双击mqbroker.cmd脚本启动Broker：
 
-    ![](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/java/mq/202412101008522.png)
+    ![](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/java/mq/202412101008522.png)
 
   - 启动方式二：不修改`mqbroker.cmd`脚本，直接使用cmd命令启动
 
@@ -105,7 +105,7 @@
     start mqbroker.cmd -n 127.0.0.1:9876 autoCreateTopicEnable=true
     ```
 
-    ![](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/java/mq/202412101008498.png)
+    ![](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/java/mq/202412101008498.png)
 
 - Broker启动显示：看到 `The broker ... boot success` 字样，表示Broker己启动成功
 
@@ -130,7 +130,7 @@ tools.cmd org.apache.rocketmq.example.quickstart.Consumer
 
 消费者启动成功：
 
-![](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/java/mq/202412101008818.png)
+![](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/java/mq/202412101008818.png)
 
 ### 启动生产者
 
@@ -143,11 +143,11 @@ tools.cmd org.apache.rocketmq.example.quickstart.Producer
 
 生产者启动成功：
 
-![](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/java/mq/202412101008763.png)
+![](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/java/mq/202412101008763.png)
 
 启动成功后，生产者会发送1000个消息，然后自动退出
 
-![](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/java/mq/202412101030803.png)
+![](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/java/mq/202412101030803.png)
 
 ### 查看效果
 
@@ -155,7 +155,7 @@ tools.cmd org.apache.rocketmq.example.quickstart.Producer
 
 消费者接收消息
 
-![](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/java/mq/202412101009763.png)
+![](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/java/mq/202412101009763.png)
 
 RocketMQ最小应用已经可以正常工作，能满足开发环境下调试代码的需求
 
@@ -171,7 +171,7 @@ Rocketmq 控制台可以可视化MQ的消息发送。
 
 修改端口号：进入\src\main\resources下的application.properties修改端口号
 
-![](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/java/mq/202412101009857.png)
+![](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/java/mq/202412101009857.png)
 
 下载后解压出来，在跟目录下执行：`mvn clean package -Dmaven.test.skip=true`
 
@@ -179,9 +179,9 @@ Rocketmq 控制台可以可视化MQ的消息发送。
 mvn clean package -Dmaven.test.skip=true
 ```
 
-![](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/java/mq/202412101009832.png)
+![](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/java/mq/202412101009832.png)
 
-![](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/java/mq/202412101009090.png)
+![](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/java/mq/202412101009090.png)
 
 直接运行该jar包即可，使用cmd命令进入到该目录，然后执行命令 `java -jar rocketmq-console-ng-1.0.0.jar`  命令
 
@@ -189,7 +189,7 @@ mvn clean package -Dmaven.test.skip=true
 java -jar rocketmq-console-ng-1.0.0.jar
 ```
 
-![](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/java/mq/202412101009555.png)
+![](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/java/mq/202412101009555.png)
 
 使用浏览器输入 http://127.0.0.1:8080/ 即可进入rocketmq控制台
 
@@ -197,6 +197,6 @@ java -jar rocketmq-console-ng-1.0.0.jar
 
 - 进入\src\main\resources下的application.properties修改即可
 
-  ![](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/java/mq/202412101009173.png)
+  ![](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/java/mq/202412101009173.png)
 
 - 重新打包运行即可

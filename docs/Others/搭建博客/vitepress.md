@@ -17,7 +17,7 @@
 
 到最后遇到问题你只能提issue，这个时候就得看负责维护这个项目团队的积极性了，vitepress团队还是很奈斯的，我今天两点提了个issue8分钟就回复了，也得益于美国跟咱这边有时差。
 
-![image-20240108185018057](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/others/202412111118531.png)
+![image-20240108185018057](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/others/202412111118531.png)
 
 ## 创建项目
 
@@ -50,7 +50,7 @@ pnpm vitepress init
 - 是否使用ts，我们个人学习就没必要ts了，主要还是我懒
 - 是否添加脚本到package.json，这个还是需要的，启动命令，打包命令这些都得用
 
-<img src="https://cdn.jsdelivr.net/gh/LetengZzz/img@main/others/202412111117002.png" alt="image-20240108190215775" style="zoom:50%;" />
+<img src="https://fastly.jsdelivr.net/gh/LetengZzz/img@main/others/202412111117002.png" alt="image-20240108190215775" style="zoom:50%;" />
 
 初始化成功后，使用vscode或webstorm打开文件夹，会看到这样一个目录。接下来简单介绍一下每个文件的含义
 
@@ -62,7 +62,7 @@ pnpm vitepress init
 - index.md。主页相关
 - package.json和pnpm-lock.yml。包管理工具需要用的
 
-![image-20240108190658316](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/others/202412111118506.png)
+![image-20240108190658316](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/others/202412111118506.png)
 
 **启动项目**
 
@@ -72,7 +72,7 @@ pnpm run docs:dev
 
 打开，看到这个，说明初始化成功
 
-![image-20240108191252240](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/others/202412111118050.png)
+![image-20240108191252240](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/others/202412111118050.png)
 
 ## 自定义配置
 
@@ -80,15 +80,15 @@ pnpm run docs:dev
 
 对于主页，我们自定义的内容有哪些？如下图，8个地方可以自定义。接下来就一一叙述这8个地方怎么自定义的。
 
-![image-20240108191730006](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/others/202412111121940.png)
+![image-20240108191730006](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/others/202412111121940.png)
 
 忘记了还有个页脚：
 
-![image-20240110033048297](https://cdn.jsdelivr.net/gh/LetengZzz/img/others/202412111122245.png)
+![image-20240110033048297](https://fastly.jsdelivr.net/gh/LetengZzz/img/others/202412111122245.png)
 
 9这个是直接配置footer，在`config.mjs defineConfig themeConfig`下面配置就可以了
 
-![image-20240110033147092](https://cdn.jsdelivr.net/gh/LetengZzz/img/others/202412111122190.png)
+![image-20240110033147092](https://fastly.jsdelivr.net/gh/LetengZzz/img/others/202412111122190.png)
 
 2-6是在index.md文件中自定义的。简单介绍一下对应关系
 
@@ -96,21 +96,21 @@ pnpm run docs:dev
 
 需要说明的是，对于5这两个按钮，是可以跳转的，**link指定路径**，比如/api-example就是在项目根目录下找api-example.md这个文件	
 
-<img src="https://cdn.jsdelivr.net/gh/LetengZzz/img@main/others/202412111123105.png" alt="image-20240108192410028" style="zoom:50%;" />
+<img src="https://fastly.jsdelivr.net/gh/LetengZzz/img@main/others/202412111123105.png" alt="image-20240108192410028" style="zoom:50%;" />
 
 修改后的页面如下：
 
-![image-20240108192848790](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/others/202412111123422.png)
+![image-20240108192848790](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/others/202412111123422.png)
 
 1、7、8这三个配置是在config.mjs中配置的
 
 其中，title对应1，nav对应7，socialLinks对应8。description是SEO要用的，我们不用关注。
 
-<img src="https://cdn.jsdelivr.net/gh/LetengZzz/img@main/others/202412111124117.png" alt="image-20240108194059919" style="zoom:50%;" />
+<img src="https://fastly.jsdelivr.net/gh/LetengZzz/img@main/others/202412111124117.png" alt="image-20240108194059919" style="zoom:50%;" />
 
 最后的结果是这样。
 
-![image-20240108194335668](https://cdn.jsdelivr.net/gh/LetengZzz/img/others/202412111124262.png)
+![image-20240108194335668](https://fastly.jsdelivr.net/gh/LetengZzz/img/others/202412111124262.png)
 
 ### 主页扩展
 
@@ -118,11 +118,11 @@ pnpm run docs:dev
 
 将找到的图片放在根目录下的public目录下。
 
-<img src="https://cdn.jsdelivr.net/gh/LetengZzz/img@main/others/202412111124205.png" alt="image-20240108195132751" style="zoom:50%;" />
+<img src="https://fastly.jsdelivr.net/gh/LetengZzz/img@main/others/202412111124205.png" alt="image-20240108195132751" style="zoom:50%;" />
 
 最后美化的效果如图：
 
-![image-20240108195220278](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/others/202412111124108.png)
+![image-20240108195220278](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/others/202412111124108.png)
 
 **TODO：**
 
@@ -134,11 +134,11 @@ logo: "logo.svg", // 配置logo位置，public目录
 
 - vitepress原生支持国外的sociallink，如果是国内需要自行复制svg代码。如图：
 
-![image-20240108195501321](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/others/202412111123493.png)
+![image-20240108195501321](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/others/202412111123493.png)
 
 - 添加搜索栏，config.mjs中的themeConfig（支持国际化需要进一步配置 ）
 
-![image-20240108215134634](https://cdn.jsdelivr.net/gh/LetengZzz/img/others/202412111123993.png)
+![image-20240108215134634](https://fastly.jsdelivr.net/gh/LetengZzz/img/others/202412111123993.png)
 
 ### 美化文章页
 
@@ -146,25 +146,25 @@ logo: "logo.svg", // 配置logo位置，public目录
 
 左边是sidebar的配置，右边是显示的文章目录（默认显示一二级）。
 
-![image-20240108195711534](https://cdn.jsdelivr.net/gh/LetengZzz/img/others/202412111122847.png)
+![image-20240108195711534](https://fastly.jsdelivr.net/gh/LetengZzz/img/others/202412111122847.png)
 
 
 
 下面叙述这个是怎么配置的。sidebar可以是数组，也可以是对象。还是修改config.mjs
 
-![image-20240108200043005](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/others/202412111121104.png)
+![image-20240108200043005](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/others/202412111121104.png)
 
 最后的结果是这样
 
-![image-20240108200249558](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/others/202412111121864.png)
+![image-20240108200249558](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/others/202412111121864.png)
 
 右侧导航栏默认索引的是md文件的一二级标题，可能需要定义索引的标题级别和`On this page`这个说明。这个时候需要在config.mjs中配置下面这两个选项，`outlineTitle`用于替代On this page。`outline`定义展示的标题级别，这里定义2-6级
 
-![image-20240108200555674](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/others/202412111121823.png)
+![image-20240108200555674](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/others/202412111121823.png)
 
 最后美化后的文章目录是这样
 
-![image-20240108201005185](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/others/202412111121791.png)
+![image-20240108201005185](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/others/202412111121791.png)
 
 **自动生成侧边栏**
 
@@ -316,13 +316,13 @@ aside: "left", // 设置右侧侧边栏在左侧显示
 
 
 
-![image-20240108204620601](https://cdn.jsdelivr.net/gh/LetengZzz/img/others/202412111121158.png)
+![image-20240108204620601](https://fastly.jsdelivr.net/gh/LetengZzz/img/others/202412111121158.png)
 
 ### 美化地址栏icon
 
 我们可能还需要修改浏览器地址栏的左边图标
 
-![image-20240110161809355](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/others/202412111120007.png)
+![image-20240110161809355](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/others/202412111120007.png)
 
 在`config.mjs defineConfig`下面直接配置即可
 
@@ -369,7 +369,7 @@ Github Pages专门用来托管静态内容，由于不需要服务器且基于gi
 
 1. 在github上创建仓库，如果没有Github账号，需要先注册一个。
 
-![](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/others/202412111120153.png)
+![](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/others/202412111120153.png)
 
 需要在config.mjs里面配置base，名称为github仓库名称，注意不要忘记改之前的icon
 
@@ -422,11 +422,11 @@ git push -u origin master
 
 8. 选择github actions
 
-![image-20240108210624305](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/others/202412111120086.png)
+![image-20240108210624305](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/others/202412111120086.png)
 
 9. 设置工作流
 
-![image-20240108210710694](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/others/202412111120440.png)
+![image-20240108210710694](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/others/202412111120440.png)
 
 10. 重命名并设置deploy脚本
 
@@ -505,21 +505,21 @@ jobs:
 
 
 
-![image-20240108210850443](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/others/202412111119006.png)
+![image-20240108210850443](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/others/202412111119006.png)
 
 11. 点击确定，耐心等待15秒左右，就可以了，接下来查看我们的域名：
 
-![image-20240108211049140](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/others/202412111119127.png)
+![image-20240108211049140](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/others/202412111119127.png)
 
 
 
 踩坑点：为啥下面的没有CSS样式呢？原因是因为没有.nojekyll这个文件，不然一些css会被忽略。添加一下再push就好了
 
-![image-20240108211022770](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/others/202412111119722.png)
+![image-20240108211022770](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/others/202412111119722.png)
 
 最后，就部署完毕了
 
-![image-20240108214941003](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/others/202412111119555.png)
+![image-20240108214941003](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/others/202412111119555.png)
 
 ### 配置自定义域名
 
@@ -527,7 +527,7 @@ jobs:
 
 在自己的域名服务商那里添加一条CNAME记录，直接指向自己的github分配的域名就好了，另外需要把这个base给注释掉（不然css文件和页面都找不到），等待分配完成。
 
-![image-20240108232734898](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/others/202412111119756.png)
+![image-20240108232734898](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/others/202412111119756.png)
 
 
 
@@ -560,7 +560,7 @@ import { withMermaid } from "vitepress-plugin-mermaid";
 
 2: defineConfig—>withMermaid
 
-<img src="https://cdn.jsdelivr.net/gh/LetengZzz/img@main/others/202412111119834.png" alt="image-20240209000231506" style="zoom:33%;" />
+<img src="https://fastly.jsdelivr.net/gh/LetengZzz/img@main/others/202412111119834.png" alt="image-20240209000231506" style="zoom:33%;" />
 
 3:根配置项下添加
 

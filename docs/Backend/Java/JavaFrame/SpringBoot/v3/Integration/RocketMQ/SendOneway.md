@@ -29,15 +29,15 @@ class Producer {
 
 运行后查看控制台：
 
-![image-20240324170746555](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202403241707010.png)
+![image-20240324170746555](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202403241707010.png)
 
 查看RocketMQ的控制台：
 
-![image-20240324171017135](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202403241710522.png)
+![image-20240324171017135](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202403241710522.png)
 
 查看消息的细节：
 
-![image-20240324171044934](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202403241710861.png)
+![image-20240324171044934](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202403241710861.png)
 
 ## 消费者
 
@@ -69,4 +69,4 @@ public class OnewayMsgListener implements RocketMQListener<MessageExt> {
 
 启动 rocketmq-consumer，运行结果：查看控制台，发现已经监听到消息了
 
-![image-20240324171235756](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202403241717717.png)
+![image-20240324171235756](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202403241717717.png)

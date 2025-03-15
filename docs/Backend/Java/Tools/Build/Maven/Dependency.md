@@ -18,7 +18,7 @@
 
 **对比**：
 
-![image-20231105174304853](https://cdn.jsdelivr.net/gh/LetengZzz/img/java/tools/202412092314897.png)
+![image-20231105174304853](https://fastly.jsdelivr.net/gh/LetengZzz/img/java/tools/202412092314897.png)
 
 ****
 
@@ -94,7 +94,7 @@ public class Calculator {
 
 其实就是验证：通过compile范围依赖的jar包会放入war包，通过test范围依赖的jar包不会放入war包。
 
-![image-20231106213818411](https://cdn.jsdelivr.net/gh/LetengZzz/img/java/tools/202412092306336.png)
+![image-20231106213818411](https://fastly.jsdelivr.net/gh/LetengZzz/img/java/tools/202412092306336.png)
 
 ****
 
@@ -145,7 +145,7 @@ public class CalculatorTest{
 
 然后运行Maven的编译命令：`mvn compile`编译成功。
 
-![image-20231106211651112](https://cdn.jsdelivr.net/gh/LetengZzz/img/java/tools/202412092314281.png)
+![image-20231106211651112](https://fastly.jsdelivr.net/gh/LetengZzz/img/java/tools/202412092314281.png)
 
 ## 依赖传递性
 
@@ -222,7 +222,7 @@ public class CalculatorTest{
 
 当 A 依赖 B，B 依赖 C 而且 C 可以传递到 A 的时候，A 不想要 C，需要在 A 里面把 C 排除掉。而往往这种情况都是为了避免 jar 包之间的冲突。
 
-![./images](https://cdn.jsdelivr.net/gh/LetengZzz/img/java/tools/202412092313210.png)
+![./images](https://fastly.jsdelivr.net/gh/LetengZzz/img/java/tools/202412092313210.png)
 
 所以配置依赖的排除其实就是阻止某些 jar 包的传递。因为这样的 jar 包传递过来会和其他 jar 包冲突。
 

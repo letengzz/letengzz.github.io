@@ -4,7 +4,7 @@
 
 ### 开启虚拟化
 
-![image.png](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202408031605845.png)
+![image.png](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202408031605845.png)
 
 ### 安装wsl2
 
@@ -16,7 +16,7 @@ wsl --install
 #有可能连不上网络，需要更新github hosts
 ```
 
-![image-20240803161348066](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202408031613832.png)
+![image-20240803161348066](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202408031613832.png)
 
 ## 安装 Docker Desktop
 
@@ -36,12 +36,12 @@ Docker Desktop默认去 hub.docker.com 去下载软件镜像，需要配置国�
 }
 ```
 
-![image-20240803170120713](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202408031701981.png)
+![image-20240803170120713](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202408031701981.png)
 
 ## 使用操作
 
 可以使用cmd命令行来进行Docker命令操作，也可以使用可视化界面来操作。
 
-![image-20240803170457063](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202408031704721.png)
+![image-20240803170457063](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202408031704721.png)
 
-![image-20240803170521667](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202408031705406.png)
+![image-20240803170521667](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202408031705406.png)

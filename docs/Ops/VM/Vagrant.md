@@ -8,7 +8,7 @@ vagrant 可以把配置好的环境打包成一个box，分享给其他人直接
 
 **官方网站**：https://www.vagrantup.com/
 
-![image-20240131202926317](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202403091822713.png)
+![image-20240131202926317](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202403091822713.png)
 
 ## 安装使用
 

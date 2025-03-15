@@ -4,31 +4,31 @@
 
 注册并登录Gitee：
 
-![image-20230514001949044](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/Two-C/img/Java/202305140108715.png)
+![image-20230514001949044](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/Two-C/img/Java/202305140108715.png)
 
 ## 用户中心
 
 登录成功后跳转到用户中心
 
-![image-20230514002037048](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/Two-C/img/Java/202305140108200.png)
+![image-20230514002037048](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/Two-C/img/Java/202305140108200.png)
 
 ## 创建远程仓库
 
 右上角选择新建仓库：
 
-![image-20230514002051523](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/Two-C/img/Java/202305140107533.png)
+![image-20230514002051523](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/Two-C/img/Java/202305140107533.png)
 
 填写仓库信息并创建：
 
-![image-20230514002101335](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/Two-C/img/Java/202305140107562.png)
+![image-20230514002101335](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/Two-C/img/Java/202305140107562.png)
 
 创建成功
 
-![image-20230514002107558](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/Two-C/img/Java/202305140107151.png)
+![image-20230514002107558](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/Two-C/img/Java/202305140107151.png)
 
 ## 远程仓库简易操作指令
 
-![image-20230514002127575](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/Two-C/img/Java/202305140107118.png)
+![image-20230514002127575](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/Two-C/img/Java/202305140107118.png)
 
 ## SSH 免密操作
 
@@ -42,13 +42,13 @@
 
 - 执行命令完成后，在window本地用户 .ssh 目录 C:\Users\用户名\.ssh 下面生成公钥和私钥：
 
-  ![image-20230514002244992](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/Two-C/img/Java/202305140107229.png)
+  ![image-20230514002244992](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/Two-C/img/Java/202305140107229.png)
 
 - 集成用户公钥：将id_rsa.pub文件内容复制到Gitee仓库中
 
-  ![image-20230514002254440](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/Two-C/img/Java/202305140107317.png)
+  ![image-20230514002254440](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/Two-C/img/Java/202305140107317.png)
 
-  ![image-20230514002259614](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/Two-C/img/Java/202305140107029.png)
+  ![image-20230514002259614](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/Two-C/img/Java/202305140107029.png)
 
 ## 设定全局用户
 
@@ -87,15 +87,15 @@ git push -u origin "master"
 
 新建仓库，设置README文件，这样Gitee会自动创建一个README.md 文件：
 
-![image-20230514002916289](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/Two-C/img/Java/202305140107271.png)
+![image-20230514002916289](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/Two-C/img/Java/202305140107271.png)
 
 创建完毕后，可以看到 README.md 文件：
 
-![image-20230514002921857](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/Two-C/img/Java/202305140107213.png)
+![image-20230514002921857](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/Two-C/img/Java/202305140107213.png)
 
 使用命令 `git clone` 克隆一个本地库，查看文件已经存在了：
 
-![image-20230514002925784](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/Two-C/img/Java/202305140107085.png)
+![image-20230514002925784](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/Two-C/img/Java/202305140107085.png)
 
 Gitee给出的地址不止一个，还可以用http 地址。实际上，Git支持多种协议，默认的 git:// 使用ssh，但也可以使用 https 等其他协议。
 

@@ -2,7 +2,7 @@
 
 官网教程：https://min.io/download
 
-![image-20240504123152578](https://cdn.jsdelivr.net/gh/LetengZzz/img/java/others/202412092354661.png)
+![image-20240504123152578](https://fastly.jsdelivr.net/gh/LetengZzz/img/java/others/202412092354661.png)
 
 - [Windows 安装](Windows.md)
 - [MacOS 安装](MacOS.md)

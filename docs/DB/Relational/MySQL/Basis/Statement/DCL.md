@@ -15,7 +15,7 @@ SELECT * FROM mysql.user;
 - Host代表当前用户访问的主机, 如果为localhost, 代表只能够在当前本机访问，不可以远程访问的
 - User代表的是访问该数据库的用户名。在MySQL中需要**通过Host和User来唯一标识一个用户**
 
-![image-20230910153312845](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img/Java/202309101533490.png)
+![image-20230910153312845](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/tc2/img/Java/202309101533490.png)
 
 ### 创建用户
 
@@ -31,7 +31,7 @@ CREATE USER '用户名'@'主机名' IDENTIFIED BY '密码';
 CREATE USER 'hjc'@'localhost' IDENTIFIED BY '123123';
 ```
 
-![image-20230910154217805](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img/Java/202309101548542.png)
+![image-20230910154217805](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/tc2/img/Java/202309101548542.png)
 
 ### 修改用户密码
 
@@ -61,13 +61,13 @@ DROP USER '用户名'@'主机名';
 DROP USER 'hjc'@'localhost'; 
 ```
 
-![image-20230910154747322](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img/Java/202309101547249.png)
+![image-20230910154747322](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/tc2/img/Java/202309101547249.png)
 
 ## 权限控制
 
 **常见权限**：
 
-![image-20230910155240526](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img/Java/202309101552443.png)
+![image-20230910155240526](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/tc2/img/Java/202309101552443.png)
 
 **注意**：
 
@@ -88,7 +88,7 @@ SHOW GRANTS FOR '用户名'@'主机名';
 SHOW GRANTS FOR 'hjc'@'localhost';
 ```
 
-![image-20230910155651627](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img/Java/202309101556751.png)
+![image-20230910155651627](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/tc2/img/Java/202309101556751.png)
 
 ### 授予权限
 
@@ -104,7 +104,7 @@ GRANT 权限列表 ON 数据库名.表名 TO '用户名'@'主机名';
 GRANT INSERT,SELECT ON sql_test.* TO 'hjc'@'localhost';
 ```
 
-![image-20230910160248726](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img/Java/202309101602457.png)
+![image-20230910160248726](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/tc2/img/Java/202309101602457.png)
 
 ### 撤销权限
 
@@ -120,4 +120,4 @@ REVOKE 权限列表 ON 数据库名.表名 FROM '用户名'@'主机名';
 REVOKE INSERT ON sql_test.* FROM 'hjc'@'localhost';
 ```
 
-![image-20230910160427375](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img/Java/202309101604952.png)
+![image-20230910160427375](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/tc2/img/Java/202309101604952.png)

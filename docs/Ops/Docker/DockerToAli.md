@@ -2,7 +2,7 @@
 
 本地镜像发布到阿里云流程：
 
-![image.png](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202410212008861.png)
+![image.png](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202410212008861.png)
 
 ## 阿里云
 
@@ -10,7 +10,7 @@
 
 开通个人实例，在访问凭证中获取账号密码，并创建命名空间
 
-![image-20240620163706557](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202410212241851.png)
+![image-20240620163706557](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202410212241851.png)
 
 ## GitHub
 
@@ -61,7 +61,7 @@ jobs:
 
 然后点击Actions，运行脚本
 
-![image-20240620163531058](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202410212257347.png)
+![image-20240620163531058](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202410212257347.png)
 
 
 

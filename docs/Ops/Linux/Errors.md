@@ -2,7 +2,7 @@
 
 当`yun update`出现：curl#6 - "Could not resolve host: mirrorlist.centos.org; 未知的名称或服务"
 
-![image-20241207002134261](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202412070021544.png)
+![image-20241207002134261](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202412070021544.png)
 
 解决办法：
 

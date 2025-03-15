@@ -28,7 +28,7 @@ public class Producer {
 }
 ```
 
-![image-20240323173028210](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/java/mq/202412101549013.png)
+![image-20240323173028210](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/java/mq/202412101549013.png)
 
 ## 消费者
 
@@ -61,11 +61,11 @@ public class Consumer {
 }
 ```
 
-![image-20240323174729729](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/java/mq/202412101549278.png)
+![image-20240323174729729](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/java/mq/202412101549278.png)
 
 ## 查看效果
 
-![image-20240323174833749](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/java/mq/202412101549323.png)
+![image-20240323174833749](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/java/mq/202412101549323.png)
 
 ## 监听死信消息
 
@@ -97,6 +97,6 @@ public class DeadConsumer {
 }
 ```
 
-![image-20240323175116412](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/java/mq/202412101550932.png)
+![image-20240323175116412](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/java/mq/202412101550932.png)
 
-![image-20240323175156058](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/java/mq/202412101550126.png)
+![image-20240323175156058](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/java/mq/202412101550126.png)

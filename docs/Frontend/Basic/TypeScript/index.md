@@ -1,6 +1,6 @@
 # TypeScript
 
-![u=3023260295,131125603&fm=253&fmt=auto&app=138&f=PNG](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202406081213688.webp)
+![u=3023260295,131125603&fm=253&fmt=auto&app=138&f=PNG](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202406081213688.webp)
 
 - [TypeScript 概述](Overview.md)
 - [TypeScript 编译](Compile.md)

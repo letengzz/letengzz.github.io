@@ -112,11 +112,11 @@ banner制作网站：
 
 **默认样式**：
 
-![image-20230723221830441](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/Two-C/img/Java/202307232218044.png)
+![image-20230723221830441](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/Two-C/img/Java/202307232218044.png)
 
 **修改后的样式**：
 
-![image-20230723222054877](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/Two-C/img/Java/202307232220269.png)
+![image-20230723222054877](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/Two-C/img/Java/202307232220269.png)
 
 **banner相关设置**：
 
@@ -271,7 +271,7 @@ public class MyConfig {
   --spring.profiles.active=dev,test
   ```
 
-  ![image-20230731153801127](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/Two-C/img/Java/202307311538829.png)
+  ![image-20230731153801127](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/Two-C/img/Java/202307311538829.png)
 
 - 修改默认环境(不推荐，推荐使用激活方式激活指定环境)：
 
@@ -349,11 +349,11 @@ spring:
 
 **新建配置文件**：
 
-![image-20230731160523085](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/Two-C/img/Java/202307311605147.png)
+![image-20230731160523085](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/Two-C/img/Java/202307311605147.png)
 
 **指定环境**：
 
-![image-20230731160607753](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/Two-C/img/Java/202307311606634.png)
+![image-20230731160607753](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/Two-C/img/Java/202307311606634.png)
 
 ### Environment
 
@@ -428,17 +428,17 @@ Spring Boot 允许将**配置外部化**，以便可以在不同的环境中使�
 
 1. **默认属性**：通过`SpringApplication.setDefaultProperties`指定的
 
-   ![image-20230731163124644](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/Two-C/img/Java/202307311631548.png)
+   ![image-20230731163124644](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/Two-C/img/Java/202307311631548.png)
 
-   ![image-20230731163747240](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/Two-C/img/Java/202307311637056.png)
+   ![image-20230731163747240](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/Two-C/img/Java/202307311637056.png)
 
 2. **`@PropertySource`指定加载的配置**：需要写在`@Configuration`类上才可生效
 
-   ![image-20230731164041191](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/Two-C/img/Java/202307311640348.png)
+   ![image-20230731164041191](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/Two-C/img/Java/202307311640348.png)
 
 3. **配置文件**：application.properties/yml等
 
-   ![image-20230731164102458](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/Two-C/img/Java/202307311641483.png)
+   ![image-20230731164102458](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/Two-C/img/Java/202307311641483.png)
 
 4. **RandomValuePropertySource支持的`random.`配置**：`@Value("${random.int}")`
 
@@ -492,9 +492,9 @@ Spring Boot 允许将**配置外部化**，以便可以在不同的环境中使�
 
 启动端口：命令行 > `9001` > `9000` > `8999` > `8000`
 
-![image-20230731181114407](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/Two-C/img/Java/202307311811663.png)
+![image-20230731181114407](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/Two-C/img/Java/202307311811663.png)
 
-![image-20230731182454166](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/Two-C/img/Java/202307311824752.png)
+![image-20230731182454166](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/Two-C/img/Java/202307311824752.png)
 
 ### 外部配置
 
@@ -507,7 +507,7 @@ SpringBoot 应用启动时会自动寻找`application.properties`和`application
 1. 类根路径
 1. 类下/config包
 
-![image-20230731190506501](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/Two-C/img/Java/202307311907117.png)
+![image-20230731190506501](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/Two-C/img/Java/202307311907117.png)
 
 当前路径(项目所在的位置)：
 
@@ -515,7 +515,7 @@ SpringBoot 应用启动时会自动寻找`application.properties`和`application
 1. 当前下/config子目录
 1. /config目录的直接子目录
 
-![image-20230731190704408](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/Two-C/img/Java/202307311907584.png)
+![image-20230731190704408](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/Two-C/img/Java/202307311907584.png)
 
 **最终效果**：优先级由高到低，前面覆盖后面
 
@@ -525,7 +525,7 @@ SpringBoot 应用启动时会自动寻找`application.properties`和`application
   - properties配置 > yaml配置
 
 
-![未命名绘图](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/Two-C/img/Java/202307311849800.png)
+![未命名绘图](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/Two-C/img/Java/202307311849800.png)
 
 
 
@@ -588,7 +588,7 @@ public class HelloController {
 }
 ```
 
-![image-20230731194346976](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/Two-C/img/Java/202307311943068.png)
+![image-20230731194346976](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/Two-C/img/Java/202307311943068.png)
 
 ## 日志配置
 
@@ -598,7 +598,7 @@ SpringBoot 支持 jul、log4j2、logback(默认使用logback)，同时提供了�
 
 **规范**：项目开发不要编写`System.out.println()`，应该用**日志**记录信息
 
-![image-20230728190802970](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/Two-C/img/Java/202307281909164.png)
+![image-20230728190802970](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/Two-C/img/Java/202307281909164.png)
 
 **SpringBoot默认配置日志**：
 
@@ -635,11 +635,11 @@ SpringBoot 支持 jul、log4j2、logback(默认使用logback)，同时提供了�
 
 **默认值**：参照：`spring-boot`包`additional-spring-configuration-metadata.json`文件
 
-![image-20230728220359165](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/Two-C/img/Java/202307282204665.png)
+![image-20230728220359165](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/Two-C/img/Java/202307282204665.png)
 
 **默认输出格式值**：`%clr(%d{${LOG_DATEFORMAT_PATTERN:-yyyy-MM-dd'T'HH:mm:ss.SSSXXX}}){faint} %clr(${LOG_LEVEL_PATTERN:-%5p}) %clr(${PID:- }){magenta} %clr(---){faint} %clr([%15.15t]){faint} %clr(%-40.40logger{39}){cyan} %clr(:){faint} %m%n${LOG_EXCEPTION_CONVERSION_WORD:-%wEx}`
 
-![image-20230728220459524](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/Two-C/img/Java/202307282205476.png)
+![image-20230728220459524](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/Two-C/img/Java/202307282205476.png)
 
 可修改为：`'%d{yyyy-MM-dd HH:mm:ss.SSS} %-5level [%thread] %logger{15} ===> %msg%n'`
 
@@ -653,7 +653,7 @@ logging:
 logging.pattern.console=%d{yyyy-MM-dd HH:mm:ss.SSS} %-5level [%thread] %logger{15} ===> %msg%n
 ```
 
-![image-20230728222253827](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/Two-C/img/Java/202307282222497.png)
+![image-20230728222253827](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/Two-C/img/Java/202307282222497.png)
 
 **修改日志日期格式**：
 
@@ -667,7 +667,7 @@ logging:
 logging.pattern.dateformat=yyyy-MM-dd HH:mm:ss
 ```
 
-![image-20230728223416064](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/Two-C/img/Java/202307282234326.png)
+![image-20230728223416064](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/Two-C/img/Java/202307282234326.png)
 
 ### 记录日志
 
@@ -685,7 +685,7 @@ public class HelloController {
 }
 ```
 
-![image-20230729230747738](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/Two-C/img/Java/202307292307016.png)
+![image-20230729230747738](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/Two-C/img/Java/202307292307016.png)
 
 **使用Lombok的`@Slf4j`注解**：
 
@@ -703,7 +703,7 @@ public class HelloController {
 }
 ```
 
-![image-20230729230858920](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/Two-C/img/Java/202307292309525.png)
+![image-20230729230858920](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/Two-C/img/Java/202307292309525.png)
 
 ### 日志级别
 
@@ -744,7 +744,7 @@ public class HelloController {
 
 2. level可取值范围：`TRACE, DEBUG, INFO, WARN, ERROR, FATAL, or OFF`，定义在 `LogLevel`类中
 
-   ![image-20230729231009569](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/Two-C/img/Java/202307292310097.png)
+   ![image-20230729231009569](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/Two-C/img/Java/202307292310097.png)
 
 3. root 的logger-name叫root，可以配置`logging.level.root=warn`，代表所有未指定日志级别都使用 root 的 warn 级别
 
@@ -780,7 +780,7 @@ SpringBoot 支持将相关的logger分组在一起，统一配置。
 
 SpringBoot 预定义两个组：
 
-![image-20230729232203090](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/Two-C/img/Java/202307292322037.png)
+![image-20230729232203090](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/Two-C/img/Java/202307292322037.png)
 
 **例**：Tomcat 相关的日志统一设置
 
@@ -802,7 +802,7 @@ logging:
 
 SpringBoot **默认只把日志写在控制台**，如果想额外记录到文件，可以在application.properties/yaml中添加`logging.file.name` or `logging.file.path`配置项。
 
-![image-20230729235206099](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/Two-C/img/Java/202307292352935.png)
+![image-20230729235206099](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/Two-C/img/Java/202307292352935.png)
 
 **说明**：
 
@@ -810,15 +810,15 @@ SpringBoot **默认只把日志写在控制台**，如果想额外记录到文�
 
   - 只指定文件名，会生成到当前项目位置上。
 
-    ![image-20230729234147244](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/Two-C/img/Java/202307292341024.png)
+    ![image-20230729234147244](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/Two-C/img/Java/202307292341024.png)
 
   - 指定 路径+文件名，会生成到指定位置的指定文件。
 
-    ![image-20230729234052533](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/Two-C/img/Java/202307292340108.png)
+    ![image-20230729234052533](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/Two-C/img/Java/202307292340108.png)
 
 - 如果只指定 `logging.file.path`，日志文件默认名为：`spring.log`。
 
-  ![image-20230729234253244](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/Two-C/img/Java/202307292342287.png)
+  ![image-20230729234253244](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/Two-C/img/Java/202307292342287.png)
 
 - 如果两个配置都同时存在，以`logging.file.name`为准(推荐直接使用`logging.file.name`)。
 
@@ -851,7 +851,7 @@ logging:
 
 **支持的滚动规则设置**：
 
-![image-20230730001649966](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/Two-C/img/Java/202307300016371.png)
+![image-20230730001649966](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/Two-C/img/Java/202307300016371.png)
 
 ```properties
 # 文件归档与滚动切割
@@ -880,7 +880,7 @@ logging:
 
 **可以自定义日志配置**：
 
-![image-20230730010826600](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/Two-C/img/Java/202307300108185.png)
+![image-20230730010826600](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/Two-C/img/Java/202307300108185.png)
 
 **推荐**：在日志配置中使用`-spring` 变量(例如，`logback-spring.xml` 而不是 `logback.xml`)。如果使用标准配置文件，spring 无法完全控制日志初始化。
 
@@ -913,7 +913,7 @@ logging:
 
 log4j2支持yaml和json格式的配置文件：
 
-![image-20230730012645555](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/Two-C/img/Java/202307300126702.png)
+![image-20230730012645555](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/Two-C/img/Java/202307300126702.png)
 
 **第三方框架**：排除掉框架的默认日志，参考 `spring-boot-starter` 排除了默认的logging配置
 

@@ -31,7 +31,7 @@ Maven工程之间存在继承关系，A 工程继承 B 工程
 
 公司级的父工程中管理的就是成熟的依赖组合方案，各个新项目、子系统各取所需即可。
 
-![./images](https://cdn.jsdelivr.net/gh/LetengZzz/img/java/tools/202412092259609.jpeg)
+![./images](https://fastly.jsdelivr.net/gh/LetengZzz/img/java/tools/202412092259609.jpeg)
 
 ### 操作
 
@@ -56,7 +56,7 @@ Maven工程之间存在继承关系，A 工程继承 B 工程
 
 创建三个模块工程：
 
-![image-20231107210023990](https://cdn.jsdelivr.net/gh/LetengZzz/img/java/tools/202412092259443.png)
+![image-20231107210023990](https://fastly.jsdelivr.net/gh/LetengZzz/img/java/tools/202412092259443.png)
 
 #### 父工程pom.xml
 

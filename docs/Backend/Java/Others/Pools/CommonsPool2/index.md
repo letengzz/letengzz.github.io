@@ -109,7 +109,7 @@ private boolean blockWhenExhausted = DEFAULT_BLOCK_WHEN_EXHAUSTED;
 
 池子的操作主要有两个：一个是业务线程，一个是检测线程。
 
-![image-20250222171817232](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/image-20250222171817232.png)
+![image-20250222171817232](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/image-20250222171817232.png)
 
 对象池在进行初始化时，要指定三个主要的参数：
 
@@ -125,7 +125,7 @@ private boolean blockWhenExhausted = DEFAULT_BLOCK_WHEN_EXHAUSTED;
 
 如果对象创建非常缓慢或者使用非常繁忙，业务线程会持续阻塞 （blockWhenExhausted 默认为 true），进而导致正常服务也不能运行。
 
-![image-20250222171854052](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/image-20250222171854052.png)
+![image-20250222171854052](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/image-20250222171854052.png)
 
 ## 面试题
 
@@ -181,5 +181,5 @@ public class JedisPoolVSJedisBenchmark {
 
 将测试结果使用 meta-chart 作图，展示结果如下图所示，可以看到使用了连接池的方式，它的吞吐量是未使用连接池方式的 5 倍！
 
-![image-20250222172045085](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/image-20250222172045085.png)
+![image-20250222172045085](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/image-20250222172045085.png)
 

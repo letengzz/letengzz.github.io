@@ -122,16 +122,16 @@
 
 **项目展示**：
 
-![img](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202411212214527.png)
+![img](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202411212214527.png)
 
-![img](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202411212214590.png)
+![img](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202411212214590.png)
 
-![img](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202411212214707.png)
+![img](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202411212214707.png)
 
-![img](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202411212214257.png)
+![img](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202411212214257.png)
 
-![img](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202411212214296.png)
+![img](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202411212214296.png)
 
-![img](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202411212214139.png)
+![img](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202411212214139.png)
 
-![img](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202411212214416.png)
+![img](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202411212214416.png)

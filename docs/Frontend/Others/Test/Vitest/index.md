@@ -21,7 +21,7 @@ test('first test',()=>{
 })
 ```
 
-![image-20250108213026286](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/image-20250108213026286.png)
+![image-20250108213026286](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/image-20250108213026286.png)
 
 在package.json下新建：
 
@@ -37,11 +37,11 @@ test('first test',()=>{
 npm test
 ```
 
-![image-20250108213257027](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/image-20250108213257027.png)
+![image-20250108213257027](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/image-20250108213257027.png)
 
 当调整条件时：
 
-![image-20250108213416527](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/image-20250108213416527.png)
+![image-20250108213416527](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/image-20250108213416527.png)
 
 该命令会一直执行(watch模式)，可以使用 `npx vitest run`执行一次：
 
@@ -109,7 +109,7 @@ test('hello',()=>{
 
 运行效果：
 
-![image-20250108215620304](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/image-20250108215620304.png)
+![image-20250108215620304](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/image-20250108215620304.png)
 
 ## 配置Vitest
 

@@ -8,11 +8,11 @@
 
 1. 进入[官方下载Maven核心程序](https://maven.apache.org/download.cgi)：
 
-   ![image-20231023162709009](https://cdn.jsdelivr.net/gh/LetengZzz/img/img/java/tools/202412092206722.png)
+   ![image-20231023162709009](https://fastly.jsdelivr.net/gh/LetengZzz/img/img/java/tools/202412092206722.png)
 
 2. 解压Maven核心程序：核心程序压缩包：[apache-maven-3.9.5-bin.zip](https://dlcdn.apache.org/maven/maven-3/3.9.5/binaries/apache-maven-3.9.5-bin.zip)，解压到**非中文、没有空格**的目录
 
-   ![image-20231023162924067](https://cdn.jsdelivr.net/gh/LetengZzz/img/img/java/tools/202412092206526.png)
+   ![image-20231023162924067](https://fastly.jsdelivr.net/gh/LetengZzz/img/img/java/tools/202412092206526.png)
 
 ### 核心配置
 
@@ -39,7 +39,7 @@
 
 - 本地仓库本身也需要使用一个**非中文、没有空格**的目录。
 
-![image-20231023163525529](https://cdn.jsdelivr.net/gh/LetengZzz/img/img/java/tools/202412092206349.png)
+![image-20231023163525529](https://fastly.jsdelivr.net/gh/LetengZzz/img/img/java/tools/202412092206349.png)
 
 #### 配置阿里云镜像仓库
 
@@ -70,7 +70,7 @@ Maven 下载 jar 包默认访问境外的中央仓库，而国外网站速度很
   </mirror>
   ```
 
-  ![image-20231023165010075](https://cdn.jsdelivr.net/gh/LetengZzz/img/img/java/tools/202412092206358.png)
+  ![image-20231023165010075](https://fastly.jsdelivr.net/gh/LetengZzz/img/img/java/tools/202412092206358.png)
 
 #### 配置Maven 工程基础JDK版本
 
@@ -237,13 +237,13 @@ maven 默认有一个setting文件，如果setting文件有很多，而默认set
    java -version
    ```
 
-   ![image-20231023164035243](https://cdn.jsdelivr.net/gh/LetengZzz/img/img/java/tools/202412092206660.png)
+   ![image-20231023164035243](https://fastly.jsdelivr.net/gh/LetengZzz/img/img/java/tools/202412092206660.png)
 
 2. 配置 MAVEN_HOME：(**配置环境变量的规律**：XXX_HOME 通常指向的是 bin 目录的上一级，PATH 指向的是 bin 目录)
 
    将Maven安装位置配置为`MAVEN_HOME`
 
-   ![image-20231023164256215](https://cdn.jsdelivr.net/gh/LetengZzz/img/img/java/tools/202412092206747.png)
+   ![image-20231023164256215](https://fastly.jsdelivr.net/gh/LetengZzz/img/img/java/tools/202412092206747.png)
 
 3. 配置PATH：
 
@@ -251,7 +251,7 @@ maven 默认有一个setting文件，如果setting文件有很多，而默认set
    %MAVEN_HOME%\bin
    ```
 
-   ![image-20231023164634590](https://cdn.jsdelivr.net/gh/LetengZzz/img/img/java/tools/202412092207689.png)
+   ![image-20231023164634590](https://fastly.jsdelivr.net/gh/LetengZzz/img/img/java/tools/202412092207689.png)
 
 4. 验证：
 
@@ -259,7 +259,7 @@ maven 默认有一个setting文件，如果setting文件有很多，而默认set
    mvn -v
    ```
 
-   ![image-20231105132734015](https://cdn.jsdelivr.net/gh/LetengZzz/img/img/java/tools/202412092207519.png)
+   ![image-20231105132734015](https://fastly.jsdelivr.net/gh/LetengZzz/img/img/java/tools/202412092207519.png)
 
 ## MacOS 安装核心程序
 
@@ -267,11 +267,11 @@ maven 默认有一个setting文件，如果setting文件有很多，而默认set
 
 1. 进入[官方下载Maven核心程序](https://maven.apache.org/download.cgi)：
 
-   ![image-20231023162709009](https://cdn.jsdelivr.net/gh/LetengZzz/img/img/java/tools/202412092207972.png)
+   ![image-20231023162709009](https://fastly.jsdelivr.net/gh/LetengZzz/img/img/java/tools/202412092207972.png)
 
 2. 解压Maven核心程序：核心程序压缩包：[apache-maven-3.9.5-bin.zip](https://dlcdn.apache.org/maven/maven-3/3.9.5/binaries/apache-maven-3.9.5-bin.zip)，解压到**非中文、没有空格**的目录
 
-   ![image-20231127222432799](https://cdn.jsdelivr.net/gh/LetengZzz/img/img/java/tools/202412092207458.png)
+   ![image-20231127222432799](https://fastly.jsdelivr.net/gh/LetengZzz/img/img/java/tools/202412092207458.png)
 
 ### 配置环境变量
 
@@ -281,7 +281,7 @@ maven 默认有一个setting文件，如果setting文件有很多，而默认set
 java -version
 ```
 
-![image-20231129211809719](https://cdn.jsdelivr.net/gh/LetengZzz/img/img/java/tools/202412092207755.png)
+![image-20231129211809719](https://fastly.jsdelivr.net/gh/LetengZzz/img/img/java/tools/202412092207755.png)
 
 配置 MAVEN_HOME：(**配置环境变量的规律**：XXX_HOME 通常指向的是 bin 目录的上一级，PATH 指向的是 bin 目录)
 
@@ -292,7 +292,7 @@ export MAVEN_HOME=/Users/cuifendemac/Program/apache-maven-3.9.5
 export PATH=$MAVEN_HOME/bin:$PATH
 ```
 
-![image-20231129215104064](https://cdn.jsdelivr.net/gh/LetengZzz/img/img/java/tools/202412092207460.png)
+![image-20231129215104064](https://fastly.jsdelivr.net/gh/LetengZzz/img/img/java/tools/202412092207460.png)
 
 按下"Ctrl+ X"，输入"Y"，再按下"Enter"保存文件并退出
 
@@ -308,7 +308,7 @@ source /etc/profile
 mvn -v
 ```
 
-![image-20231129215518069](https://cdn.jsdelivr.net/gh/LetengZzz/img/img/java/tools/202412092207289.png)
+![image-20231129215518069](https://fastly.jsdelivr.net/gh/LetengZzz/img/img/java/tools/202412092207289.png)
 
 ### 核心配置
 
@@ -333,7 +333,7 @@ mvn -v
 
 - 本地仓库本身也需要使用一个**非中文、没有空格**的目录。
 
-![image-20231127222737961](https://cdn.jsdelivr.net/gh/LetengZzz/img/img/java/tools/202412092207859.png)
+![image-20231127222737961](https://fastly.jsdelivr.net/gh/LetengZzz/img/img/java/tools/202412092207859.png)
 
 #### 配置阿里云镜像仓库
 
@@ -364,7 +364,7 @@ Maven 下载 jar 包默认访问境外的中央仓库，而国外网站速度很
   </mirror>
   ```
 
-  ![image-20231023165010075](https://cdn.jsdelivr.net/gh/LetengZzz/img/img/java/tools/202412092207740.png)
+  ![image-20231023165010075](https://fastly.jsdelivr.net/gh/LetengZzz/img/img/java/tools/202412092207740.png)
 
 #### 配置Maven 工程基础JDK版本
 

@@ -39,15 +39,15 @@ class Producer {
 
 运行后查看控制台：
 
-![image-20240324173610681](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202403241736152.png)
+![image-20240324173610681](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202403241736152.png)
 
 查看RocketMQ的控制台：
 
-![image-20240324173919342](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202403241739777.png)
+![image-20240324173919342](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202403241739777.png)
 
 查看消息的细节：
 
-![image-20240324173955807](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202403241739845.png)
+![image-20240324173955807](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202403241739845.png)
 
 ## 消费者
 
@@ -81,4 +81,4 @@ public class DelayMsgListener implements RocketMQListener<MessageExt> {
 
 启动 rocketmq-consumer，运行结果：查看控制台，发现已经监听到消息了
 
-![image-20240324174203617](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202403241742416.png)
+![image-20240324174203617](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202403241742416.png)

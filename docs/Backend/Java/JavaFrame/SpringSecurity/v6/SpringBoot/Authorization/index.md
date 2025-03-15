@@ -423,29 +423,29 @@ http.exceptionHandling(exception  -> {
 
 RBAC (`Role-Based Access Control`，基于角色的访问控制) 是一种常用的数据库设计方案，它将用户的权限分配和管理与角色相关联。
 
-![img](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202402241719359.jpg)
+![img](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202402241719359.jpg)
 
 以下是一个基本的RBAC数据库设计方案的示例：
 
 1. 用户表 (`User table`)：包含用户的基本信息，例如用户名、密码和其他身份验证信息。
 
-   ![image-20240224145907281](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202402241459113.png)
+   ![image-20240224145907281](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202402241459113.png)
 
 2. 角色表 (`Role table`)：存储所有可能的角色及其描述。
 
-   ![image-20240224150100375](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202402241501653.png)
+   ![image-20240224150100375](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202402241501653.png)
 
 3. 权限表 (`Permission table`)：定义系统中所有可能的权限。
 
-   ![image-20240224151123934](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202402241511265.png)
+   ![image-20240224151123934](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202402241511265.png)
 
 4. 用户角色关联表 (`User-Role table`)：将用户与角色关联起来。
 
-   ![image-20240224151306814](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202402241513341.png)
+   ![image-20240224151306814](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202402241513341.png)
 
 5. 角色权限关联表 (`Role-Permission table`)：将角色与权限关联起来。
 
-   ![image-20240224151421496](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202402241514409.png)
+   ![image-20240224151421496](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202402241514409.png)
 
 在这个设计方案中，用户可以被分配一个或多个角色，而每个角色又可以具有一个或多个权限。通过对用户角色关联和角色权限关联表进行操作，可以实现灵活的权限管理和访问控制。
 

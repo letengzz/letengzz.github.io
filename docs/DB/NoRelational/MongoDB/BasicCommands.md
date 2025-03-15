@@ -159,7 +159,7 @@ db.collection.insert(
 ```
 
 参数：
-![](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202412041452163.png)
+![](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202412041452163.png)
 【示例】
 要向comment的集合(表)中插入一条测试数据：
 
@@ -207,7 +207,7 @@ db.collection.insertMany(
 ```
 
 参数
-![](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202412041452781.png)
+![](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202412041452781.png)
 【示例】
 批量插入多条文章评论：
 
@@ -249,7 +249,7 @@ db.collection.find(<query>, [projection])
 ```
 
 参数：
-![](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202412041452134.png)
+![](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202412041452134.png)
 【示例】
 （1 )查询所有
 如果我们要查询spit集合的所有文档，我们输入以下命令
@@ -322,7 +322,7 @@ db.collection.update(
 ```
 
 参数：
-![](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202412041452999.png)
+![](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202412041452999.png)
 提示：
 主要关注前四个参数即可。
 【示例】

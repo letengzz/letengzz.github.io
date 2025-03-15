@@ -9,7 +9,7 @@ npm init
 
 需要填写作者和描述：
 
-![image-20240627130353181](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202406271303592.png)
+![image-20240627130353181](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202406271303592.png)
 
 安装Electron开发依赖：
 
@@ -48,7 +48,7 @@ npm install --save-dev electron
 
 创建一个main.js：
 
-![image-20240627193327020](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202406271933252.png)
+![image-20240627193327020](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202406271933252.png)
 
 在main.js 引入app、BrowserWindow：
 
@@ -74,4 +74,4 @@ app.on('ready',()=>{
 
 使用 `npm run start`运行项目：
 
-![image-20240627194601105](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202406271946818.png)
+![image-20240627194601105](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202406271946818.png)

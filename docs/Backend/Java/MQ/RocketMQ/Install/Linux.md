@@ -6,7 +6,7 @@
 
 下载地址：https://rocketmq.apache.org/dowloading/releases/ 
 
-![](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/java/mq/202412101032112.png)
+![](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/java/mq/202412101032112.png)
 
 **上传服务器并解压**：
 
@@ -56,13 +56,13 @@ export NAMESRV_ADDR=公网IP:9876
 vim runserver.sh
 ```
 
-![img202403171618106](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/java/mq/202412101542411.png)
+![img202403171618106](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/java/mq/202412101542411.png)
 
 ### 修改broker
 
 进入bin目录下，修改runbroker.sh文件,修改67行，保存并退出
 
-![](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/java/mq/202412101032505.png)
+![](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/java/mq/202412101032505.png)
 
 ## 修改broker的配置文件
 
@@ -81,7 +81,7 @@ autoCreateTopicEnable=true
 brokerIP1=公网IP 
 ```
 
-![](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/java/mq/202412101032962.png)
+![](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/java/mq/202412101032962.png)
 
 - namesrvAddr：nameSrv地址 可以写localhost因为nameSrv和broker在一个服务器
 - autoCreateTopicEnable：自动创建主题，不然需要手动创建出来
@@ -101,7 +101,7 @@ export PATH=$ROCKETMQ_HOME/bin:$PATH
 
 **启动并添加日志**：首先在安装目录下创建一个logs文件夹，用于存放日志：
 
-![image-20240317171739652](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/java/mq/202412101541915.png)
+![image-20240317171739652](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/java/mq/202412101541915.png)
 
 ```shell
 mkdir logs
@@ -139,7 +139,7 @@ mkdir logs
   jps
   ```
 
-  ![](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/java/mq/202412101541838.png)
+  ![](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/java/mq/202412101541838.png)
 
 
 ## 安装可视化控制台
@@ -154,7 +154,7 @@ Rocketmq 控制台可以可视化MQ的消息发送。
 
 修改端口号：进入\src\main\resources下的application.properties修改端口号
 
-![](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/java/mq/202412101032891.png)
+![](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/java/mq/202412101032891.png)
 
 下载后解压出来，在跟目录下执行：
 
@@ -162,13 +162,13 @@ Rocketmq 控制台可以可视化MQ的消息发送。
 mvn clean package -Dmaven.test.skip=true
 ```
 
-![](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/java/mq/202412101032545.png)
+![](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/java/mq/202412101032545.png)
 
-![](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/java/mq/202412101032044.png)
+![](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/java/mq/202412101032044.png)
 
 将jar包上传到服务器上去：
 
-![](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/java/mq/202412101032992.png)
+![](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/java/mq/202412101032992.png)
 
 运行：
 

@@ -2,7 +2,7 @@
 
 RocketMQ 控制台点击生产者时，出现如下异常：
 
-![image-20240318210108962](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/java/mq/202412100952237.png)
+![image-20240318210108962](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/java/mq/202412100952237.png)
 
 在写demo测试RocketMQ，把代码中的`producer.shutdown()`去掉，因为生产者调用`shutdown()`方法，会自动将这个组删掉。
 

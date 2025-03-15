@@ -31,7 +31,7 @@ yarn # 或者 npm install
 yarn start # 或者 npm run start
 ```
 
-![img](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202411212232824.png)
+![img](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202411212232824.png)
 
 **前端技术栈**：
 
@@ -55,27 +55,27 @@ yarn start # 或者 npm run start
 
 **项目演示**：
 
-![img](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202411212232468.png)
+![img](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202411212232468.png)
 
-![img](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202411212233727.png)
+![img](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202411212233727.png)
 
-![img](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202411212233664.png)
+![img](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202411212233664.png)
 
-![img](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202411212233459.png)
+![img](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202411212233459.png)
 
-![img](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202411212233592.png)
+![img](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202411212233592.png)
 
-![img](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202411212233643.png)
+![img](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202411212233643.png)
 
-![img](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202411212233702.png)
+![img](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202411212233702.png)
 
-![img](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202411212233166.png)
+![img](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202411212233166.png)
 
-![img](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202411212234167.png)
+![img](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202411212234167.png)
 
-![img](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202411212234856.png)
+![img](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202411212234856.png)
 
-![img](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202411212234153.png)
+![img](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202411212234153.png)
 
 
 

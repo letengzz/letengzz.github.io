@@ -15,7 +15,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vue程序</title>
     <!-- 开发环境版本，包含了有帮助的命令行警告 -->
-    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <script src="https://fastly.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
 </head>
 
 <body>
@@ -43,7 +43,7 @@
 </html>
 ```
 
-![image-20240620222833318](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202406202228738.png)
+![image-20240620222833318](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202406202228738.png)
 
 ### v-else
 
@@ -60,7 +60,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vue程序</title>
     <!-- 开发环境版本，包含了有帮助的命令行警告 -->
-    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <script src="https://fastly.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
 </head>
 
 <body>
@@ -100,7 +100,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vue程序</title>
     <!-- 开发环境版本，包含了有帮助的命令行警告 -->
-    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <script src="https://fastly.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
 </head>
 
 <body>
@@ -143,7 +143,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vue程序</title>
     <!-- 开发环境版本，包含了有帮助的命令行警告 -->
-    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <script src="https://fastly.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
 </head>
 
 <body>
@@ -192,7 +192,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vue程序</title>
     <!-- 开发环境版本，包含了有帮助的命令行警告 -->
-    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <script src="https://fastly.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
 </head>
 
 <body>
@@ -220,7 +220,7 @@
 </html>
 ```
 
-![image-20240620223708926](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202406202237653.png)
+![image-20240620223708926](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202406202237653.png)
 
 ### v-if与v-show
 

@@ -24,7 +24,7 @@ minio.exe server D:\Data\minio --console-address ":9001"
 
 默认账号密码都是 `minioadmin`
 
-![image-20240504141924742](https://cdn.jsdelivr.net/gh/LetengZzz/img/java/others/202412092355061.png)
+![image-20240504141924742](https://fastly.jsdelivr.net/gh/LetengZzz/img/java/others/202412092355061.png)
 
 ## 关闭MinIO
 

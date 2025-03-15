@@ -12,7 +12,7 @@ GitHub：https://github.com/pure-admin/vue-pure-admin
 
 官方文档：https://pure-admin.github.io/pure-admin-doc
 
-![image-20241022094247331](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202410220942779.png)
+![image-20241022094247331](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202410220942779.png)
 
 Pure Admin 包括完整版和精简版两个模板，完整版集成多个实用组件：图片裁剪、Swiper 插件、数字动画、右键菜单、JSON 编辑器、虚拟滚动、动画选择器、图标选择器、颜色选择器、图形验证码、二维码、条形码等等。
 
@@ -20,37 +20,37 @@ Pure Admin 包括完整版和精简版两个模板，完整版集成多个实用
 
 - 图形验证码功能
 
-  ![image-20241022094332414](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202410220943718.png)
+  ![image-20241022094332414](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202410220943718.png)
 
 - 表格无限滚动功能：
 
-  ![image-20241022094547155](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202410220945895.png)
+  ![image-20241022094547155](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202410220945895.png)
 
 - 部分页面展示：
 
   控制台：
 
-  ![image-20241022094624237](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202410220946768.png)
+  ![image-20241022094624237](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202410220946768.png)
 
   数据列表：
 
-  ![image-20241022095008430](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202410220950298.png)
+  ![image-20241022095008430](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202410220950298.png)
 
   结果页：
 
-  ![image-20241022094931871](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202410220949307.png)
+  ![image-20241022094931871](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202410220949307.png)
 
   用户管理：
 
-  ![image-20241022094847450](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202410220948308.png)
+  ![image-20241022094847450](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202410220948308.png)
 
   菜单管理：
 
-  ![image-20241022094827496](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202410220948326.png)
+  ![image-20241022094827496](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202410220948326.png)
 
   富文本编辑器：
 
-  ![image-20241022094751222](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202410220947121.png)
+  ![image-20241022094751222](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202410220947121.png)
 
 Pure Admin 还提供了一套 Node JS 版本的后端代码，供开发者学习使用：https://github.com/pure-admin/pure-admin-backend
 

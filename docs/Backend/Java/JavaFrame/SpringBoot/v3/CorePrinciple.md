@@ -16,7 +16,7 @@
 
 1. springboot 在`spring-boot.jar`中配置了默认的 Listener：
 
-   ![img](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202401061237090.png)
+   ![img](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202401061237090.png)
 
 **流程**：
 
@@ -36,7 +36,7 @@
 
 #### 生命周期全流程
 
-![img](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202401061237741.png)
+![img](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202401061237741.png)
 
 ### 事件触发时机
 
@@ -96,11 +96,11 @@
 3. `AvailabilityChangeEvent`：`ReadinessState.ACCEPTING_TRAFFIC`**就绪探针**，可以接请求
 4.  `ApplicationFailedEvent `：启动出错
 
-![img](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202401061236539.png)
+![img](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202401061236539.png)
 
 应用事件发送顺序如下：
 
-![img](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202401061236594.png)
+![img](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202401061236594.png)
 
 感知应用是否**存活**了：可能植物状态，虽然活着但是不能处理请求。
 
@@ -113,9 +113,9 @@
 - **事件发布**：`ApplicationEventPublisherAware`或`注入：ApplicationEventMulticaster`
 - **事件监听**：`组件 + @EventListener`
 
-![img](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202401061237418.png)
+![img](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202401061237418.png)
 
-![img](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202401061237301.png)
+![img](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202401061237301.png)
 
 
 
@@ -177,7 +177,7 @@ public class CouponService {
 
 ### 自动配置流程
 
-![image-20240106124546315](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202401061245984.png)
+![image-20240106124546315](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202401061245984.png)
 
 1. 导入`starter`
 2. 依赖导入`autoconfigure`

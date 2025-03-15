@@ -57,7 +57,7 @@ MinIO集群搭建步骤 (多节点多磁盘)：
 
 8. 使用访问负载均衡来做转发：
 
-   ![image-20240512221301406](https://cdn.jsdelivr.net/gh/LetengZzz/img/java/others/202412100000600.png)
+   ![image-20240512221301406](https://fastly.jsdelivr.net/gh/LetengZzz/img/java/others/202412100000600.png)
 
    使用Nginx来作为负载均衡：在配置文件中配置
 

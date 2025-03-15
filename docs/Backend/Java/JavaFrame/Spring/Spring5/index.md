@@ -26,9 +26,9 @@ Spring 有两个最核心模块： IoC 和 AOP。
 
 ## Spring 模块组成
 
-![image-20230220154255847](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/Two-C/img/Java/202307042000510.png)
+![image-20230220154255847](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/Two-C/img/Java/202307042000510.png)
 
-![2097896352](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/Two-C/img/Java/202307042002409.png)
+![2097896352](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/Two-C/img/Java/202307042002409.png)
 
 包含了 Spring 框架的所有模块，这些模块可以满足一切企业级应用开发的需求，在开发过程中可以根据需求有选择性地使用所需要的模块。
 

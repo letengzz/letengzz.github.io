@@ -8,7 +8,7 @@ TypeScript 中的数据类型：
 2. 四个新类型：void、never、unknown、 any、 enum、tuple
 3. 自定义类型：type、 interface
 
-![image-20240128233155908](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202401282332924.png)
+![image-20240128233155908](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202401282332924.png)
 
 ## number
 

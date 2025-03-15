@@ -90,4 +90,4 @@ public class Consumer {
 }
 ```
 
-![img202403231659991](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/java/mq/202412101558938.png)
+![img202403231659991](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/java/mq/202412101558938.png)

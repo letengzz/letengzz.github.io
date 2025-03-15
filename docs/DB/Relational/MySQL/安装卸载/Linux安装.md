@@ -16,11 +16,11 @@ systemctl status mysqld.service
 
 如果存在mysql-libs的旧版本包，显示如下：
 
-![image-20240930154134966](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202409301541423.png)
+![image-20240930154134966](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202409301541423.png)
 
 如果不存在mysql-lib的版本，显示如下：
 
-![image-20240930154152619](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202409301541347.png) 
+![image-20240930154152619](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202409301541347.png) 
 
 ## 检查MySQL依赖
 
@@ -40,7 +40,7 @@ rpm -qa | grep libaio
 
 如果存在libaio包如下：
 
-![image-20240930204313897](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202409302043394.png) 
+![image-20240930204313897](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202409302043394.png) 
 
 ```shell
 rpm -qa|grep net-tools
@@ -48,7 +48,7 @@ rpm -qa|grep net-tools
 
 如果存在net-tools包如下：
 
-![image-20240930204340615](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202409302043077.png) 
+![image-20240930204340615](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202409302043077.png) 
 
 ## 安装包下载
 
@@ -56,11 +56,11 @@ rpm -qa|grep net-tools
 
 2. 打开官网，点击DOWNLOADS，点击 `MySQL Community(GPL) Downloads`
 
-   ![image-20240724092759446](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202409301551568.png)
+   ![image-20240724092759446](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202409301551568.png)
 
 3. 点击 MySQL Community Server
 
-   ![image-20240724092815967](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202409301553859.png)
+   ![image-20240724092815967](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202409301553859.png)
 
 4. 在General Availability(GA) Releases中选择适合的版本
 
@@ -76,15 +76,15 @@ rpm -qa|grep net-tools
 
 直接点Download下载RPM Bundle全量包。包括了所有下面的组件。不需要一个一个下载了。
 
-![image-20240724093324163](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202409302044314.png)
+![image-20240724093324163](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202409302044314.png)
 
 下载的tar包，用压缩工具打开
 
-![image-20240724093333835](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202409302044462.png)
+![image-20240724093333835](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202409302044462.png)
 
 解压后rpm安装包 （红框为抽取出来的安装包）
 
-![image-20240724093344421](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202409302044029.png)
+![image-20240724093344421](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202409302044029.png)
 
 依次执行命令：
 
@@ -107,7 +107,7 @@ rpm -ivh mysql-community-server-8.0.25-1.el7.x86_64.rpm
 
 安装过程中可能的报错信息：
 
-![image-20240724093800392](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202412011759004.png)
+![image-20240724093800392](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202412011759004.png)
 
 解决办法：一个命令：`yum remove mysql-libs` 解决，清除之前安装过的依赖即可
 
@@ -151,7 +151,7 @@ mysqld --initialize --user=mysql
 
 查看密码：`cat /var/log/mysqld.log` root@localhost: 后面就是初始化的密码
 
-![image.png](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202412011759307.png)
+![image.png](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202412011759307.png)
 
 ####  启动MySQL，查看状态
 
@@ -165,7 +165,7 @@ mysqld --initialize --user=mysql
 
 > mysqld 这个可执行文件就代表着 MySQL 服务器程序，运行这个可执行文件就可以直接启动一个 服务器进程。
 
-![image-20240724094048272](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202412011759361.png)
+![image-20240724094048272](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202412011759361.png)
 
 查看进程：
 
@@ -173,7 +173,7 @@ mysqld --initialize --user=mysql
 ps -ef | grep -i mysql
 ```
 
-![image-20240724094106390](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202412011759436.png)
+![image-20240724094106390](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202412011759436.png)
 
 查看MySQL服务是否自启动
 
@@ -181,7 +181,7 @@ ps -ef | grep -i mysql
 systemctl list-unit-files | grep mysqld.service
 ```
 
-![image-20240724094131796](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202412011759288.png)
+![image-20240724094131796](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202412011759288.png)
 
 默认是enabled。 
 

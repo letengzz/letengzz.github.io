@@ -30,7 +30,7 @@
 
    - 动态扩容队列数量，从而增加消费者数量 (最好不要动)
 
-     ![image-20240329173952412](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/java/mq/202412100947537.png)
+     ![image-20240329173952412](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/java/mq/202412100947537.png)
 
 2. 消费者消费出现问题：
 
@@ -73,5 +73,5 @@ RocketMQ 发生了消息积压， **事发时** 一般有两种处理方式：
 
 差值中的数据都会被清除(必须存在消费者)
 
-![image-20240329173815741](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/java/mq/202412100947819.png)
+![image-20240329173815741](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/java/mq/202412100947819.png)
 

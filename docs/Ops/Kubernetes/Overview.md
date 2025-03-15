@@ -26,7 +26,7 @@
   >
   >  容器化的应用程序可以跨云服务商、跨Linux操作系统发行版进行部署
 
-![image-20200505183738289](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202410221118778.png)
+![image-20200505183738289](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202410221118778.png)
 
 容器化部署方式给带来很多的便利，但是也会出现一些问题，比如说：
 
@@ -39,13 +39,13 @@
 - **Mesos**：Apache的一个资源统一管控的工具，需要和Marathon结合使用
 - **Kubernetes**：Google开源的的容器编排工具
 
-<img src="https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202410221118282.png" alt="image-20200524150339551" style="border:1px solid;zoom:110%;" />
+<img src="https://fastly.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202410221118282.png" alt="image-20200524150339551" style="border:1px solid;zoom:110%;" />
 
 ## kubernetes 简介    
 
 kubernetes，是一个全新的基于容器技术的分布式架构领先方案，是谷歌严格保密十几年的秘密武器----Borg系统的一个开源版本，于2014年9月发布第一个版本，2015年7月发布第一个正式版本。
 
-<img src="https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202410221118945.png" alt="image-20200406232838722" style="zoom:100%;border:1px solid;" />
+<img src="https://fastly.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202410221118945.png" alt="image-20200406232838722" style="zoom:100%;border:1px solid;" />
 
 kubernetes的本质是**一组服务器集群**，它可以在集群的每个节点上运行特定的程序，来对节点中的容器进行管理。目的是实现资源管理的自动化，主要提供了如下的主要功能：
 
@@ -56,7 +56,7 @@ kubernetes的本质是**一组服务器集群**，它可以在集群的每个节
 - **版本回退**：如果发现新发布的程序版本有问题，可以立即回退到原来的版本
 - **存储编排**：可以根据容器自身的需求自动创建存储卷
 
-![image-20200526203726071](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202410221118869.png)
+![image-20200526203726071](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202410221118869.png)
 
 ## kubernetes 组件
 
@@ -80,7 +80,7 @@ kubernetes的本质是**一组服务器集群**，它可以在集群的每个节
 >
 > **Docker** : 负责节点上容器的各种操作
 
-<img src="https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202410221118755.png" alt="image-20200406184656917" style="zoom:200%;" />
+<img src="https://fastly.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202410221118755.png" alt="image-20200406184656917" style="zoom:200%;" />
 
 下面，以部署一个nginx服务来说明kubernetes系统各个组件调用关系：
 
@@ -118,5 +118,5 @@ kubernetes的本质是**一组服务器集群**，它可以在集群的每个节
 
 **NameSpace**：命名空间，用来隔离pod的运行环境
 
-<img src="https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202410221119207.png" alt="image-20200403224313355" style="zoom:200%;" />
+<img src="https://fastly.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202410221119207.png" alt="image-20200403224313355" style="zoom:200%;" />
 

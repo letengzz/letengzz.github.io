@@ -462,7 +462,7 @@ docker compose version
 使用Dockerfile构建jar的镜像
 
 jar包配置项所需ip的位置可以使用服务名
-![image.png](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202410212155039.png)
+![image.png](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202410212155039.png)
 
 配置运行jar所需镜像的配置
 

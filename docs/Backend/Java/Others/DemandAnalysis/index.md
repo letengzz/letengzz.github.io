@@ -48,7 +48,7 @@
 
   比如：添加课程的需求用例：
 
-  ![image-20231217142734973](https://cdn.jsdelivr.net/gh/LetengZzz/img/java/others/202412092346754.png)
+  ![image-20231217142734973](https://fastly.jsdelivr.net/gh/LetengZzz/img/java/others/202412092346754.png)
 
 ## **模块介绍**
 
@@ -75,7 +75,7 @@
 
 *课程编辑与发布的整体流程：
 
-![](https://cdn.jsdelivr.net/gh/LetengZzz/img/java/others/202412092346880.jpg)
+![](https://fastly.jsdelivr.net/gh/LetengZzz/img/java/others/202412092346880.jpg)
 
 ## **界面原型**
 
@@ -85,30 +85,30 @@
 
 - 课程列表 ：
 
-  ![image.png](https://cdn.jsdelivr.net/gh/LetengZzz/img/java/others/202412092347264.png)
+  ![image.png](https://fastly.jsdelivr.net/gh/LetengZzz/img/java/others/202412092347264.png)
 
 - 点击添加课程：
 
-  ![image.png](https://cdn.jsdelivr.net/gh/LetengZzz/img/java/others/202412092348297.png)
+  ![image.png](https://fastly.jsdelivr.net/gh/LetengZzz/img/java/others/202412092348297.png)
 
 - 选择录播课程 ，填写课程信息：
 
-  ![](https://cdn.jsdelivr.net/gh/LetengZzz/img/java/others/202412092346542.jpg)
+  ![](https://fastly.jsdelivr.net/gh/LetengZzz/img/java/others/202412092346542.jpg)
 
 - 填写课程计划信息：
 
-  ![image.png](https://cdn.jsdelivr.net/gh/LetengZzz/img/java/others/202412092348534.png)
+  ![image.png](https://fastly.jsdelivr.net/gh/LetengZzz/img/java/others/202412092348534.png)
 
 - 填写课程师资信息：
 
-  ![image.png](https://cdn.jsdelivr.net/gh/LetengZzz/img/java/others/202412092348474.png)
+  ![image.png](https://fastly.jsdelivr.net/gh/LetengZzz/img/java/others/202412092348474.png)
 
 - 课程填写完毕进行课程 发布：当审核状态为通过时发布按钮点亮，点击发布按钮 即可对该课程进行发布：
 
-  ![image.png](https://cdn.jsdelivr.net/gh/LetengZzz/img/java/others/202412092348862.png)
+  ![image.png](https://fastly.jsdelivr.net/gh/LetengZzz/img/java/others/202412092348862.png)
 
 ## **数据模型**
 
 使用PowerDesigner建立模型：
 
- ![](https://cdn.jsdelivr.net/gh/LetengZzz/img/java/others/202412092345234.jpg)
+ ![](https://fastly.jsdelivr.net/gh/LetengZzz/img/java/others/202412092345234.jpg)

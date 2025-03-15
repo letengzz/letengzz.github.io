@@ -148,7 +148,7 @@ loginManage();
 </script>
 ```
 
-![image-20250126220857381](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/image-20250126220857381.png)
+![image-20250126220857381](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/image-20250126220857381.png)
 
 ### 响应拦截器
 
@@ -247,7 +247,7 @@ export const login = (data: any) => {
 };
 ```
 
-![image-20250127101017196](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/image-20250127101017196.png)
+![image-20250127101017196](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/image-20250127101017196.png)
 
 此时可以获取到 config 中的 isToken 了
 

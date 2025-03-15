@@ -21,6 +21,6 @@
 - 如果想保持 boot mvc 的默认配置，但要自定义核心组件实例，比如：RequestMappingHandlerMapping，RequestMappingHandlerAdapter 或 ExceptionHandlerExceptionResolver，给容器中放一个WebMvcRegistrations 组件即可
 - 如果想全面接管 Spring MVC，`@Configuration` 标注一个配置类，并加上 `@EnableWebMvc`注解，实现 WebMvcConfigurer 接口
 
-![image-20230801152505058](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/Two-C/img/Java/202308011526218.png)
+![image-20230801152505058](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/Two-C/img/Java/202308011526218.png)
 
 **推荐方式**：给容器中写一个配置类`@Configuration`实现 `WebMvcConfigurer`但是不要标注 `@EnableWebMvc`注解，实现手自一体的效果。

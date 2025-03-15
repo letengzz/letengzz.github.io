@@ -56,7 +56,7 @@ Jdbc场景的自动配置：
 
 4. 要操作数据库，最简单直接的方法就是使用JdbcTemplate来完成：它给我们封装了很多方法使用，比如要查询数据库中的一条记录
 
-   ![image-20230716000431492](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202411211523418.png)
+   ![image-20230716000431492](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202411211523418.png)
 
    可以使用`queryForMap`快速以Map为结果的形式查询一行数据：
 
@@ -71,7 +71,7 @@ Jdbc场景的自动配置：
    }
    ```
 
-   ![image-20230720215124918](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202411211524390.png)
+   ![image-20230720215124918](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202411211524390.png)
 
    也可以编写自定义的Mapper用于直接得到查询结果：
 
@@ -135,7 +135,7 @@ public class WebConfiguration {
 
 这样就可以快速进行插入操作并且返回自增主键了，还是挺方便的。
 
-![image-20230720224314223](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202411211526701.png)
+![image-20230720224314223](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202411211526701.png)
 
 
 

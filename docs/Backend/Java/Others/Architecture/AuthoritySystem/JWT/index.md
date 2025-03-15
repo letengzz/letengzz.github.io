@@ -15,7 +15,7 @@ JWT最重要的作用就是对 token信息的防伪作用。
 典型的，一个JWT看起来如下图：该对象为一个很长的字符串，字符之间通过"."分隔符分为三个子串。
 https://jwt.io/
 
-![3402e929-2225-4c64-8f2e-4471b63366d0](https://cdn.jsdelivr.net/gh/LetengZzz/img/java/others/202412092337882.png)
+![3402e929-2225-4c64-8f2e-4471b63366d0](https://fastly.jsdelivr.net/gh/LetengZzz/img/java/others/202412092337882.png)
 
 ### JWT头
 

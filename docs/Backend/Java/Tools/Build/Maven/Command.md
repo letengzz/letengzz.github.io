@@ -18,7 +18,7 @@ mvn clean
 
 效果：删除 target 目录
 
-![image-20231023192502697](https://cdn.jsdelivr.net/gh/LetengZzz/img/java/tools/202412092314855.png)
+![image-20231023192502697](https://fastly.jsdelivr.net/gh/LetengZzz/img/java/tools/202412092314855.png)
 
 ## 编译操作
 
@@ -38,11 +38,11 @@ mvn test-compile
 
 - 主体程序编译结果存放的目录：`target/classes`
 
-  ![image-20231023192556095](https://cdn.jsdelivr.net/gh/LetengZzz/img/java/tools/202412092314389.png)
+  ![image-20231023192556095](https://fastly.jsdelivr.net/gh/LetengZzz/img/java/tools/202412092314389.png)
 
 - 测试程序编译结果存放的目录：`target/test-classes`
 
-  ![image-20231023192658702](https://cdn.jsdelivr.net/gh/LetengZzz/img/java/tools/202412092315867.png)
+  ![image-20231023192658702](https://fastly.jsdelivr.net/gh/LetengZzz/img/java/tools/202412092315867.png)
 
 ## 测试操作
 
@@ -52,7 +52,7 @@ mvn test
 
 测试的报告存放的目录：`target/surefire-reports`
 
-![image-20231023192817092](https://cdn.jsdelivr.net/gh/LetengZzz/img/java/tools/202412092315063.png)
+![image-20231023192817092](https://fastly.jsdelivr.net/gh/LetengZzz/img/java/tools/202412092315063.png)
 
 ## 打包操作
 
@@ -62,7 +62,7 @@ mvn package
 
 打包的结果——jar 包，存放的目录：target
 
-![image-20231023193004726](https://cdn.jsdelivr.net/gh/LetengZzz/img/java/tools/202412092315517.png)
+![image-20231023193004726](https://fastly.jsdelivr.net/gh/LetengZzz/img/java/tools/202412092315517.png)
 
 ## 安装操作
 
@@ -70,7 +70,7 @@ mvn package
 mvn install
 ```
 
-![](https://cdn.jsdelivr.net/gh/LetengZzz/img/java/tools/202412092315943.png)
+![](https://fastly.jsdelivr.net/gh/LetengZzz/img/java/tools/202412092315943.png)
 
 > [INFO] Installing D:\maven-workspace\space\pro01-maven-java\target\pro01-maven-java-1.0-SNAPSHOT.jar to D:\Data\Maven\com\hjc\maven\pro01-maven-java\1.0-SNAPSHOT\pro01-maven-java-1.0-SNAPSHOT.jar
 > [INFO] Installing D:\maven-workspace\space\pro01-maven-java\pom.xml to D:\Data\Maven\com\hjc\maven\pro01-maven-java\1.0-SNAPSHOT\pro01-maven-java-1.0-SNAPSHOT.pom
@@ -99,7 +99,7 @@ D:\repo\maven-repository\com\hjc\maven\pro01-maven-java\1.0-SNAPSHOT\pro01-maven
 mvn dependency:list
 ```
 
-![image-20231105162923957](https://cdn.jsdelivr.net/gh/LetengZzz/img/java/tools/202412092315314.png)
+![image-20231105162923957](https://fastly.jsdelivr.net/gh/LetengZzz/img/java/tools/202412092315314.png)
 
 > [INFO] The following files have been resolved:
 > [INFO] org.hamcrest:hamcrest-core:jar:1.3:test
@@ -117,7 +117,7 @@ mvn dependency:list
 mvn dependency:tree
 ```
 
-![image-20231105163356579](https://cdn.jsdelivr.net/gh/LetengZzz/img/java/tools/202412092315731.png)
+![image-20231105163356579](https://fastly.jsdelivr.net/gh/LetengZzz/img/java/tools/202412092315731.png)
 
 > [INFO] com.hjc.maven:pro02-maven-web:war:1.0-SNAPSHOT
 > [INFO] +- junit:junit:jar:4.12:test
@@ -135,4 +135,4 @@ mvn dependency:tree
 mvn -v
 ```
 
-![image-20231105132734015](https://cdn.jsdelivr.net/gh/LetengZzz/img/java/tools/202412092315262.png)
+![image-20231105132734015](https://fastly.jsdelivr.net/gh/LetengZzz/img/java/tools/202412092315262.png)

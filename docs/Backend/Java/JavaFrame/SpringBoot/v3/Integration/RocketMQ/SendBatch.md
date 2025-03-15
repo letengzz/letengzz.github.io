@@ -51,7 +51,7 @@ class Producer {
 
 启动生产者进行测试：
 
-![image-20240326172055824](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202403261721889.png)
+![image-20240326172055824](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202403261721889.png)
 
 ## 消费者
 
@@ -101,7 +101,7 @@ public class BatchMsgListener implements RocketMQListener<MessageExt>,RocketMQPu
 
 启动消费者进行测试：
 
-![image-20240326172535513](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202403261725650.png)
+![image-20240326172535513](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202403261725650.png)
 
 ## 一次消费多条
 
@@ -321,4 +321,4 @@ public class BatchMsgListener implements RocketMQListener<MessageExt>,RocketMQPu
 
 - 查看效果：
 
-  ![image-20240326175426389](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202403261754597.png)
+  ![image-20240326175426389](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202403261754597.png)

@@ -2,7 +2,7 @@
 
 ## 手动部署
 
-![image-20240330210824395](https://cdn.jsdelivr.net/gh/LetengZzz/img/java/tools/202412092236628.png)
+![image-20240330210824395](https://fastly.jsdelivr.net/gh/LetengZzz/img/java/tools/202412092236628.png)
 
 ## 自动化部署
 
@@ -12,5 +12,5 @@
 
 对于程序员的日常开发来说不会造成任何额外负担——自己把代码提交上去之后，服务器上运行的马上就是最新版本——一切都发生在无形中。
 
-![image-20240330210917324](https://cdn.jsdelivr.net/gh/LetengZzz/img/java/tools/202412092236524.png)
+![image-20240330210917324](https://fastly.jsdelivr.net/gh/LetengZzz/img/java/tools/202412092236524.png)
 

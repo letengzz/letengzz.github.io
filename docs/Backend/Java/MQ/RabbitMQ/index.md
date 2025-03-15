@@ -1,6 +1,6 @@
 # RabbitMQ
 
-![img202403092347385](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/java/mq/202412101631350.jpg)
+![img202403092347385](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/java/mq/202412101631350.jpg)
 
 - [RabbitMQ 概述](Overview.md)
 - [RabbitMQ 安装](Install/index.md)

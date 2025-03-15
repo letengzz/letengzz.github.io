@@ -4,7 +4,7 @@
 
 **注意**：使用Spring initailizr构建响应式web项目：
 
-![image-20230822205002080](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/Two-C/img/Java/202308222050224.png)
+![image-20230822205002080](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/Two-C/img/Java/202308222050224.png)
 
 导入依赖：
 

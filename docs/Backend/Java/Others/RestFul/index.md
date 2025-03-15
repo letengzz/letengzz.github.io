@@ -6,7 +6,7 @@ REST 是 Representational State Transfer的缩写，如果⼀个架构符合REST
 
 因此，这种风格的连接，可以直接从请求路径中读取参数：`http://localhost:8080/mvc/index/123456`
 
-![image-20230301091133844](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202312241441195.png)
+![image-20230301091133844](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202312241441195.png)
 
 可以直接将index的下一级路径作为请求参数进行处理，也就是说现在的请求参数包含在了请求路径中：
 

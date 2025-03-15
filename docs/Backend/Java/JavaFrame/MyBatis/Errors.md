@@ -5,7 +5,7 @@
 
 ## <span id="jump1">mabatis报错：Result type not match for select id=XXX</span>
 
-在使用模块编程时会出现![image-20230111110547086](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/Two-C/img/Java/202303011650479.png)
+在使用模块编程时会出现![image-20230111110547086](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/Two-C/img/Java/202303011650479.png)
 
 实际上并不影响运行，但是会飘红 
 

@@ -51,19 +51,19 @@ yum -y install gcc-c++
 
    1. 默认`daemonize no` 改为 `daemonize yes`：设置后台启动
 
-      ![](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202404080005150.png)
+      ![](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202404080005150.png)
 
    2. 默认`protected-mode yes` 改为 `protected-mode no`：关闭保护模式
 
-      ![](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202404080005209.png)
+      ![](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202404080005209.png)
 
    3. 默认`bind 127.0.0.1` 改为 直接注释掉 (默认`bind 127.0.0.1`只能本机访问)或改成本机IP地址，否则影响远程IP连接
 
-      ![](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202404080006254.png)
+      ![](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202404080006254.png)
 
    4. 添加redis密码 改为 requirepass 你自己设置的密码
 
-      ![](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202404080006041.png)
+      ![](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202404080006041.png)
 
 6. 启动服务：在/usr/local/bin目录下运行redis-server，启用/myredis目录下的redis7.conf文件
 
@@ -85,7 +85,7 @@ yum -y install gcc-c++
    redis-cli -a 111111 -p 6379
    ```
 
-   ![](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202404080018002.png)
+   ![](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202404080018002.png)
 
    提示：`Warning: Using a password with '-a' or '-u' option on the command line interface may not be safe.`
 
@@ -100,7 +100,7 @@ yum -y install gcc-c++
 
    解决办法将标准错误去除即可，追加`2>/dev/null`，将标准错误丢弃即可，就没有烦人的警告了。
 
-   ![](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202404080020546.png)
+   ![](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202404080020546.png)
 
 8. 输入`ping`：
 
@@ -141,7 +141,7 @@ yum -y install gcc-c++
 
 1. 停止redis-server服务：
 
-   ![](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202404080030295.png)
+   ![](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202404080030295.png)
 
 2. 删除/usr/local/lib目录下与redis相关的文件：
 
@@ -150,4 +150,4 @@ yum -y install gcc-c++
    rm -rf /usr/local/bin/redis-*
    ```
 
-   ![](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202404080031390.png)
+   ![](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202404080031390.png)

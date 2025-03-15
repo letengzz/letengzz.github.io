@@ -13,35 +13,35 @@
 - LTS：长期支持版本
 - Current：最新版
 
-![image-20231003174023008](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img/Java/202310031740169.png)
+![image-20231003174023008](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/tc2/img/Java/202310031740169.png)
 
 也可以通过 https://nodejs.org/en/download 下载
 
-![image-20231003174224837](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img/Java/202310031742716.png)
+![image-20231003174224837](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/tc2/img/Java/202310031742716.png)
 
 下载完毕后，双击安装Node.js
 
-![image-20231003174749883](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img/Java/202310031747421.png)
+![image-20231003174749883](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/tc2/img/Java/202310031747421.png)
 
-![image-20231003174802617](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img/Java/202310031750726.png)
+![image-20231003174802617](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/tc2/img/Java/202310031750726.png)
 
-![image-20231003174846696](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img/Java/202310031750751.png)
+![image-20231003174846696](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/tc2/img/Java/202310031750751.png)
 
-![image-20231003174923260](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img/Java/202310031750138.png)
+![image-20231003174923260](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/tc2/img/Java/202310031750138.png)
 
-![image-20231003175006696](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img/Java/202310031750612.png)
+![image-20231003175006696](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/tc2/img/Java/202310031750612.png)
 
-![image-20231003175014065](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img/Java/202310031750199.png)
+![image-20231003175014065](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/tc2/img/Java/202310031750199.png)
 
 安装成功：
 
-![image-20231003175041766](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img/Java/202310031750100.png)
+![image-20231003175041766](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/tc2/img/Java/202310031750100.png)
 
 配置依赖库 (`node_global`)：
 
 - 创建node_global目录：
 
-  ![image-20240507134716318](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202405071347227.png)
+  ![image-20240507134716318](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202405071347227.png)
 
 - 设置依赖库：
 
@@ -49,7 +49,7 @@
   npm config set prefix "D:\ProGram\nodejs\node_global"
   ```
 
-  ![image-20240507134811833](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202405071348208.png)
+  ![image-20240507134811833](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202405071348208.png)
 
 - 查看设置成功：
 
@@ -57,17 +57,17 @@
   npm config get prefix
   ```
 
-  ![image-20240507134824849](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202405071348657.png)
+  ![image-20240507134824849](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202405071348657.png)
 
 - 设置环境变量：
 
-  ![image-20240507135338168](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202405071353541.png)
+  ![image-20240507135338168](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202405071353541.png)
 
 配置缓存 (`node_cache`)：
 
 - 创建node_cache目录：
 
-  ![image-20240507134929846](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202405071349320.png)
+  ![image-20240507134929846](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202405071349320.png)
 
 - 设置依赖库：
 
@@ -75,7 +75,7 @@
   npm config set cache "D:\ProGram\nodejs\node_cache"
   ```
 
-  ![image-20240507135116077](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202405071351160.png)
+  ![image-20240507135116077](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202405071351160.png)
 
 - 查看设置成功：
 
@@ -83,7 +83,7 @@
   npm config get cache
   ```
 
-  ![image-20240507135133580](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202405071351017.png)
+  ![image-20240507135133580](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202405071351017.png)
 
 验证：
 
@@ -93,7 +93,7 @@ Win+R 输入cmd，在cmd中输入 `node -v`
 node -v
 ```
 
-![image-20231003175215400](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img/Java/202310031752181.png)
+![image-20231003175215400](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/tc2/img/Java/202310031752181.png)
 
 ## Mac 安装
 
@@ -108,23 +108,23 @@ node -v
 - LTS：长期支持版本
 - Current：最新版
 
-![image-20240206175117731](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/imgimage-20240206175117731.png)
+![image-20240206175117731](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/tc2/imgimage-20240206175117731.png)
 
 也可以通过 https://nodejs.org/en/download 下载
 
-![image-20240206175357575](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/imgimgimage-20240206175357575.png)
+![image-20240206175357575](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/tc2/imgimgimage-20240206175357575.png)
 
 下载完毕后，双击安装Node.js
 
-![image-20240206175416170](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/imgimage-20240206175416170.png)
+![image-20240206175416170](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/tc2/imgimage-20240206175416170.png)
 
-![image-20240206175445639](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/imgimage-20240206175445639.png)
+![image-20240206175445639](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/tc2/imgimage-20240206175445639.png)
 
-![image-20240206175513631](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/imgimage-20240206175513631.png)
+![image-20240206175513631](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/tc2/imgimage-20240206175513631.png)
 
 安装成功：
 
-![image-20240206175548048](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/imgimage-20240206175548048.png)
+![image-20240206175548048](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/tc2/imgimage-20240206175548048.png)
 
 环境配置：打开Mac 终端，配置全局环境变量，键盘输入 `vim .bash_profile`进入编辑状态，打开之后添加一行代码：`PATH=$PATH:/usr/local/bin/`。点击 esc 退出编辑状态，此时无法对内容进行修改。键盘输入 `:wq!` 强制保存并退出vim，回到终端的界面
 
@@ -136,7 +136,7 @@ node -v
 node -v
 ```
 
-![image-20240206180351876](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/imgimage-20240206180351876.png)
+![image-20240206180351876](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/tc2/imgimage-20240206180351876.png)
 
 ## 简单使用
 
@@ -146,7 +146,7 @@ node -v
 console.log('hello Node.js');
 ```
 
-![image-20231003181424364](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img/Java/202310031814817.png)
+![image-20231003181424364](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/tc2/img/Java/202310031814817.png)
 
 在CMD中输入：
 
@@ -154,15 +154,15 @@ console.log('hello Node.js');
 node 文件名.js
 ```
 
-![image-20231003181537604](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img/Java/202310031816614.png)
+![image-20231003181537604](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/tc2/img/Java/202310031816614.png)
 
 ## 注意
 
 1. Node.js 中不能使用 BOM 和 DOM 的API (Node.js 并没有包含BOM 和 DOM)
 
-   ![image-20231003181746154](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img/Java/202310031818515.png)
+   ![image-20231003181746154](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/tc2/img/Java/202310031818515.png)
 
-   ![image-20231003181816993](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img/Java/202310031818303.png)
+   ![image-20231003181816993](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/tc2/img/Java/202310031818303.png)
 
    ```js
    //测试 以下命令 程序会报异常

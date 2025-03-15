@@ -37,7 +37,7 @@ Git软件本身就是用于Linux系统开发所设计的版本管理软件，所
 
   将下载后的压缩文件上传到Linux系统中
 
-  ![image-20230513232500399](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/Two-C/img/Java/202305140103304.png)
+  ![image-20230513232500399](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/Two-C/img/Java/202305140103304.png)
 
 - 解压Git：
 

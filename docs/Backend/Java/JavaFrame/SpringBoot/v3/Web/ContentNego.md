@@ -8,7 +8,7 @@
 
 因此，在现代的开发中，不同的客户端可能需要后端系统返回不同格式的数据。总之后端应该满足这种多样化的需求。
 
-![img](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/Two-C/img/202308021001821.png)
+![img](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/Two-C/img/202308021001821.png)
 
 ## 多端内容适配
 
@@ -26,7 +26,7 @@
 
    服务端根据**客户端请求头期望的数据类型进行动态返回**
 
-   ![image-20230804222924773](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/Two-C/img/Java/202308042229351.png)
+   ![image-20230804222924773](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/Two-C/img/Java/202308042229351.png)
 
 2. **基于请求参数内容协商(需要开启)**：
 
@@ -38,7 +38,7 @@
 
    1. 发送请求 GET /projects/spring-boot?format=xml,优先返回 xml 类型数据
 
-      ![image-20230804223135250](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/Two-C/img/Java/202308042231999.png)
+      ![image-20230804223135250](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/Two-C/img/Java/202308042231999.png)
 
 默认支持把对象转化为JSON，因为默认web场景导入了Jackson处理的包：jackson-core
 
@@ -67,7 +67,7 @@ public class PersonController {
 }
 ```
 
-![image-20230805152218210](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/Two-C/img/Java/202308051522439.png)
+![image-20230805152218210](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/Two-C/img/Java/202308051522439.png)
 
 **例**：请求同一个接口，可以返回json和xml不同格式数据：
 
@@ -95,13 +95,13 @@ public class PersonController {
 
 3. 进行了内容协商 默认返回了文本：
 
-   ![image-20230805152754450](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/Two-C/img/Java/202308051527240.png)
+   ![image-20230805152754450](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/Two-C/img/Java/202308051527240.png)
 
 4. 使用**基于请求头内容协商**：
 
-   ![image-20230805153315918](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/Two-C/img/Java/202308051533147.png)
+   ![image-20230805153315918](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/Two-C/img/Java/202308051533147.png)
 
-   ![image-20230805153423806](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/Two-C/img/Java/202308051534407.png)
+   ![image-20230805153423806](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/Two-C/img/Java/202308051534407.png)
 
 5. 使用**基于请求参数内容协商**：开启基于请求参数的内容协商
 
@@ -122,7 +122,7 @@ public class PersonController {
          parameter-name: type
    ```
 
-   ![image-20230805154210686](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/Two-C/img/Java/202308051542142.png)
+   ![image-20230805154210686](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/Two-C/img/Java/202308051542142.png)
 
 ### 配置协商规则与支持类型
 
@@ -282,9 +282,9 @@ public class MyYamlHttpMessageConverter extends AbstractHttpMessageConverter<Obj
 }
 ```
 
-![image-20230805230556304](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/Two-C/img/Java/202308052305785.png)
+![image-20230805230556304](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/Two-C/img/Java/202308052305785.png)
 
-![image-20230805230615593](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/Two-C/img/Java/202308052306842.png)
+![image-20230805230615593](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/Two-C/img/Java/202308052306842.png)
 
 ## 内容协商原理-`HttpMessageConverter`
 
@@ -317,7 +317,7 @@ public class MyYamlHttpMessageConverter extends AbstractHttpMessageConverter<Obj
 
    1. 默认`MessageConverter`：
 
-      ![img](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/Two-C/img/Java/202308051623295.png)
+      ![img](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/Two-C/img/Java/202308051623295.png)
 
    1. 最终因为要`json`所以`MappingJackson2HttpMessageConverter`支持写出json
 
@@ -337,7 +337,7 @@ public class MyYamlHttpMessageConverter extends AbstractHttpMessageConverter<Obj
 
 默认8个：
 
-![img](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/Two-C/img/Java/202308052235292.png)
+![img](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/Two-C/img/Java/202308052235292.png)
 
 系统提供默认的MessageConverter 功能有限，仅用于json或者普通返回数据。额外增加新的内容协商功能，必须增加新的`HttpMessageConverter`
 
@@ -345,4 +345,4 @@ public class MyYamlHttpMessageConverter extends AbstractHttpMessageConverter<Obj
 
 提供了很多的默认配置。判断系统中是否有相应的类：如果有，就加入相应的HttpMessageConverter
 
-![image-20230805224337466](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/Two-C/img/Java/202308052243134.png)
+![image-20230805224337466](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/Two-C/img/Java/202308052243134.png)

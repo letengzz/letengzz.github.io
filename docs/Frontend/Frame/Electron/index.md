@@ -1,6 +1,6 @@
 # Electron
 
-![image-20240929213849360](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202409292138970.png)
+![image-20240929213849360](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202409292138970.png)
 
 - [Electron 概述](Overview.md)
 - [Electron 搭建环境](BuildEnvironment.md)

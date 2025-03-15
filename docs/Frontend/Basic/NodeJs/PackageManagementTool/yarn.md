@@ -2,7 +2,7 @@
 
 yarn 是由 Facebook 在 2016 年推出的新的 Javascript 包管理工具
 
-![image-20231026180709980](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202310261807750.png)
+![image-20231026180709980](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202310261807750.png)
 
 - 官方网址： https://yarnpkg.com/
 
@@ -34,7 +34,7 @@ npm i -g yarn
 
 ## 常用命令
 
-![image-20231026201034999](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202310262010927.png)
+![image-20231026201034999](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202310262010927.png)
 
 yarn 全局安装包的位置可以通过 `yarn global bin` 来查看
 
@@ -62,7 +62,7 @@ yarn config list
 
 在使用yarn创建vite项目时，报了一个错误：**文件名、目录名或卷标语法不正确。error Command failed**
 
-![image-20250107155858173](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/image-20250107155858173.png)
+![image-20250107155858173](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/image-20250107155858173.png)
 
 因为yarn默认的cache和global文件夹是安装在C盘目录下的，而我安装的yarn的bin目录在D盘下，所以会报错
 
@@ -79,7 +79,7 @@ yarn config list
 
    也就是保证你的bin目录所在的磁盘和存放global以及cache文件夹所在的磁盘一致即可
 
-   ![img](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/205d6b8b4baf4e26b5aeb4304876e2df.png)
+   ![img](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/205d6b8b4baf4e26b5aeb4304876e2df.png)
 
 3. 使用设置yarn的全局global和cache存放位置为刚刚那两个文件夹就行：
 

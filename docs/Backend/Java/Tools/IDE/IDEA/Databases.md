@@ -4,23 +4,23 @@
 
 创建数据库：springboot
 
-![](https://cdn.jsdelivr.net/gh/LetengZzz/img/java/tools/202412092230377.png)
+![](https://fastly.jsdelivr.net/gh/LetengZzz/img/java/tools/202412092230377.png)
 
 使用IDEA工具自带的mysql插件来完成表的创建和数据的准备：
 
-![](https://cdn.jsdelivr.net/gh/LetengZzz/img/java/tools/202412092230961.png)
+![](https://fastly.jsdelivr.net/gh/LetengZzz/img/java/tools/202412092230961.png)
 
 
 
-![](https://cdn.jsdelivr.net/gh/LetengZzz/img/java/tools/202412092230702.png)
+![](https://fastly.jsdelivr.net/gh/LetengZzz/img/java/tools/202412092230702.png)
 
-![](https://cdn.jsdelivr.net/gh/LetengZzz/img/java/tools/202412092230424.png)
+![](https://fastly.jsdelivr.net/gh/LetengZzz/img/java/tools/202412092230424.png)
 
 
 
-![](https://cdn.jsdelivr.net/gh/LetengZzz/img/java/tools/202412092230106.png)
+![](https://fastly.jsdelivr.net/gh/LetengZzz/img/java/tools/202412092230106.png)
 
 表创建成功后，为表准备数据，如下：
 
-![](https://cdn.jsdelivr.net/gh/LetengZzz/img/java/tools/202412092230373.png)
+![](https://fastly.jsdelivr.net/gh/LetengZzz/img/java/tools/202412092230373.png)
 

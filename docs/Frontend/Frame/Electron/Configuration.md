@@ -130,7 +130,7 @@ app.on('ready',()=>{
 
 出现`Electron Security Warning (Insecure Content-Security-Policy)`：
 
-![image-20240627203916534](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202406272039200.png)
+![image-20240627203916534](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202406272039200.png)
 
 解决办法：配置 CSP(Content-Security-Policy)
 

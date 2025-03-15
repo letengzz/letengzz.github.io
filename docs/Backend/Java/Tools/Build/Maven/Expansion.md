@@ -6,7 +6,7 @@
 
 **三个生命周期**：
 
-![image-20231107211939172](https://cdn.jsdelivr.net/gh/LetengZzz/img/java/tools/202412092259370.png)
+![image-20231107211939172](https://fastly.jsdelivr.net/gh/LetengZzz/img/java/tools/202412092259370.png)
 
 **特点**：
 

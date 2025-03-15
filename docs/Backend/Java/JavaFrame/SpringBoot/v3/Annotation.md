@@ -6,7 +6,7 @@ SpringBoot摒弃XML配置方式，改为**全注解驱动**
 
 Spring Boot的主入口程序被`@SpringBootApplication`注解标注，可见这个注解的重要性，查看它的源码：
 
-![](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202411172040344.png)
+![](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202411172040344.png)
 
 可以看出这个注解属于**组合注解**。拥有`@SpringBootConfiguration`、`@EnableAutoConfiguration`、`@ComponentScan`的功能。
 
@@ -134,7 +134,7 @@ public class SpringbootAnnotationApplication {
 
 **运行结果**：
 
-![image-20230730141309431](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/Two-C/img/Java/202307301413901.png)
+![image-20230730141309431](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/Two-C/img/Java/202307301413901.png)
 
 ### @Bean、@Scope
 
@@ -153,7 +153,7 @@ public class SpringbootAnnotationApplication {
 
 @Scope默认是单例模式(singleton)，即：`@Scope("singleton")`
 
-![image-20230730154145369](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/Two-C/img/Java/202307301541651.png)
+![image-20230730154145369](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/Two-C/img/Java/202307301541651.png)
 
 ```java
 @Bean("tom")
@@ -167,7 +167,7 @@ public Pet tomPet(){
 
 ### @Controller、 @Service、@Repository、@Component
 
-![image-20230730150507898](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/Two-C/img/Java/202307301505317.png)
+![image-20230730150507898](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/Two-C/img/Java/202307301505317.png)
 
 ### @Import
 
@@ -200,7 +200,7 @@ lication.class,args);
 }
 ```
 
-![image-20230730155344809](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/Two-C/img/Java/202307301553311.png)
+![image-20230730155344809](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/Two-C/img/Java/202307301553311.png)
 
 ### @ComponentScan
 
@@ -256,7 +256,7 @@ public class SpringbootAnnotationApplication {
 }
 ```
 
-![image-20230730172351954](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/Two-C/img/Java/202307301724382.png)
+![image-20230730172351954](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/Two-C/img/Java/202307301724382.png)
 
 ## 条件注解
 
@@ -405,7 +405,7 @@ public class SpringbootAnnotationApplication {
 }
 ```
 
-![image-20230730220336087](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/Two-C/img/Java/202307302203804.png)
+![image-20230730220336087](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/Two-C/img/Java/202307302203804.png)
 
 ### @EnableConfigurationProperties
 
@@ -480,7 +480,7 @@ public class SpringbootAnnotationApplication {
 }
 ```
 
-![image-20230730220336087](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/Two-C/img/Java/202307302203804.png)
+![image-20230730220336087](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/Two-C/img/Java/202307302203804.png)
 
 该注解表示`启用自动配置`。
 

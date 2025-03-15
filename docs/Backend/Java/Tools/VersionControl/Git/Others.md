@@ -8,7 +8,7 @@ Git会适当地显示不同的颜色，比如 git status 命令
 git config --global color.ui true
 ```
 
-![image-20230514004027556](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/Two-C/img/Java/202305140113887.png)
+![image-20230514004027556](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/Two-C/img/Java/202305140113887.png)
 
 ## 忽略特殊文件
 
@@ -122,28 +122,28 @@ deploy_key_rsa
 
 名字含有spring boot的项目：`in:name spring boot`
 
-![image-20230514005018629](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/Two-C/img/Java/202305140113480.png)
+![image-20230514005018629](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/Two-C/img/Java/202305140113480.png)
 
 ##### 根据 starts和forks搜索
 
 搜索名字含有spring boot同时starts > 3000，forks>3000：`in:name spring boot stars:>3000 forks:>3000`
 
-![image-20230514005047099](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/Two-C/img/Java/202305140113519.png)
+![image-20230514005047099](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/Two-C/img/Java/202305140113519.png)
 
 ##### 根据 readme和language和pushed搜索
 
 搜索readme中含有微服务 语言为java push时间为2019-09-01之后的：`in:readme 微服务 language:java pushed:>2019-09-01`
 
-![image-20230514005106159](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/Two-C/img/Java/202305140113396.png)
+![image-20230514005106159](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/Two-C/img/Java/202305140113396.png)
 
 ##### 根据 description 搜索
 
 搜索描述包含爬虫，语言为python，stars >1000 ,2020-1-1有更新的：`in:description 爬虫 language:python stars:>1000 pushed:>2020-01-01`
 
-![image-20230514005136561](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/Two-C/img/Java/202305140113112.png)
+![image-20230514005136561](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/Two-C/img/Java/202305140113112.png)
 
 #### 组合搜索
 
 搜索文档中包含spring security的开源项目
 
-![image-20230514004955567](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/Two-C/img/Java/202305140113040.png)
+![image-20230514004955567](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/Two-C/img/Java/202305140113040.png)

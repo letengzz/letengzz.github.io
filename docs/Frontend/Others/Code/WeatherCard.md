@@ -2,7 +2,7 @@
 
 这段代码是一个 HTML 页面，它包含了 CSS 样式，用于创建一个天气信息卡片。这个卡片显示了当前的天气状况、温度、时间和未来几天的天气预报。
 
-![图片](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/img/202502212233862.gif)
+![图片](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/img/202502212233862.gif)
 
 ## **HTML 结构**
 

@@ -32,7 +32,7 @@ insert into student(s_name,age,sex) values ("小寸",25,"男");
 
 ### 整体结构
 
-![image-20230202170525515](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/Two-C/img/Java/202303011659794.png)
+![image-20230202170525515](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/Two-C/img/Java/202303011659794.png)
 
 ### 导入依赖
 

@@ -4,11 +4,11 @@
 
 注解主要分为三大类，即 [SQL 语句映射](#SQL 语句映射)、[结果集映射](#结果集映射)和[关系映射](#关系映射)。
 
-![图片2](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/Two-C/img/Java/202303011122854.png)
+![图片2](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/Two-C/img/Java/202303011122854.png)
 
 为了简化 XML 的配置，MyBatis 提供了注解。可以通过 MyBatis 的 jar 包查看注解：
 
-![img](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/Two-C/img/Java/202303011122371.gif)
+![img](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/Two-C/img/Java/202303011122371.gif)
 
 ## SQL 语句映射
 

@@ -17,7 +17,7 @@ GET /_analyze
 
 效果：
 
-![image-20231228191423681](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202312281914165.png)
+![image-20231228191423681](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202312281914165.png)
 
 ## 分词的作用
 
@@ -50,7 +50,7 @@ exit
 docker volume inspect es-plugins
 ```
 
-![image-20231228194409739](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202312281944552.png)
+![image-20231228194409739](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202312281944552.png)
 
 说明plugins目录被挂载到了：`/var/lib/docker/volumes/es-plugins/_data `这个目录中。
 
@@ -58,11 +58,11 @@ docker volume inspect es-plugins
 
 通过：https://github.com/medcl/elasticsearch-analysis-ik/releases/download/v7.12.1/elasticsearch-analysis-ik-7.12.1.zip 下载并解压，重命名为ik
 
-![image-20210506110249144](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202312281946068.png)
+![image-20210506110249144](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202312281946068.png)
 
 #### 上传到es容器的插件数据卷中
 
-![image-20210506110704293](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202312281946544.png)
+![image-20210506110704293](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202312281946544.png)
 
 ###  重启容器
 
@@ -97,7 +97,7 @@ GET /_analyze
 }
 ```
 
-![image-20231228200532843](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202404091730992.png)
+![image-20231228200532843](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202404091730992.png)
 
 ```
 #ik分词器 粗粒度分词
@@ -108,7 +108,7 @@ GET /_analyze
 }
 ```
 
-![image-20231228200647666](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202312282006367.png)
+![image-20231228200647666](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202312282006367.png)
 
 ## 拓展词库
 
@@ -118,17 +118,17 @@ IK分词器使用的基础字典没有某些词 会被分成两个字，此时�
 
 1. 进入`/var/lib/docker/volumes/es-plugins/_data/ik/config/`，打开IKAnalyzer.cfg.xml，将key为ext_dict标签中添加 ext.dic
 
-   ![image-20231228201208510](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202312282012067.png)
+   ![image-20231228201208510](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202312282012067.png)
 
 2. 在`/var/lib/docker/volumes/es-plugins/_data/ik/config/`下添加：ext.dic
 
-   ![image-20231228201258813](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202312282013132.png)
+   ![image-20231228201258813](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202312282013132.png)
 
 3. 在名为 ext.dic 文件中，添加要拓展的词语，保存即可：
 
    **注意**：当前文件的编码必须是 UTF-8 格式，严禁使用Windows记事本编辑
 
-   ![image-20231228201455497](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202312282014171.png)
+   ![image-20231228201455497](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202312282014171.png)
 
 4. 重新启动，让其生效：
 
@@ -138,7 +138,7 @@ IK分词器使用的基础字典没有某些词 会被分成两个字，此时�
 
 5. 测试：
 
-   ![image-20231228201716130](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202312282017375.png)
+   ![image-20231228201716130](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202312282017375.png)
 
 ## 停用词库
 
@@ -148,13 +148,13 @@ IK分词器使用的基础字典没有某些词 会被分成两个字，此时�
 
 1. 在`/var/lib/docker/volumes/es-plugins/_data/ik/config/`下找到ext_stopwords：
 
-   ![image-20231228201921322](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202404091731468.png)
+   ![image-20231228201921322](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202404091731468.png)
 
 2. 在名为 stopword.dic 文件中，添加要停用的词语，保存即可：
 
    **注意**：当前文件的编码必须是 UTF-8 格式，严禁使用Windows记事本编辑
 
-   ![image-20231228202230874](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202312282022071.png)
+   ![image-20231228202230874](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202312282022071.png)
 
 3. 重新启动，让其生效：
 
@@ -164,7 +164,7 @@ IK分词器使用的基础字典没有某些词 会被分成两个字，此时�
 
 4. 测试：
 
-   ![image-20231228202554216](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202312282025315.png)
+   ![image-20231228202554216](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202312282025315.png)
 
 ## 基于MySQL实现热更新
 
@@ -172,11 +172,11 @@ IK分词器使用的基础字典没有某些词 会被分成两个字，此时�
 
 添加数据库并添加两个字段，两个表结构相同：
 
-![image-20240108223504258](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202401082235030.png)
+![image-20240108223504258](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202401082235030.png)
 
 下载对应版本的源码：https://github.com/medcl/elasticsearch-analysis-ik/releases
 
-![image-20240108221635946](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202401082216701.png)
+![image-20240108221635946](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202401082216701.png)
 
 打开项目源码，在config中添加`jdbc-reload.properties`：
 
@@ -193,7 +193,7 @@ jdbc.reload.interval=10000 // 毫秒 请注意调整
 
 打开 `org.wltea.analyzer.dic.Dictionary`：
 
-![image-20240108222445840](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202404091731105.png)
+![image-20240108222445840](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202404091731105.png)
 
 找到loadMainDict方法，并添加 `this.loadMySQLExtDict()`：
 
@@ -214,7 +214,7 @@ private void loadMainDict() {
 }
 ```
 
-![image-20240108223015626](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202404091731805.png)
+![image-20240108223015626](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202404091731805.png)
 
 添加 `loadMySQLExtDict()`方法：
 
@@ -318,19 +318,19 @@ public static synchronized void initial(Configuration cfg) {
 
 修改版本：
 
-![image-20240108233732277](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202401082337532.png)
+![image-20240108233732277](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202401082337532.png)
 
 使用Maven打包，并将此文件放入到Elasticsearch：
 
-![image-20240108233852422](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202401082338540.png)
+![image-20240108233852422](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202401082338540.png)
 
 解压并改名为ik：
 
-![image-20240108234017173](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202401082340891.png)
+![image-20240108234017173](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202401082340891.png)
 
 添加驱动：
 
-![image-20240108234703510](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202401082347322.png)
+![image-20240108234703510](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202401082347322.png)
 
 重启Elasticsearch：
 

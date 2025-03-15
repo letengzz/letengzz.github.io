@@ -4,7 +4,7 @@
 
 RocketMQ的broker的机制，导致了RocketMQ会有这个问题 因为一个broker中对应了四个queue
 
-![img](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202403172013509.png)
+![img](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202403172013509.png)
 
 **顺序消费的原理**：在默认的情况下消息发送会采取Round Robin轮询方式把消息发送到不同的queue(分区队列)；而消费消息的时候从多个queue上拉取消息，这种情况发送和消费是不能保证顺序。但是如果控制发送的顺序消息只依次发送到同一个queue中，消费的时候只从这个queue上依次拉取，则就保证了顺序。当发送和消费参与的queue只有一个，则是全局有序；如果多个queue参与，则为分区有序，即相对每个queue，消息都是有序的。
 
@@ -97,11 +97,11 @@ RocketMQ的broker的机制，导致了RocketMQ会有这个问题 因为一个bro
      }
      ```
 
-     ![image-20240324190038528](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202403241900142.png)
+     ![image-20240324190038528](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202403241900142.png)
 
      运行后查看控制台：
 
-     ![image-20240324191536654](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202403241915888.png)
+     ![image-20240324191536654](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202403241915888.png)
 
   3. 顺序消息消费者：测试时等一会即可有延迟
 
@@ -135,4 +135,4 @@ RocketMQ的broker的机制，导致了RocketMQ会有这个问题 因为一个bro
 
      启动 rocketmq-consumer，运行结果：查看控制台，发现已经监听到消息了
 
-     ![image-20240324191645218](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202403241916906.png)
+     ![image-20240324191645218](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202403241916906.png)

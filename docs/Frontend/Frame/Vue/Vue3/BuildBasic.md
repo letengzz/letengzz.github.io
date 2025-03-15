@@ -10,23 +10,23 @@
 
 node 最好>20 因为eslint9的需要 本次项目node为20.10.0
 
-![image-20250107150058871](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/image-20250107150058871.png)
+![image-20250107150058871](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/image-20250107150058871.png)
 
 ###  vscode 插件
 
 vscode 插件 eslint prettier stylelint unocss vue-official postcss
 
-![image-20240828103527225](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/image-20240828103527225.png)
+![image-20240828103527225](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/image-20240828103527225.png)
 
-![image-20240828103542672](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/image-20240828103542672.png)
+![image-20240828103542672](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/image-20240828103542672.png)
 
-![image-20240828103556492](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/image-20240828103556492.png)
+![image-20240828103556492](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/image-20240828103556492.png)
 
-![image-20240828103620621](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/image-20240828103620621.png)
+![image-20240828103620621](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/image-20240828103620621.png)
 
-![image-20240828103706879](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/image-20240828103706879.png)
+![image-20240828103706879](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/image-20240828103706879.png)
 
-![image-20240828140147090](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/image-20240828140147090.png)
+![image-20240828140147090](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/image-20240828140147090.png)
 
 ### git
 
@@ -44,7 +44,7 @@ git init
 npm create vue
 ```
 
-![image-20250107154112524](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/image-20250107154112524.png)
+![image-20250107154112524](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/image-20250107154112524.png)
 
 ## .vscode 配置文件  
 
@@ -665,7 +665,7 @@ export default {
 npx @antfu/eslint-config@latest
 ```
 
-![image-20250107173615864](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/image-20250107173615864.png)
+![image-20250107173615864](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/image-20250107173615864.png)
 
 ### 安装依赖包
 
@@ -763,7 +763,7 @@ Husky 是 Git 钩子工具，可以设置在 git 各个阶段（`pre-commit`、`
   npx husky-init
   ```
 
-  ![image-20250107210102300](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/image-20250107210102300.png)
+  ![image-20250107210102300](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/image-20250107210102300.png)
 
 3. 安装husky 执行 `npm i`
 
@@ -771,7 +771,7 @@ Husky 是 Git 钩子工具，可以设置在 git 各个阶段（`pre-commit`、`
   npm i
   ```
 
-  ![image-20250107210141221](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/image-20250107210141221.png)
+  ![image-20250107210141221](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/image-20250107210141221.png)
 
 ### Lint-staged 增量检测提交代码
 
@@ -820,7 +820,7 @@ lint-staged 是一个在 git add 到暂存区的文件运行 linters (ESLint/Pre
   npm run lint:lint-staged --allow-empty
   ```
 
-  ![image-20240207143016869](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/image-20240207143016869.png)
+  ![image-20240207143016869](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/image-20240207143016869.png)
 
 ### Commitlint 
 
@@ -877,7 +877,7 @@ Commitlint 官网：https://commitlint.js.org/)
   npx husky add .husky/commit-msg "npx --no -- commitlint --edit $1"
   ```
 
-  ![image-20240207142542813](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/image-20240207142542813.png)
+  ![image-20240207142542813](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/image-20240207142542813.png)
 
 ## 调整Sass
 
@@ -1234,7 +1234,7 @@ export default defineConfig({
 - .env.production：生产环境默认加载
 - .env.check：自定义环境
 
-![image-20250113174344475](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/image-20250113174344475.png)
+![image-20250113174344475](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/image-20250113174344475.png)
 
 修改package.json命令：
 

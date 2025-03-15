@@ -32,7 +32,7 @@ docker run ... –v 宿主机目录(文件):容器内目录(文件) ...
 - $PWD 表示宿主机当前目录
 - 在容器中不能写 ~
 
-![image-20240615163725142](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202406151637749.png)
+![image-20240615163725142](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202406151637749.png)
 
 数据卷持久化：
 
@@ -150,7 +150,7 @@ docker run -it --name=c1 -v ~/data:/root/data_container:rw centos:7 /bin/bash
 
 多容器进行数据交换，多个容器挂载同一个数据卷容器，完成数据交互。
 
-![](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202406151644479.png)
+![](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202406151644479.png)
 
 通过简单方式实现数据卷配置：创建一个容器，挂载一个目录，让其他容器继承自该容器( --volume-from )
 

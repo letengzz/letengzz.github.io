@@ -4,42 +4,42 @@
 
 1. 解压下载的PowerDesigner16.5.exe文件，双击.exe文件，来到安装界面，点击Next
 
-   ![image-20250105160621842](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/image-20250105160621842.png)
+   ![image-20250105160621842](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/image-20250105160621842.png)
 
 2. 选择Trial，点击Next
 
-   ![image-20250105160646684](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/image-20250105160646684.png)
+   ![image-20250105160646684](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/image-20250105160646684.png)
 
 3. 地区选择，选择我同意，点击Next
 
-   ![image-20250105160725916](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/image-20250105160725916.png)
+   ![image-20250105160725916](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/image-20250105160725916.png)
 
 4. 选择安装路径，默认是C盘
 
-   ![image-20250105160836725](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/image-20250105160836725.png)
+   ![image-20250105160836725](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/image-20250105160836725.png)
 
 5. 直接点击Next
 
-   ![image-20250105160900946](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/image-20250105160900946.png)
+   ![image-20250105160900946](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/image-20250105160900946.png)
 
 6. 选择General和Notation
 
-   ![image-20250105160928755](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/image-20250105160928755.png)
+   ![image-20250105160928755](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/image-20250105160928755.png)
 
 7. 点击Next
 
-   ![image-20250105161003514](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/image-20250105161003514.png)
+   ![image-20250105161003514](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/image-20250105161003514.png)
 
-   ![image-20250105161020271](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/image-20250105161020271.png)
+   ![image-20250105161020271](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/image-20250105161020271.png)
 
 8. 安装完成，点击Finish
 
-   ![image-20250105161129731](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/image-20250105161129731.png)
+   ![image-20250105161129731](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/image-20250105161129731.png)
 
 ## 破解
 
 解压破解zip文件，复制pdflm16.dll文件，把文件覆盖到你的软件安装目录下。
-![在这里插入图片描述](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/3bcdb3606947c2a16938e298c133c77e.png)
+![在这里插入图片描述](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/3bcdb3606947c2a16938e298c133c77e.png)
 
 ## 汉化
 
@@ -51,22 +51,22 @@
 
 选择：
 
-![image-20250105163215145](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/image-20250105163215145.png)
+![image-20250105163215145](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/image-20250105163215145.png)
 
 点击所需内容，在画布中左键即可，点击右键取消使用该图形：
 
-![image-20250105163418817](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/image-20250105163418817.png)
+![image-20250105163418817](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/image-20250105163418817.png)
 
 双击打开，填写表信息：
 
-![image-20250105163603146](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/image-20250105163603146.png)
+![image-20250105163603146](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/image-20250105163603146.png)
 
 双击左侧箭头创建主键：
 
-![image-20250105164803457](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/image-20250105164803457.png)
+![image-20250105164803457](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/image-20250105164803457.png)
 
-![image-20250105164849552](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/image-20250105164849552.png)
+![image-20250105164849552](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/image-20250105164849552.png)
 
 生成SQL：
 
-![image-20250106112111993](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/image-20250106112111993.png)
+![image-20250106112111993](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/image-20250106112111993.png)

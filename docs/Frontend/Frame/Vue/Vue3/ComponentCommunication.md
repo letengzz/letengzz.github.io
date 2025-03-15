@@ -11,7 +11,7 @@
 
 **常见搭配形式：**
 
-<img src="https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202402111719186.png" alt="image-20231119185900990" style="zoom:60%;" /> 
+<img src="https://fastly.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202402111719186.png" alt="image-20231119185900990" style="zoom:60%;" /> 
 
 ## props
 
@@ -456,7 +456,7 @@ function sendToy(){
 
 ### 默认插槽
 
-![img](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202402111719693.png)
+![img](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202402111719693.png)
 
 ```vue
 父组件中：

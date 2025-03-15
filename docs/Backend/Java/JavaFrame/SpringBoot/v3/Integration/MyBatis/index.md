@@ -39,7 +39,7 @@ MyBatis的所有配置绑定在MybatisProperties
 
 可以直接从spring initializr中选择整合MyBatis：
 
-![image-20231224205619772](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202312242056982.png)
+![image-20231224205619772](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202312242056982.png)
 
 也可导入依赖：
 
@@ -80,11 +80,11 @@ mybatis:
 
 + **第一种方式：查询语句使用as关键字起别名，让查询结果列名和实体类的属性名对应上。**
 
-  ![](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202411222259883.png)
+  ![](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202411222259883.png)
 
   再次测试：
 
-  ![](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202411222259070.png)
+  ![](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202411222259070.png)
 
 
 

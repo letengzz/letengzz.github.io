@@ -43,7 +43,7 @@ insert into t_emp(emp_name,emp_salary,dept_id) values ("JONES","122.10",3);
 
 ### 整体结构
 
-![image-20230301135654733](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/Two-C/img/Java/202303011659667.png)
+![image-20230301135654733](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/Two-C/img/Java/202303011659667.png)
 
 ### 导入依赖
 

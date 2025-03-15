@@ -8,7 +8,7 @@
 
 **源码地址**：https://github.com/varletjs/varlet
 
-![image-20241022093050383](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202410220930346.png)
+![image-20241022093050383](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202410220930346.png)
 
 Varlet 提供了丰富的组件集，从基础的按钮、图标到复杂的对话框、滑动操作等，满足了常见的移动端开发需求。与其他组件库不同，Varlet 的特色在于其轻量和简洁性，使得项目体积保持小巧，而不牺牲功能。
 
@@ -24,7 +24,7 @@ Varlet 主要特性：
 
 组件预览：四款主题，Material Design 2 和 3，支持亮暗：
 
-![image-20241022093730400](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202410220937181.png)
+![image-20241022093730400](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202410220937181.png)
 
 **安装**：
 

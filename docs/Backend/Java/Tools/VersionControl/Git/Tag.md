@@ -74,45 +74,45 @@ git push origin :refs/tags/v0.9
 
 - 切换到需要打标签的分支上：
 
-  ![image-20230513234935268](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/Two-C/img/Java/202305140103711.png)
+  ![image-20230513234935268](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/Two-C/img/Java/202305140103711.png)
 
 - 使用  `git tag <名称>` 创建标签，用命令 `git tag` 查看所有标签：
 
-  ![image-20230513234941679](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/Two-C/img/Java/202305140103067.png)
+  ![image-20230513234941679](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/Two-C/img/Java/202305140103067.png)
 
 - 默认标签是打在最新提交的commit上的，可以给之前的操作打上标签：
 
   - 使用 `git log --pretty=oneline --abbrev-commit` 查看历史提交的commit id 提交打上标签
 
-    ![image-20230513235047457](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/Two-C/img/Java/202305140104833.png)
+    ![image-20230513235047457](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/Two-C/img/Java/202305140104833.png)
 
 - 标签不是按时间顺序列出，而是按字母排序的。可以用 `git show <tagname>` 查看标签信息：
 
-  ![image-20230513235057534](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/Two-C/img/Java/202305140104652.png)
+  ![image-20230513235057534](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/Two-C/img/Java/202305140104652.png)
 
 - 创建带有说明的标签：用 `-a` 指定标签名， `-m` 指定说明文字
 
   `git tag -a v0.1 -m "version 0.1 released" 1094adb` 
 
-  ![image-20230513235110847](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/Two-C/img/Java/202305140104416.png)
+  ![image-20230513235110847](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/Two-C/img/Java/202305140104416.png)
 
 ## 推送标签到远程库
 
 - 推送单个标签：
 
-  ![image-20230513235140930](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/Two-C/img/Java/202305140104114.png)
+  ![image-20230513235140930](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/Two-C/img/Java/202305140104114.png)
 
 - 推送全部尚未推送到远程库的本地标签：
 
-  ![image-20230513235148404](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/Two-C/img/Java/202305140104064.png)
+  ![image-20230513235148404](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/Two-C/img/Java/202305140104064.png)
 
-- ![image-20230513235135933](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/Two-C/img/Java/202305140104009.png)
+- ![image-20230513235135933](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/Two-C/img/Java/202305140104009.png)
 
 ## 删除标签
 
 - 当本地标签打错了，可以删除本地标签：
 
-  ![image-20230513235158453](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/Two-C/img/Java/202305140104886.png)
+  ![image-20230513235158453](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/Two-C/img/Java/202305140104886.png)
 
 - 因为创建的标签都只存储在本地，不会自动推送到远程。所以，打错的标签可以在本地安全删除。
 
@@ -120,10 +120,10 @@ git push origin :refs/tags/v0.9
 
   - 首先从本地删除标签：
 
-    ![image-20230513235207521](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/Two-C/img/Java/202305140104759.png)
+    ![image-20230513235207521](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/Two-C/img/Java/202305140104759.png)
 
   - 从远程库中删除：
 
-    ![image-20230513235210767](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/Two-C/img/Java/202305140104556.png)
+    ![image-20230513235210767](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/Two-C/img/Java/202305140104556.png)
 
-  - ![image-20230513235230186](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/Two-C/img/Java/202305140104461.png)
+  - ![image-20230513235230186](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/Two-C/img/Java/202305140104461.png)

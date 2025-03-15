@@ -1,6 +1,6 @@
 # Node.js
 
-![image-20231003170307371](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img/Java/202310031704118.png)
+![image-20231003170307371](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/tc2/img/Java/202310031704118.png)
 
 - [Node.js 概述](Overview.md)
 - [Node.js 安装](Install.md)

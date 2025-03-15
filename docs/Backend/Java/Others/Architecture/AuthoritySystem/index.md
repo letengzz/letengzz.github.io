@@ -4,7 +4,7 @@
 
 企业权限系统设计通常有`sys_user_info` (系统用户表，一般有账号密码)、`sys_dept` (部门表，每个用户是那个部门，一般是一对一关系或一对多关系，且为树形结构)、`sys_role` (角色表，多个角色，与用户表是多对多关系)、`sys_user_role` (用户角色关联表，记录用户和角色的关联信息)、`sys_role_dept` (角色部门关联表，多个部门和多个角色，某个或多个部门拥有某些角色)、`sys_resource` (资源表，用户能操作的资源，一种资源也就是一种权限，包括url、button、file、data等)、`sys_role_res` (角色资源关联表，记录每一个角色能操作的资源)、`sys_user_res` (用户资源关联表，记录那个用户直接操作的资源)
 
-![image-20240810230834917](https://cdn.jsdelivr.net/gh/LetengZzz/img/java/others/202412092337660.png)
+![image-20240810230834917](https://fastly.jsdelivr.net/gh/LetengZzz/img/java/others/202412092337660.png)
 
 **结论**：
 
@@ -45,13 +45,13 @@
 
 菜单权限就是对页面的控制，就是有这个权限的用户才能访问这个页面，没这个权限的用户就无法访问，它是以整个页面为维度，对权限的控制并没有那么细，所以是一种**粗颗粒权限**。
 
-![image-20220606155704023](https://cdn.jsdelivr.net/gh/LetengZzz/img/java/others/202412092337396.png)
+![image-20220606155704023](https://fastly.jsdelivr.net/gh/LetengZzz/img/java/others/202412092337396.png)
 
 ### 按钮权限
 
 按钮权限就是将页面的**操作**视为资源，比如删除操作，有些人可以操作有些人不能操作。对于后端来说，操作就是一个接口。于前端来说，操作往往是一个按钮，是一种**细颗粒权限**。
 
-![image-20220606160034229](https://cdn.jsdelivr.net/gh/LetengZzz/img/java/others/202412092337316.png)
+![image-20220606160034229](https://fastly.jsdelivr.net/gh/LetengZzz/img/java/others/202412092337316.png)
 
 ## 实现方式
 

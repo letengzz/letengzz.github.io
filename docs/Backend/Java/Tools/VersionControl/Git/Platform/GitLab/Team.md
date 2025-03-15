@@ -8,21 +8,21 @@
 
 点击管理中心-用户-新用户：
 
-![image-20240613133743468](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202406131337523.png)
+![image-20240613133743468](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202406131337523.png)
 
 创建一个leader的账号：
 
-![image-20240613221040128](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202406132210482.png)
+![image-20240613221040128](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202406132210482.png)
 
 再申请一个hjc账号：
 
-![image-20240613134159618](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202406131342014.png)
+![image-20240613134159618](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202406131342014.png)
 
 用户会收到重置密码的邮件，也可以由管理员设置：
 
-![image-20240613134316069](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202406131343633.png)
+![image-20240613134316069](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202406131343633.png)
 
-![image-20240613134400924](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202406131344343.png)
+![image-20240613134400924](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202406131344343.png)
 
 ## 创建群组
 
@@ -43,30 +43,30 @@
 
 假设研发部群组是rdc，下属后端组、前端组、大数据组等子群组：
 
-![1img](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202406131347314.jpg) 
+![1img](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202406131347314.jpg) 
 
 创建研发中心群组rdc：
 
-![image-20240613134944564](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202406131349212.png)
+![image-20240613134944564](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202406131349212.png)
 
- ![image-20240613135050321](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202406131350690.png)
+ ![image-20240613135050321](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202406131350690.png)
 
 创建大数据组：
 
 在研发中心组下，再创建一个大数据组 (当然，其他还会有后端组、前端组等)：
 
-![image-20240613135205154](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202406131352897.png) 
+![image-20240613135205154](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202406131352897.png) 
 
-![image-20240613135821194](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202406131358480.png) 
+![image-20240613135821194](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202406131358480.png) 
 
 当然，根据公司情况还可以进一步在数据组下面细分子组（比如：离线、实时、湖等），这里就不再细分。
 
 将数据组的leader设为bigdata的负责人：
 
-![](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202406131359269.png) 
+![](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202406131359269.png) 
 
 将hjc添加为普通的开发人员：
 
-![image-20240613140055251](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202406131400880.png) 
+![image-20240613140055251](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202406131400880.png) 
 
 现在就有一个顶级群组rdc，其下有一个子群组bigdata，组内有管理员leader01，开发人员hjc。

@@ -77,7 +77,7 @@ builder.Services.AddSwaggerGen(options =>
 });
 ```
 设置程序集属性
-![image.png](https://cdn.jsdelivr.net/gh/LetengZzz/img/DotNet/202412101728932.png)
+![image.png](https://fastly.jsdelivr.net/gh/LetengZzz/img/DotNet/202412101728932.png)
 action上使用文档注释
 
 #### swagger添加版本

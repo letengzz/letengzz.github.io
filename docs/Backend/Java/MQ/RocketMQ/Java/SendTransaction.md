@@ -4,7 +4,7 @@
 
 事务消息可以被认为是一个两阶段的提交消息实现，以确保分布式系统的最终一致性。事务性消息确保本地事务的执行和消息的发送可以原子地执行。
 
-![](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/java/mq/202412101606128.png)
+![](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/java/mq/202412101606128.png)
 
 事务消息的大致分为两个流程：正常事务消息的发送及提交、事务消息的补偿流程：
 
@@ -21,7 +21,7 @@
   4. 其中，补偿阶段用于解决消息UNKNOW或者Rollback发生超时或者失败的情况。
 
 
-![](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/java/mq/202412101607065.png)
+![](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/java/mq/202412101607065.png)
 
 **事务消息共有三种状态**：提交状态、回滚状态、中间状态
 
@@ -115,7 +115,7 @@ public class Producer {
 
 启动生产者进行测试：
 
-![image-20240327164402122](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/java/mq/202412101607047.png)
+![image-20240327164402122](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/java/mq/202412101607047.png)
 
 ## 消费者
 
@@ -147,4 +147,4 @@ public class Consumer {
 
 启动消费者进行测试：
 
-![image-20240327164427352](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/java/mq/202412101608941.png)
+![image-20240327164427352](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/java/mq/202412101608941.png)

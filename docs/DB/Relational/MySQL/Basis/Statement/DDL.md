@@ -27,7 +27,7 @@ CREATE DATABASE IF NOT EXISTS sql_test;
 CREATE DATABASE sql_test2 DEFAULT CHARSET utf8mb4;
 ```
 
-![image-20230909131717436](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img/Java/202309091320037.png)
+![image-20230909131717436](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/tc2/img/Java/202309091320037.png)
 
 ### 删除操作
 
@@ -47,7 +47,7 @@ DROP DATABASE sql_test;
 DROP DATABASE IF EXISTS sql_test;
 ```
 
-![image-20230909132449917](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img/Java/202309091333275.png)
+![image-20230909132449917](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/tc2/img/Java/202309091333275.png)
 
 ### 查询操作
 
@@ -59,7 +59,7 @@ DROP DATABASE IF EXISTS sql_test;
 SHOW DATABASES;
 ```
 
-![image-20230909133342414](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img/Java/202309091333114.png)
+![image-20230909133342414](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/tc2/img/Java/202309091333114.png)
 
 #### 查询当前所在数据库
 
@@ -69,7 +69,7 @@ SHOW DATABASES;
 SELECT DATABASE();
 ```
 
-![image-20230909133526432](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img/Java/202309091335571.png)
+![image-20230909133526432](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/tc2/img/Java/202309091335571.png)
 
 ### 切换数据库
 
@@ -93,7 +93,7 @@ use sql_test;
 SELECT DATABASE();
 ```
 
-![image-20230909132840515](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img/Java/202309091351948.png)
+![image-20230909132840515](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/tc2/img/Java/202309091351948.png)
 
 ## 表操作
 
@@ -130,7 +130,7 @@ CREATE TABLE user(
 ) COMMENT '账号密码表';
 ```
 
-![image-20230909134537805](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img/Java/202309091347154.png)
+![image-20230909134537805](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/tc2/img/Java/202309091347154.png)
 
 #### 添加字段
 
@@ -150,7 +150,7 @@ ALTER TABLE user ADD vip int COMMENT '是否为VIP用户';
 DESC user;
 ```
 
-![image-20230909140703580](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img/Java/202309091407929.png)
+![image-20230909140703580](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/tc2/img/Java/202309091407929.png)
 
 ### 查询表操作
 
@@ -170,7 +170,7 @@ use sql_test;
 SHOW TABLES;
 ```
 
-![image-20230909141542108](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img/Java/202309091415598.png)
+![image-20230909141542108](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/tc2/img/Java/202309091415598.png)
 
 #### 查询指定表结构
 
@@ -188,7 +188,7 @@ desc 表名;
 DESC user;
 ```
 
-![image-20230909141723195](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img/Java/202309091417299.png)
+![image-20230909141723195](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/tc2/img/Java/202309091417299.png)
 
 #### 查询指定表的建表语句
 
@@ -206,7 +206,7 @@ SHOW CREATE TABLE 表名;
 SHOW CREATE TABLE user;
 ```
 
-![image-20230909141917499](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img/Java/202309091419964.png)
+![image-20230909141917499](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/tc2/img/Java/202309091419964.png)
 
 ### 修改表操作
 
@@ -228,7 +228,7 @@ ALTER TABLE user MODIFY vip varchar(20);
 DESC user;
 ```
 
-![image-20230909142412877](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202412011756321.png)
+![image-20230909142412877](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202412011756321.png)
 
 #### 同时修改字段名和字段类型
 
@@ -248,7 +248,7 @@ ALTER TABLE user CHANGE vip isVip int;
 DESC user;
 ```
 
-![image-20230909143355126](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img/Java/202309091433284.png)
+![image-20230909143355126](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/tc2/img/Java/202309091433284.png)
 
 #### 修改表名
 
@@ -268,7 +268,7 @@ ALTER TABLE user RENAME TO new_user;
 SHOW TABLES;
 ```
 
-![image-20230909143719664](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img/Java/202309091437287.png)
+![image-20230909143719664](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/tc2/img/Java/202309091437287.png)
 
 ### 删除表操作
 
@@ -290,7 +290,7 @@ ALTER TABLE new_user DROP isVip;
 DESC new_user;
 ```
 
-![image-20230909143959305](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img/Java/202309091440937.png)
+![image-20230909143959305](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/tc2/img/Java/202309091440937.png)
 
 #### 删除表
 
@@ -314,7 +314,7 @@ DROP TABLE IF EXISTS new_user;
 SHOW TABLES;
 ```
 
-![image-20230909144414867](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img/Java/202309091444620.png)
+![image-20230909144414867](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/tc2/img/Java/202309091444620.png)
 
 #### 删除指定表，并重新创建表
 
@@ -334,4 +334,4 @@ TRUNCATE TABLE user;
 SELECT * FROM user;
 ```
 
-![image-20230910163814647](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202412051437499.png)
+![image-20230910163814647](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202412051437499.png)

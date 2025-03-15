@@ -49,7 +49,7 @@ java -version
 
 ## 启动Jenkins
 
-![image-20240331011626003](https://cdn.jsdelivr.net/gh/LetengZzz/img/java/tools/202412092237767.png)
+![image-20240331011626003](https://fastly.jsdelivr.net/gh/LetengZzz/img/java/tools/202412092237767.png)
 
 启动Jenkins：
 
@@ -63,13 +63,13 @@ java -jar jenkins.war
 
 初始化后的密码：
 
-![image-20240331013050470](https://cdn.jsdelivr.net/gh/LetengZzz/img/java/tools/202412092237739.png)
+![image-20240331013050470](https://fastly.jsdelivr.net/gh/LetengZzz/img/java/tools/202412092237739.png)
 
 密码文件使用后会自动删除
 
 当出现：`java.lang.RuntimeException: Fontconfig head is null, check your fonts or fonts configuration`
 
-![image-20240331114246966](https://cdn.jsdelivr.net/gh/LetengZzz/img/java/tools/202412092237740.png)
+![image-20240331114246966](https://fastly.jsdelivr.net/gh/LetengZzz/img/java/tools/202412092237740.png)
 
 解决办法：安装fontconfig
 
@@ -86,19 +86,19 @@ firewall-cmd --reload ##重启防火墙生效
 
 ## 访问Jenkins
 
-![image-20240331013620069](https://cdn.jsdelivr.net/gh/LetengZzz/img/java/tools/202412092237977.png)
+![image-20240331013620069](https://fastly.jsdelivr.net/gh/LetengZzz/img/java/tools/202412092237977.png)
 
 安装推荐的插件：
 
-![image-20240331013741848](https://cdn.jsdelivr.net/gh/LetengZzz/img/java/tools/202412092237946.png)
+![image-20240331013741848](https://fastly.jsdelivr.net/gh/LetengZzz/img/java/tools/202412092237946.png)
 
 创建一个管理员用户：
 
-![image-20240331014159713](https://cdn.jsdelivr.net/gh/LetengZzz/img/java/tools/202412092238916.png)
+![image-20240331014159713](https://fastly.jsdelivr.net/gh/LetengZzz/img/java/tools/202412092238916.png)
 
 默认URL即可：
 
-![image-20240331014229747](https://cdn.jsdelivr.net/gh/LetengZzz/img/java/tools/202412092238392.png)
+![image-20240331014229747](https://fastly.jsdelivr.net/gh/LetengZzz/img/java/tools/202412092238392.png)
 
 ## 安装Maven
 
@@ -397,16 +397,16 @@ yum install -y git
 
 管理Jenkins：
 
-![image-20240331105108577](https://cdn.jsdelivr.net/gh/LetengZzz/img/java/tools/202412092238555.png)
+![image-20240331105108577](https://fastly.jsdelivr.net/gh/LetengZzz/img/java/tools/202412092238555.png)
 
 Jenkins 安装Maven插件：
 
-![image-20240331115013058](https://cdn.jsdelivr.net/gh/LetengZzz/img/java/tools/202412092238659.png)
+![image-20240331115013058](https://fastly.jsdelivr.net/gh/LetengZzz/img/java/tools/202412092238659.png)
 
 配置Maven：
 
-![image-20240331115627059](https://cdn.jsdelivr.net/gh/LetengZzz/img/java/tools/202412092238046.png)
+![image-20240331115627059](https://fastly.jsdelivr.net/gh/LetengZzz/img/java/tools/202412092238046.png)
 
 配置JDK：
 
-![image-20240331180303435](https://cdn.jsdelivr.net/gh/LetengZzz/img/java/tools/202412092238975.png)
+![image-20240331180303435](https://fastly.jsdelivr.net/gh/LetengZzz/img/java/tools/202412092238975.png)

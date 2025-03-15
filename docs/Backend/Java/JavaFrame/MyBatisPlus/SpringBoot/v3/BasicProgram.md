@@ -43,9 +43,9 @@ INSERT INTO user (id, name, age, email) VALUES
 
 使用 Spring Initializr 快速初始化一个 Spring Boot 工程，并选择好工具：
 
-![image-20240116213239014](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202401162132105.png)
+![image-20240116213239014](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202401162132105.png)
 
-![image-20240116213712576](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202401162137802.png)
+![image-20240116213712576](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202401162137802.png)
 
 #### 引入依赖
 
@@ -149,7 +149,7 @@ public class User {
 
 User类编译之后的结果：
 
-![image-20230916223032175](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img/Java/202309162230919.png)
+![image-20230916223032175](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/tc2/img/Java/202309162230919.png)
 
 #### 添加mapper
 
@@ -185,7 +185,7 @@ class UserMapperTest {
 
 **结果**：
 
-![image-20230916223512798](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img/Java/202309162235792.png)
+![image-20230916223512798](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/tc2/img/Java/202309162235792.png)
 
 ## 5.添加日志
 
@@ -198,7 +198,7 @@ mybatis-plus:
     log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
 ```
 
-![image-20230916223605704](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img/Java/202309162252862.png)
+![image-20230916223605704](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/tc2/img/Java/202309162252862.png)
 
 ## 6.原理
 

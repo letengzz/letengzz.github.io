@@ -291,11 +291,11 @@ import Header from "@/components/Header.vue";
 </style>
 ```
 
-![image-20240210140017360](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202402111349186.png)
+![image-20240210140017360](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202402111349186.png)
 
 通过点击导航，视觉效果上“消失” 了的路由组件，默认是被**卸载**掉的，需要的时候再去**挂载**：
 
-![image-20240210141040400](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202402111349876.png)
+![image-20240210141040400](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202402111349876.png)
 
 ## 路由器工作模式
 
@@ -326,7 +326,7 @@ import Header from "@/components/Header.vue";
   })
   ```
 
-![image-20240210141410326](https://cdn.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202402111350315.png)
+![image-20240210141410326](https://fastly.jsdelivr.net/gh/LetengZzz/img@main/tc2/img202402111350315.png)
 
 ## to的两种写法
 
