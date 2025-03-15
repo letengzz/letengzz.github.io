@@ -1,6 +1,6 @@
 # Spring Task
 
-Spring中Task模块，快速实现定时任务，两个注解@Scheduled声明定时任务的方法， @EnableScheduling表示启用定时任务功能。
+Spring中Task模块，快速实现定时任务，两个注解@Scheduled声明定时任务的方法， `@EnableScheduling`表示启用定时任务功能。
 
 首先创建定时任务方法，声明@Scheduled注解，cron属性为时间表达式
 
